@@ -77,8 +77,14 @@ public abstract class AbstractScript {
             while (paused) {
                 try {
                     pauseLock.wait(); // Wait until notified
+
+                    // Check for thread interruption
+                    if (Thread.interrupted()) {
+                        break;
+                    }
                 } catch (InterruptedException e) {
-                    Thread.currentThread().interrupt(); // Restore the interrupted status
+                    // Restore the interrupted status and break the loop
+                    Thread.currentThread().interrupt();
                     break;
                 }
             }
