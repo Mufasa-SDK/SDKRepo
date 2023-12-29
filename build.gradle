@@ -40,7 +40,6 @@ task generateJavaDoc(type: Javadoc) {
 
 jar {
     archiveFileName = 'scriptSDK.jar'
-    destinationDirectory = file('/jar')
     manifest {
         attributes(
                 'Manifest-Version': '1.0',
