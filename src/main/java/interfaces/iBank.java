@@ -8,8 +8,8 @@ import java.awt.*;
 public interface iBank {
 
     /**
-     * Opens the bank interface with the specified bank name.
-     * @param bankname The name of the bank to be opened.
+     * Opens the bank interface.
+     * @param bankname The name of the bank to be opened. Use BankNames. for supported banks
      */
     void open(String bankname);
 
