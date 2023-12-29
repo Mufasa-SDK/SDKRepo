@@ -9,3 +9,4 @@ local.properties
 .DS_Store
 .vscode
 Simba
+.gradle
