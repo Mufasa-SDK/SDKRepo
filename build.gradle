@@ -3,13 +3,21 @@ plugins {
     id 'maven-publish'
 }
 
+publishing {
+    publications {
+        mavenJava(MavenPublication) {
+            from components.java
+        }
+    }
+}
+
 java {
     toolchain {
         languageVersion.set(JavaLanguageVersion.of(11))
     }
 }
 
-group 'com.mufasa'
+group 'com.github.Mufasa-SDK' // Change this to your GitHub username and repository
 version '1.0.0'
 
 repositories {
@@ -39,7 +47,8 @@ task generateJavaDoc(type: Javadoc) {
 }
 
 jar {
-    archiveFileName = 'scriptSDK.jar'
+    archiveBaseName = 'ScriptSDK'
+    archiveVersion = '1.0.0'
     manifest {
         attributes(
                 'Manifest-Version': '1.0',
