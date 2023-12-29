@@ -26,6 +26,9 @@ public abstract class AbstractScript {
     protected iChatbox chatbox;
     protected iScript script;
 
+    private final Object pauseLock = new Object();
+    private boolean paused = false;
+
     public void initialize(iLogger logger, iBank bank, iClient client, iCondition condition, iDepositBox depositBox, iEquipment equipment, iGame game, iGameTabs gameTabs, iInventory inventory, iLogin login, iLogout logout, iMagic magic, iOverlay overlay, iPlayer player, iPrayer prayer, iStats stats, iWalker walker, iXPBar xpBar, iChatbox chatbox, iScript script) {
         this.logger = logger;
         this.bank = bank;
@@ -58,6 +61,33 @@ public abstract class AbstractScript {
         return configurations;
     }
 
+    // Method to set the paused state
+    public void setPaused(boolean paused) {
+        synchronized (pauseLock) {
+            this.paused = paused;
+            if (!paused) {
+                pauseLock.notifyAll(); // Wake up the thread if it's waiting
+            }
+        }
+    }
+
+    // Method to check and wait if paused
+    protected void checkAndPause() {
+        synchronized (pauseLock) {
+            while (paused) {
+                try {
+                    pauseLock.wait(); // Wait until notified
+                } catch (InterruptedException e) {
+                    Thread.currentThread().interrupt(); // Restore the interrupted status
+                    break;
+                }
+            }
+        }
+    }
+    public void running() {
+        checkAndPause();
+        poll();
+    }
     public abstract void onStart();
 
     public abstract void poll();
