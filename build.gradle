@@ -2,12 +2,16 @@ plugins {
     id 'java'
 }
 
+java {
+    toolchain {
+        languageVersion.set(JavaLanguageVersion.of(11))
+    }
+}
+
 group 'com.mufasa'
 version '1.0.0'
 
 repositories {
-    mavenCentral()
-    maven { url "https://repo1.maven.org/maven2" }
     maven { url "https://openpnp.github.io/maven" }
     google()
 }
@@ -30,8 +34,6 @@ task generateJavaDoc(type: Javadoc) {
     options.version = true
 }
 
-compileJava.finalizedBy generateJavaDoc
-
 jar {
     archiveFileName = 'scriptSDK.jar'
     destinationDirectory = file('/jar')
@@ -42,4 +44,3 @@ jar {
         )
     }
 }
-
