@@ -1,0 +1,70 @@
+package interfaces;
+
+import java.awt.*;
+import java.io.File;
+
+/**
+ * Interface defining the actions for client interaction.
+ * This interface provides methods for simulating various user interactions like tapping, long pressing,
+ * sending keystrokes, and more.
+ */
+public interface iClient {
+
+    /**
+     * Simulates a tap action at a specified coordinate.
+     *
+     * @param x the x-coordinate for the tap action.
+     * @param y the y-coordinate for the tap action.
+     */
+    void tap(int x, int y);
+
+    /**
+     * Simulates a tap action on a specific color within a defined area.
+     *
+     * @param targetColor the color to target for the tap.
+     * @param boundingArea The area on the screen you'd like to search in
+     * @param tolerance the color tolerance for matching the target color, 0-100, usually 0-15 is enough.
+     */
+    void tap(Color targetColor, Rectangle boundingArea, int tolerance);
+
+    /**
+     * Simulates a long press action at a specified coordinate.
+     *
+     * @param x the x-coordinate for the long press action.
+     * @param y the y-coordinate for the long press action.
+     */
+    void longPress(int x, int y);
+
+    /**
+     * Simulates a long press action on a specific color within a defined area.
+     *
+     * @param targetColor the color to target for the long press.
+     * @param boundingArea The area on the screen you'd like to search in
+     * @param tolerance the color tolerance for matching the target color.
+     */
+    void longPress(Color targetColor, Rectangle boundingArea, int tolerance);
+
+    /**
+     * Simulates a long press action within a specified rectangle area.
+     *
+     * @param rectangle the rectangle area where the long press should occur.
+     */
+    void longPressWithinRectangle(Rectangle rectangle);
+
+    /**
+     * Sends a specific keystroke to the client.
+     *
+     * @param keystroke the string representing the keystroke to be sent.
+     */
+    void sendKeystroke(String keystroke);
+
+    /**
+     * Restarts the application associated with this client.
+     */
+    void restartApp();
+
+    /**
+     * Simulates the action of moving the camera up.
+     */
+    void moveCameraUp();
+}

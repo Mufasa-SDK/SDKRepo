@@ -1,0 +1,45 @@
+plugins {
+    id 'java'
+}
+
+group 'com.mufasa'
+version '1.0.0'
+
+repositories {
+    mavenCentral()
+    maven { url "https://repo1.maven.org/maven2" }
+    maven { url "https://openpnp.github.io/maven" }
+    google()
+}
+
+dependencies {
+    implementation 'org.openpnp:opencv:4.5.3-4'
+}
+
+compileJava {
+    options.debug = true
+    options.compilerArgs += ['-g', '-parameters']
+}
+
+task generateJavaDoc(type: Javadoc) {
+    source = sourceSets.main.java.srcDirs
+    classpath = configurations.compileClasspath
+    destinationDir = file("../scriptSDK/docs")
+    options.memberLevel = JavadocMemberLevel.PRIVATE
+    options.author = true
+    options.version = true
+}
+
+compileJava.finalizedBy generateJavaDoc
+
+jar {
+    archiveFileName = 'scriptSDK.jar'
+    destinationDirectory = file('/jar')
+    manifest {
+        attributes(
+                'Manifest-Version': '1.0',
+                'Created-By': 'Mufasa'
+        )
+    }
+}
+
