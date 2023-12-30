@@ -27,12 +27,20 @@ public interface iWalker {
     Point getPlayerPosition(RegionBox region);
 
     /**
-     * Takes a step to a specified point on a world map using a map file.
+     * Takes a step to a specified point on a world map, needs to be visible on the minimap.
+     *
+     * @param worldmapPoint The point to step to on the world map.
+     * @param region the RegionBox region you are in on the worldmap.
+     */
+    void step(Point worldmapPoint, RegionBox region);
+
+    /**
+     * Takes a step to a specified point on a world map using a map file, neds to be visible on the minimap.
      *
      * @param worldmapPoint The point to step to on the world map.
      * @param mapFileLocation The location of the map file to use for navigation.
      */
-    void step(Point worldmapPoint, String mapFileLocation);
+    void stepCustomMap(Point worldmapPoint, String mapFileLocation);
 
     /**
      * Walks along a specified path on a custom map.
