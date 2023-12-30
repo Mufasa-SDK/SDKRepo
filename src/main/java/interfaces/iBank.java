@@ -68,6 +68,17 @@ public interface iBank {
      */
     String setupDynamicBank();
 
+    /**
+     * Finds the dynamic bank and returns a bank identifier.
+     * @return A string identifier for the dynamic bank you're in.
+     */
+    String findDynamicBank();
+
+    /**
+     * Steps to the bank object (booth/chest) of the bank identifier, for example: Castle_wars_bank.
+     */
+    void stepToBank(String bankidentifier);
+
     // Methods for finding different bank interface components
     // Each method returns the screen area (as a Rectangle) for a specific bank interface component
     Rectangle findBankCloseButton();
