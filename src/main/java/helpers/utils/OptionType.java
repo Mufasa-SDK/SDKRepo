@@ -3,6 +3,7 @@ package helpers.utils;
 public enum OptionType {
         STRING,
         INTEGER,
-        BOOLEAN
+        BOOLEAN,
+        BANK
         // Other types if needed
 }
