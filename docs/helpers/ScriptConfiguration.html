@@ -116,6 +116,9 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <li class="blockList">
 <hr>
 <pre>public @interface <span class="memberNameLabel">ScriptConfiguration</span></pre>
+<div class="block">This annotation is used to define a configuration for a script.
+ It allows specifying various parameters such as name, description,
+ default values, and the type of the option.</div>
 </li>
 </ul>
 </div>
@@ -139,22 +142,30 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <tr class="altColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#defaultValue()">defaultValue</a></span></code></th>
-<td class="colLast">&nbsp;</td>
+<td class="colLast">
+<div class="block">The default value for the configuration option.</div>
+</td>
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#description()">description</a></span></code></th>
-<td class="colLast">&nbsp;</td>
+<td class="colLast">
+<div class="block">A brief description of the configuration option.</div>
+</td>
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#name()">name</a></span></code></th>
-<td class="colLast">&nbsp;</td>
+<td class="colLast">
+<div class="block">The name of the configuration option.</div>
+</td>
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code><a href="utils/OptionType.html" title="enum in helpers.utils">OptionType</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#optionType()">optionType</a></span></code></th>
-<td class="colLast">&nbsp;</td>
+<td class="colLast">
+<div class="block">The type of the configuration option.</div>
+</td>
 </tr>
 </table>
 </li>
@@ -177,12 +188,16 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <tr class="altColor">
 <td class="colFirst"><code><a href="AllowedValue.html" title="annotation in helpers">AllowedValue</a>[]</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#allowedValues()">allowedValues</a></span></code></th>
-<td class="colLast">&nbsp;</td>
+<td class="colLast">
+<div class="block">Defines the allowed values for a STRING type option.</div>
+</td>
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code>int[]</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#minMaxIntValues()">minMaxIntValues</a></span></code></th>
-<td class="colLast">&nbsp;</td>
+<td class="colLast">
+<div class="block">Defines the minimum and maximum values for an INTEGER type option.</div>
+</td>
 </tr>
 </table>
 </li>
@@ -208,6 +223,11 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <li class="blockList">
 <h4>name</h4>
 <pre>java.lang.String&nbsp;name</pre>
+<div class="block">The name of the configuration option.</div>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>The configuration option name.</dd>
+</dl>
 </li>
 </ul>
 </li>
@@ -222,6 +242,11 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <li class="blockList">
 <h4>description</h4>
 <pre>java.lang.String&nbsp;description</pre>
+<div class="block">A brief description of the configuration option.</div>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>The configuration option description.</dd>
+</dl>
 </li>
 </ul>
 </li>
@@ -236,6 +261,11 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <li class="blockList">
 <h4>defaultValue</h4>
 <pre>java.lang.String&nbsp;defaultValue</pre>
+<div class="block">The default value for the configuration option.</div>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>The default value as a String.</dd>
+</dl>
 </li>
 </ul>
 </li>
@@ -250,6 +280,11 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <li class="blockList">
 <h4>optionType</h4>
 <pre><a href="utils/OptionType.html" title="enum in helpers.utils">OptionType</a>&nbsp;optionType</pre>
+<div class="block">The type of the configuration option.</div>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>The type of the option as defined in <a href="utils/OptionType.html" title="enum in helpers.utils"><code>OptionType</code></a>.</dd>
+</dl>
 </li>
 </ul>
 </li>
@@ -265,6 +300,11 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <li class="blockList">
 <h4>allowedValues</h4>
 <pre><a href="AllowedValue.html" title="annotation in helpers">AllowedValue</a>[]&nbsp;allowedValues</pre>
+<div class="block">Defines the allowed values for a STRING type option.</div>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>An array of allowed values.</dd>
+</dl>
 <dl>
 <dt>Default:</dt>
 <dd>{}</dd>
@@ -283,6 +323,11 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <li class="blockList">
 <h4>minMaxIntValues</h4>
 <pre>int[]&nbsp;minMaxIntValues</pre>
+<div class="block">Defines the minimum and maximum values for an INTEGER type option.</div>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>An array of two integers, where the first is the minimum and the second is the maximum.</dd>
+</dl>
 <dl>
 <dt>Default:</dt>
 <dd>{}</dd>

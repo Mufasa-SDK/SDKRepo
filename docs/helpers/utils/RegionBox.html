@@ -133,6 +133,8 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <hr>
 <pre>public class <span class="typeNameLabel">RegionBox</span>
 extends java.lang.Object</pre>
+<div class="block">Represents a rectangular region defined by two coordinates in a coordinate space.
+ This class is useful for defining areas, zones, or regions within a game or application interface.</div>
 </li>
 </ul>
 </div>
@@ -201,7 +203,9 @@ extends java.lang.Object</pre>
          int&nbsp;y1,
          int&nbsp;x2,
          int&nbsp;y2)</code></th>
-<td class="colLast">&nbsp;</td>
+<td class="colLast">
+<div class="block">Constructs a new RegionBox with specified coordinates and a name.</div>
+</td>
 </tr>
 </table>
 </li>
@@ -224,47 +228,65 @@ extends java.lang.Object</pre>
 <tr id="i0" class="altColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getName()">getName</a></span>()</code></th>
-<td class="colLast">&nbsp;</td>
+<td class="colLast">
+<div class="block">Gets the name of the region.</div>
+</td>
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code>int</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getX1()">getX1</a></span>()</code></th>
-<td class="colLast">&nbsp;</td>
+<td class="colLast">
+<div class="block">Gets the x-coordinate of the first corner of the region.</div>
+</td>
 </tr>
 <tr id="i2" class="altColor">
 <td class="colFirst"><code>int</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getX2()">getX2</a></span>()</code></th>
-<td class="colLast">&nbsp;</td>
+<td class="colLast">
+<div class="block">Gets the x-coordinate of the opposite corner of the region.</div>
+</td>
 </tr>
 <tr id="i3" class="rowColor">
 <td class="colFirst"><code>int</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getY1()">getY1</a></span>()</code></th>
-<td class="colLast">&nbsp;</td>
+<td class="colLast">
+<div class="block">Gets the y-coordinate of the first corner of the region.</div>
+</td>
 </tr>
 <tr id="i4" class="altColor">
 <td class="colFirst"><code>int</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getY2()">getY2</a></span>()</code></th>
-<td class="colLast">&nbsp;</td>
+<td class="colLast">
+<div class="block">Gets the y-coordinate of the opposite corner of the region.</div>
+</td>
 </tr>
 <tr id="i5" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setX1(int)">setX1</a></span>&#8203;(int&nbsp;x1)</code></th>
-<td class="colLast">&nbsp;</td>
+<td class="colLast">
+<div class="block">Sets the x-coordinate of the first corner of the region.</div>
+</td>
 </tr>
 <tr id="i6" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setX2(int)">setX2</a></span>&#8203;(int&nbsp;x2)</code></th>
-<td class="colLast">&nbsp;</td>
+<td class="colLast">
+<div class="block">Sets the x-coordinate of the opposite corner of the region.</div>
+</td>
 </tr>
 <tr id="i7" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setY1(int)">setY1</a></span>&#8203;(int&nbsp;y1)</code></th>
-<td class="colLast">&nbsp;</td>
+<td class="colLast">
+<div class="block">Sets the y-coordinate of the first corner of the region.</div>
+</td>
 </tr>
 <tr id="i8" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setY2(int)">setY2</a></span>&#8203;(int&nbsp;y2)</code></th>
-<td class="colLast">&nbsp;</td>
+<td class="colLast">
+<div class="block">Sets the y-coordinate of the opposite corner of the region.</div>
+</td>
 </tr>
 </table>
 <ul class="blockList">
@@ -356,6 +378,15 @@ extends java.lang.Object</pre>
                  int&nbsp;y1,
                  int&nbsp;x2,
                  int&nbsp;y2)</pre>
+<div class="block">Constructs a new RegionBox with specified coordinates and a name.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>name</code> - The name of the region.</dd>
+<dd><code>x1</code> - The x-coordinate of the first corner.</dd>
+<dd><code>y1</code> - The y-coordinate of the first corner.</dd>
+<dd><code>x2</code> - The x-coordinate of the opposite corner.</dd>
+<dd><code>y2</code> - The y-coordinate of the opposite corner.</dd>
+</dl>
 </li>
 </ul>
 </li>
@@ -375,6 +406,11 @@ extends java.lang.Object</pre>
 <li class="blockList">
 <h4>getName</h4>
 <pre class="methodSignature">public&nbsp;java.lang.String&nbsp;getName()</pre>
+<div class="block">Gets the name of the region.</div>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>The name of the region.</dd>
+</dl>
 </li>
 </ul>
 <a id="getX1()">
@@ -384,6 +420,11 @@ extends java.lang.Object</pre>
 <li class="blockList">
 <h4>getX1</h4>
 <pre class="methodSignature">public&nbsp;int&nbsp;getX1()</pre>
+<div class="block">Gets the x-coordinate of the first corner of the region.</div>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>The x-coordinate of the first corner.</dd>
+</dl>
 </li>
 </ul>
 <a id="setX1(int)">
@@ -393,6 +434,11 @@ extends java.lang.Object</pre>
 <li class="blockList">
 <h4>setX1</h4>
 <pre class="methodSignature">public&nbsp;void&nbsp;setX1&#8203;(int&nbsp;x1)</pre>
+<div class="block">Sets the x-coordinate of the first corner of the region.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>x1</code> - The new x-coordinate of the first corner.</dd>
+</dl>
 </li>
 </ul>
 <a id="getY1()">
@@ -402,6 +448,11 @@ extends java.lang.Object</pre>
 <li class="blockList">
 <h4>getY1</h4>
 <pre class="methodSignature">public&nbsp;int&nbsp;getY1()</pre>
+<div class="block">Gets the y-coordinate of the first corner of the region.</div>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>The y-coordinate of the first corner.</dd>
+</dl>
 </li>
 </ul>
 <a id="setY1(int)">
@@ -411,6 +462,11 @@ extends java.lang.Object</pre>
 <li class="blockList">
 <h4>setY1</h4>
 <pre class="methodSignature">public&nbsp;void&nbsp;setY1&#8203;(int&nbsp;y1)</pre>
+<div class="block">Sets the y-coordinate of the first corner of the region.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>y1</code> - The new y-coordinate of the first corner.</dd>
+</dl>
 </li>
 </ul>
 <a id="getX2()">
@@ -420,6 +476,11 @@ extends java.lang.Object</pre>
 <li class="blockList">
 <h4>getX2</h4>
 <pre class="methodSignature">public&nbsp;int&nbsp;getX2()</pre>
+<div class="block">Gets the x-coordinate of the opposite corner of the region.</div>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>The x-coordinate of the opposite corner.</dd>
+</dl>
 </li>
 </ul>
 <a id="setX2(int)">
@@ -429,6 +490,11 @@ extends java.lang.Object</pre>
 <li class="blockList">
 <h4>setX2</h4>
 <pre class="methodSignature">public&nbsp;void&nbsp;setX2&#8203;(int&nbsp;x2)</pre>
+<div class="block">Sets the x-coordinate of the opposite corner of the region.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>x2</code> - The new x-coordinate of the opposite corner.</dd>
+</dl>
 </li>
 </ul>
 <a id="getY2()">
@@ -438,6 +504,11 @@ extends java.lang.Object</pre>
 <li class="blockList">
 <h4>getY2</h4>
 <pre class="methodSignature">public&nbsp;int&nbsp;getY2()</pre>
+<div class="block">Gets the y-coordinate of the opposite corner of the region.</div>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>The y-coordinate of the opposite corner.</dd>
+</dl>
 </li>
 </ul>
 <a id="setY2(int)">
@@ -447,6 +518,11 @@ extends java.lang.Object</pre>
 <li class="blockList">
 <h4>setY2</h4>
 <pre class="methodSignature">public&nbsp;void&nbsp;setY2&#8203;(int&nbsp;y2)</pre>
+<div class="block">Sets the y-coordinate of the opposite corner of the region.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>y2</code> - The new y-coordinate of the opposite corner.</dd>
+</dl>
 </li>
 </ul>
 </li>

@@ -118,6 +118,8 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <pre>@Target(TYPE)
 @Retention(RUNTIME)
 public @interface <span class="memberNameLabel">ScriptManifest</span></pre>
+<div class="block">Annotation for script metadata, defining essential information about a script.
+ This annotation can be used on classes to specify script details.</div>
 </li>
 </ul>
 </div>
@@ -141,22 +143,30 @@ public @interface <span class="memberNameLabel">ScriptManifest</span></pre>
 <tr class="altColor">
 <td class="colFirst"><code><a href="ScriptCategory.html" title="enum in helpers">ScriptCategory</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#category()">category</a></span></code></th>
-<td class="colLast">&nbsp;</td>
+<td class="colLast">
+<div class="block">Indicates the category of the script based on predefined script types.</div>
+</td>
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#description()">description</a></span></code></th>
-<td class="colLast">&nbsp;</td>
+<td class="colLast">
+<div class="block">Describes the purpose or functionality of the script.</div>
+</td>
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#name()">name</a></span></code></th>
-<td class="colLast">&nbsp;</td>
+<td class="colLast">
+<div class="block">Specifies the name of the script.</div>
+</td>
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#version()">version</a></span></code></th>
-<td class="colLast">&nbsp;</td>
+<td class="colLast">
+<div class="block">Specifies the version of the script.</div>
+</td>
 </tr>
 </table>
 </li>
@@ -182,6 +192,11 @@ public @interface <span class="memberNameLabel">ScriptManifest</span></pre>
 <li class="blockList">
 <h4>name</h4>
 <pre>java.lang.String&nbsp;name</pre>
+<div class="block">Specifies the name of the script.</div>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>The script name.</dd>
+</dl>
 </li>
 </ul>
 </li>
@@ -196,6 +211,11 @@ public @interface <span class="memberNameLabel">ScriptManifest</span></pre>
 <li class="blockList">
 <h4>description</h4>
 <pre>java.lang.String&nbsp;description</pre>
+<div class="block">Describes the purpose or functionality of the script.</div>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>A description of the script.</dd>
+</dl>
 </li>
 </ul>
 </li>
@@ -210,6 +230,11 @@ public @interface <span class="memberNameLabel">ScriptManifest</span></pre>
 <li class="blockList">
 <h4>version</h4>
 <pre>java.lang.String&nbsp;version</pre>
+<div class="block">Specifies the version of the script.</div>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>The script version.</dd>
+</dl>
 </li>
 </ul>
 </li>
@@ -224,6 +249,11 @@ public @interface <span class="memberNameLabel">ScriptManifest</span></pre>
 <li class="blockList">
 <h4>category</h4>
 <pre><a href="ScriptCategory.html" title="enum in helpers">ScriptCategory</a>&nbsp;category</pre>
+<div class="block">Indicates the category of the script based on predefined script types.</div>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>The category of the script from the <a href="ScriptCategory.html" title="enum in helpers"><code>ScriptCategory</code></a> enumeration.</dd>
+</dl>
 </li>
 </ul>
 </li>

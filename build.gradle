@@ -40,7 +40,7 @@ compileJava {
 tasks.register('generateJavaDoc', Javadoc) {
     source = sourceSets.main.java.srcDirs
     classpath = configurations.compileClasspath
-    destinationDir = file("/docs")
+    destinationDir = file("docs")
     options.memberLevel = JavadocMemberLevel.PRIVATE
     options.author = true
     options.version = true

@@ -116,6 +116,8 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <li class="blockList">
 <hr>
 <pre>public @interface <span class="memberNameLabel">AllowedValue</span></pre>
+<div class="block">This annotation defines an allowed value for a script configuration option.
+ It can specify an icon and a name for each allowed value.</div>
 </li>
 </ul>
 </div>
@@ -139,7 +141,9 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <tr class="altColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#optionName()">optionName</a></span></code></th>
-<td class="colLast">&nbsp;</td>
+<td class="colLast">
+<div class="block">The name of the option.</div>
+</td>
 </tr>
 </table>
 </li>
@@ -162,7 +166,9 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <tr class="altColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#optionIcon()">optionIcon</a></span></code></th>
-<td class="colLast">&nbsp;</td>
+<td class="colLast">
+<div class="block">The icon for the option.</div>
+</td>
 </tr>
 </table>
 </li>
@@ -188,6 +194,12 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <li class="blockList">
 <h4>optionName</h4>
 <pre>java.lang.String&nbsp;optionName</pre>
+<div class="block">The name of the option. This should be a human-readable string
+ describing the option value.</div>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the name of the option.</dd>
+</dl>
 </li>
 </ul>
 </li>
@@ -203,6 +215,12 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <li class="blockList">
 <h4>optionIcon</h4>
 <pre>java.lang.String&nbsp;optionIcon</pre>
+<div class="block">The icon for the option. Default is "0".
+ This can be used to specify an itemID to use as icon in the configuration</div>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the icon identifier or path for this option value.</dd>
+</dl>
 <dl>
 <dt>Default:</dt>
 <dd>"0"</dd>
