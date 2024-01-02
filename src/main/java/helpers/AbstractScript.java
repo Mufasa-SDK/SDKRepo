@@ -7,9 +7,11 @@ import java.util.Map;
 public abstract class AbstractScript {
     private final Object pauseLock = new Object();
     private boolean paused = false;
+    private boolean isInitialized = false;
 
     public void initialize(iLogger logger, iBank bank, iClient client, iCondition condition, iDepositBox depositBox, iEquipment equipment, iGame game, iGameTabs gameTabs, iInventory inventory, iLogin login, iLogout logout, iMagic magic, iOverlay overlay, iPlayer player, iPrayer prayer, iStats stats, iWalker walker, iXPBar xpBar, iChatbox chatbox, iScript script) {
         Interfaces.initialize(logger, bank, client, condition, depositBox, equipment, game, gameTabs, inventory, login, logout, magic, overlay, player, prayer, stats, walker, xpBar, chatbox, script);
+        isInitialized = true;
     }
 
     private Map<String, String> configurations;
@@ -57,6 +59,10 @@ public abstract class AbstractScript {
     public abstract void onStart();
 
     public abstract void poll();
+
+    public boolean isInitialized() {
+        return isInitialized;
+    }
 
     @Override
     public String toString() {
