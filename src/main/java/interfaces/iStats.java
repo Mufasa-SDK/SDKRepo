@@ -7,17 +7,26 @@ package interfaces;
 public interface iStats {
 
     /**
-     * Checks if the statistics interface is currently open.
+     * Gets the real level of the specified stat using OCR.
      *
-     * @return boolean indicating whether the stats interface is open.
+     * @param skill String of the skill level you want to check, for example "Attack" or "Herblore"
+     * @return Integer indicating the real level of the skill you're checking.
      */
-    boolean isOpen();
+    Integer getRealLevel(String skill);
 
     /**
-     * Opens the statistics interface.
-     * This method should initiate the process of opening the stats interface.
+     * Gets the effective (boosted or reduced) level of the specified stat using OCR.
      *
-     * @return boolean indicating whether the operation to open the stats interface was successful.
+     * @param skill String of the skill level you want to check, for example "Attack" or "Herblore"
+     * @return Integer indicating the effective level of the skill you're checking.
      */
-    boolean open();
+    Integer getEffectiveLevel(String skill);
+
+    /**
+     * Gets the total level using OCR.
+     *
+     * @return Integer indicating the total level.
+     */
+    Integer getTotalLevel();
+
 }

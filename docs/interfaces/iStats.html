@@ -27,7 +27,7 @@
     catch(err) {
     }
 //-->
-var data = {"i0":6,"i1":6};
+var data = {"i0":6,"i1":6,"i2":6};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],4:["t3","Abstract Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -147,17 +147,24 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <th class="colLast" scope="col">Description</th>
 </tr>
 <tr id="i0" class="altColor">
-<td class="colFirst"><code>boolean</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#isOpen()">isOpen</a></span>()</code></th>
+<td class="colFirst"><code>java.lang.Integer</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getEffectiveLevel(java.lang.String)">getEffectiveLevel</a></span>&#8203;(java.lang.String&nbsp;skill)</code></th>
 <td class="colLast">
-<div class="block">Checks if the statistics interface is currently open.</div>
+<div class="block">Gets the effective (boosted or reduced) level of the specified stat using OCR.</div>
 </td>
 </tr>
 <tr id="i1" class="rowColor">
-<td class="colFirst"><code>boolean</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#open()">open</a></span>()</code></th>
+<td class="colFirst"><code>java.lang.Integer</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getRealLevel(java.lang.String)">getRealLevel</a></span>&#8203;(java.lang.String&nbsp;skill)</code></th>
 <td class="colLast">
-<div class="block">Opens the statistics interface.</div>
+<div class="block">Gets the real level of the specified stat using OCR.</div>
+</td>
+</tr>
+<tr id="i2" class="altColor">
+<td class="colFirst"><code>java.lang.Integer</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getTotalLevel()">getTotalLevel</a></span>()</code></th>
+<td class="colLast">
+<div class="block">Gets the total level using OCR.</div>
 </td>
 </tr>
 </table>
@@ -177,32 +184,49 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <!--   -->
 </a>
 <h3>Method Detail</h3>
-<a id="isOpen()">
+<a id="getRealLevel(java.lang.String)">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>isOpen</h4>
-<pre class="methodSignature">boolean&nbsp;isOpen()</pre>
-<div class="block">Checks if the statistics interface is currently open.</div>
+<h4>getRealLevel</h4>
+<pre class="methodSignature">java.lang.Integer&nbsp;getRealLevel&#8203;(java.lang.String&nbsp;skill)</pre>
+<div class="block">Gets the real level of the specified stat using OCR.</div>
 <dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>skill</code> - String of the skill level you want to check, for example "Attack" or "Herblore"</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
-<dd>boolean indicating whether the stats interface is open.</dd>
+<dd>Integer indicating the real level of the skill you're checking.</dd>
 </dl>
 </li>
 </ul>
-<a id="open()">
+<a id="getEffectiveLevel(java.lang.String)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getEffectiveLevel</h4>
+<pre class="methodSignature">java.lang.Integer&nbsp;getEffectiveLevel&#8203;(java.lang.String&nbsp;skill)</pre>
+<div class="block">Gets the effective (boosted or reduced) level of the specified stat using OCR.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>skill</code> - String of the skill level you want to check, for example "Attack" or "Herblore"</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>Integer indicating the effective level of the skill you're checking.</dd>
+</dl>
+</li>
+</ul>
+<a id="getTotalLevel()">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
-<h4>open</h4>
-<pre class="methodSignature">boolean&nbsp;open()</pre>
-<div class="block">Opens the statistics interface.
- This method should initiate the process of opening the stats interface.</div>
+<h4>getTotalLevel</h4>
+<pre class="methodSignature">java.lang.Integer&nbsp;getTotalLevel()</pre>
+<div class="block">Gets the total level using OCR.</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
-<dd>boolean indicating whether the operation to open the stats interface was successful.</dd>
+<dd>Integer indicating the total level.</dd>
 </dl>
 </li>
 </ul>
