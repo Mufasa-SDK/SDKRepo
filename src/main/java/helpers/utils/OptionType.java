@@ -24,5 +24,5 @@ public enum OptionType {
         /**
          * Represents a configuration option related to banking functionality.
          */
-        BANK
+        BANKTABS
 }
