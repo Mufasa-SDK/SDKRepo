@@ -1,5 +1,9 @@
 package helpers.utils;
 
+/**
+ * Contains constants representing the names of various banks in a game.
+ * Each constant is a {@code String} that uniquely identifies a bank location.
+ */
 public class BankNames {
     public static String AL_KHARID = "Al_Kharid-bank";
     public static String CATHERBY = "Catherby_bank";

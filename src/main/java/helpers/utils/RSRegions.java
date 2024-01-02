@@ -1,5 +1,9 @@
 package helpers.utils;
 
+/**
+ * This class defines various regions in the game as constants.
+ * Each region is represented by a {@link RegionBox} object, specifying its name and coordinates.
+ */
 public class RSRegions {
     public static RegionBox FULL_WORLD_MAP;
     public static RegionBox ABYSS;

@@ -1,5 +1,9 @@
 package helpers;
 
+/**
+ * Represents the categories of scripts available in the game.
+ * Each category corresponds to a specific skill or type of activity.
+ */
 public enum ScriptCategory {
     Agility,
     Combat,
@@ -20,5 +24,8 @@ public enum ScriptCategory {
     Smithing,
     Thieving,
     Woodcutting,
+    /**
+     * Represents scripts that are executed locally.
+     */
     Local;
 }
