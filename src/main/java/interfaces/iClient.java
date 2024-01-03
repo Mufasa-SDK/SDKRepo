@@ -26,7 +26,12 @@ public interface iClient {
      * @param tolerance the color tolerance for matching the target color, 0-100, usually 0-15 is enough.
      */
     void tap(Color targetColor, Rectangle boundingArea, int tolerance);
-
+    /**
+     * Simulates a tap action inside a specific polygon.
+     *
+     * @param polygon the polygon you wish to do the tap in.
+     */
+    void tap (Polygon polygon);
     /**
      * Simulates a long press action at a specified coordinate.
      *
@@ -49,7 +54,7 @@ public interface iClient {
      *
      * @param rectangle the rectangle area where the long press should occur.
      */
-    void longPressWithinRectangle(Rectangle rectangle);
+    void longPress(Rectangle rectangle);
 
     /**
      * Sends a specific keystroke to the client.
