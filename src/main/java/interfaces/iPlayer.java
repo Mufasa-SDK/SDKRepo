@@ -3,6 +3,7 @@ package interfaces;
 import helpers.utils.RegionBox;
 
 import java.awt.*;
+import javafx.scene.shape.Rectangle;
 
 /**
  * Interface defining player interactions within the game
@@ -43,7 +44,7 @@ public interface iPlayer {
      * @param rectangle This is the java awt Rectangle of the custom map you want to check if you are in it currently.
      * @return Returns a true/false boolean, true if you are in the java awt Rectangle, false if not.
      */
-    boolean withinCustom(String mapFileLocation, Rectangle rectangle);
+    boolean withinCustom(String mapFileLocation, java.awt.Rectangle rectangle);
 
     /**
      * Gets the player's current position based on a custom map and checks if it is within the specified java fx Rectangle
