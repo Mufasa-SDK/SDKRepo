@@ -27,7 +27,7 @@
     catch(err) {
     }
 //-->
-var data = {"i0":6,"i1":6,"i2":6,"i3":6,"i4":6,"i5":6,"i6":6,"i7":6,"i8":6,"i9":6};
+var data = {"i0":6,"i1":6,"i2":6,"i3":6,"i4":6,"i5":6,"i6":6,"i7":6};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],4:["t3","Abstract Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -191,34 +191,18 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </tr>
 <tr id="i6" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#within(helpers.utils.RegionBox,javafx.scene.shape.Rectangle)">within</a></span>&#8203;(<a href="../helpers/utils/RegionBox.html" title="class in helpers.utils">RegionBox</a>&nbsp;regionToSearchIn,
-      javafx.scene.shape.Rectangle&nbsp;rectangleToBeIn)</code></th>
-<td class="colLast">
-<div class="block">Gets the player's current position and checks if it is within the specified JavaFX Rectangle</div>
-</td>
-</tr>
-<tr id="i7" class="rowColor">
-<td class="colFirst"><code>boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#withinCustom(java.lang.String,helpers.utils.RegionBox)">withinCustom</a></span>&#8203;(java.lang.String&nbsp;mapFileLocation,
             <a href="../helpers/utils/RegionBox.html" title="class in helpers.utils">RegionBox</a>&nbsp;regionBox)</code></th>
 <td class="colLast">
 <div class="block">Gets the player's current position based on a custom map and checks if it is within the specified RegionBox</div>
 </td>
 </tr>
-<tr id="i8" class="altColor">
+<tr id="i7" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#withinCustom(java.lang.String,java.awt.Rectangle)">withinCustom</a></span>&#8203;(java.lang.String&nbsp;mapFileLocation,
             java.awt.Rectangle&nbsp;rectangle)</code></th>
 <td class="colLast">
 <div class="block">Gets the player's current position based on a custom map and checks if it is within the specified java awt Rectangle</div>
-</td>
-</tr>
-<tr id="i9" class="rowColor">
-<td class="colFirst"><code>boolean</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#withinCustom(java.lang.String,javafx.scene.shape.Rectangle)">withinCustom</a></span>&#8203;(java.lang.String&nbsp;mapFileLocation,
-            javafx.scene.shape.Rectangle&nbsp;javafxrectangle)</code></th>
-<td class="colLast">
-<div class="block">Gets the player's current position based on a custom map and checks if it is within the specified java fx Rectangle</div>
 </td>
 </tr>
 </table>
@@ -274,24 +258,6 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </dl>
 </li>
 </ul>
-<a id="within(helpers.utils.RegionBox,javafx.scene.shape.Rectangle)">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>within</h4>
-<pre class="methodSignature">boolean&nbsp;within&#8203;(<a href="../helpers/utils/RegionBox.html" title="class in helpers.utils">RegionBox</a>&nbsp;regionToSearchIn,
-               javafx.scene.shape.Rectangle&nbsp;rectangleToBeIn)</pre>
-<div class="block">Gets the player's current position and checks if it is within the specified JavaFX Rectangle</div>
-<dl>
-<dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>regionToSearchIn</code> - This is the RegionBox of the world map you'd like to search in.</dd>
-<dd><code>rectangleToBeIn</code> - This is the javafx Rectangle of the world map you want to check if you are in it currently.</dd>
-<dt><span class="returnLabel">Returns:</span></dt>
-<dd>Returns a true/false boolean, true if you are in the javafx Rectangle, false if not.</dd>
-</dl>
-</li>
-</ul>
 <a id="withinCustom(java.lang.String,java.awt.Rectangle)">
 <!--   -->
 </a>
@@ -307,24 +273,6 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <dd><code>rectangle</code> - This is the java awt Rectangle of the custom map you want to check if you are in it currently.</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>Returns a true/false boolean, true if you are in the java awt Rectangle, false if not.</dd>
-</dl>
-</li>
-</ul>
-<a id="withinCustom(java.lang.String,javafx.scene.shape.Rectangle)">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>withinCustom</h4>
-<pre class="methodSignature">boolean&nbsp;withinCustom&#8203;(java.lang.String&nbsp;mapFileLocation,
-                     javafx.scene.shape.Rectangle&nbsp;javafxrectangle)</pre>
-<div class="block">Gets the player's current position based on a custom map and checks if it is within the specified java fx Rectangle</div>
-<dl>
-<dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>mapFileLocation</code> - This is string location of the custom map you'd like to search in.</dd>
-<dd><code>javafxrectangle</code> - This is the java fx Rectangle of the custom map you want to check if you are in it currently.</dd>
-<dt><span class="returnLabel">Returns:</span></dt>
-<dd>Returns a true/false boolean, true if you are in the java fx Rectangle, false if not.</dd>
 </dl>
 </li>
 </ul>
