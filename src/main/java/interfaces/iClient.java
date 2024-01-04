@@ -33,6 +33,12 @@ public interface iClient {
      */
     void tap (Polygon polygon);
     /**
+     * Simulates a tap action inside a specific polygon.
+     *
+     * @param rectangle the rectangle you wish to do the tap in.
+     */
+    void tap (Rectangle rectangle);
+    /**
      * Simulates a long press action at a specified coordinate.
      *
      * @param x the x-coordinate for the long press action.

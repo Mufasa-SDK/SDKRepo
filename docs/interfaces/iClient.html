@@ -27,7 +27,7 @@
     catch(err) {
     }
 //-->
-var data = {"i0":6,"i1":6,"i2":6,"i3":6,"i4":6,"i5":6,"i6":6,"i7":6};
+var data = {"i0":6,"i1":6,"i2":6,"i3":6,"i4":6,"i5":6,"i6":6,"i7":6,"i8":6,"i9":6};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],4:["t3","Abstract Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -166,7 +166,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </tr>
 <tr id="i2" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#longPressWithinRectangle(java.awt.Rectangle)">longPressWithinRectangle</a></span>&#8203;(java.awt.Rectangle&nbsp;rectangle)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#longPress(java.awt.Rectangle)">longPress</a></span>&#8203;(java.awt.Rectangle&nbsp;rectangle)</code></th>
 <td class="colLast">
 <div class="block">Simulates a long press action within a specified rectangle area.</div>
 </td>
@@ -207,6 +207,20 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
    int&nbsp;tolerance)</code></th>
 <td class="colLast">
 <div class="block">Simulates a tap action on a specific color within a defined area.</div>
+</td>
+</tr>
+<tr id="i8" class="altColor">
+<td class="colFirst"><code>void</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#tap(java.awt.Polygon)">tap</a></span>&#8203;(java.awt.Polygon&nbsp;polygon)</code></th>
+<td class="colLast">
+<div class="block">Simulates a tap action inside a specific polygon.</div>
+</td>
+</tr>
+<tr id="i9" class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#tap(java.awt.Rectangle)">tap</a></span>&#8203;(java.awt.Rectangle&nbsp;rectangle)</code></th>
+<td class="colLast">
+<div class="block">Simulates a tap action inside a specific polygon.</div>
 </td>
 </tr>
 </table>
@@ -260,6 +274,34 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </dl>
 </li>
 </ul>
+<a id="tap(java.awt.Polygon)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>tap</h4>
+<pre class="methodSignature">void&nbsp;tap&#8203;(java.awt.Polygon&nbsp;polygon)</pre>
+<div class="block">Simulates a tap action inside a specific polygon.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>polygon</code> - the polygon you wish to do the tap in.</dd>
+</dl>
+</li>
+</ul>
+<a id="tap(java.awt.Rectangle)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>tap</h4>
+<pre class="methodSignature">void&nbsp;tap&#8203;(java.awt.Rectangle&nbsp;rectangle)</pre>
+<div class="block">Simulates a tap action inside a specific polygon.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>rectangle</code> - the rectangle you wish to do the tap in.</dd>
+</dl>
+</li>
+</ul>
 <a id="longPress(int,int)">
 <!--   -->
 </a>
@@ -294,13 +336,13 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </dl>
 </li>
 </ul>
-<a id="longPressWithinRectangle(java.awt.Rectangle)">
+<a id="longPress(java.awt.Rectangle)">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>longPressWithinRectangle</h4>
-<pre class="methodSignature">void&nbsp;longPressWithinRectangle&#8203;(java.awt.Rectangle&nbsp;rectangle)</pre>
+<h4>longPress</h4>
+<pre class="methodSignature">void&nbsp;longPress&#8203;(java.awt.Rectangle&nbsp;rectangle)</pre>
 <div class="block">Simulates a long press action within a specified rectangle area.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
