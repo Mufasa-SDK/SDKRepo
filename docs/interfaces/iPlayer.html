@@ -27,6 +27,12 @@
     catch(err) {
     }
 //-->
+var data = {"i0":6,"i1":6,"i2":6,"i3":6,"i4":6,"i5":6,"i6":6,"i7":6,"i8":6,"i9":6};
+var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],4:["t3","Abstract Methods"]};
+var altColor = "altColor";
+var rowColor = "rowColor";
+var tableTab = "tableTab";
+var activeTableTab = "activeTableTab";
 var pathtoroot = "../";
 var useModuleDirectories = true;
 loadScripts(document, 'script');</script>
@@ -85,13 +91,13 @@ loadScripts(document, 'script');</script>
 <li>Nested&nbsp;|&nbsp;</li>
 <li>Field&nbsp;|&nbsp;</li>
 <li>Constr&nbsp;|&nbsp;</li>
-<li>Method</li>
+<li><a href="#method.summary">Method</a></li>
 </ul>
 <ul class="subNavList">
 <li>Detail:&nbsp;</li>
 <li>Field&nbsp;|&nbsp;</li>
 <li>Constr&nbsp;|&nbsp;</li>
-<li>Method</li>
+<li><a href="#method.detail">Method</a></li>
 </ul>
 </div>
 <a id="skip.navbar.top">
@@ -119,6 +125,286 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <hr>
 <pre>public interface <span class="typeNameLabel">iPlayer</span></pre>
 <div class="block">Interface defining player interactions within the game</div>
+</li>
+</ul>
+</div>
+<div class="summary">
+<ul class="blockList">
+<li class="blockList">
+<!-- ========== METHOD SUMMARY =========== -->
+<section>
+<ul class="blockList">
+<li class="blockList"><a id="method.summary">
+<!--   -->
+</a>
+<h3>Method Summary</h3>
+<table class="memberSummary">
+<caption><span id="t0" class="activeTableTab"><span>All Methods</span><span class="tabEnd">&nbsp;</span></span><span id="t2" class="tableTab"><span><a href="javascript:show(2);">Instance Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t3" class="tableTab"><span><a href="javascript:show(4);">Abstract Methods</a></span><span class="tabEnd">&nbsp;</span></span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colSecond" scope="col">Method</th>
+<th class="colLast" scope="col">Description</th>
+</tr>
+<tr id="i0" class="altColor">
+<td class="colFirst"><code>java.lang.Integer</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getHP()">getHP</a></span>()</code></th>
+<td class="colLast">
+<div class="block">Gets the player's current HP based on the minimap orb.</div>
+</td>
+</tr>
+<tr id="i1" class="rowColor">
+<td class="colFirst"><code>java.lang.Integer</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getPray()">getPray</a></span>()</code></th>
+<td class="colLast">
+<div class="block">Gets the player's current Prayer points based on the minimap orb.</div>
+</td>
+</tr>
+<tr id="i2" class="altColor">
+<td class="colFirst"><code>java.lang.Integer</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getRun()">getRun</a></span>()</code></th>
+<td class="colLast">
+<div class="block">Gets the player's current Run energy based on the minimap orb.</div>
+</td>
+</tr>
+<tr id="i3" class="rowColor">
+<td class="colFirst"><code>java.lang.Integer</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getSpec()">getSpec</a></span>()</code></th>
+<td class="colLast">
+<div class="block">Gets the player's current Special attack based on the minimap orb.</div>
+</td>
+</tr>
+<tr id="i4" class="altColor">
+<td class="colFirst"><code>boolean</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#within(helpers.utils.RegionBox,helpers.utils.RegionBox)">within</a></span>&#8203;(<a href="../helpers/utils/RegionBox.html" title="class in helpers.utils">RegionBox</a>&nbsp;regionToSearchIn,
+      <a href="../helpers/utils/RegionBox.html" title="class in helpers.utils">RegionBox</a>&nbsp;targetRegionBox)</code></th>
+<td class="colLast">
+<div class="block">Gets the player's current position and checks if it is within the specified RegionBox</div>
+</td>
+</tr>
+<tr id="i5" class="rowColor">
+<td class="colFirst"><code>boolean</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#within(helpers.utils.RegionBox,java.awt.Rectangle)">within</a></span>&#8203;(<a href="../helpers/utils/RegionBox.html" title="class in helpers.utils">RegionBox</a>&nbsp;regionToSearchIn,
+      java.awt.Rectangle&nbsp;awtRectangle)</code></th>
+<td class="colLast">
+<div class="block">Gets the player's current position and checks if it is within the specified awtRectangle</div>
+</td>
+</tr>
+<tr id="i6" class="altColor">
+<td class="colFirst"><code>boolean</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#within(helpers.utils.RegionBox,javafx.scene.shape.Rectangle)">within</a></span>&#8203;(<a href="../helpers/utils/RegionBox.html" title="class in helpers.utils">RegionBox</a>&nbsp;regionToSearchIn,
+      javafx.scene.shape.Rectangle&nbsp;rectangleToBeIn)</code></th>
+<td class="colLast">
+<div class="block">Gets the player's current position and checks if it is within the specified JavaFX Rectangle</div>
+</td>
+</tr>
+<tr id="i7" class="rowColor">
+<td class="colFirst"><code>boolean</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#withinCustom(java.lang.String,helpers.utils.RegionBox)">withinCustom</a></span>&#8203;(java.lang.String&nbsp;mapFileLocation,
+            <a href="../helpers/utils/RegionBox.html" title="class in helpers.utils">RegionBox</a>&nbsp;regionBox)</code></th>
+<td class="colLast">
+<div class="block">Gets the player's current position based on a custom map and checks if it is within the specified RegionBox</div>
+</td>
+</tr>
+<tr id="i8" class="altColor">
+<td class="colFirst"><code>boolean</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#withinCustom(java.lang.String,java.awt.Rectangle)">withinCustom</a></span>&#8203;(java.lang.String&nbsp;mapFileLocation,
+            java.awt.Rectangle&nbsp;rectangle)</code></th>
+<td class="colLast">
+<div class="block">Gets the player's current position based on a custom map and checks if it is within the specified java awt Rectangle</div>
+</td>
+</tr>
+<tr id="i9" class="rowColor">
+<td class="colFirst"><code>boolean</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#withinCustom(java.lang.String,javafx.scene.shape.Rectangle)">withinCustom</a></span>&#8203;(java.lang.String&nbsp;mapFileLocation,
+            javafx.scene.shape.Rectangle&nbsp;javafxrectangle)</code></th>
+<td class="colLast">
+<div class="block">Gets the player's current position based on a custom map and checks if it is within the specified java fx Rectangle</div>
+</td>
+</tr>
+</table>
+</li>
+</ul>
+</section>
+</li>
+</ul>
+</div>
+<div class="details">
+<ul class="blockList">
+<li class="blockList">
+<!-- ============ METHOD DETAIL ========== -->
+<section>
+<ul class="blockList">
+<li class="blockList"><a id="method.detail">
+<!--   -->
+</a>
+<h3>Method Detail</h3>
+<a id="within(helpers.utils.RegionBox,java.awt.Rectangle)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>within</h4>
+<pre class="methodSignature">boolean&nbsp;within&#8203;(<a href="../helpers/utils/RegionBox.html" title="class in helpers.utils">RegionBox</a>&nbsp;regionToSearchIn,
+               java.awt.Rectangle&nbsp;awtRectangle)</pre>
+<div class="block">Gets the player's current position and checks if it is within the specified awtRectangle</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>regionToSearchIn</code> - This is the RegionBox of the world map area you'd like to search in.</dd>
+<dd><code>awtRectangle</code> - This is the awtRectangle of the world map you want to check if you are in it currently.</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>Returns a true/false boolean, true if you are in the awtRectangle, false if not.</dd>
+</dl>
+</li>
+</ul>
+<a id="within(helpers.utils.RegionBox,helpers.utils.RegionBox)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>within</h4>
+<pre class="methodSignature">boolean&nbsp;within&#8203;(<a href="../helpers/utils/RegionBox.html" title="class in helpers.utils">RegionBox</a>&nbsp;regionToSearchIn,
+               <a href="../helpers/utils/RegionBox.html" title="class in helpers.utils">RegionBox</a>&nbsp;targetRegionBox)</pre>
+<div class="block">Gets the player's current position and checks if it is within the specified RegionBox</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>regionToSearchIn</code> - This is the RegionBox of the world map area you'd like to search in.</dd>
+<dd><code>targetRegionBox</code> - This is the RegionBox of the world map you want to check if you are in it currently.</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>Returns a true/false boolean, true if you are in the targetRegionBox, false if not.</dd>
+</dl>
+</li>
+</ul>
+<a id="within(helpers.utils.RegionBox,javafx.scene.shape.Rectangle)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>within</h4>
+<pre class="methodSignature">boolean&nbsp;within&#8203;(<a href="../helpers/utils/RegionBox.html" title="class in helpers.utils">RegionBox</a>&nbsp;regionToSearchIn,
+               javafx.scene.shape.Rectangle&nbsp;rectangleToBeIn)</pre>
+<div class="block">Gets the player's current position and checks if it is within the specified JavaFX Rectangle</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>regionToSearchIn</code> - This is the RegionBox of the world map you'd like to search in.</dd>
+<dd><code>rectangleToBeIn</code> - This is the javafx Rectangle of the world map you want to check if you are in it currently.</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>Returns a true/false boolean, true if you are in the javafx Rectangle, false if not.</dd>
+</dl>
+</li>
+</ul>
+<a id="withinCustom(java.lang.String,java.awt.Rectangle)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>withinCustom</h4>
+<pre class="methodSignature">boolean&nbsp;withinCustom&#8203;(java.lang.String&nbsp;mapFileLocation,
+                     java.awt.Rectangle&nbsp;rectangle)</pre>
+<div class="block">Gets the player's current position based on a custom map and checks if it is within the specified java awt Rectangle</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>mapFileLocation</code> - This is string location of the custom map you'd like to search in.</dd>
+<dd><code>rectangle</code> - This is the java awt Rectangle of the custom map you want to check if you are in it currently.</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>Returns a true/false boolean, true if you are in the java awt Rectangle, false if not.</dd>
+</dl>
+</li>
+</ul>
+<a id="withinCustom(java.lang.String,javafx.scene.shape.Rectangle)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>withinCustom</h4>
+<pre class="methodSignature">boolean&nbsp;withinCustom&#8203;(java.lang.String&nbsp;mapFileLocation,
+                     javafx.scene.shape.Rectangle&nbsp;javafxrectangle)</pre>
+<div class="block">Gets the player's current position based on a custom map and checks if it is within the specified java fx Rectangle</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>mapFileLocation</code> - This is string location of the custom map you'd like to search in.</dd>
+<dd><code>javafxrectangle</code> - This is the java fx Rectangle of the custom map you want to check if you are in it currently.</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>Returns a true/false boolean, true if you are in the java fx Rectangle, false if not.</dd>
+</dl>
+</li>
+</ul>
+<a id="withinCustom(java.lang.String,helpers.utils.RegionBox)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>withinCustom</h4>
+<pre class="methodSignature">boolean&nbsp;withinCustom&#8203;(java.lang.String&nbsp;mapFileLocation,
+                     <a href="../helpers/utils/RegionBox.html" title="class in helpers.utils">RegionBox</a>&nbsp;regionBox)</pre>
+<div class="block">Gets the player's current position based on a custom map and checks if it is within the specified RegionBox</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>mapFileLocation</code> - This is string location of the custom map you'd like to search in.</dd>
+<dd><code>regionBox</code> - This is the RegionBox of the custom map you want to check if you are in it currently.</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>Returns a true/false boolean, true if you are in the RegionBox, false if not.</dd>
+</dl>
+</li>
+</ul>
+<a id="getPray()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getPray</h4>
+<pre class="methodSignature">java.lang.Integer&nbsp;getPray()</pre>
+<div class="block">Gets the player's current Prayer points based on the minimap orb.</div>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>Returns an integer that represents the current Prayer points value of the player.</dd>
+</dl>
+</li>
+</ul>
+<a id="getHP()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getHP</h4>
+<pre class="methodSignature">java.lang.Integer&nbsp;getHP()</pre>
+<div class="block">Gets the player's current HP based on the minimap orb.</div>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>Returns an integer that represents the current HP value of the player.</dd>
+</dl>
+</li>
+</ul>
+<a id="getSpec()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getSpec</h4>
+<pre class="methodSignature">java.lang.Integer&nbsp;getSpec()</pre>
+<div class="block">Gets the player's current Special attack based on the minimap orb.</div>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>Returns an integer that represents the current Special attack energy value of the player.</dd>
+</dl>
+</li>
+</ul>
+<a id="getRun()">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>getRun</h4>
+<pre class="methodSignature">java.lang.Integer&nbsp;getRun()</pre>
+<div class="block">Gets the player's current Run energy based on the minimap orb.</div>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>Returns an integer that represents the current Run energy value of the player.</dd>
+</dl>
+</li>
+</ul>
+</li>
+</ul>
+</section>
 </li>
 </ul>
 </div>
@@ -170,13 +456,13 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <li>Nested&nbsp;|&nbsp;</li>
 <li>Field&nbsp;|&nbsp;</li>
 <li>Constr&nbsp;|&nbsp;</li>
-<li>Method</li>
+<li><a href="#method.summary">Method</a></li>
 </ul>
 <ul class="subNavList">
 <li>Detail:&nbsp;</li>
 <li>Field&nbsp;|&nbsp;</li>
 <li>Constr&nbsp;|&nbsp;</li>
-<li>Method</li>
+<li><a href="#method.detail">Method</a></li>
 </ul>
 </div>
 <a id="skip.navbar.bottom">
