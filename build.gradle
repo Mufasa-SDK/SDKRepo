@@ -18,7 +18,7 @@ java {
 }
 
 group 'com.github.Mufasa-SDK' // Change this to your GitHub username and repository
-version '1.0.0'
+version '1.1.0'
 
 repositories {
     mavenCentral()
