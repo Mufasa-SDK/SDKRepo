@@ -78,4 +78,13 @@ public interface iClient {
      * Simulates the action of moving the camera up.
      */
     void moveCameraUp();
+    /**
+     * Disables the internal Break handler. Do note that you will have to manage breaks yourself with the login/logout methods and a custom implementation.
+     */
+    boolean disableBreakHandler();
+
+    /**
+     * Enables the internal Break handler again if you disabled it.
+     */
+    boolean enableBreakHandler();
 }
