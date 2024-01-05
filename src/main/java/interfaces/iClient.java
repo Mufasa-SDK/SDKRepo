@@ -80,11 +80,15 @@ public interface iClient {
     void moveCameraUp();
     /**
      * Disables the internal Break handler. Do note that you will have to manage breaks yourself with the login/logout methods and a custom implementation.
+     *
+     * @return Break handler stopped or not
      */
     boolean disableBreakHandler();
 
     /**
      * Enables the internal Break handler again if you disabled it.
+     *
+     * @return Break handler enabled or not
      */
     boolean enableBreakHandler();
 }
