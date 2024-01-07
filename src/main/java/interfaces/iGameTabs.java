@@ -41,6 +41,22 @@ public interface iGameTabs {
     void openEmotesTab();
     void openMusicTab();
 
+    // closeTab calls
+    void closeInventoryTab();
+    void closeCombatTab();
+    void closeStatsTab();
+    void closeQuestsTab();
+    void closeEquipTab();
+    void closePrayerTab();
+    void closeMagicTab();
+    void closeClanTab();
+    void closeFriendsTab();
+    void closeAccountTab();
+    void closeLogoutTab();
+    void closeSettingsTab();
+    void closeEmotesTab();
+    void closeMusicTab();
+
     // findTab calls
     Rectangle findInventoryTab();
     Rectangle findCombatTab();
