@@ -51,5 +51,13 @@ public interface iInventory {
      * @param threshold The threshold value used for identifying the item, threshold is a double where 1.0 represents 100% confidence. Usually above 0.80 (but often 0.90+).
      */
     void tapItem(String itemId, double threshold);
+
+    /**
+     * Initiates a tap action on a specified food in the inventory, based on a threshold without using a cache.
+     *
+     * @param itemId    The ID of the food to be tapped.
+     * @param threshold The threshold value used for identifying the food, threshold is a double where 1.0 represents 100% confidence. Usually above 0.80 (but often 0.90+).
+     */
+    void eat(String itemId, double threshold);
 }
 

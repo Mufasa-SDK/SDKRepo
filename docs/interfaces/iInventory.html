@@ -27,7 +27,7 @@
     catch(err) {
     }
 //-->
-var data = {"i0":6,"i1":6,"i2":6,"i3":6,"i4":6};
+var data = {"i0":6,"i1":6,"i2":6,"i3":6,"i4":6,"i5":6};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],4:["t3","Abstract Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -172,6 +172,14 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </td>
 </tr>
 <tr id="i3" class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#eat(java.lang.String,double)">eat</a></span>&#8203;(java.lang.String&nbsp;itemId,
+   double&nbsp;threshold)</code></th>
+<td class="colLast">
+<div class="block">Initiates a tap action on a specified food in the inventory, based on a threshold without using a cache.</div>
+</td>
+</tr>
+<tr id="i4" class="altColor">
 <td class="colFirst"><code>java.awt.Rectangle</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#itemPosition(java.lang.String,double)">itemPosition</a></span>&#8203;(java.lang.String&nbsp;itemID,
             double&nbsp;threshold)</code></th>
@@ -179,7 +187,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <div class="block">Finds the position of a specific item in the inventory, based on a threshold.</div>
 </td>
 </tr>
-<tr id="i4" class="altColor">
+<tr id="i5" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#tapItem(java.lang.String,double)">tapItem</a></span>&#8203;(java.lang.String&nbsp;itemId,
        double&nbsp;threshold)</code></th>
@@ -279,7 +287,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <a id="tapItem(java.lang.String,double)">
 <!--   -->
 </a>
-<ul class="blockListLast">
+<ul class="blockList">
 <li class="blockList">
 <h4>tapItem</h4>
 <pre class="methodSignature">void&nbsp;tapItem&#8203;(java.lang.String&nbsp;itemId,
@@ -289,6 +297,22 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>itemId</code> - The ID of the item to be tapped.</dd>
 <dd><code>threshold</code> - The threshold value used for identifying the item, threshold is a double where 1.0 represents 100% confidence. Usually above 0.80 (but often 0.90+).</dd>
+</dl>
+</li>
+</ul>
+<a id="eat(java.lang.String,double)">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>eat</h4>
+<pre class="methodSignature">void&nbsp;eat&#8203;(java.lang.String&nbsp;itemId,
+         double&nbsp;threshold)</pre>
+<div class="block">Initiates a tap action on a specified food in the inventory, based on a threshold without using a cache.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>itemId</code> - The ID of the food to be tapped.</dd>
+<dd><code>threshold</code> - The threshold value used for identifying the food, threshold is a double where 1.0 represents 100% confidence. Usually above 0.80 (but often 0.90+).</dd>
 </dl>
 </li>
 </ul>
