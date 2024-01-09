@@ -73,4 +73,17 @@ public interface iPlayer {
      */
     Integer getRun();
 
+    /**
+     * Checks if run is currently enabled or not.
+     *
+     * @return Returns a true/false boolean, true if run is enabled, false if not.
+     */
+    boolean isRunEnabled();
+
+    /**
+     * Toggles the run on/off, use isRunEnabled() to check if run is on or not, this will always toggle it on/off, no matter what it currently is on.
+     *
+     */
+    void toggleRun();
+
 }

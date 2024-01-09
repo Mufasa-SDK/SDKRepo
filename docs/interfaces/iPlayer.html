@@ -27,7 +27,7 @@
     catch(err) {
     }
 //-->
-var data = {"i0":6,"i1":6,"i2":6,"i3":6,"i4":6,"i5":6,"i6":6,"i7":6};
+var data = {"i0":6,"i1":6,"i2":6,"i3":6,"i4":6,"i5":6,"i6":6,"i7":6,"i8":6,"i9":6};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],4:["t3","Abstract Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -175,13 +175,27 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </tr>
 <tr id="i4" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#isRunEnabled()">isRunEnabled</a></span>()</code></th>
+<td class="colLast">
+<div class="block">Checks if run is currently enabled or not.</div>
+</td>
+</tr>
+<tr id="i5" class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#toggleRun()">toggleRun</a></span>()</code></th>
+<td class="colLast">
+<div class="block">Toggles the run on/off, use isRunEnabled() to check if run is on or not, this will always toggle it on/off, no matter what it currently is on.</div>
+</td>
+</tr>
+<tr id="i6" class="altColor">
+<td class="colFirst"><code>boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#within(helpers.utils.RegionBox,helpers.utils.RegionBox)">within</a></span>&#8203;(<a href="../helpers/utils/RegionBox.html" title="class in helpers.utils">RegionBox</a>&nbsp;regionToSearchIn,
       <a href="../helpers/utils/RegionBox.html" title="class in helpers.utils">RegionBox</a>&nbsp;targetRegionBox)</code></th>
 <td class="colLast">
 <div class="block">Gets the player's current position and checks if it is within the specified RegionBox</div>
 </td>
 </tr>
-<tr id="i5" class="rowColor">
+<tr id="i7" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#within(helpers.utils.RegionBox,java.awt.Rectangle)">within</a></span>&#8203;(<a href="../helpers/utils/RegionBox.html" title="class in helpers.utils">RegionBox</a>&nbsp;regionToSearchIn,
       java.awt.Rectangle&nbsp;awtRectangle)</code></th>
@@ -189,7 +203,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <div class="block">Gets the player's current position and checks if it is within the specified awtRectangle</div>
 </td>
 </tr>
-<tr id="i6" class="altColor">
+<tr id="i8" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#withinCustom(java.lang.String,helpers.utils.RegionBox)">withinCustom</a></span>&#8203;(java.lang.String&nbsp;mapFileLocation,
             <a href="../helpers/utils/RegionBox.html" title="class in helpers.utils">RegionBox</a>&nbsp;regionBox)</code></th>
@@ -197,7 +211,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <div class="block">Gets the player's current position based on a custom map and checks if it is within the specified RegionBox</div>
 </td>
 </tr>
-<tr id="i7" class="rowColor">
+<tr id="i9" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#withinCustom(java.lang.String,java.awt.Rectangle)">withinCustom</a></span>&#8203;(java.lang.String&nbsp;mapFileLocation,
             java.awt.Rectangle&nbsp;rectangle)</code></th>
@@ -339,7 +353,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <a id="getRun()">
 <!--   -->
 </a>
-<ul class="blockListLast">
+<ul class="blockList">
 <li class="blockList">
 <h4>getRun</h4>
 <pre class="methodSignature">java.lang.Integer&nbsp;getRun()</pre>
@@ -348,6 +362,30 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>Returns an integer that represents the current Run energy value of the player.</dd>
 </dl>
+</li>
+</ul>
+<a id="isRunEnabled()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>isRunEnabled</h4>
+<pre class="methodSignature">boolean&nbsp;isRunEnabled()</pre>
+<div class="block">Checks if run is currently enabled or not.</div>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>Returns a true/false boolean, true if run is enabled, false if not.</dd>
+</dl>
+</li>
+</ul>
+<a id="toggleRun()">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>toggleRun</h4>
+<pre class="methodSignature">void&nbsp;toggleRun()</pre>
+<div class="block">Toggles the run on/off, use isRunEnabled() to check if run is on or not, this will always toggle it on/off, no matter what it currently is on.</div>
 </li>
 </ul>
 </li>
