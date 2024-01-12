@@ -54,8 +54,14 @@ public abstract class AbstractScript {
     }
     public void running() {
         checkAndPause();
+        
+        if (Thread.interrupted()) {
+            return;
+        }
+
         poll();
     }
+
     public abstract void onStart();
 
     public abstract void poll();
