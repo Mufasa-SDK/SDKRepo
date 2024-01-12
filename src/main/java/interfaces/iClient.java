@@ -19,6 +19,13 @@ public interface iClient {
     void tap(int x, int y);
 
     /**
+     * Simulates a tap action at a specified coordinate using a java.awt.Point.
+     *
+     * @param point The point that contains the x,y coordinates to tap.
+     */
+    void tap(Point point);
+
+    /**
      * Simulates a tap action on a specific color within a defined area.
      *
      * @param targetColor the color to target for the tap.
