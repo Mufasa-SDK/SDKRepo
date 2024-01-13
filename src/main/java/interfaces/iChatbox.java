@@ -2,6 +2,8 @@ package interfaces;
 
 import org.opencv.core.Rect;
 
+import java.awt.*;
+
 /**
  * Interface representing chatbox operations.
  */
@@ -71,8 +73,8 @@ public interface iChatbox {
 
     /**
      * Finds and returns the rectangle representing the chatbox menu.
-     * @return A Rect object representing the area of the chatbox menu.
+     * @return A Rectangle object representing the area of the chatbox menu.
      */
-    Rect findChatboxMenu();
+    Rectangle findChatboxMenu();
 
 }
