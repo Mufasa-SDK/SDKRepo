@@ -17,5 +17,5 @@ public interface iGame {
      *
      * @param zoomLevel The string zoom level (1-5) to set the zoom to.
      */
-    String setZoom(String zoomLevel);
+    void setZoom(String zoomLevel);
 }
