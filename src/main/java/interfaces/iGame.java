@@ -18,14 +18,18 @@ public interface iGame {
      * @param zoomLevel The string zoom level (1-5) to set the zoom to.
      */
     void setZoom(String zoomLevel);
-    
+
     /**
      * Check if there are other players around you or under you.
+     *
+     * @return true if players around
      */
     public boolean isPlayersAround();
 
     /**
      * Check ONLY if there are other players under your character specifically
+     *
+     * @return true if players under you
      */
     public boolean isPlayersUnderUs();
 }

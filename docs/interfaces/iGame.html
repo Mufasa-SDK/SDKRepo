@@ -27,7 +27,7 @@
     catch(err) {
     }
 //-->
-var data = {"i0":6,"i1":6};
+var data = {"i0":6,"i1":6,"i2":6,"i3":6};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],4:["t3","Abstract Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -147,13 +147,27 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <th class="colLast" scope="col">Description</th>
 </tr>
 <tr id="i0" class="altColor">
+<td class="colFirst"><code>boolean</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#isPlayersAround()">isPlayersAround</a></span>()</code></th>
+<td class="colLast">
+<div class="block">Check if there are other players around you or under you.</div>
+</td>
+</tr>
+<tr id="i1" class="rowColor">
+<td class="colFirst"><code>boolean</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#isPlayersUnderUs()">isPlayersUnderUs</a></span>()</code></th>
+<td class="colLast">
+<div class="block">Check ONLY if there are other players under your character specifically</div>
+</td>
+</tr>
+<tr id="i2" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#sendChatMessage(java.lang.String)">sendChatMessage</a></span>&#8203;(java.lang.String&nbsp;message)</code></th>
 <td class="colLast">
 <div class="block">Sends a chat message in the game.</div>
 </td>
 </tr>
-<tr id="i1" class="rowColor">
+<tr id="i3" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setZoom(java.lang.String)">setZoom</a></span>&#8203;(java.lang.String&nbsp;zoomLevel)</code></th>
 <td class="colLast">
@@ -194,7 +208,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <a id="setZoom(java.lang.String)">
 <!--   -->
 </a>
-<ul class="blockListLast">
+<ul class="blockList">
 <li class="blockList">
 <h4>setZoom</h4>
 <pre class="methodSignature">void&nbsp;setZoom&#8203;(java.lang.String&nbsp;zoomLevel)</pre>
@@ -202,6 +216,34 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>zoomLevel</code> - The string zoom level (1-5) to set the zoom to.</dd>
+</dl>
+</li>
+</ul>
+<a id="isPlayersAround()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>isPlayersAround</h4>
+<pre class="methodSignature">boolean&nbsp;isPlayersAround()</pre>
+<div class="block">Check if there are other players around you or under you.</div>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>true if players around</dd>
+</dl>
+</li>
+</ul>
+<a id="isPlayersUnderUs()">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>isPlayersUnderUs</h4>
+<pre class="methodSignature">boolean&nbsp;isPlayersUnderUs()</pre>
+<div class="block">Check ONLY if there are other players under your character specifically</div>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>true if players under you</dd>
 </dl>
 </li>
 </ul>
