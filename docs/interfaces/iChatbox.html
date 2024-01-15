@@ -27,7 +27,7 @@
     catch(err) {
     }
 //-->
-var data = {"i0":6,"i1":6,"i2":6,"i3":6,"i4":6,"i5":6,"i6":6,"i7":6,"i8":6,"i9":6,"i10":6,"i11":6};
+var data = {"i0":6,"i1":6,"i2":6,"i3":6,"i4":6,"i5":6,"i6":6,"i7":6,"i8":6,"i9":6,"i10":6,"i11":6,"i12":6};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],4:["t3","Abstract Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -146,83 +146,90 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <th class="colLast" scope="col">Description</th>
 </tr>
 <tr id="i0" class="altColor">
+<td class="colFirst"><code>void</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#closeChatbox()">closeChatbox</a></span>()</code></th>
+<td class="colLast">
+<div class="block">Closes the chatbox with random actions.</div>
+</td>
+</tr>
+<tr id="i1" class="rowColor">
 <td class="colFirst"><code>java.awt.Rectangle</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#findChatboxMenu()">findChatboxMenu</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Finds and returns the rectangle representing the chatbox menu.</div>
 </td>
 </tr>
-<tr id="i1" class="rowColor">
+<tr id="i2" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#isMakeMenuVisible()">isMakeMenuVisible</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Checks if the make menu is visible in the chatbox.</div>
 </td>
 </tr>
-<tr id="i2" class="altColor">
+<tr id="i3" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#isSelectedMake1()">isSelectedMake1</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Checks if the "Make 1" option is selected.</div>
 </td>
 </tr>
-<tr id="i3" class="rowColor">
+<tr id="i4" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#isSelectedMake10()">isSelectedMake10</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Checks if the "Make 10" option is selected.</div>
 </td>
 </tr>
-<tr id="i4" class="altColor">
+<tr id="i5" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#isSelectedMake5()">isSelectedMake5</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Checks if the "Make 5" option is selected.</div>
 </td>
 </tr>
-<tr id="i5" class="rowColor">
+<tr id="i6" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#isSelectedMakeAll()">isSelectedMakeAll</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Checks if the "Make All" option is selected.</div>
 </td>
 </tr>
-<tr id="i6" class="altColor">
+<tr id="i7" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#makeOption(int)">makeOption</a></span>&#8203;(int&nbsp;optionNumber)</code></th>
 <td class="colLast">
 <div class="block">Selects a make option based on the specified option number.</div>
 </td>
 </tr>
-<tr id="i7" class="rowColor">
+<tr id="i8" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#selectMake1()">selectMake1</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Selects the "Make 1" option.</div>
 </td>
 </tr>
-<tr id="i8" class="altColor">
+<tr id="i9" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#selectMake10()">selectMake10</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Selects the "Make 10" option.</div>
 </td>
 </tr>
-<tr id="i9" class="rowColor">
+<tr id="i10" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#selectMake5()">selectMake5</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Selects the "Make 5" option.</div>
 </td>
 </tr>
-<tr id="i10" class="altColor">
+<tr id="i11" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#selectMakeAll()">selectMakeAll</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Selects the "Make All" option.</div>
 </td>
 </tr>
-<tr id="i11" class="rowColor">
+<tr id="i12" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#selectMakeX()">selectMakeX</a></span>()</code></th>
 <td class="colLast">
@@ -379,6 +386,16 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <h4>selectMakeAll</h4>
 <pre class="methodSignature">void&nbsp;selectMakeAll()</pre>
 <div class="block">Selects the "Make All" option.</div>
+</li>
+</ul>
+<a id="closeChatbox()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>closeChatbox</h4>
+<pre class="methodSignature">void&nbsp;closeChatbox()</pre>
+<div class="block">Closes the chatbox with random actions.</div>
 </li>
 </ul>
 <a id="findChatboxMenu()">

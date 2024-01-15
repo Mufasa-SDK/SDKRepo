@@ -72,6 +72,11 @@ public interface iChatbox {
     void selectMakeAll();
 
     /**
+     * Closes the chatbox with random actions.
+     */
+    void closeChatbox();
+
+    /**
      * Finds and returns the rectangle representing the chatbox menu.
      * @return A Rectangle object representing the area of the chatbox menu.
      */
