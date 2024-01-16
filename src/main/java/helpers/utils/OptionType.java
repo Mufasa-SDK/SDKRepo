@@ -31,7 +31,8 @@ public enum OptionType {
          */
         BANKTABS,
         /**
-         * Represents a configuration option for worldhopper utilies. This includes a boolean checkbox if worldhopper is enabled and also the worldhopper profile selection
+         * Represents a configuration option for worldhopper utilities. This includes a boolean checkbox if worldhopper is enabled and also the worldhopper profile selection.
+         * The boolean checkbox returns as configName().enabled and the selected profile returns as just configName().
          */
         WORLDHOPPER
 }
