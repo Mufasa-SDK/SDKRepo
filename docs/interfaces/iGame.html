@@ -148,9 +148,12 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </tr>
 <tr id="i0" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#hop(java.lang.String)">hop</a></span>&#8203;(java.lang.String&nbsp;profileName)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#hop(java.lang.String,java.lang.Boolean,java.lang.Boolean)">hop</a></span>&#8203;(java.lang.String&nbsp;profileName,
+   java.lang.Boolean&nbsp;useWDH,
+   java.lang.Boolean&nbsp;useOnlyWDH)</code></th>
 <td class="colLast">
-<div class="block">Hops to a random world from the selected hop profile.</div>
+<div class="block">Hops to a random world from the selected hop profile, or if other players are found around us (if activated)
+ WDH = White Dot Hop</div>
 </td>
 </tr>
 <tr id="i1" class="rowColor">
@@ -254,17 +257,22 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </dl>
 </li>
 </ul>
-<a id="hop(java.lang.String)">
+<a id="hop(java.lang.String,java.lang.Boolean,java.lang.Boolean)">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>hop</h4>
-<pre class="methodSignature">void&nbsp;hop&#8203;(java.lang.String&nbsp;profileName)</pre>
-<div class="block">Hops to a random world from the selected hop profile.</div>
+<pre class="methodSignature">void&nbsp;hop&#8203;(java.lang.String&nbsp;profileName,
+         java.lang.Boolean&nbsp;useWDH,
+         java.lang.Boolean&nbsp;useOnlyWDH)</pre>
+<div class="block">Hops to a random world from the selected hop profile, or if other players are found around us (if activated)
+ WDH = White Dot Hop</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>profileName</code> - use the profileName that was selected in the ScriptUI config here by the user.</dd>
+<dd><code>useWDH</code> - Boolean to enable/disable WDH. If true, this will instantly hop when a player is around us. Otherwise it will wait till the next hop time.</dd>
+<dd><code>useOnlyWDH</code> - Boolean to set the mode to use WDH only, this overrides the normal hopping schedule and only hops when players are around.</dd>
 </dl>
 </li>
 </ul>

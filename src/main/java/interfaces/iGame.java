@@ -34,9 +34,12 @@ public interface iGame {
     public boolean isPlayersUnderUs();
 
     /**
-     * Hops to a random world from the selected hop profile.
+     * Hops to a random world from the selected hop profile, or if other players are found around us (if activated)
+     * WDH = White Dot Hop
      *
      * @param profileName use the profileName that was selected in the ScriptUI config here by the user.
+     * @param useWDH Boolean to enable/disable WDH. If true, this will instantly hop when a player is around us. Otherwise it will wait till the next hop time.
+     * @param useOnlyWDH Boolean to set the mode to use WDH only, this overrides the normal hopping schedule and only hops when players are around.
      */
-    void hop(String profileName);
+    void hop(String profileName, Boolean useWDH, Boolean useOnlyWDH);
 }
