@@ -83,7 +83,7 @@ public interface iChatbox {
     Rectangle findChatboxMenu();
 
     /**
-     * Reads the specific area, and returns what is was able to read.
+     * Reads the specific area, and returns what it was able to read.
      * @return A string with the OCR results.
      * @param areaToOCR A java.awt.Rectangle with the area you want to perform OCR on.
      */
