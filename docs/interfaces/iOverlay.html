@@ -27,7 +27,7 @@
     catch(err) {
     }
 //-->
-var data = {"i0":6,"i1":6};
+var data = {"i0":6,"i1":6,"i2":6};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],4:["t3","Abstract Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -160,6 +160,13 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <div class="block">Finds and returns a list of polygons representing overlays of a specified color.</div>
 </td>
 </tr>
+<tr id="i2" class="altColor">
+<td class="colFirst"><code>java.awt.Polygon</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#findSecondNearest(java.awt.Color)">findSecondNearest</a></span>&#8203;(java.awt.Color&nbsp;color)</code></th>
+<td class="colLast">
+<div class="block">Finds and returns the polygon representing the overlay that is second closest to the center of the screen.</div>
+</td>
+</tr>
 </table>
 </li>
 </ul>
@@ -197,7 +204,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <a id="findNearest(java.awt.Color)">
 <!--   -->
 </a>
-<ul class="blockListLast">
+<ul class="blockList">
 <li class="blockList">
 <h4>findNearest</h4>
 <pre class="methodSignature">java.awt.Polygon&nbsp;findNearest&#8203;(java.awt.Color&nbsp;color)</pre>
@@ -208,6 +215,24 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <dd><code>color</code> - The color to search for in the overlays.</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>The <code>Polygon</code> closest to the center of the screen where the specified color is predominant.
+         Returns null if no matching overlays are found.</dd>
+</dl>
+</li>
+</ul>
+<a id="findSecondNearest(java.awt.Color)">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>findSecondNearest</h4>
+<pre class="methodSignature">java.awt.Polygon&nbsp;findSecondNearest&#8203;(java.awt.Color&nbsp;color)</pre>
+<div class="block">Finds and returns the polygon representing the overlay that is second closest to the center of the screen.
+ This method is useful when there is a need to interact with the overlay second nearest to the focal point of the user interface, when it is not feasible using the closest one.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>color</code> - The color to search for in the overlays.</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>The <code>Polygon</code> second closest to the center of the screen where the specified color is predominant.
          Returns null if no matching overlays are found.</dd>
 </dl>
 </li>

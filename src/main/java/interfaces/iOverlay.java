@@ -27,4 +27,14 @@ public interface iOverlay {
      *         Returns null if no matching overlays are found.
      */
     Polygon findNearest(Color color);
+
+    /**
+     * Finds and returns the polygon representing the overlay that is second closest to the center of the screen.
+     * This method is useful when there is a need to interact with the overlay second nearest to the focal point of the user interface, when it is not feasible using the closest one.
+     *
+     * @param color The color to search for in the overlays.
+     * @return The {@link Polygon} second closest to the center of the screen where the specified color is predominant.
+     *         Returns null if no matching overlays are found.
+     */
+    Polygon findSecondNearest(Color color);
 }
