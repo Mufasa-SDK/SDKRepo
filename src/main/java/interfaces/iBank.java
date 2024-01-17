@@ -76,9 +76,8 @@ public interface iBank {
 
     /**
      * Steps to the bank object (booth/chest) of the bank identifier, for example: Castle_wars_bank.
-     * @param bankidentifier The bank identifier returned by findDynamicBank or setupDynamicBank (i.e. Castle_wars_bank) - refer to the bankNames to find them all.
      */
-    void stepToBank(String bankidentifier);
+    void stepToBank();
 
     // Methods for finding different bank interface components
     // Each method returns the screen area (as a Rectangle) for a specific bank interface component
