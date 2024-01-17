@@ -365,9 +365,9 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </tr>
 <tr id="i39" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#stepToBank(java.lang.String)">stepToBank</a></span>&#8203;(java.lang.String&nbsp;bankidentifier)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#stepToBank()">stepToBank</a></span>()</code></th>
 <td class="colLast">
-<div class="block">Steps to the bank object (booth/chest) of the bank identifier, for example: Castle_wars_bank.</div>
+<div class="block">Steps to the cached bank object (booth/chest).</div>
 </td>
 </tr>
 <tr id="i40" class="altColor">
@@ -617,18 +617,14 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </dl>
 </li>
 </ul>
-<a id="stepToBank(java.lang.String)">
+<a id="stepToBank()">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>stepToBank</h4>
-<pre class="methodSignature">void&nbsp;stepToBank&#8203;(java.lang.String&nbsp;bankidentifier)</pre>
-<div class="block">Steps to the bank object (booth/chest) of the bank identifier, for example: Castle_wars_bank.</div>
-<dl>
-<dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>bankidentifier</code> - The bank identifier returned by findDynamicBank or setupDynamicBank (i.e. Castle_wars_bank) - refer to the bankNames to find them all.</dd>
-</dl>
+<pre class="methodSignature">void&nbsp;stepToBank()</pre>
+<div class="block">Steps to the cached bank object (booth/chest). Make sure you have run either findDynamicBank or setupDynamicBank prior.</div>
 </li>
 </ul>
 <a id="findBankCloseButton()">
