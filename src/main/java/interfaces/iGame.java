@@ -32,11 +32,4 @@ public interface iGame {
      * @return true if players under you
      */
     public boolean isPlayersUnderUs();
-
-    /**
-     * Hops to a random world from the selected hop profile.
-     *
-     * @param profileName use the profileName that was selected in the ScriptUI config here by the user.
-     */
-    void hop(String profileName);
 }
