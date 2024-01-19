@@ -1,5 +1,7 @@
 package interfaces;
 
+import helpers.utils.EquipmentSlot;
+
 import java.awt.*;
 
 /**
@@ -21,6 +23,13 @@ public interface iEquipment {
      * @return Boolean indicating whether the equipment interface was successfully opened.
      */
     Boolean open();
+
+    /**
+     * Attempts to check for a specified itemID in the specified EquipmentSlot
+     *
+     * @return Boolean indicating whether the itemID was found in that equipment slot
+     */
+    Boolean itemAt(EquipmentSlot equipmentSlot, int itemToCheck);
 
     /**
      * Finds the rectangle representing the selected equipment tab.
