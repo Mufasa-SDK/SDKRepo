@@ -103,21 +103,30 @@ public interface iClient {
     /**
      * Checks if a specified color is found within a rectangle area on the game screen
      *
+     * @param targetColor the color to look for.
+     * @param regionToSearch The area on the screen you'd like to search in
+     * @param tolerance the color tolerance for matching the target color.
      * @return true/false if found or not
      */
-    boolean isColorInRect(Color targetColor, Rectangle regionToSearch);
+    boolean isColorInRect(Color targetColor, Rectangle regionToSearch, int tolerance);
 
     /**
      * Checks if specified colors is found within a rectangle area on the game screen
      *
+     * @param targetColors the colors to look for.
+     * @param regionToSearch The area on the screen you'd like to search in
+     * @param tolerance the color tolerance for matching the target color.
      * @return true/false if found or not
      */
-    boolean isAnyColorInRect(List<Color> targetColor, Rectangle regionToSearch);
+    boolean isAnyColorInRect(List<Color> targetColors, Rectangle regionToSearch, int tolerance);
 
     /**
      * Checks if a specified color is found on a specific point on the game screen
      *
+     * @param targetColor the color to look for.
+     * @param pointToSearch The point on the screen you'd like to search in
+     * @param tolerance the color tolerance for matching the target color.
      * @return true/false if found or not
      */
-    boolean isColorAtPoint(String device, Color targetColor, Point pointToSearch);
+    boolean isColorAtPoint(String device, Color targetColor, Point pointToSearch, int tolerance);
 }
