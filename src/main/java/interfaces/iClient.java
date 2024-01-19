@@ -2,6 +2,7 @@ package interfaces;
 
 import java.awt.*;
 import java.io.File;
+import java.util.List;
 
 /**
  * Interface defining the actions for client interaction.
@@ -98,4 +99,25 @@ public interface iClient {
      * @return Break handler enabled or not
      */
     boolean enableBreakHandler();
+
+    /**
+     * Checks if a specified color is found within a rectangle area on the game screen
+     *
+     * @return true/false if found or not
+     */
+    boolean isColorInRect(Color targetColor, Rectangle regionToSearch);
+
+    /**
+     * Checks if specified colors is found within a rectangle area on the game screen
+     *
+     * @return true/false if found or not
+     */
+    boolean isAnyColorInRect(List<Color> targetColor, Rectangle regionToSearch);
+
+    /**
+     * Checks if a specified color is found on a specific point on the game screen
+     *
+     * @return true/false if found or not
+     */
+    boolean isColorAtPoint(String device, Color targetColor, Point pointToSearch);
 }
