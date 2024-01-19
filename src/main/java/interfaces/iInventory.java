@@ -27,6 +27,33 @@ public interface iInventory {
     boolean contains(String itemID, double threshold);
 
     /**
+     * Checks if the inventory contains any of the specified items, based on a threshold.
+     *
+     * @param itemIDs    The ID of the item to check in the inventory.
+     * @param threshold The threshold value used for the check, threshold is a double where 1.0 represents 100% confidence. Usually above 0.80 (but often 0.90+).
+     * @return boolean indicating whether the specified item is present in the inventory.
+     */
+    boolean containsAny(int[] itemIDs, double threshold);
+
+    /**
+     * Checks if the inventory contains all the specific items, based on a threshold.
+     *
+     * @param itemIDs    The ID of the item to check in the inventory.
+     * @param threshold The threshold value used for the check, threshold is a double where 1.0 represents 100% confidence. Usually above 0.80 (but often 0.90+).
+     * @return boolean indicating whether the specified item is present in the inventory.
+     */
+    boolean containsAll(int[] itemIDs, double threshold);
+
+    /**
+     * Checks if the inventory contains a specific item, based on a threshold.
+     *
+     * @param itemID    The ID of the item to check in the inventory.
+     * @param threshold The threshold value used for the check, threshold is a double where 1.0 represents 100% confidence. Usually above 0.80 (but often 0.90+).
+     * @return boolean indicating whether the specified item is present in the inventory.
+     */
+    boolean contains(int itemID, double threshold);
+
+    /**
      * Counts the quantity of a specific item in the inventory, based on a threshold.
      *
      * @param itemID    The ID of the item to count in the inventory.
