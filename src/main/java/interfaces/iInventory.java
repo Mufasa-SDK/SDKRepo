@@ -87,6 +87,11 @@ public interface iInventory {
      */
     void eat(String itemId, double threshold);
 
+    /**
+     * Check if inventory is full or not
+     *
+     * @return true if inventory is full
+     */
     boolean isFull();
 }
 

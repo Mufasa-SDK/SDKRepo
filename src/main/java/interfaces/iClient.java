@@ -128,5 +128,5 @@ public interface iClient {
      * @param tolerance the color tolerance for matching the target color.
      * @return true/false if found or not
      */
-    boolean isColorAtPoint(String device, Color targetColor, Point pointToSearch, int tolerance);
+    boolean isColorAtPoint(Color targetColor, Point pointToSearch, int tolerance);
 }

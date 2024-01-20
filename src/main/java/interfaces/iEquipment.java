@@ -27,6 +27,8 @@ public interface iEquipment {
     /**
      * Attempts to check for a specified itemID in the specified EquipmentSlot
      *
+     * @param equipmentSlot uses the SDK enum EquipmentSlot
+     * @param itemToCheck is the itemID you are looking for
      * @return Boolean indicating whether the itemID was found in that equipment slot
      */
     Boolean itemAt(EquipmentSlot equipmentSlot, int itemToCheck);
