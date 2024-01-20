@@ -86,5 +86,7 @@ public interface iInventory {
      * @param threshold The threshold value used for identifying the food, threshold is a double where 1.0 represents 100% confidence. Usually above 0.80 (but often 0.90+).
      */
     void eat(String itemId, double threshold);
+
+    boolean isFull();
 }
 
