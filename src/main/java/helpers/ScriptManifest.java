@@ -10,8 +10,8 @@ import java.lang.annotation.Target;
  * Annotation for script metadata, defining essential information about a script.
  * This annotation can be used on classes to specify script details.
  */
-@Target(ElementType.TYPE)  // Indicates that this annotation can only be applied to class declarations
-@Retention(RetentionPolicy.RUNTIME)  // Indicates that this annotation is available at runtime for reflection
+@Target(ElementType.TYPE)
+@Retention(RetentionPolicy.RUNTIME)
 public @interface ScriptManifest {
 
     /**
