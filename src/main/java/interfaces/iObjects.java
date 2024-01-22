@@ -1,6 +1,7 @@
 package interfaces;
 
 import java.awt.*;
+import java.util.List;
 
 /**
  * Interface defining methods for object detection and location within a game environment.
@@ -13,9 +14,9 @@ public interface iObjects {
      *
      * @param tileRadius The radius, in terms of tiles, to search within from the center.
      * @param filePath   Path to the image file used for object recognition.
-     * @return A Rectangle representing the found object's location and size; returns null if no object is found.
+     * @return A list of Rectangles representing the locations and sizes of found objects; returns an empty list if no objects are found.
      */
-    Rectangle within(int tileRadius, String filePath);
+    List<Rectangle> within(int tileRadius, boolean returnAll, String filePath);
 
     /**
      * Finds game objects within a specified area, either returning the first found or all within the area.
