@@ -68,7 +68,7 @@ public interface iInventory {
      * @param itemID The ID of the item to count in the inventory.
      * @return int representing the stack quantity of the specified item in the inventory.
      */
-    int stackSize(String itemID);
+    int stackSize(int itemID);
 
     /**
      * Finds the position of a specific item in the inventory, based on a threshold.
