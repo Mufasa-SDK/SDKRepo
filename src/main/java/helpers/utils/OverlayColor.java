@@ -29,7 +29,7 @@ public class OverlayColor {
     public static final Color FISHING;
 
     static {
-        RED = new Color(0x579839);
+        RED = new Color(0xff3522);
         AGILITY = new Color(0x21ff26);
         BLUE = new Color(0x579839);
         FISHING = new Color(0x29ffff);
