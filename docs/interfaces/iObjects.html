@@ -148,16 +148,14 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </tr>
 <tr id="i0" class="altColor">
 <td class="colFirst"><code>java.awt.Rectangle</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getNearest(java.lang.String,java.lang.String)">getNearest</a></span>&#8203;(java.lang.String&nbsp;device,
-          java.lang.String&nbsp;filePath)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getNearest(java.lang.String)">getNearest</a></span>&#8203;(java.lang.String&nbsp;filePath)</code></th>
 <td class="colLast">
 <div class="block">Finds the game object nearest to the center of the game view.</div>
 </td>
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code>java.awt.Rectangle</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#within(java.lang.String,int,java.lang.String)">within</a></span>&#8203;(java.lang.String&nbsp;device,
-      int&nbsp;tileRadius,
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#within(int,java.lang.String)">within</a></span>&#8203;(int&nbsp;tileRadius,
       java.lang.String&nbsp;filePath)</code></th>
 <td class="colLast">
 <div class="block">Finds the first game object within a specified tile radius from the center of the game view.</div>
@@ -165,8 +163,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </tr>
 <tr id="i2" class="altColor">
 <td class="colFirst"><code>java.util.List&lt;java.awt.Rectangle&gt;</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#within(java.lang.String,java.awt.Rectangle,boolean,java.lang.String)">within</a></span>&#8203;(java.lang.String&nbsp;device,
-      java.awt.Rectangle&nbsp;rect,
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#within(java.awt.Rectangle,boolean,java.lang.String)">within</a></span>&#8203;(java.awt.Rectangle&nbsp;rect,
       boolean&nbsp;returnAll,
       java.lang.String&nbsp;filePath)</code></th>
 <td class="colLast">
@@ -190,19 +187,17 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <!--   -->
 </a>
 <h3>Method Detail</h3>
-<a id="within(java.lang.String,int,java.lang.String)">
+<a id="within(int,java.lang.String)">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>within</h4>
-<pre class="methodSignature">java.awt.Rectangle&nbsp;within&#8203;(java.lang.String&nbsp;device,
-                          int&nbsp;tileRadius,
+<pre class="methodSignature">java.awt.Rectangle&nbsp;within&#8203;(int&nbsp;tileRadius,
                           java.lang.String&nbsp;filePath)</pre>
 <div class="block">Finds the first game object within a specified tile radius from the center of the game view.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>device</code> - Identifier for the device or screen to search on.</dd>
 <dd><code>tileRadius</code> - The radius, in terms of tiles, to search within from the center.</dd>
 <dd><code>filePath</code> - Path to the image file used for object recognition.</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
@@ -210,20 +205,18 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </dl>
 </li>
 </ul>
-<a id="within(java.lang.String,java.awt.Rectangle,boolean,java.lang.String)">
+<a id="within(java.awt.Rectangle,boolean,java.lang.String)">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>within</h4>
-<pre class="methodSignature">java.util.List&lt;java.awt.Rectangle&gt;&nbsp;within&#8203;(java.lang.String&nbsp;device,
-                                          java.awt.Rectangle&nbsp;rect,
+<pre class="methodSignature">java.util.List&lt;java.awt.Rectangle&gt;&nbsp;within&#8203;(java.awt.Rectangle&nbsp;rect,
                                           boolean&nbsp;returnAll,
                                           java.lang.String&nbsp;filePath)</pre>
 <div class="block">Finds game objects within a specified area, either returning the first found or all within the area.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>device</code> - Identifier for the device or screen to search on.</dd>
 <dd><code>rect</code> - The Rectangle area within which to search for objects.</dd>
 <dd><code>returnAll</code> - If true, returns all objects within the area; otherwise, returns only the first found object.</dd>
 <dd><code>filePath</code> - Path to the image file used for object recognition.</dd>
@@ -232,18 +225,16 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </dl>
 </li>
 </ul>
-<a id="getNearest(java.lang.String,java.lang.String)">
+<a id="getNearest(java.lang.String)">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>getNearest</h4>
-<pre class="methodSignature">java.awt.Rectangle&nbsp;getNearest&#8203;(java.lang.String&nbsp;device,
-                              java.lang.String&nbsp;filePath)</pre>
+<pre class="methodSignature">java.awt.Rectangle&nbsp;getNearest&#8203;(java.lang.String&nbsp;filePath)</pre>
 <div class="block">Finds the game object nearest to the center of the game view.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>device</code> - Identifier for the device or screen to search on.</dd>
 <dd><code>filePath</code> - Path to the image file used for object recognition.</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>A Rectangle representing the nearest object's location and size; returns null if no object is found.</dd>
