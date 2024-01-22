@@ -221,36 +221,41 @@ extends java.lang.Object</pre>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="rowColor">
+<td class="colFirst"><code>static <a href="../interfaces/iObjects.html" title="interface in interfaces">iObjects</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#Objects">Objects</a></span></code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="altColor">
 <td class="colFirst"><code>static <a href="../interfaces/iOverlay.html" title="interface in interfaces">iOverlay</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#Overlay">Overlay</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code>static <a href="../interfaces/iPlayer.html" title="interface in interfaces">iPlayer</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#Player">Player</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code>static <a href="../interfaces/iPrayer.html" title="interface in interfaces">iPrayer</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#Prayer">Prayer</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code>static <a href="../interfaces/iScript.html" title="interface in interfaces">iScript</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#Script">Script</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code>static <a href="../interfaces/iStats.html" title="interface in interfaces">iStats</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#Stats">Stats</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code>static <a href="../interfaces/iWalker.html" title="interface in interfaces">iWalker</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#Walker">Walker</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code>static <a href="../interfaces/iXPBar.html" title="interface in interfaces">iXPBar</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#XpBar">XpBar</a></span></code></th>
 <td class="colLast">&nbsp;</td>
@@ -296,7 +301,7 @@ extends java.lang.Object</pre>
 </tr>
 <tr id="i0" class="altColor">
 <td class="colFirst"><code>static void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#initialize(interfaces.iLogger,interfaces.iBank,interfaces.iClient,interfaces.iCondition,interfaces.iDepositBox,interfaces.iEquipment,interfaces.iGame,interfaces.iGameTabs,interfaces.iInventory,interfaces.iLogin,interfaces.iLogout,interfaces.iMagic,interfaces.iOverlay,interfaces.iPlayer,interfaces.iPrayer,interfaces.iStats,interfaces.iWalker,interfaces.iXPBar,interfaces.iChatbox,interfaces.iScript)">initialize</a></span>&#8203;(<a href="../interfaces/iLogger.html" title="interface in interfaces">iLogger</a>&nbsp;logger,
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#initialize(interfaces.iLogger,interfaces.iBank,interfaces.iClient,interfaces.iCondition,interfaces.iDepositBox,interfaces.iEquipment,interfaces.iGame,interfaces.iGameTabs,interfaces.iInventory,interfaces.iLogin,interfaces.iLogout,interfaces.iMagic,interfaces.iOverlay,interfaces.iPlayer,interfaces.iPrayer,interfaces.iStats,interfaces.iWalker,interfaces.iXPBar,interfaces.iChatbox,interfaces.iObjects,interfaces.iScript)">initialize</a></span>&#8203;(<a href="../interfaces/iLogger.html" title="interface in interfaces">iLogger</a>&nbsp;logger,
           <a href="../interfaces/iBank.html" title="interface in interfaces">iBank</a>&nbsp;bank,
           <a href="../interfaces/iClient.html" title="interface in interfaces">iClient</a>&nbsp;client,
           <a href="../interfaces/iCondition.html" title="interface in interfaces">iCondition</a>&nbsp;condition,
@@ -315,6 +320,7 @@ extends java.lang.Object</pre>
           <a href="../interfaces/iWalker.html" title="interface in interfaces">iWalker</a>&nbsp;walker,
           <a href="../interfaces/iXPBar.html" title="interface in interfaces">iXPBar</a>&nbsp;xpBar,
           <a href="../interfaces/iChatbox.html" title="interface in interfaces">iChatbox</a>&nbsp;chatbox,
+          <a href="../interfaces/iObjects.html" title="interface in interfaces">iObjects</a>&nbsp;objects,
           <a href="../interfaces/iScript.html" title="interface in interfaces">iScript</a>&nbsp;script)</code></th>
 <td class="colLast">
 <div class="block">Initializes the static references to the various game interfaces.</div>
@@ -515,6 +521,15 @@ extends java.lang.Object</pre>
 <pre>public static&nbsp;<a href="../interfaces/iChatbox.html" title="interface in interfaces">iChatbox</a> Chatbox</pre>
 </li>
 </ul>
+<a id="Objects">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>Objects</h4>
+<pre>public static&nbsp;<a href="../interfaces/iObjects.html" title="interface in interfaces">iObjects</a> Objects</pre>
+</li>
+</ul>
 <a id="Script">
 <!--   -->
 </a>
@@ -553,7 +568,7 @@ extends java.lang.Object</pre>
 <!--   -->
 </a>
 <h3>Method Detail</h3>
-<a id="initialize(interfaces.iLogger,interfaces.iBank,interfaces.iClient,interfaces.iCondition,interfaces.iDepositBox,interfaces.iEquipment,interfaces.iGame,interfaces.iGameTabs,interfaces.iInventory,interfaces.iLogin,interfaces.iLogout,interfaces.iMagic,interfaces.iOverlay,interfaces.iPlayer,interfaces.iPrayer,interfaces.iStats,interfaces.iWalker,interfaces.iXPBar,interfaces.iChatbox,interfaces.iScript)">
+<a id="initialize(interfaces.iLogger,interfaces.iBank,interfaces.iClient,interfaces.iCondition,interfaces.iDepositBox,interfaces.iEquipment,interfaces.iGame,interfaces.iGameTabs,interfaces.iInventory,interfaces.iLogin,interfaces.iLogout,interfaces.iMagic,interfaces.iOverlay,interfaces.iPlayer,interfaces.iPrayer,interfaces.iStats,interfaces.iWalker,interfaces.iXPBar,interfaces.iChatbox,interfaces.iObjects,interfaces.iScript)">
 <!--   -->
 </a>
 <ul class="blockListLast">
@@ -578,6 +593,7 @@ extends java.lang.Object</pre>
                               <a href="../interfaces/iWalker.html" title="interface in interfaces">iWalker</a>&nbsp;walker,
                               <a href="../interfaces/iXPBar.html" title="interface in interfaces">iXPBar</a>&nbsp;xpBar,
                               <a href="../interfaces/iChatbox.html" title="interface in interfaces">iChatbox</a>&nbsp;chatbox,
+                              <a href="../interfaces/iObjects.html" title="interface in interfaces">iObjects</a>&nbsp;objects,
                               <a href="../interfaces/iScript.html" title="interface in interfaces">iScript</a>&nbsp;script)</pre>
 <div class="block">Initializes the static references to the various game interfaces.
  This method is called to set up all interfaces required for the script.</div>
@@ -602,6 +618,7 @@ extends java.lang.Object</pre>
 <dd><code>walker</code> - The walker interface.</dd>
 <dd><code>xpBar</code> - The XP bar interface.</dd>
 <dd><code>chatbox</code> - The chatbox interface.</dd>
+<dd><code>objects</code> - The objects interface.</dd>
 <dd><code>script</code> - The script interface.</dd>
 </dl>
 </li>
