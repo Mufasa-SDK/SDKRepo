@@ -154,8 +154,9 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </td>
 </tr>
 <tr id="i1" class="rowColor">
-<td class="colFirst"><code>java.awt.Rectangle</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#within(int,java.lang.String)">within</a></span>&#8203;(int&nbsp;tileRadius,
+<td class="colFirst"><code>java.util.List&lt;java.awt.Rectangle&gt;</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#within(int,boolean,java.lang.String)">within</a></span>&#8203;(int&nbsp;tileRadius,
+      boolean&nbsp;returnAll,
       java.lang.String&nbsp;filePath)</code></th>
 <td class="colLast">
 <div class="block">Finds the first game object within a specified tile radius from the center of the game view.</div>
@@ -187,21 +188,22 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <!--   -->
 </a>
 <h3>Method Detail</h3>
-<a id="within(int,java.lang.String)">
+<a id="within(int,boolean,java.lang.String)">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>within</h4>
-<pre class="methodSignature">java.awt.Rectangle&nbsp;within&#8203;(int&nbsp;tileRadius,
-                          java.lang.String&nbsp;filePath)</pre>
+<pre class="methodSignature">java.util.List&lt;java.awt.Rectangle&gt;&nbsp;within&#8203;(int&nbsp;tileRadius,
+                                          boolean&nbsp;returnAll,
+                                          java.lang.String&nbsp;filePath)</pre>
 <div class="block">Finds the first game object within a specified tile radius from the center of the game view.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>tileRadius</code> - The radius, in terms of tiles, to search within from the center.</dd>
 <dd><code>filePath</code> - Path to the image file used for object recognition.</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
-<dd>A Rectangle representing the found object's location and size; returns null if no object is found.</dd>
+<dd>A list of Rectangles representing the locations and sizes of found objects; returns an empty list if no objects are found.</dd>
 </dl>
 </li>
 </ul>
