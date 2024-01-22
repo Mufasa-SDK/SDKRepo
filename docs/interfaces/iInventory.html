@@ -27,7 +27,7 @@
     catch(err) {
     }
 //-->
-var data = {"i0":6,"i1":6,"i2":6,"i3":6,"i4":6,"i5":6,"i6":6,"i7":6,"i8":6,"i9":6};
+var data = {"i0":6,"i1":6,"i2":6,"i3":6,"i4":6,"i5":6,"i6":6,"i7":6,"i8":6,"i9":6,"i10":6};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],4:["t3","Abstract Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -219,6 +219,13 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </td>
 </tr>
 <tr id="i9" class="rowColor">
+<td class="colFirst"><code>int</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#stackSize(java.lang.String)">stackSize</a></span>&#8203;(java.lang.String&nbsp;itemID)</code></th>
+<td class="colLast">
+<div class="block">Reads the stack size of a specified item in the inventory.</div>
+</td>
+</tr>
+<tr id="i10" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#tapItem(java.lang.String,double)">tapItem</a></span>&#8203;(java.lang.String&nbsp;itemId,
        double&nbsp;threshold)</code></th>
@@ -348,6 +355,22 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <dd><code>threshold</code> - The threshold value used for the count, threshold is a double where 1.0 represents 100% confidence. Usually above 0.80 (but often 0.90+).</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>int representing the quantity of the specified item in the inventory.</dd>
+</dl>
+</li>
+</ul>
+<a id="stackSize(java.lang.String)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>stackSize</h4>
+<pre class="methodSignature">int&nbsp;stackSize&#8203;(java.lang.String&nbsp;itemID)</pre>
+<div class="block">Reads the stack size of a specified item in the inventory.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>itemID</code> - The ID of the item to count in the inventory.</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>int representing the stack quantity of the specified item in the inventory.</dd>
 </dl>
 </li>
 </ul>

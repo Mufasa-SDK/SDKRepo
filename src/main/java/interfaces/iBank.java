@@ -79,6 +79,14 @@ public interface iBank {
      */
     void stepToBank();
 
+    /**
+     * Reads the stack size of a specified item in the bank interface.
+     *
+     * @param itemID The ID of the item to count in the bank.
+     * @return int representing the stack quantity of the specified item in the bank.
+     */
+    int stackSize(String itemID);
+
     // Methods for finding different bank interface components
     // Each method returns the screen area (as a Rectangle) for a specific bank interface component
     Rectangle findBankCloseButton();
