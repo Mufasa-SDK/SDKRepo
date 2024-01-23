@@ -11,6 +11,10 @@ public class Tile {
         this.topLeft = topLeft;
     }
 
+    public Point getBottomRight() {
+        return new Point(topLeft.x + width - 1, topLeft.y + height - 1);
+    }
+
     public Point getTopLeft() {
         return topLeft;
     }
