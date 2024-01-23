@@ -15,23 +15,11 @@ public class Tile {
         this.y = y;
     }
 
-    public Point getBottomRight() {
-        return new Point(topLeft.x + width - 1, topLeft.y + height - 1);
-    }
-
     public Point getPoint() {
         return topLeft;
     }
     public int getX() {return x;}
     public int getY() {return y;}
-
-    public int getWidth() {
-        return width;
-    }
-
-    public int getHeight() {
-        return height;
-    }
 
     // Method to check if a point is within this tile
     public boolean contains(Point point) {
