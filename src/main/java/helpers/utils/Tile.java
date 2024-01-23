@@ -4,20 +4,26 @@ import java.awt.Point;
 
 public class Tile {
     private Point topLeft;
+    private int x;
+    private int y;
     private final int width = 3; // Fixed width for the tile
     private final int height = 3; // Fixed height for the tile
 
     public Tile(int x, int y) {
         this.topLeft = new Point(x, y);
+        this.x = x;
+        this.y = y;
     }
 
     public Point getBottomRight() {
         return new Point(topLeft.x + width - 1, topLeft.y + height - 1);
     }
 
-    public Point getTopLeft() {
+    public Point getPoint() {
         return topLeft;
     }
+    public int getX() {return x;}
+    public int getY() {return y;}
 
     public int getWidth() {
         return width;
