@@ -4,12 +4,14 @@ public class ScriptMetadata {
     private String name;
     private String description;
     private String version;
+    private String guideLink;
     private ScriptCategory category;
 
-    public ScriptMetadata(String name, String description, String version, ScriptCategory category) {
+    public ScriptMetadata(String name, String description, String version, String guideLink, ScriptCategory category) {
         this.name = name;
         this.description = description;
         this.version = version;
+        this.guideLink = guideLink;
         this.category = category;
     }
 
@@ -25,6 +27,8 @@ public class ScriptMetadata {
     public String getVersion() {
         return version;
     }
+
+    public String getGuideLink() {return guideLink;}
 
     public ScriptCategory getCategory() {
         return category;
@@ -47,14 +51,16 @@ public class ScriptMetadata {
         this.category = category;
     }
 
+    public void setGuideLink(String guideLink) {this.guideLink = guideLink;}
+
     @Override
     public String toString() {
         return "ScriptMetadata{" +
                 "name='" + name + '\'' +
                 ", description='" + description + '\'' +
                 ", version='" + version + '\'' +
+                ", guideLink='" + guideLink + '\'' +
                 ", category=" + category +
                 '}';
     }
-
 }
