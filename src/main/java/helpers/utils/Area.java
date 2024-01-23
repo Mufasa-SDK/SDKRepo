@@ -23,12 +23,12 @@ public class Area {
     // Method to check if a point is within this area
     public boolean contains(Point point) {
         // Top-left corner of the top-right tile
-        Point topLeftOfTopRightTile = topRightTile.getTopLeft();
+        Point topLeftOfTopRightTile = topRightTile.getPoint();
 
         // Bottom-right corner of the bottom-left tile
         Point bottomRightOfBottomLeftTile = new Point(
-                bottomLeftTile.getTopLeft().x + bottomLeftTile.getWidth() - 1,
-                bottomLeftTile.getTopLeft().y + bottomLeftTile.getHeight() - 1
+                bottomLeftTile.getX() + bottomLeftTile.getWidth() - 1,
+                bottomLeftTile.getY() + bottomLeftTile.getHeight() - 1
         );
 
         // Check if the point is within the bounds
@@ -38,12 +38,12 @@ public class Area {
 
     // Method to get the width of the area
     public int getWidth() {
-        return topRightTile.getBottomRight().x - bottomLeftTile.getTopLeft().x + 1;
+        return topRightTile.getX() - bottomLeftTile.getX() + 1;
     }
 
     // Method to get the height of the area
     public int getHeight() {
-        return topRightTile.getBottomRight().y - bottomLeftTile.getTopLeft().y + 1;
+        return topRightTile.getY() - bottomLeftTile.getY() + 1;
     }
 }
 

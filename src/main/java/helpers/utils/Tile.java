@@ -20,6 +20,8 @@ public class Tile {
     }
     public int getX() {return x;}
     public int getY() {return y;}
+    public int getWidth() {return width;}
+    public int getHeight() {return height;}
 
     // Method to check if a point is within this tile
     public boolean contains(Point point) {
