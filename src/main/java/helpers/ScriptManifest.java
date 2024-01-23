@@ -36,6 +36,13 @@ public @interface ScriptManifest {
     String version();
 
     /**
+     * Specifies the link to the script guide on wiki for the script.
+     *
+     * @return The script guide.
+     */
+    String guideLink();
+
+    /**
      * Indicates the category of the script based on predefined script types.
      *
      * @return The category of the script from the {@link ScriptCategory} enumeration.
