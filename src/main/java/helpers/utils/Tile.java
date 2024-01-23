@@ -1,13 +1,13 @@
 package helpers.utils;
 
-import java.awt.Point;
+import java.awt.*;
 
 public class Tile {
     private Point topLeft;
     private int x;
     private int y;
-    private final int width = 3; // Fixed width for the tile
-    private final int height = 3; // Fixed height for the tile
+    private final int width = 3;
+    private final int height = 3;
 
     public Tile(int x, int y) {
         this.topLeft = new Point(x, y);
@@ -18,6 +18,7 @@ public class Tile {
     public Point getPoint() {
         return topLeft;
     }
+    public Rectangle getTile() {return new Rectangle(x, y, width, height);}
     public int getX() {return x;}
     public int getY() {return y;}
     public int getWidth() {return width;}
