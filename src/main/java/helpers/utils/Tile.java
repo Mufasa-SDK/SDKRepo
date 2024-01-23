@@ -1,14 +1,14 @@
 package helpers.utils;
 
-import java.awt.*;
+import java.awt.Point;
 
 public class Tile {
     private Point topLeft;
     private final int width = 3; // Fixed width for the tile
     private final int height = 3; // Fixed height for the tile
 
-    public Tile(Point topLeft) {
-        this.topLeft = topLeft;
+    public Tile(int x, int y) {
+        this.topLeft = new Point(x, y);
     }
 
     public Point getBottomRight() {
