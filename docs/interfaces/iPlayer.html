@@ -189,15 +189,15 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </tr>
 <tr id="i6" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#within(helpers.utils.Area,helpers.utils.Area)">within</a></span>&#8203;(<a href="../helpers/utils/Area.html" title="class in helpers.utils">Area</a>&nbsp;regionToSearchIn,
-      <a href="../helpers/utils/Area.html" title="class in helpers.utils">Area</a>&nbsp;area)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#within(helpers.utils.RegionBox,helpers.utils.RegionBox)">within</a></span>&#8203;(<a href="../helpers/utils/RegionBox.html" title="class in helpers.utils">RegionBox</a>&nbsp;regionToSearchIn,
+      <a href="../helpers/utils/RegionBox.html" title="class in helpers.utils">RegionBox</a>&nbsp;targetRegionBox)</code></th>
 <td class="colLast">
 <div class="block">Gets the player's current position and checks if it is within the specified RegionBox</div>
 </td>
 </tr>
 <tr id="i7" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#within(helpers.utils.Area,java.awt.Rectangle)">within</a></span>&#8203;(<a href="../helpers/utils/Area.html" title="class in helpers.utils">Area</a>&nbsp;regionToSearchIn,
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#within(helpers.utils.RegionBox,java.awt.Rectangle)">within</a></span>&#8203;(<a href="../helpers/utils/RegionBox.html" title="class in helpers.utils">RegionBox</a>&nbsp;regionToSearchIn,
       java.awt.Rectangle&nbsp;awtRectangle)</code></th>
 <td class="colLast">
 <div class="block">Gets the player's current position and checks if it is within the specified awtRectangle</div>
@@ -205,8 +205,8 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </tr>
 <tr id="i8" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#withinCustom(java.lang.String,helpers.utils.Area)">withinCustom</a></span>&#8203;(java.lang.String&nbsp;mapFileLocation,
-            <a href="../helpers/utils/Area.html" title="class in helpers.utils">Area</a>&nbsp;area)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#withinCustom(java.lang.String,helpers.utils.RegionBox)">withinCustom</a></span>&#8203;(java.lang.String&nbsp;mapFileLocation,
+            <a href="../helpers/utils/RegionBox.html" title="class in helpers.utils">RegionBox</a>&nbsp;regionBox)</code></th>
 <td class="colLast">
 <div class="block">Gets the player's current position based on a custom map and checks if it is within the specified RegionBox</div>
 </td>
@@ -236,13 +236,13 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <!--   -->
 </a>
 <h3>Method Detail</h3>
-<a id="within(helpers.utils.Area,java.awt.Rectangle)">
+<a id="within(helpers.utils.RegionBox,java.awt.Rectangle)">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>within</h4>
-<pre class="methodSignature">boolean&nbsp;within&#8203;(<a href="../helpers/utils/Area.html" title="class in helpers.utils">Area</a>&nbsp;regionToSearchIn,
+<pre class="methodSignature">boolean&nbsp;within&#8203;(<a href="../helpers/utils/RegionBox.html" title="class in helpers.utils">RegionBox</a>&nbsp;regionToSearchIn,
                java.awt.Rectangle&nbsp;awtRectangle)</pre>
 <div class="block">Gets the player's current position and checks if it is within the specified awtRectangle</div>
 <dl>
@@ -254,21 +254,21 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </dl>
 </li>
 </ul>
-<a id="within(helpers.utils.Area,helpers.utils.Area)">
+<a id="within(helpers.utils.RegionBox,helpers.utils.RegionBox)">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>within</h4>
-<pre class="methodSignature">boolean&nbsp;within&#8203;(<a href="../helpers/utils/Area.html" title="class in helpers.utils">Area</a>&nbsp;regionToSearchIn,
-               <a href="../helpers/utils/Area.html" title="class in helpers.utils">Area</a>&nbsp;area)</pre>
+<pre class="methodSignature">boolean&nbsp;within&#8203;(<a href="../helpers/utils/RegionBox.html" title="class in helpers.utils">RegionBox</a>&nbsp;regionToSearchIn,
+               <a href="../helpers/utils/RegionBox.html" title="class in helpers.utils">RegionBox</a>&nbsp;targetRegionBox)</pre>
 <div class="block">Gets the player's current position and checks if it is within the specified RegionBox</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>regionToSearchIn</code> - This is the RegionBox of the world map area you'd like to search in.</dd>
-<dd><code>area</code> - This is the area of the world map you want to check if you are in it currently.</dd>
+<dd><code>targetRegionBox</code> - This is the RegionBox of the world map you want to check if you are in it currently.</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
-<dd>Returns a true/false boolean, true if you are in the area, false if not.</dd>
+<dd>Returns a true/false boolean, true if you are in the targetRegionBox, false if not.</dd>
 </dl>
 </li>
 </ul>
@@ -290,19 +290,19 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </dl>
 </li>
 </ul>
-<a id="withinCustom(java.lang.String,helpers.utils.Area)">
+<a id="withinCustom(java.lang.String,helpers.utils.RegionBox)">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>withinCustom</h4>
 <pre class="methodSignature">boolean&nbsp;withinCustom&#8203;(java.lang.String&nbsp;mapFileLocation,
-                     <a href="../helpers/utils/Area.html" title="class in helpers.utils">Area</a>&nbsp;area)</pre>
+                     <a href="../helpers/utils/RegionBox.html" title="class in helpers.utils">RegionBox</a>&nbsp;regionBox)</pre>
 <div class="block">Gets the player's current position based on a custom map and checks if it is within the specified RegionBox</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>mapFileLocation</code> - This is string location of the custom map you'd like to search in.</dd>
-<dd><code>area</code> - This is the area of the custom map you want to check if you are in it currently.</dd>
+<dd><code>regionBox</code> - This is the RegionBox of the custom map you want to check if you are in it currently.</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>Returns a true/false boolean, true if you are in the RegionBox, false if not.</dd>
 </dl>

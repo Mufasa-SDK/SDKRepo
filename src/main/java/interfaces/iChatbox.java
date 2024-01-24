@@ -1,5 +1,7 @@
 package interfaces;
 
+import org.opencv.core.Rect;
+
 import java.awt.*;
 
 /**

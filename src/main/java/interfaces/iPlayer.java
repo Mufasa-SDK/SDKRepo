@@ -1,6 +1,6 @@
 package interfaces;
 
-import helpers.utils.Area;
+import helpers.utils.RegionBox;
 
 import java.awt.*;
 
@@ -16,16 +16,16 @@ public interface iPlayer {
      * @param awtRectangle This is the awtRectangle of the world map you want to check if you are in it currently.
      * @return Returns a true/false boolean, true if you are in the awtRectangle, false if not.
      */
-    boolean within(Area regionToSearchIn, Rectangle awtRectangle);
+    boolean within(RegionBox regionToSearchIn, Rectangle awtRectangle);
 
     /**
      * Gets the player's current position and checks if it is within the specified RegionBox
      *
      * @param regionToSearchIn This is the RegionBox of the world map area you'd like to search in.
-     * @param area This is the area of the world map you want to check if you are in it currently.
-     * @return Returns a true/false boolean, true if you are in the area, false if not.
+     * @param targetRegionBox This is the RegionBox of the world map you want to check if you are in it currently.
+     * @return Returns a true/false boolean, true if you are in the targetRegionBox, false if not.
      */
-    boolean within(Area regionToSearchIn, Area area);
+    boolean within(RegionBox regionToSearchIn, RegionBox targetRegionBox);
 
     /**
      * Gets the player's current position based on a custom map and checks if it is within the specified java awt Rectangle
@@ -40,10 +40,10 @@ public interface iPlayer {
      * Gets the player's current position based on a custom map and checks if it is within the specified RegionBox
      *
      * @param mapFileLocation This is string location of the custom map you'd like to search in.
-     * @param area This is the area of the custom map you want to check if you are in it currently.
+     * @param regionBox This is the RegionBox of the custom map you want to check if you are in it currently.
      * @return Returns a true/false boolean, true if you are in the RegionBox, false if not.
      */
-    boolean withinCustom(String mapFileLocation, Area area);
+    boolean withinCustom(String mapFileLocation, RegionBox regionBox);
 
     /**
      * Gets the player's current Prayer points based on the minimap orb.
