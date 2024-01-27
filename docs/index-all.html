@@ -1841,6 +1841,14 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="helpers/utils/ItemList.html#ARDRIGAL_MIXTURE_738">ARDRIGAL_MIXTURE_738</a></span> - Static variable in class helpers.utils.<a href="helpers/utils/ItemList.html" title="class in helpers.utils">ItemList</a></dt>
 <dd>&nbsp;</dd>
+<dt><a href="helpers/utils/Area.html" title="class in helpers.utils"><span class="typeNameLink">Area</span></a> - Class in <a href="helpers/utils/package-summary.html">helpers.utils</a></dt>
+<dd>
+<div class="block">Represents a rectangular area defined by two <a href="helpers/utils/Tile.html" title="class in helpers.utils"><code>Tile</code></a> objects, one for the top-left corner and the other for the bottom-right corner.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="helpers/utils/Area.html#%3Cinit%3E(helpers.utils.Tile,helpers.utils.Tile)">Area(Tile, Tile)</a></span> - Constructor for class helpers.utils.<a href="helpers/utils/Area.html" title="class in helpers.utils">Area</a></dt>
+<dd>
+<div class="block">Constructs an <code>Area</code> object with specified top-left and bottom-right corners.</div>
+</dd>
 <dt><span class="memberNameLink"><a href="helpers/utils/ItemList.html#ARENA_BOOK_6891">ARENA_BOOK_6891</a></span> - Static variable in class helpers.utils.<a href="helpers/utils/ItemList.html" title="class in helpers.utils">ItemList</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="helpers/utils/ItemList.html#ARENA_BOOK_NOTED_6892">ARENA_BOOK_NOTED_6892</a></span> - Static variable in class helpers.utils.<a href="helpers/utils/ItemList.html" title="class in helpers.utils">ItemList</a></dt>
@@ -4353,6 +4361,10 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="helpers/utils/ItemList.html#BOTTOM_OF_SCEPTRE_9011">BOTTOM_OF_SCEPTRE_9011</a></span> - Static variable in class helpers.utils.<a href="helpers/utils/ItemList.html" title="class in helpers.utils">ItemList</a></dt>
 <dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="helpers/utils/Area.html#bottomRight">bottomRight</a></span> - Variable in class helpers.utils.<a href="helpers/utils/Area.html" title="class in helpers.utils">Area</a></dt>
+<dd>
+<div class="block">The <a href="helpers/utils/Tile.html" title="class in helpers.utils"><code>Tile</code></a> representing the bottom-right corner of the area.</div>
+</dd>
 <dt><span class="memberNameLink"><a href="helpers/utils/ItemList.html#BOUNDARY_STONES_8196">BOUNDARY_STONES_8196</a></span> - Static variable in class helpers.utils.<a href="helpers/utils/ItemList.html" title="class in helpers.utils">ItemList</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="helpers/utils/ItemList.html#BOUNTY_TELEPORT_SCROLL_12846">BOUNTY_TELEPORT_SCROLL_12846</a></span> - Static variable in class helpers.utils.<a href="helpers/utils/ItemList.html" title="class in helpers.utils">ItemList</a></dt>
@@ -12223,6 +12235,10 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="helpers/utils/RSRegions.html#GEM_ROCKS_MINE">GEM_ROCKS_MINE</a></span> - Static variable in class helpers.utils.<a href="helpers/utils/RSRegions.html" title="class in helpers.utils">RSRegions</a></dt>
 <dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="helpers/utils/Area.html#getBottomRight()">getBottomRight()</a></span> - Method in class helpers.utils.<a href="helpers/utils/Area.html" title="class in helpers.utils">Area</a></dt>
+<dd>
+<div class="block">Returns the <a href="helpers/utils/Tile.html" title="class in helpers.utils"><code>Tile</code></a> representing the bottom-right corner of the area.</div>
+</dd>
 <dt><span class="memberNameLink"><a href="helpers/ScriptMetadata.html#getCategory()">getCategory()</a></span> - Method in class helpers.<a href="helpers/ScriptMetadata.html" title="class in helpers">ScriptMetadata</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="helpers/AbstractScript.html#getConfigurations()">getConfigurations()</a></span> - Method in class helpers.<a href="helpers/AbstractScript.html" title="class in helpers">AbstractScript</a></dt>
@@ -12276,6 +12292,10 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <dt><span class="memberNameLink"><a href="interfaces/iPlayer.html#getSpec()">getSpec()</a></span> - Method in interface interfaces.<a href="interfaces/iPlayer.html" title="interface in interfaces">iPlayer</a></dt>
 <dd>
 <div class="block">Gets the player's current Special attack based on the minimap orb.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="helpers/utils/Area.html#getTopLeft()">getTopLeft()</a></span> - Method in class helpers.utils.<a href="helpers/utils/Area.html" title="class in helpers.utils">Area</a></dt>
+<dd>
+<div class="block">Returns the <a href="helpers/utils/Tile.html" title="class in helpers.utils"><code>Tile</code></a> representing the top-left corner of the area.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="interfaces/iStats.html#getTotalLevel()">getTotalLevel()</a></span> - Method in interface interfaces.<a href="interfaces/iStats.html" title="interface in interfaces">iStats</a></dt>
 <dd>
@@ -25466,11 +25486,11 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="helpers/utils/ItemList.html#STEEL_WARHAMMER_NOTED_1340">STEEL_WARHAMMER_NOTED_1340</a></span> - Static variable in class helpers.utils.<a href="helpers/utils/ItemList.html" title="class in helpers.utils">ItemList</a></dt>
 <dd>&nbsp;</dd>
-<dt><span class="memberNameLink"><a href="interfaces/iWalker.html#step(java.awt.Point,helpers.utils.RegionBox)">step(Point, RegionBox)</a></span> - Method in interface interfaces.<a href="interfaces/iWalker.html" title="interface in interfaces">iWalker</a></dt>
+<dt><span class="memberNameLink"><a href="interfaces/iWalker.html#step(helpers.utils.Tile,helpers.utils.RegionBox)">step(Tile, RegionBox)</a></span> - Method in interface interfaces.<a href="interfaces/iWalker.html" title="interface in interfaces">iWalker</a></dt>
 <dd>
 <div class="block">Takes a step to a specified point on a world map, needs to be visible on the minimap.</div>
 </dd>
-<dt><span class="memberNameLink"><a href="interfaces/iWalker.html#stepCustomMap(java.awt.Point,java.lang.String)">stepCustomMap(Point, String)</a></span> - Method in interface interfaces.<a href="interfaces/iWalker.html" title="interface in interfaces">iWalker</a></dt>
+<dt><span class="memberNameLink"><a href="interfaces/iWalker.html#stepCustomMap(helpers.utils.Tile,java.lang.String)">stepCustomMap(Tile, String)</a></span> - Method in interface interfaces.<a href="interfaces/iWalker.html" title="interface in interfaces">iWalker</a></dt>
 <dd>
 <div class="block">Takes a step to a specified point on a world map using a map file, neds to be visible on the minimap.</div>
 </dd>
@@ -27414,6 +27434,10 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="helpers/utils/ItemList.html#TOPIARY_HEDGE_NOTED_8444">TOPIARY_HEDGE_NOTED_8444</a></span> - Static variable in class helpers.utils.<a href="helpers/utils/ItemList.html" title="class in helpers.utils">ItemList</a></dt>
 <dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="helpers/utils/Area.html#topLeft">topLeft</a></span> - Variable in class helpers.utils.<a href="helpers/utils/Area.html" title="class in helpers.utils">Area</a></dt>
+<dd>
+<div class="block">The <a href="helpers/utils/Tile.html" title="class in helpers.utils"><code>Tile</code></a> representing the top-left corner of the area.</div>
+</dd>
 <dt><span class="memberNameLink"><a href="helpers/utils/ItemList.html#TORAGS_ARMOUR_SET_12879">TORAGS_ARMOUR_SET_12879</a></span> - Static variable in class helpers.utils.<a href="helpers/utils/ItemList.html" title="class in helpers.utils">ItemList</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="helpers/utils/ItemList.html#TORAGS_ARMOUR_SET_NOTED_12880">TORAGS_ARMOUR_SET_NOTED_12880</a></span> - Static variable in class helpers.utils.<a href="helpers/utils/ItemList.html" title="class in helpers.utils">ItemList</a></dt>
@@ -28755,11 +28779,11 @@ the order they are declared.</div>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="helpers/Interfaces.html#Walker">Walker</a></span> - Static variable in class helpers.<a href="helpers/Interfaces.html" title="class in helpers">Interfaces</a></dt>
 <dd>&nbsp;</dd>
-<dt><span class="memberNameLink"><a href="interfaces/iWalker.html#walkPath(helpers.utils.RegionBox,java.awt.Point%5B%5D)">walkPath(RegionBox, Point[])</a></span> - Method in interface interfaces.<a href="interfaces/iWalker.html" title="interface in interfaces">iWalker</a></dt>
+<dt><span class="memberNameLink"><a href="interfaces/iWalker.html#walkPath(helpers.utils.RegionBox,helpers.utils.Tile%5B%5D)">walkPath(RegionBox, Tile[])</a></span> - Method in interface interfaces.<a href="interfaces/iWalker.html" title="interface in interfaces">iWalker</a></dt>
 <dd>
 <div class="block">Walks along a specified path within a given region.</div>
 </dd>
-<dt><span class="memberNameLink"><a href="interfaces/iWalker.html#walkPathOnCustomMap(java.lang.String,java.awt.Point%5B%5D)">walkPathOnCustomMap(String, Point[])</a></span> - Method in interface interfaces.<a href="interfaces/iWalker.html" title="interface in interfaces">iWalker</a></dt>
+<dt><span class="memberNameLink"><a href="interfaces/iWalker.html#walkPathOnCustomMap(java.lang.String,helpers.utils.Tile%5B%5D)">walkPathOnCustomMap(String, Tile[])</a></span> - Method in interface interfaces.<a href="interfaces/iWalker.html" title="interface in interfaces">iWalker</a></dt>
 <dd>
 <div class="block">Walks along a specified path on a custom map.</div>
 </dd>
@@ -29345,6 +29369,10 @@ the order they are declared.</div>
 <dd>
 <div class="block">Finds the first game object within a specified tile radius from the center of the game view.</div>
 </dd>
+<dt><span class="memberNameLink"><a href="interfaces/iPlayer.html#within(helpers.utils.Area,helpers.utils.RegionBox)">within(Area, RegionBox)</a></span> - Method in interface interfaces.<a href="interfaces/iPlayer.html" title="interface in interfaces">iPlayer</a></dt>
+<dd>
+<div class="block">Gets the player's current position and checks if it is within the specified RegionBox</div>
+</dd>
 <dt><span class="memberNameLink"><a href="interfaces/iPlayer.html#within(helpers.utils.RegionBox,helpers.utils.RegionBox)">within(RegionBox, RegionBox)</a></span> - Method in interface interfaces.<a href="interfaces/iPlayer.html" title="interface in interfaces">iPlayer</a></dt>
 <dd>
 <div class="block">Gets the player's current position and checks if it is within the specified RegionBox</div>
@@ -29356,6 +29384,10 @@ the order they are declared.</div>
 <dt><span class="memberNameLink"><a href="interfaces/iObjects.html#within(java.awt.Rectangle,boolean,java.lang.String)">within(Rectangle, boolean, String)</a></span> - Method in interface interfaces.<a href="interfaces/iObjects.html" title="interface in interfaces">iObjects</a></dt>
 <dd>
 <div class="block">Finds game objects within a specified area, either returning the first found or all within the area.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="interfaces/iPlayer.html#withinCustom(java.lang.String,helpers.utils.Area)">withinCustom(String, Area)</a></span> - Method in interface interfaces.<a href="interfaces/iPlayer.html" title="interface in interfaces">iPlayer</a></dt>
+<dd>
+<div class="block">Gets the player's current position based on a custom map and checks if it is within the specified RegionBox</div>
 </dd>
 <dt><span class="memberNameLink"><a href="interfaces/iPlayer.html#withinCustom(java.lang.String,helpers.utils.RegionBox)">withinCustom(String, RegionBox)</a></span> - Method in interface interfaces.<a href="interfaces/iPlayer.html" title="interface in interfaces">iPlayer</a></dt>
 <dd>
