@@ -16,17 +16,17 @@ public interface iWalker {
      * Gets the player's current position from a specified map file.
      *
      * @param mapFileLocation The location of the map file to use for determining the player's position.
-     * @return Point representing the player's current position on the map.
+     * @return Tile representing the player's current position on the map.
      */
-    Point getPlayerPosition(String mapFileLocation);
+    Tile getPlayerPosition(String mapFileLocation);
 
     /**
      * Gets the player's current position within a specified region.
      *
      * @param region The region for which to determine the player's position.
-     * @return Point representing the player's current position within the region.
+     * @return Tile representing the player's current position within the region.
      */
-    Point getPlayerPosition(RegionBox region);
+    Tile getPlayerPosition(RegionBox region);
 
     /**
      * Takes a step to a specified point on a world map, needs to be visible on the minimap.
