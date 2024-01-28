@@ -47,6 +47,20 @@ public interface iPlayer {
     boolean atTileCustom(String mapFileLocation, Tile tileToCheck);
 
     /**
+     * Checks if a given tile is within a specified area.
+     * <p>
+     * This method determines whether the provided tile (represented by {@code tileToCheck})
+     * is located within the bounds of the area defined by {@code areaToCheckWithin}. The area
+     * is defined by two points: the top-left and the bottom-right tiles of the area, which
+     * are expanded slightly (by an offset of 2 units) to include their boundaries.
+     * <p>
+     * @param tileToCheck The tile whose presence within the area is being checked.
+     * @param areaToCheckWithin The area within which the tile's presence is checked.
+     * @return true if {@code tileToCheck} is within the bounds of {@code areaToCheckWithin}, false otherwise.
+     */
+    boolean isTileWithinArea(Tile tileToCheck, Area areaToCheckWithin);
+
+    /**
      * Gets the player's current Prayer points based on the minimap orb.
      *
      * @return Returns an integer that represents the current Prayer points value of the player.
