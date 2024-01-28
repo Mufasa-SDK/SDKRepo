@@ -4,8 +4,6 @@ import helpers.utils.Area;
 import helpers.utils.RegionBox;
 import helpers.utils.Tile;
 
-import java.awt.*;
-
 /**
  * Interface defining player interactions within the game
  */
