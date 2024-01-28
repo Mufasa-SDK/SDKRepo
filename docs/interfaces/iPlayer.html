@@ -27,7 +27,7 @@
     catch(err) {
     }
 //-->
-var data = {"i0":6,"i1":6,"i2":6,"i3":6,"i4":6,"i5":6,"i6":6,"i7":6};
+var data = {"i0":6,"i1":6,"i2":6,"i3":6,"i4":6,"i5":6,"i6":6,"i7":6,"i8":6,"i9":6};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],4:["t3","Abstract Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -146,48 +146,64 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <th class="colLast" scope="col">Description</th>
 </tr>
 <tr id="i0" class="altColor">
+<td class="colFirst"><code>boolean</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#atTile(helpers.utils.Tile,helpers.utils.RegionBox)">atTile</a></span>&#8203;(<a href="../helpers/utils/Tile.html" title="class in helpers.utils">Tile</a>&nbsp;tileToCheck,
+      <a href="../helpers/utils/RegionBox.html" title="class in helpers.utils">RegionBox</a>&nbsp;mapRegion)</code></th>
+<td class="colLast">
+<div class="block">Checks if a specific tile is within a given map region.</div>
+</td>
+</tr>
+<tr id="i1" class="rowColor">
+<td class="colFirst"><code>boolean</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#atTileCustom(java.lang.String,helpers.utils.Tile)">atTileCustom</a></span>&#8203;(java.lang.String&nbsp;mapFileLocation,
+            <a href="../helpers/utils/Tile.html" title="class in helpers.utils">Tile</a>&nbsp;tileToCheck)</code></th>
+<td class="colLast">
+<div class="block">Checks if a specific tile is within a region defined in a custom map file.</div>
+</td>
+</tr>
+<tr id="i2" class="altColor">
 <td class="colFirst"><code>java.lang.Integer</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getHP()">getHP</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Gets the player's current HP based on the minimap orb.</div>
 </td>
 </tr>
-<tr id="i1" class="rowColor">
+<tr id="i3" class="rowColor">
 <td class="colFirst"><code>java.lang.Integer</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getPray()">getPray</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Gets the player's current Prayer points based on the minimap orb.</div>
 </td>
 </tr>
-<tr id="i2" class="altColor">
+<tr id="i4" class="altColor">
 <td class="colFirst"><code>java.lang.Integer</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getRun()">getRun</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Gets the player's current Run energy based on the minimap orb.</div>
 </td>
 </tr>
-<tr id="i3" class="rowColor">
+<tr id="i5" class="rowColor">
 <td class="colFirst"><code>java.lang.Integer</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getSpec()">getSpec</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Gets the player's current Special attack based on the minimap orb.</div>
 </td>
 </tr>
-<tr id="i4" class="altColor">
+<tr id="i6" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#isRunEnabled()">isRunEnabled</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Checks if run is currently enabled or not.</div>
 </td>
 </tr>
-<tr id="i5" class="rowColor">
+<tr id="i7" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#toggleRun()">toggleRun</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Toggles the run on/off, use isRunEnabled() to check if run is on or not, this will always toggle it on/off, no matter what it currently is on.</div>
 </td>
 </tr>
-<tr id="i6" class="altColor">
+<tr id="i8" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#within(helpers.utils.Area,helpers.utils.RegionBox)">within</a></span>&#8203;(<a href="../helpers/utils/Area.html" title="class in helpers.utils">Area</a>&nbsp;areaToSearchIn,
       <a href="../helpers/utils/RegionBox.html" title="class in helpers.utils">RegionBox</a>&nbsp;mapRegion)</code></th>
@@ -195,7 +211,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <div class="block">Gets the player's current position and checks if it is within the specified RegionBox</div>
 </td>
 </tr>
-<tr id="i7" class="rowColor">
+<tr id="i9" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#withinCustom(java.lang.String,helpers.utils.Area)">withinCustom</a></span>&#8203;(java.lang.String&nbsp;mapFileLocation,
             <a href="../helpers/utils/Area.html" title="class in helpers.utils">Area</a>&nbsp;areaToSearchIn)</code></th>
@@ -253,6 +269,42 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <dd><code>areaToSearchIn</code> - This is the Area of the custom map you want to check if you are in.</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>Returns a true/false boolean, true if you are in the RegionBox, false if not.</dd>
+</dl>
+</li>
+</ul>
+<a id="atTile(helpers.utils.Tile,helpers.utils.RegionBox)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>atTile</h4>
+<pre class="methodSignature">boolean&nbsp;atTile&#8203;(<a href="../helpers/utils/Tile.html" title="class in helpers.utils">Tile</a>&nbsp;tileToCheck,
+               <a href="../helpers/utils/RegionBox.html" title="class in helpers.utils">RegionBox</a>&nbsp;mapRegion)</pre>
+<div class="block">Checks if a specific tile is within a given map region.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>tileToCheck</code> - The tile to be checked for presence within the map region.</dd>
+<dd><code>mapRegion</code> - This is the RegionBox of the world map you want to check against.</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>true if the player is on the tile in the specified map region, false otherwise.</dd>
+</dl>
+</li>
+</ul>
+<a id="atTileCustom(java.lang.String,helpers.utils.Tile)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>atTileCustom</h4>
+<pre class="methodSignature">boolean&nbsp;atTileCustom&#8203;(java.lang.String&nbsp;mapFileLocation,
+                     <a href="../helpers/utils/Tile.html" title="class in helpers.utils">Tile</a>&nbsp;tileToCheck)</pre>
+<div class="block">Checks if a specific tile is within a region defined in a custom map file.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>mapFileLocation</code> - This is string location of the custom map you'd like to search in.</dd>
+<dd><code>tileToCheck</code> - The tile to be checked for presence within the region defined in the map file.</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>true if the player is on the tile in the specified map, false otherwise.</dd>
 </dl>
 </li>
 </ul>

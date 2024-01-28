@@ -2,6 +2,7 @@ package interfaces;
 
 import helpers.utils.Area;
 import helpers.utils.RegionBox;
+import helpers.utils.Tile;
 
 import java.awt.*;
 
@@ -26,6 +27,24 @@ public interface iPlayer {
      * @return Returns a true/false boolean, true if you are in the RegionBox, false if not.
      */
     boolean withinCustom(String mapFileLocation, Area areaToSearchIn);
+
+    /**
+     * Checks if a specific tile is within a given map region.
+     *
+     * @param tileToCheck The tile to be checked for presence within the map region.
+     * @param mapRegion This is the RegionBox of the world map you want to check against.
+     * @return true if the player is on the tile in the specified map region, false otherwise.
+     */
+    boolean atTile(Tile tileToCheck, RegionBox mapRegion);
+
+    /**
+     * Checks if a specific tile is within a region defined in a custom map file.
+     *
+     * @param mapFileLocation This is string location of the custom map you'd like to search in.
+     * @param tileToCheck The tile to be checked for presence within the region defined in the map file.
+     * @return true if the player is on the tile in the specified map, false otherwise.
+     */
+    boolean atTileCustom(String mapFileLocation, Tile tileToCheck);
 
     /**
      * Gets the player's current Prayer points based on the minimap orb.
