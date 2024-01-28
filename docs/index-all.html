@@ -4361,7 +4361,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="helpers/utils/ItemList.html#BOTTOM_OF_SCEPTRE_9011">BOTTOM_OF_SCEPTRE_9011</a></span> - Static variable in class helpers.utils.<a href="helpers/utils/ItemList.html" title="class in helpers.utils">ItemList</a></dt>
 <dd>&nbsp;</dd>
-<dt><span class="memberNameLink"><a href="helpers/utils/Area.html#bottomRight">bottomRight</a></span> - Variable in class helpers.utils.<a href="helpers/utils/Area.html" title="class in helpers.utils">Area</a></dt>
+<dt><span class="memberNameLink"><a href="helpers/utils/Area.html#bottomTile">bottomTile</a></span> - Variable in class helpers.utils.<a href="helpers/utils/Area.html" title="class in helpers.utils">Area</a></dt>
 <dd>
 <div class="block">The <a href="helpers/utils/Tile.html" title="class in helpers.utils"><code>Tile</code></a> representing the bottom-right corner of the area.</div>
 </dd>
@@ -12235,7 +12235,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="helpers/utils/RSRegions.html#GEM_ROCKS_MINE">GEM_ROCKS_MINE</a></span> - Static variable in class helpers.utils.<a href="helpers/utils/RSRegions.html" title="class in helpers.utils">RSRegions</a></dt>
 <dd>&nbsp;</dd>
-<dt><span class="memberNameLink"><a href="helpers/utils/Area.html#getBottomRight()">getBottomRight()</a></span> - Method in class helpers.utils.<a href="helpers/utils/Area.html" title="class in helpers.utils">Area</a></dt>
+<dt><span class="memberNameLink"><a href="helpers/utils/Area.html#getBottomTile()">getBottomTile()</a></span> - Method in class helpers.utils.<a href="helpers/utils/Area.html" title="class in helpers.utils">Area</a></dt>
 <dd>
 <div class="block">Returns the <a href="helpers/utils/Tile.html" title="class in helpers.utils"><code>Tile</code></a> representing the bottom-right corner of the area.</div>
 </dd>
@@ -12293,7 +12293,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <dd>
 <div class="block">Gets the player's current Special attack based on the minimap orb.</div>
 </dd>
-<dt><span class="memberNameLink"><a href="helpers/utils/Area.html#getTopLeft()">getTopLeft()</a></span> - Method in class helpers.utils.<a href="helpers/utils/Area.html" title="class in helpers.utils">Area</a></dt>
+<dt><span class="memberNameLink"><a href="helpers/utils/Area.html#getTopTile()">getTopTile()</a></span> - Method in class helpers.utils.<a href="helpers/utils/Area.html" title="class in helpers.utils">Area</a></dt>
 <dd>
 <div class="block">Returns the <a href="helpers/utils/Tile.html" title="class in helpers.utils"><code>Tile</code></a> representing the top-left corner of the area.</div>
 </dd>
@@ -27434,7 +27434,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="helpers/utils/ItemList.html#TOPIARY_HEDGE_NOTED_8444">TOPIARY_HEDGE_NOTED_8444</a></span> - Static variable in class helpers.utils.<a href="helpers/utils/ItemList.html" title="class in helpers.utils">ItemList</a></dt>
 <dd>&nbsp;</dd>
-<dt><span class="memberNameLink"><a href="helpers/utils/Area.html#topLeft">topLeft</a></span> - Variable in class helpers.utils.<a href="helpers/utils/Area.html" title="class in helpers.utils">Area</a></dt>
+<dt><span class="memberNameLink"><a href="helpers/utils/Area.html#topTile">topTile</a></span> - Variable in class helpers.utils.<a href="helpers/utils/Area.html" title="class in helpers.utils">Area</a></dt>
 <dd>
 <div class="block">The <a href="helpers/utils/Tile.html" title="class in helpers.utils"><code>Tile</code></a> representing the top-left corner of the area.</div>
 </dd>
@@ -29373,14 +29373,6 @@ the order they are declared.</div>
 <dd>
 <div class="block">Gets the player's current position and checks if it is within the specified RegionBox</div>
 </dd>
-<dt><span class="memberNameLink"><a href="interfaces/iPlayer.html#within(helpers.utils.RegionBox,helpers.utils.RegionBox)">within(RegionBox, RegionBox)</a></span> - Method in interface interfaces.<a href="interfaces/iPlayer.html" title="interface in interfaces">iPlayer</a></dt>
-<dd>
-<div class="block">Gets the player's current position and checks if it is within the specified RegionBox</div>
-</dd>
-<dt><span class="memberNameLink"><a href="interfaces/iPlayer.html#within(helpers.utils.RegionBox,java.awt.Rectangle)">within(RegionBox, Rectangle)</a></span> - Method in interface interfaces.<a href="interfaces/iPlayer.html" title="interface in interfaces">iPlayer</a></dt>
-<dd>
-<div class="block">Gets the player's current position and checks if it is within the specified awtRectangle</div>
-</dd>
 <dt><span class="memberNameLink"><a href="interfaces/iObjects.html#within(java.awt.Rectangle,boolean,java.lang.String)">within(Rectangle, boolean, String)</a></span> - Method in interface interfaces.<a href="interfaces/iObjects.html" title="interface in interfaces">iObjects</a></dt>
 <dd>
 <div class="block">Finds game objects within a specified area, either returning the first found or all within the area.</div>
@@ -29388,14 +29380,6 @@ the order they are declared.</div>
 <dt><span class="memberNameLink"><a href="interfaces/iPlayer.html#withinCustom(java.lang.String,helpers.utils.Area)">withinCustom(String, Area)</a></span> - Method in interface interfaces.<a href="interfaces/iPlayer.html" title="interface in interfaces">iPlayer</a></dt>
 <dd>
 <div class="block">Gets the player's current position based on a custom map and checks if it is within the specified RegionBox</div>
-</dd>
-<dt><span class="memberNameLink"><a href="interfaces/iPlayer.html#withinCustom(java.lang.String,helpers.utils.RegionBox)">withinCustom(String, RegionBox)</a></span> - Method in interface interfaces.<a href="interfaces/iPlayer.html" title="interface in interfaces">iPlayer</a></dt>
-<dd>
-<div class="block">Gets the player's current position based on a custom map and checks if it is within the specified RegionBox</div>
-</dd>
-<dt><span class="memberNameLink"><a href="interfaces/iPlayer.html#withinCustom(java.lang.String,java.awt.Rectangle)">withinCustom(String, Rectangle)</a></span> - Method in interface interfaces.<a href="interfaces/iPlayer.html" title="interface in interfaces">iPlayer</a></dt>
-<dd>
-<div class="block">Gets the player's current position based on a custom map and checks if it is within the specified java awt Rectangle</div>
 </dd>
 <dt><span class="memberNameLink"><a href="helpers/utils/ItemList.html#WIZARD_BLIZZARD_2054">WIZARD_BLIZZARD_2054</a></span> - Static variable in class helpers.utils.<a href="helpers/utils/ItemList.html" title="class in helpers.utils">ItemList</a></dt>
 <dd>&nbsp;</dd>

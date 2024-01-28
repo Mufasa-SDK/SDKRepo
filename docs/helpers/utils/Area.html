@@ -156,14 +156,14 @@ extends java.lang.Object</pre>
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code>private <a href="Tile.html" title="class in helpers.utils">Tile</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#bottomRight">bottomRight</a></span></code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#bottomTile">bottomTile</a></span></code></th>
 <td class="colLast">
 <div class="block">The <a href="Tile.html" title="class in helpers.utils"><code>Tile</code></a> representing the bottom-right corner of the area.</div>
 </td>
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code>private <a href="Tile.html" title="class in helpers.utils">Tile</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#topLeft">topLeft</a></span></code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#topTile">topTile</a></span></code></th>
 <td class="colLast">
 <div class="block">The <a href="Tile.html" title="class in helpers.utils"><code>Tile</code></a> representing the top-left corner of the area.</div>
 </td>
@@ -186,8 +186,8 @@ extends java.lang.Object</pre>
 <th class="colLast" scope="col">Description</th>
 </tr>
 <tr class="altColor">
-<th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="#%3Cinit%3E(helpers.utils.Tile,helpers.utils.Tile)">Area</a></span>&#8203;(<a href="Tile.html" title="class in helpers.utils">Tile</a>&nbsp;topLeft,
-    <a href="Tile.html" title="class in helpers.utils">Tile</a>&nbsp;bottomRight)</code></th>
+<th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="#%3Cinit%3E(helpers.utils.Tile,helpers.utils.Tile)">Area</a></span>&#8203;(<a href="Tile.html" title="class in helpers.utils">Tile</a>&nbsp;topTile,
+    <a href="Tile.html" title="class in helpers.utils">Tile</a>&nbsp;bottomTile)</code></th>
 <td class="colLast">
 <div class="block">Constructs an <code>Area</code> object with specified top-left and bottom-right corners.</div>
 </td>
@@ -212,14 +212,14 @@ extends java.lang.Object</pre>
 </tr>
 <tr id="i0" class="altColor">
 <td class="colFirst"><code><a href="Tile.html" title="class in helpers.utils">Tile</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getBottomRight()">getBottomRight</a></span>()</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getBottomTile()">getBottomTile</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Returns the <a href="Tile.html" title="class in helpers.utils"><code>Tile</code></a> representing the bottom-right corner of the area.</div>
 </td>
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code><a href="Tile.html" title="class in helpers.utils">Tile</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getTopLeft()">getTopLeft</a></span>()</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getTopTile()">getTopTile</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Returns the <a href="Tile.html" title="class in helpers.utils"><code>Tile</code></a> representing the top-left corner of the area.</div>
 </td>
@@ -248,23 +248,23 @@ extends java.lang.Object</pre>
 <!--   -->
 </a>
 <h3>Field Detail</h3>
-<a id="topLeft">
+<a id="topTile">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>topLeft</h4>
-<pre>private final&nbsp;<a href="Tile.html" title="class in helpers.utils">Tile</a> topLeft</pre>
+<h4>topTile</h4>
+<pre>private final&nbsp;<a href="Tile.html" title="class in helpers.utils">Tile</a> topTile</pre>
 <div class="block">The <a href="Tile.html" title="class in helpers.utils"><code>Tile</code></a> representing the top-left corner of the area.</div>
 </li>
 </ul>
-<a id="bottomRight">
+<a id="bottomTile">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
-<h4>bottomRight</h4>
-<pre>private final&nbsp;<a href="Tile.html" title="class in helpers.utils">Tile</a> bottomRight</pre>
+<h4>bottomTile</h4>
+<pre>private final&nbsp;<a href="Tile.html" title="class in helpers.utils">Tile</a> bottomTile</pre>
 <div class="block">The <a href="Tile.html" title="class in helpers.utils"><code>Tile</code></a> representing the bottom-right corner of the area.</div>
 </li>
 </ul>
@@ -284,13 +284,13 @@ extends java.lang.Object</pre>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>Area</h4>
-<pre>public&nbsp;Area&#8203;(<a href="Tile.html" title="class in helpers.utils">Tile</a>&nbsp;topLeft,
-            <a href="Tile.html" title="class in helpers.utils">Tile</a>&nbsp;bottomRight)</pre>
+<pre>public&nbsp;Area&#8203;(<a href="Tile.html" title="class in helpers.utils">Tile</a>&nbsp;topTile,
+            <a href="Tile.html" title="class in helpers.utils">Tile</a>&nbsp;bottomTile)</pre>
 <div class="block">Constructs an <code>Area</code> object with specified top-left and bottom-right corners.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>topLeft</code> - The <a href="Tile.html" title="class in helpers.utils"><code>Tile</code></a> representing the top-left corner of the area.</dd>
-<dd><code>bottomRight</code> - The <a href="Tile.html" title="class in helpers.utils"><code>Tile</code></a> representing the bottom-right corner of the area.</dd>
+<dd><code>topTile</code> - The <a href="Tile.html" title="class in helpers.utils"><code>Tile</code></a> representing the top-left corner of the area.</dd>
+<dd><code>bottomTile</code> - The <a href="Tile.html" title="class in helpers.utils"><code>Tile</code></a> representing the bottom-right corner of the area.</dd>
 </dl>
 </li>
 </ul>
@@ -304,31 +304,31 @@ extends java.lang.Object</pre>
 <!--   -->
 </a>
 <h3>Method Detail</h3>
-<a id="getTopLeft()">
+<a id="getTopTile()">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>getTopLeft</h4>
-<pre class="methodSignature">public&nbsp;<a href="Tile.html" title="class in helpers.utils">Tile</a>&nbsp;getTopLeft()</pre>
+<h4>getTopTile</h4>
+<pre class="methodSignature">public&nbsp;<a href="Tile.html" title="class in helpers.utils">Tile</a>&nbsp;getTopTile()</pre>
 <div class="block">Returns the <a href="Tile.html" title="class in helpers.utils"><code>Tile</code></a> representing the top-left corner of the area.</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
-<dd>The <a href="Tile.html" title="class in helpers.utils"><code>Tile</code></a> at the top-left corner.</dd>
+<dd>The <a href="Tile.html" title="class in helpers.utils"><code>Tile</code></a> at the top.</dd>
 </dl>
 </li>
 </ul>
-<a id="getBottomRight()">
+<a id="getBottomTile()">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
-<h4>getBottomRight</h4>
-<pre class="methodSignature">public&nbsp;<a href="Tile.html" title="class in helpers.utils">Tile</a>&nbsp;getBottomRight()</pre>
+<h4>getBottomTile</h4>
+<pre class="methodSignature">public&nbsp;<a href="Tile.html" title="class in helpers.utils">Tile</a>&nbsp;getBottomTile()</pre>
 <div class="block">Returns the <a href="Tile.html" title="class in helpers.utils"><code>Tile</code></a> representing the bottom-right corner of the area.</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
-<dd>The <a href="Tile.html" title="class in helpers.utils"><code>Tile</code></a> at the bottom-right corner.</dd>
+<dd>The <a href="Tile.html" title="class in helpers.utils"><code>Tile</code></a> at the bottom.</dd>
 </dl>
 </li>
 </ul>

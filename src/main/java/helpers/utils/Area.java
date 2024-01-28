@@ -8,39 +8,39 @@ public class Area {
     /**
      * The {@link Tile} representing the top-left corner of the area.
      */
-    private final Tile topLeft;
+    private final Tile topTile;
 
     /**
      * The {@link Tile} representing the bottom-right corner of the area.
      */
-    private final Tile bottomRight;
+    private final Tile bottomTile;
 
     /**
      * Constructs an {@code Area} object with specified top-left and bottom-right corners.
      *
-     * @param topLeft The {@link Tile} representing the top-left corner of the area.
-     * @param bottomRight The {@link Tile} representing the bottom-right corner of the area.
+     * @param topTile The {@link Tile} representing the top-left corner of the area.
+     * @param bottomTile The {@link Tile} representing the bottom-right corner of the area.
      */
-    public Area(Tile topLeft, Tile bottomRight) {
-        this.topLeft = topLeft;
-        this.bottomRight = bottomRight;
+    public Area(Tile topTile, Tile bottomTile) {
+        this.topTile = topTile;
+        this.bottomTile = bottomTile;
     }
 
     /**
      * Returns the {@link Tile} representing the top-left corner of the area.
      *
-     * @return The {@link Tile} at the top-left corner.
+     * @return The {@link Tile} at the top.
      */
-    public Tile getTopLeft() {
-        return topLeft;
+    public Tile getTopTile() {
+        return topTile;
     }
 
     /**
      * Returns the {@link Tile} representing the bottom-right corner of the area.
      *
-     * @return The {@link Tile} at the bottom-right corner.
+     * @return The {@link Tile} at the bottom.
      */
-    public Tile getBottomRight() {
-        return bottomRight;
+    public Tile getBottomTile() {
+        return bottomTile;
     }
 }
