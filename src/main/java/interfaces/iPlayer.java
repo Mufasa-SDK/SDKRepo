@@ -61,6 +61,18 @@ public interface iPlayer {
     boolean isTileWithinArea(Tile tileToCheck, Area areaToCheckWithin);
 
     /**
+     * Compares two tiles for equality.
+     * <p>
+     * This method checks if the specified {@code originTile} and {@code tileToCheck} represent
+     * the same tile.
+     * <p>
+     * @param originTile The first tile to be compared.
+     * @param tileToCheck The second tile to be compared with the first tile.
+     * @return true if both tiles are considered equal, false otherwise.
+     */
+    boolean tileEquals(Tile originTile, Tile tileToCheck);
+
+    /**
      * Gets the player's current Prayer points based on the minimap orb.
      *
      * @return Returns an integer that represents the current Prayer points value of the player.
