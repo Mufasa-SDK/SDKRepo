@@ -1,18 +1,20 @@
 package helpers;
 
+import java.util.List;
+
 public class ScriptMetadata {
     private String name;
     private String description;
     private String version;
     private String guideLink;
-    private ScriptCategory category;
+    private List<ScriptCategory> categories;
 
     public ScriptMetadata(String name, String description, String version, String guideLink, ScriptCategory category) {
         this.name = name;
         this.description = description;
         this.version = version;
         this.guideLink = guideLink;
-        this.category = category;
+        this.categories = categories;
     }
 
     // Getters
@@ -30,8 +32,8 @@ public class ScriptMetadata {
 
     public String getGuideLink() {return guideLink;}
 
-    public ScriptCategory getCategory() {
-        return category;
+    public List<ScriptCategory> getCategories() {
+        return categories;
     }
 
     // Setters
@@ -47,8 +49,8 @@ public class ScriptMetadata {
         this.version = version;
     }
 
-    public void setCategory(ScriptCategory category) {
-        this.category = category;
+    public void setCategories(List<ScriptCategory> categories) {
+        this.categories = categories;
     }
 
     public void setGuideLink(String guideLink) {this.guideLink = guideLink;}
