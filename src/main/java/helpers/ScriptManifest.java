@@ -45,7 +45,7 @@ public @interface ScriptManifest {
     /**
      * Indicates the category of the script based on predefined script types.
      *
-     * @return The category of the script from the {@link ScriptCategory} enumeration.
+     * @return The categories of the script from the {@link ScriptCategory} enumeration.
      */
-    ScriptCategory category();
+    ScriptCategory[] categories();
 }
