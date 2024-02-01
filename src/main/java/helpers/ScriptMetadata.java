@@ -9,7 +9,7 @@ public class ScriptMetadata {
     private String guideLink;
     private List<ScriptCategory> categories;
 
-    public ScriptMetadata(String name, String description, String version, String guideLink, ScriptCategory category) {
+    public ScriptMetadata(String name, String description, String version, String guideLink, List<ScriptCategory> categories) {
         this.name = name;
         this.description = description;
         this.version = version;
@@ -62,7 +62,7 @@ public class ScriptMetadata {
                 ", description='" + description + '\'' +
                 ", version='" + version + '\'' +
                 ", guideLink='" + guideLink + '\'' +
-                ", category=" + category +
+                ", category=" + categories +
                 '}';
     }
 }
