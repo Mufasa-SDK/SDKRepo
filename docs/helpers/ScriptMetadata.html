@@ -154,8 +154,8 @@ extends java.lang.Object</pre>
 <th class="colLast" scope="col">Description</th>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>private <a href="ScriptCategory.html" title="enum in helpers">ScriptCategory</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#category">category</a></span></code></th>
+<td class="colFirst"><code>private java.util.List&lt;<a href="ScriptCategory.html" title="enum in helpers">ScriptCategory</a>&gt;</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#categories">categories</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="rowColor">
@@ -196,11 +196,11 @@ extends java.lang.Object</pre>
 <th class="colLast" scope="col">Description</th>
 </tr>
 <tr class="altColor">
-<th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="#%3Cinit%3E(java.lang.String,java.lang.String,java.lang.String,java.lang.String,helpers.ScriptCategory)">ScriptMetadata</a></span>&#8203;(java.lang.String&nbsp;name,
+<th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="#%3Cinit%3E(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.util.List)">ScriptMetadata</a></span>&#8203;(java.lang.String&nbsp;name,
               java.lang.String&nbsp;description,
               java.lang.String&nbsp;version,
               java.lang.String&nbsp;guideLink,
-              <a href="ScriptCategory.html" title="enum in helpers">ScriptCategory</a>&nbsp;category)</code></th>
+              java.util.List&lt;<a href="ScriptCategory.html" title="enum in helpers">ScriptCategory</a>&gt;&nbsp;categories)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 </table>
@@ -222,8 +222,8 @@ extends java.lang.Object</pre>
 <th class="colLast" scope="col">Description</th>
 </tr>
 <tr id="i0" class="altColor">
-<td class="colFirst"><code><a href="ScriptCategory.html" title="enum in helpers">ScriptCategory</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getCategory()">getCategory</a></span>()</code></th>
+<td class="colFirst"><code>java.util.List&lt;<a href="ScriptCategory.html" title="enum in helpers">ScriptCategory</a>&gt;</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getCategories()">getCategories</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i1" class="rowColor">
@@ -248,7 +248,7 @@ extends java.lang.Object</pre>
 </tr>
 <tr id="i5" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setCategory(helpers.ScriptCategory)">setCategory</a></span>&#8203;(<a href="ScriptCategory.html" title="enum in helpers">ScriptCategory</a>&nbsp;category)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setCategories(java.util.List)">setCategories</a></span>&#8203;(java.util.List&lt;<a href="ScriptCategory.html" title="enum in helpers">ScriptCategory</a>&gt;&nbsp;categories)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i6" class="altColor">
@@ -336,13 +336,13 @@ extends java.lang.Object</pre>
 <pre>private&nbsp;java.lang.String guideLink</pre>
 </li>
 </ul>
-<a id="category">
+<a id="categories">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
-<h4>category</h4>
-<pre>private&nbsp;<a href="ScriptCategory.html" title="enum in helpers">ScriptCategory</a> category</pre>
+<h4>categories</h4>
+<pre>private&nbsp;java.util.List&lt;<a href="ScriptCategory.html" title="enum in helpers">ScriptCategory</a>&gt; categories</pre>
 </li>
 </ul>
 </li>
@@ -355,7 +355,7 @@ extends java.lang.Object</pre>
 <!--   -->
 </a>
 <h3>Constructor Detail</h3>
-<a id="&lt;init&gt;(java.lang.String,java.lang.String,java.lang.String,java.lang.String,helpers.ScriptCategory)">
+<a id="&lt;init&gt;(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.util.List)">
 <!--   -->
 </a>
 <ul class="blockListLast">
@@ -365,7 +365,7 @@ extends java.lang.Object</pre>
                       java.lang.String&nbsp;description,
                       java.lang.String&nbsp;version,
                       java.lang.String&nbsp;guideLink,
-                      <a href="ScriptCategory.html" title="enum in helpers">ScriptCategory</a>&nbsp;category)</pre>
+                      java.util.List&lt;<a href="ScriptCategory.html" title="enum in helpers">ScriptCategory</a>&gt;&nbsp;categories)</pre>
 </li>
 </ul>
 </li>
@@ -414,13 +414,13 @@ extends java.lang.Object</pre>
 <pre class="methodSignature">public&nbsp;java.lang.String&nbsp;getGuideLink()</pre>
 </li>
 </ul>
-<a id="getCategory()">
+<a id="getCategories()">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>getCategory</h4>
-<pre class="methodSignature">public&nbsp;<a href="ScriptCategory.html" title="enum in helpers">ScriptCategory</a>&nbsp;getCategory()</pre>
+<h4>getCategories</h4>
+<pre class="methodSignature">public&nbsp;java.util.List&lt;<a href="ScriptCategory.html" title="enum in helpers">ScriptCategory</a>&gt;&nbsp;getCategories()</pre>
 </li>
 </ul>
 <a id="setName(java.lang.String)">
@@ -450,13 +450,13 @@ extends java.lang.Object</pre>
 <pre class="methodSignature">public&nbsp;void&nbsp;setVersion&#8203;(java.lang.String&nbsp;version)</pre>
 </li>
 </ul>
-<a id="setCategory(helpers.ScriptCategory)">
+<a id="setCategories(java.util.List)">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>setCategory</h4>
-<pre class="methodSignature">public&nbsp;void&nbsp;setCategory&#8203;(<a href="ScriptCategory.html" title="enum in helpers">ScriptCategory</a>&nbsp;category)</pre>
+<h4>setCategories</h4>
+<pre class="methodSignature">public&nbsp;void&nbsp;setCategories&#8203;(java.util.List&lt;<a href="ScriptCategory.html" title="enum in helpers">ScriptCategory</a>&gt;&nbsp;categories)</pre>
 </li>
 </ul>
 <a id="setGuideLink(java.lang.String)">
