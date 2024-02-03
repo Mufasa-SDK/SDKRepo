@@ -55,7 +55,7 @@ public interface iWalker {
     Boolean walkPath(RegionBox region, Tile[] path);
 
     /**
-     * Walks along a specified path without providing a region.
+     * Walks along a specified path without providing a region. This should primarily be used if using custom maps
      *
      * @param path An array of Tiles representing the path to walk.
      * @return Boolean indicating whether the path was successfully walked.
