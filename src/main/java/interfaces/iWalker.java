@@ -46,6 +46,13 @@ public interface iWalker {
     void step(Tile worldmapPoint, RegionBox region);
 
     /**
+     * Takes a step to a specified Tile without providing a search region. Needs to be visible on the minimap.
+     *
+     * @param worldmapPoint The tile to step to on the world map.
+     */
+    void step(Tile worldmapPoint);
+
+    /**
      * Walks along a specified path within a given region.
      *
      * @param region The region within which to walk the path.
