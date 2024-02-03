@@ -27,7 +27,7 @@
     catch(err) {
     }
 //-->
-var data = {"i0":6,"i1":6,"i2":6,"i3":6,"i4":6,"i5":6};
+var data = {"i0":6,"i1":6,"i2":6,"i3":6,"i4":6};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],4:["t3","Abstract Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -149,32 +149,31 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </tr>
 <tr id="i0" class="altColor">
 <td class="colFirst"><code><a href="../helpers/utils/Tile.html" title="class in helpers.utils">Tile</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getPlayerPosition()">getPlayerPosition</a></span>()</code></th>
+<td class="colLast">
+<div class="block">Gets the player's current position.</div>
+</td>
+</tr>
+<tr id="i1" class="rowColor">
+<td class="colFirst"><code><a href="../helpers/utils/Tile.html" title="class in helpers.utils">Tile</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getPlayerPosition(helpers.utils.RegionBox)">getPlayerPosition</a></span>&#8203;(<a href="../helpers/utils/RegionBox.html" title="class in helpers.utils">RegionBox</a>&nbsp;region)</code></th>
 <td class="colLast">
 <div class="block">Gets the player's current position within a specified region.</div>
 </td>
 </tr>
-<tr id="i1" class="rowColor">
-<td class="colFirst"><code><a href="../helpers/utils/Tile.html" title="class in helpers.utils">Tile</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getPlayerPosition(java.lang.String)">getPlayerPosition</a></span>&#8203;(java.lang.String&nbsp;mapFileLocation)</code></th>
-<td class="colLast">
-<div class="block">Gets the player's current position from a specified map file.</div>
-</td>
-</tr>
 <tr id="i2" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#step(helpers.utils.Tile,helpers.utils.RegionBox)">step</a></span>&#8203;(<a href="../helpers/utils/Tile.html" title="class in helpers.utils">Tile</a>&nbsp;worldmapPoint,
-    <a href="../helpers/utils/RegionBox.html" title="class in helpers.utils">RegionBox</a>&nbsp;region)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setup(java.lang.String)">setup</a></span>&#8203;(java.lang.String&nbsp;customMapfilePath)</code></th>
 <td class="colLast">
-<div class="block">Takes a step to a specified point on a world map, needs to be visible on the minimap.</div>
+<div class="block">Configures the system to use a custom map file instead of the default worldmap.</div>
 </td>
 </tr>
 <tr id="i3" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#stepCustomMap(helpers.utils.Tile,java.lang.String)">stepCustomMap</a></span>&#8203;(<a href="../helpers/utils/Tile.html" title="class in helpers.utils">Tile</a>&nbsp;worldmapPoint,
-             java.lang.String&nbsp;mapFileLocation)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#step(helpers.utils.Tile,helpers.utils.RegionBox)">step</a></span>&#8203;(<a href="../helpers/utils/Tile.html" title="class in helpers.utils">Tile</a>&nbsp;worldmapPoint,
+    <a href="../helpers/utils/RegionBox.html" title="class in helpers.utils">RegionBox</a>&nbsp;region)</code></th>
 <td class="colLast">
-<div class="block">Takes a step to a specified point on a world map using a map file, neds to be visible on the minimap.</div>
+<div class="block">Takes a step to a specified Tile.</div>
 </td>
 </tr>
 <tr id="i4" class="altColor">
@@ -183,14 +182,6 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
         <a href="../helpers/utils/Tile.html" title="class in helpers.utils">Tile</a>[]&nbsp;path)</code></th>
 <td class="colLast">
 <div class="block">Walks along a specified path within a given region.</div>
-</td>
-</tr>
-<tr id="i5" class="rowColor">
-<td class="colFirst"><code>java.lang.Boolean</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#walkPathOnCustomMap(java.lang.String,helpers.utils.Tile%5B%5D)">walkPathOnCustomMap</a></span>&#8203;(java.lang.String&nbsp;mapFileLocation,
-                   <a href="../helpers/utils/Tile.html" title="class in helpers.utils">Tile</a>[]&nbsp;path)</code></th>
-<td class="colLast">
-<div class="block">Walks along a specified path on a custom map.</div>
 </td>
 </tr>
 </table>
@@ -210,17 +201,32 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <!--   -->
 </a>
 <h3>Method Detail</h3>
-<a id="getPlayerPosition(java.lang.String)">
+<a id="setup(java.lang.String)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>setup</h4>
+<pre class="methodSignature">void&nbsp;setup&#8203;(java.lang.String&nbsp;customMapfilePath)</pre>
+<div class="block">Configures the system to use a custom map file instead of the default worldmap.
+ This method must be called before any operations that require map data are performed
+ to ensure the custom map is loaded and ready for use. If a custom map is not set up
+ using this method, the system will revert to using the default map.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>customMapfilePath</code> - The relative file path to the custom map file. Path must be relative to your script directory.</dd>
+</dl>
+</li>
+</ul>
+<a id="getPlayerPosition()">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>getPlayerPosition</h4>
-<pre class="methodSignature"><a href="../helpers/utils/Tile.html" title="class in helpers.utils">Tile</a>&nbsp;getPlayerPosition&#8203;(java.lang.String&nbsp;mapFileLocation)</pre>
-<div class="block">Gets the player's current position from a specified map file.</div>
+<pre class="methodSignature"><a href="../helpers/utils/Tile.html" title="class in helpers.utils">Tile</a>&nbsp;getPlayerPosition()</pre>
+<div class="block">Gets the player's current position.</div>
 <dl>
-<dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>mapFileLocation</code> - The location of the map file to use for determining the player's position.</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>Tile representing the player's current position on the map.</dd>
 </dl>
@@ -250,45 +256,11 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <h4>step</h4>
 <pre class="methodSignature">void&nbsp;step&#8203;(<a href="../helpers/utils/Tile.html" title="class in helpers.utils">Tile</a>&nbsp;worldmapPoint,
           <a href="../helpers/utils/RegionBox.html" title="class in helpers.utils">RegionBox</a>&nbsp;region)</pre>
-<div class="block">Takes a step to a specified point on a world map, needs to be visible on the minimap.</div>
+<div class="block">Takes a step to a specified Tile. Needs to be visible on the minimap.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>worldmapPoint</code> - The tile to step to on the world map.</dd>
 <dd><code>region</code> - the RegionBox region you are in on the worldmap.</dd>
-</dl>
-</li>
-</ul>
-<a id="stepCustomMap(helpers.utils.Tile,java.lang.String)">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>stepCustomMap</h4>
-<pre class="methodSignature">void&nbsp;stepCustomMap&#8203;(<a href="../helpers/utils/Tile.html" title="class in helpers.utils">Tile</a>&nbsp;worldmapPoint,
-                   java.lang.String&nbsp;mapFileLocation)</pre>
-<div class="block">Takes a step to a specified point on a world map using a map file, neds to be visible on the minimap.</div>
-<dl>
-<dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>worldmapPoint</code> - The tile to step to on the world map.</dd>
-<dd><code>mapFileLocation</code> - The location of the map file to use for navigation.</dd>
-</dl>
-</li>
-</ul>
-<a id="walkPathOnCustomMap(java.lang.String,helpers.utils.Tile[])">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>walkPathOnCustomMap</h4>
-<pre class="methodSignature">java.lang.Boolean&nbsp;walkPathOnCustomMap&#8203;(java.lang.String&nbsp;mapFileLocation,
-                                      <a href="../helpers/utils/Tile.html" title="class in helpers.utils">Tile</a>[]&nbsp;path)</pre>
-<div class="block">Walks along a specified path on a custom map.</div>
-<dl>
-<dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>mapFileLocation</code> - The location of the custom map file to use for the path.</dd>
-<dd><code>path</code> - An array of Tiles representing the path to walk.</dd>
-<dt><span class="returnLabel">Returns:</span></dt>
-<dd>Boolean indicating whether the path was successfully walked.</dd>
 </dl>
 </li>
 </ul>

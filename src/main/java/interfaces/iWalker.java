@@ -13,12 +13,21 @@ import java.awt.*;
 public interface iWalker {
 
     /**
-     * Gets the player's current position from a specified map file.
+     * Configures the system to use a custom map file instead of the default worldmap.
+     * This method must be called before any operations that require map data are performed
+     * to ensure the custom map is loaded and ready for use. If a custom map is not set up
+     * using this method, the system will revert to using the default map.
      *
-     * @param mapFileLocation The location of the map file to use for determining the player's position.
+     * @param customMapfilePath The relative file path to the custom map file. Path must be relative to your script directory.
+     */
+    void setup(String customMapfilePath);
+
+    /**
+     * Gets the player's current position.
+     *
      * @return Tile representing the player's current position on the map.
      */
-    Tile getPlayerPosition(String mapFileLocation);
+    Tile getPlayerPosition();
 
     /**
      * Gets the player's current position within a specified region.
@@ -29,29 +38,12 @@ public interface iWalker {
     Tile getPlayerPosition(RegionBox region);
 
     /**
-     * Takes a step to a specified point on a world map, needs to be visible on the minimap.
+     * Takes a step to a specified Tile. Needs to be visible on the minimap.
      *
      * @param worldmapPoint The tile to step to on the world map.
      * @param region the RegionBox region you are in on the worldmap.
      */
     void step(Tile worldmapPoint, RegionBox region);
-
-    /**
-     * Takes a step to a specified point on a world map using a map file, neds to be visible on the minimap.
-     *
-     * @param worldmapPoint The tile to step to on the world map.
-     * @param mapFileLocation The location of the map file to use for navigation.
-     */
-    void stepCustomMap(Tile worldmapPoint, String mapFileLocation);
-
-    /**
-     * Walks along a specified path on a custom map.
-     *
-     * @param mapFileLocation The location of the custom map file to use for the path.
-     * @param path An array of Tiles representing the path to walk.
-     * @return Boolean indicating whether the path was successfully walked.
-     */
-    Boolean walkPathOnCustomMap(String mapFileLocation, Tile[] path);
 
     /**
      * Walks along a specified path within a given region.
