@@ -9,7 +9,7 @@ import helpers.utils.Tile;
  */
 public interface iPlayer {
     /**
-     * Gets the player's current position and checks if it is within the specified RegionBox
+     * Gets the player's current position and checks if it is within the specified area
      *
      * @param areaToSearchIn This is the Area of the world map area you'd like to search in.
      * @param mapRegion This is the RegionBox of the world map you want to check against.
@@ -18,16 +18,15 @@ public interface iPlayer {
     boolean within(Area areaToSearchIn, RegionBox mapRegion);
 
     /**
-     * Gets the player's current position based on a custom map and checks if it is within the specified RegionBox
+     * Gets the player's current position based on a custom map and checks if it is within the specified area
      *
-     * @param mapFileLocation This is string location of the custom map you'd like to search in.
      * @param areaToSearchIn This is the Area of the custom map you want to check if you are in.
      * @return Returns a true/false boolean, true if you are in the RegionBox, false if not.
      */
-    boolean withinCustom(String mapFileLocation, Area areaToSearchIn);
+    boolean within(Area areaToSearchIn);
 
     /**
-     * Checks if a specific tile is within a given map region.
+     * Checks if player is at that specific tile within your set worldmap inside a specific region
      *
      * @param tileToCheck The tile to be checked for presence within the map region.
      * @param mapRegion This is the RegionBox of the world map you want to check against.
@@ -36,13 +35,12 @@ public interface iPlayer {
     boolean atTile(Tile tileToCheck, RegionBox mapRegion);
 
     /**
-     * Checks if a specific tile is within a region defined in a custom map file.
+     * Checks if player is at that specific tile within your set worldmap
      *
-     * @param mapFileLocation This is string location of the custom map you'd like to search in.
      * @param tileToCheck The tile to be checked for presence within the region defined in the map file.
      * @return true if the player is on the tile in the specified map, false otherwise.
      */
-    boolean atTileCustom(String mapFileLocation, Tile tileToCheck);
+    boolean atTile(Tile tileToCheck);
 
     /**
      * Checks if a given tile is within a specified area.

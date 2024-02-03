@@ -147,18 +147,17 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </tr>
 <tr id="i0" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#atTile(helpers.utils.Tile,helpers.utils.RegionBox)">atTile</a></span>&#8203;(<a href="../helpers/utils/Tile.html" title="class in helpers.utils">Tile</a>&nbsp;tileToCheck,
-      <a href="../helpers/utils/RegionBox.html" title="class in helpers.utils">RegionBox</a>&nbsp;mapRegion)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#atTile(helpers.utils.Tile)">atTile</a></span>&#8203;(<a href="../helpers/utils/Tile.html" title="class in helpers.utils">Tile</a>&nbsp;tileToCheck)</code></th>
 <td class="colLast">
-<div class="block">Checks if a specific tile is within a given map region.</div>
+<div class="block">Checks if player is at that specific tile within your set worldmap</div>
 </td>
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#atTileCustom(java.lang.String,helpers.utils.Tile)">atTileCustom</a></span>&#8203;(java.lang.String&nbsp;mapFileLocation,
-            <a href="../helpers/utils/Tile.html" title="class in helpers.utils">Tile</a>&nbsp;tileToCheck)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#atTile(helpers.utils.Tile,helpers.utils.RegionBox)">atTile</a></span>&#8203;(<a href="../helpers/utils/Tile.html" title="class in helpers.utils">Tile</a>&nbsp;tileToCheck,
+      <a href="../helpers/utils/RegionBox.html" title="class in helpers.utils">RegionBox</a>&nbsp;mapRegion)</code></th>
 <td class="colLast">
-<div class="block">Checks if a specific tile is within a region defined in a custom map file.</div>
+<div class="block">Checks if player is at that specific tile within your set worldmap inside a specific region</div>
 </td>
 </tr>
 <tr id="i2" class="altColor">
@@ -221,18 +220,17 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </tr>
 <tr id="i10" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#within(helpers.utils.Area,helpers.utils.RegionBox)">within</a></span>&#8203;(<a href="../helpers/utils/Area.html" title="class in helpers.utils">Area</a>&nbsp;areaToSearchIn,
-      <a href="../helpers/utils/RegionBox.html" title="class in helpers.utils">RegionBox</a>&nbsp;mapRegion)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#within(helpers.utils.Area)">within</a></span>&#8203;(<a href="../helpers/utils/Area.html" title="class in helpers.utils">Area</a>&nbsp;areaToSearchIn)</code></th>
 <td class="colLast">
-<div class="block">Gets the player's current position and checks if it is within the specified RegionBox</div>
+<div class="block">Gets the player's current position based on a custom map and checks if it is within the specified area</div>
 </td>
 </tr>
 <tr id="i11" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#withinCustom(java.lang.String,helpers.utils.Area)">withinCustom</a></span>&#8203;(java.lang.String&nbsp;mapFileLocation,
-            <a href="../helpers/utils/Area.html" title="class in helpers.utils">Area</a>&nbsp;areaToSearchIn)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#within(helpers.utils.Area,helpers.utils.RegionBox)">within</a></span>&#8203;(<a href="../helpers/utils/Area.html" title="class in helpers.utils">Area</a>&nbsp;areaToSearchIn,
+      <a href="../helpers/utils/RegionBox.html" title="class in helpers.utils">RegionBox</a>&nbsp;mapRegion)</code></th>
 <td class="colLast">
-<div class="block">Gets the player's current position based on a custom map and checks if it is within the specified RegionBox</div>
+<div class="block">Gets the player's current position and checks if it is within the specified area</div>
 </td>
 </tr>
 </table>
@@ -260,7 +258,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <h4>within</h4>
 <pre class="methodSignature">boolean&nbsp;within&#8203;(<a href="../helpers/utils/Area.html" title="class in helpers.utils">Area</a>&nbsp;areaToSearchIn,
                <a href="../helpers/utils/RegionBox.html" title="class in helpers.utils">RegionBox</a>&nbsp;mapRegion)</pre>
-<div class="block">Gets the player's current position and checks if it is within the specified RegionBox</div>
+<div class="block">Gets the player's current position and checks if it is within the specified area</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>areaToSearchIn</code> - This is the Area of the world map area you'd like to search in.</dd>
@@ -270,18 +268,16 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </dl>
 </li>
 </ul>
-<a id="withinCustom(java.lang.String,helpers.utils.Area)">
+<a id="within(helpers.utils.Area)">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>withinCustom</h4>
-<pre class="methodSignature">boolean&nbsp;withinCustom&#8203;(java.lang.String&nbsp;mapFileLocation,
-                     <a href="../helpers/utils/Area.html" title="class in helpers.utils">Area</a>&nbsp;areaToSearchIn)</pre>
-<div class="block">Gets the player's current position based on a custom map and checks if it is within the specified RegionBox</div>
+<h4>within</h4>
+<pre class="methodSignature">boolean&nbsp;within&#8203;(<a href="../helpers/utils/Area.html" title="class in helpers.utils">Area</a>&nbsp;areaToSearchIn)</pre>
+<div class="block">Gets the player's current position based on a custom map and checks if it is within the specified area</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>mapFileLocation</code> - This is string location of the custom map you'd like to search in.</dd>
 <dd><code>areaToSearchIn</code> - This is the Area of the custom map you want to check if you are in.</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>Returns a true/false boolean, true if you are in the RegionBox, false if not.</dd>
@@ -296,7 +292,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <h4>atTile</h4>
 <pre class="methodSignature">boolean&nbsp;atTile&#8203;(<a href="../helpers/utils/Tile.html" title="class in helpers.utils">Tile</a>&nbsp;tileToCheck,
                <a href="../helpers/utils/RegionBox.html" title="class in helpers.utils">RegionBox</a>&nbsp;mapRegion)</pre>
-<div class="block">Checks if a specific tile is within a given map region.</div>
+<div class="block">Checks if player is at that specific tile within your set worldmap inside a specific region</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>tileToCheck</code> - The tile to be checked for presence within the map region.</dd>
@@ -306,18 +302,16 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </dl>
 </li>
 </ul>
-<a id="atTileCustom(java.lang.String,helpers.utils.Tile)">
+<a id="atTile(helpers.utils.Tile)">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>atTileCustom</h4>
-<pre class="methodSignature">boolean&nbsp;atTileCustom&#8203;(java.lang.String&nbsp;mapFileLocation,
-                     <a href="../helpers/utils/Tile.html" title="class in helpers.utils">Tile</a>&nbsp;tileToCheck)</pre>
-<div class="block">Checks if a specific tile is within a region defined in a custom map file.</div>
+<h4>atTile</h4>
+<pre class="methodSignature">boolean&nbsp;atTile&#8203;(<a href="../helpers/utils/Tile.html" title="class in helpers.utils">Tile</a>&nbsp;tileToCheck)</pre>
+<div class="block">Checks if player is at that specific tile within your set worldmap</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>mapFileLocation</code> - This is string location of the custom map you'd like to search in.</dd>
 <dd><code>tileToCheck</code> - The tile to be checked for presence within the region defined in the map file.</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>true if the player is on the tile in the specified map, false otherwise.</dd>
