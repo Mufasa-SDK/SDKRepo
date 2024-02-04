@@ -96,6 +96,14 @@ public interface iInventory {
     void tapItem(int itemId, double threshold);
 
     /**
+     * Initiates a tap action on a all items in the inventory with the given item ID, based on a threshold.
+     *
+     * @param itemId    The ID of the item to be tapped.
+     * @param threshold The threshold value used for identifying the item, threshold is a double where 1.0 represents 100% confidence. Usually above 0.80 (but often 0.90+).
+     */
+    void tapAllItems(int itemId, double threshold);
+
+    /**
      * Initiates a tap action on a specified food in the inventory, based on a threshold without using a cache.
      *
      * @param itemId    The ID of the food to be tapped.
