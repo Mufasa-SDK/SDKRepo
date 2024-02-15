@@ -39,26 +39,15 @@ public abstract class AbstractScript {
             while (paused) {
                 try {
                     pauseLock.wait(); // Wait until notified
-
-                    // Check for thread interruption
-                    if (Thread.interrupted()) {
-                        break;
-                    }
                 } catch (InterruptedException e) {
-                    // Restore the interrupted status and break the loop
-                    Thread.currentThread().interrupt();
-                    break;
+                    System.out.println("We caught an exception while script pausing" + e.getMessage());
                 }
             }
         }
     }
+
     public void running() {
         checkAndPause();
-        
-        if (Thread.interrupted()) {
-            return;
-        }
-
         poll();
     }
 
