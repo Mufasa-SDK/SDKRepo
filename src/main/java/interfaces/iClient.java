@@ -86,6 +86,7 @@ public interface iClient {
      * Simulates the action of moving the camera up.
      */
     void moveCameraUp();
+
     /**
      * Disables the internal Break handler. Do note that you will have to manage breaks yourself with the login/logout methods and a custom implementation.
      *
@@ -99,6 +100,20 @@ public interface iClient {
      * @return Break handler enabled or not
      */
     boolean enableBreakHandler();
+
+    /**
+     * Disables the internal AFK handler. Do note that you will have to manage AFK's yourself with a custom implementation.
+     *
+     * @return AFK handler stopped or not
+     */
+    public boolean disableAFKHandler();
+
+    /**
+     * Enables the internal AFK handler again if you disabled it.
+     *
+     * @return AFK handler enabled or not
+     */
+    public boolean enableAFKHandler();
 
     /**
      * Checks if a specified color is found within a rectangle area on the game screen
