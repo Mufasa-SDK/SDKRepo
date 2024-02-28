@@ -27,7 +27,7 @@
     catch(err) {
     }
 //-->
-var data = {"i0":6,"i1":6,"i2":6,"i3":6,"i4":6,"i5":6,"i6":6,"i7":6,"i8":6,"i9":6,"i10":6,"i11":6,"i12":6};
+var data = {"i0":6,"i1":6,"i2":6,"i3":6,"i4":6,"i5":6,"i6":6,"i7":6,"i8":6,"i9":6,"i10":6,"i11":6,"i12":6,"i13":6};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],4:["t3","Abstract Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -205,27 +205,35 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </tr>
 <tr id="i8" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#isTileWithinRegionbox(helpers.utils.Tile,helpers.utils.RegionBox)">isTileWithinRegionbox</a></span>&#8203;(<a href="../helpers/utils/Tile.html" title="class in helpers.utils">Tile</a>&nbsp;tileToCheck,
+                     <a href="../helpers/utils/RegionBox.html" title="class in helpers.utils">RegionBox</a>&nbsp;regionToCheckWithin)</code></th>
+<td class="colLast">
+<div class="block">Checks if a given tile is within a specified area.</div>
+</td>
+</tr>
+<tr id="i9" class="rowColor">
+<td class="colFirst"><code>boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#tileEquals(helpers.utils.Tile,helpers.utils.Tile)">tileEquals</a></span>&#8203;(<a href="../helpers/utils/Tile.html" title="class in helpers.utils">Tile</a>&nbsp;originTile,
           <a href="../helpers/utils/Tile.html" title="class in helpers.utils">Tile</a>&nbsp;tileToCheck)</code></th>
 <td class="colLast">
 <div class="block">Compares two tiles for equality.</div>
 </td>
 </tr>
-<tr id="i9" class="rowColor">
+<tr id="i10" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#toggleRun()">toggleRun</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Toggles the run on/off, use isRunEnabled() to check if run is on or not, this will always toggle it on/off, no matter what it currently is on.</div>
 </td>
 </tr>
-<tr id="i10" class="altColor">
+<tr id="i11" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#within(helpers.utils.Area)">within</a></span>&#8203;(<a href="../helpers/utils/Area.html" title="class in helpers.utils">Area</a>&nbsp;areaToSearchIn)</code></th>
 <td class="colLast">
 <div class="block">Gets the player's current position and checks if it is within the specified area</div>
 </td>
 </tr>
-<tr id="i11" class="rowColor">
+<tr id="i12" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#within(helpers.utils.Area,helpers.utils.RegionBox)">within</a></span>&#8203;(<a href="../helpers/utils/Area.html" title="class in helpers.utils">Area</a>&nbsp;areaToSearchIn,
       <a href="../helpers/utils/RegionBox.html" title="class in helpers.utils">RegionBox</a>&nbsp;mapRegion)</code></th>
@@ -233,7 +241,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <div class="block">Gets the player's current position and checks if it is within the specified area</div>
 </td>
 </tr>
-<tr id="i12" class="altColor">
+<tr id="i13" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#within(helpers.utils.RegionBox)">within</a></span>&#8203;(<a href="../helpers/utils/RegionBox.html" title="class in helpers.utils">RegionBox</a>&nbsp;regionToSearchIn)</code></th>
 <td class="colLast">
@@ -352,14 +360,34 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <div class="block">Checks if a given tile is within a specified area.
  <p>
  This method determines whether the provided tile (represented by <code>tileToCheck</code>)
- is located within the bounds of the area defined by <code>areaToCheckWithin</code>. The area
- is defined by two points: the top-left and the bottom-right tiles of the area, which
- are expanded slightly (by an offset of 2 units) to include their boundaries.
+ is located within the bounds of the area defined by <code>areaToCheckWithin</code>.
  <p></div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>tileToCheck</code> - The tile whose presence within the area is being checked.</dd>
 <dd><code>areaToCheckWithin</code> - The area within which the tile's presence is checked.</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>true if <code>tileToCheck</code> is within the bounds of <code>areaToCheckWithin</code>, false otherwise.</dd>
+</dl>
+</li>
+</ul>
+<a id="isTileWithinRegionbox(helpers.utils.Tile,helpers.utils.RegionBox)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>isTileWithinRegionbox</h4>
+<pre class="methodSignature">boolean&nbsp;isTileWithinRegionbox&#8203;(<a href="../helpers/utils/Tile.html" title="class in helpers.utils">Tile</a>&nbsp;tileToCheck,
+                              <a href="../helpers/utils/RegionBox.html" title="class in helpers.utils">RegionBox</a>&nbsp;regionToCheckWithin)</pre>
+<div class="block">Checks if a given tile is within a specified area.
+ <p>
+ This method determines whether the provided tile (represented by <code>tileToCheck</code>)
+ is located within the bounds of the RegionBox defined by <code>regionToCheckWithin</code>.
+ <p></div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>tileToCheck</code> - The tile whose presence within the area is being checked.</dd>
+<dd><code>regionToCheckWithin</code> - The RegionBox within which the tile's presence is checked.</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>true if <code>tileToCheck</code> is within the bounds of <code>areaToCheckWithin</code>, false otherwise.</dd>
 </dl>

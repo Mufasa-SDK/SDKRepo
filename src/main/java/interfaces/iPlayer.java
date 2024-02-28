@@ -54,9 +54,7 @@ public interface iPlayer {
      * Checks if a given tile is within a specified area.
      * <p>
      * This method determines whether the provided tile (represented by {@code tileToCheck})
-     * is located within the bounds of the area defined by {@code areaToCheckWithin}. The area
-     * is defined by two points: the top-left and the bottom-right tiles of the area, which
-     * are expanded slightly (by an offset of 2 units) to include their boundaries.
+     * is located within the bounds of the area defined by {@code areaToCheckWithin}.
      * <p>
      * @param tileToCheck The tile whose presence within the area is being checked.
      * @param areaToCheckWithin The area within which the tile's presence is checked.
@@ -64,6 +62,17 @@ public interface iPlayer {
      */
     boolean isTileWithinArea(Tile tileToCheck, Area areaToCheckWithin);
 
+    /**
+     * Checks if a given tile is within a specified area.
+     * <p>
+     * This method determines whether the provided tile (represented by {@code tileToCheck})
+     * is located within the bounds of the RegionBox defined by {@code regionToCheckWithin}.
+     * <p>
+     * @param tileToCheck The tile whose presence within the area is being checked.
+     * @param regionToCheckWithin The RegionBox within which the tile's presence is checked.
+     * @return true if {@code tileToCheck} is within the bounds of {@code areaToCheckWithin}, false otherwise.
+     */
+    boolean isTileWithinRegionbox(Tile tileToCheck, RegionBox regionToCheckWithin);
     /**
      * Compares two tiles for equality.
      * <p>
