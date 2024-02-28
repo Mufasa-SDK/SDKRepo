@@ -18,12 +18,20 @@ public interface iPlayer {
     boolean within(Area areaToSearchIn, RegionBox mapRegion);
 
     /**
-     * Gets the player's current position based on a custom map and checks if it is within the specified area
+     * Gets the player's current position and checks if it is within the specified area
      *
      * @param areaToSearchIn This is the Area of the custom map you want to check if you are in.
      * @return Returns a true/false boolean, true if you are in the RegionBox, false if not.
      */
     boolean within(Area areaToSearchIn);
+
+    /**
+     * Gets the player's current position and checks if it is within the specified area
+     *
+     * @param regionToSearchIn This is the RegionBox you want to check if you are in.
+     * @return Returns a true/false boolean, true if you are in the RegionBox, false if not.
+     */
+    boolean within(RegionBox regionToSearchIn);
 
     /**
      * Checks if player is at that specific tile within your set worldmap inside a specific region

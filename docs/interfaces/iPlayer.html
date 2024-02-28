@@ -27,7 +27,7 @@
     catch(err) {
     }
 //-->
-var data = {"i0":6,"i1":6,"i2":6,"i3":6,"i4":6,"i5":6,"i6":6,"i7":6,"i8":6,"i9":6,"i10":6,"i11":6};
+var data = {"i0":6,"i1":6,"i2":6,"i3":6,"i4":6,"i5":6,"i6":6,"i7":6,"i8":6,"i9":6,"i10":6,"i11":6,"i12":6};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],4:["t3","Abstract Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -222,13 +222,20 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <td class="colFirst"><code>boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#within(helpers.utils.Area)">within</a></span>&#8203;(<a href="../helpers/utils/Area.html" title="class in helpers.utils">Area</a>&nbsp;areaToSearchIn)</code></th>
 <td class="colLast">
-<div class="block">Gets the player's current position based on a custom map and checks if it is within the specified area</div>
+<div class="block">Gets the player's current position and checks if it is within the specified area</div>
 </td>
 </tr>
 <tr id="i11" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#within(helpers.utils.Area,helpers.utils.RegionBox)">within</a></span>&#8203;(<a href="../helpers/utils/Area.html" title="class in helpers.utils">Area</a>&nbsp;areaToSearchIn,
       <a href="../helpers/utils/RegionBox.html" title="class in helpers.utils">RegionBox</a>&nbsp;mapRegion)</code></th>
+<td class="colLast">
+<div class="block">Gets the player's current position and checks if it is within the specified area</div>
+</td>
+</tr>
+<tr id="i12" class="altColor">
+<td class="colFirst"><code>boolean</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#within(helpers.utils.RegionBox)">within</a></span>&#8203;(<a href="../helpers/utils/RegionBox.html" title="class in helpers.utils">RegionBox</a>&nbsp;regionToSearchIn)</code></th>
 <td class="colLast">
 <div class="block">Gets the player's current position and checks if it is within the specified area</div>
 </td>
@@ -275,10 +282,26 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <li class="blockList">
 <h4>within</h4>
 <pre class="methodSignature">boolean&nbsp;within&#8203;(<a href="../helpers/utils/Area.html" title="class in helpers.utils">Area</a>&nbsp;areaToSearchIn)</pre>
-<div class="block">Gets the player's current position based on a custom map and checks if it is within the specified area</div>
+<div class="block">Gets the player's current position and checks if it is within the specified area</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>areaToSearchIn</code> - This is the Area of the custom map you want to check if you are in.</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>Returns a true/false boolean, true if you are in the RegionBox, false if not.</dd>
+</dl>
+</li>
+</ul>
+<a id="within(helpers.utils.RegionBox)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>within</h4>
+<pre class="methodSignature">boolean&nbsp;within&#8203;(<a href="../helpers/utils/RegionBox.html" title="class in helpers.utils">RegionBox</a>&nbsp;regionToSearchIn)</pre>
+<div class="block">Gets the player's current position and checks if it is within the specified area</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>regionToSearchIn</code> - This is the RegionBox you want to check if you are in.</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>Returns a true/false boolean, true if you are in the RegionBox, false if not.</dd>
 </dl>
