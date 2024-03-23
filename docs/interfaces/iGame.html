@@ -27,7 +27,7 @@
     catch(err) {
     }
 //-->
-var data = {"i0":6,"i1":6,"i2":6,"i3":6,"i4":6};
+var data = {"i0":6,"i1":6,"i2":6,"i3":6,"i4":6,"i5":6};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],4:["t3","Abstract Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -179,6 +179,13 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </tr>
 <tr id="i4" class="altColor">
 <td class="colFirst"><code>void</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setFairyRing(java.lang.String)">setFairyRing</a></span>&#8203;(java.lang.String&nbsp;Letters)</code></th>
+<td class="colLast">
+<div class="block">Sets the letters on the fairy ring you'd like to travel to.</div>
+</td>
+</tr>
+<tr id="i5" class="rowColor">
+<td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setZoom(java.lang.String)">setZoom</a></span>&#8203;(java.lang.String&nbsp;zoomLevel)</code></th>
 <td class="colLast">
 <div class="block">Sets the zoom to a specific level.</div>
@@ -260,7 +267,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <a id="hop(java.lang.String,java.lang.Boolean,java.lang.Boolean)">
 <!--   -->
 </a>
-<ul class="blockListLast">
+<ul class="blockList">
 <li class="blockList">
 <h4>hop</h4>
 <pre class="methodSignature">void&nbsp;hop&#8203;(java.lang.String&nbsp;profileName,
@@ -273,6 +280,20 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <dd><code>profileName</code> - use the profileName that was selected in the ScriptUI config here by the user.</dd>
 <dd><code>useWDH</code> - Boolean to enable/disable WDH. If true, this will instantly hop when a player is around us. Otherwise it will wait till the next hop time.</dd>
 <dd><code>useOnlyWDH</code> - Boolean to set the mode to use WDH only, this overrides the normal hopping schedule and only hops when players are around.</dd>
+</dl>
+</li>
+</ul>
+<a id="setFairyRing(java.lang.String)">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>setFairyRing</h4>
+<pre class="methodSignature">void&nbsp;setFairyRing&#8203;(java.lang.String&nbsp;Letters)</pre>
+<div class="block">Sets the letters on the fairy ring you'd like to travel to.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>Letters</code> - The 3 letters of the fairy ring code you'd like to travel to.</dd>
 </dl>
 </li>
 </ul>

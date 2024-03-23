@@ -42,4 +42,11 @@ public interface iGame {
      * @param useOnlyWDH Boolean to set the mode to use WDH only, this overrides the normal hopping schedule and only hops when players are around.
      */
     void hop(String profileName, Boolean useWDH, Boolean useOnlyWDH);
+
+    /**
+     * Sets the letters on the fairy ring you'd like to travel to.
+     *
+     * @param Letters The 3 letters of the fairy ring code you'd like to travel to.
+     * */
+    void setFairyRing(String Letters);
 }
