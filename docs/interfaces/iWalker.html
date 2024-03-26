@@ -27,7 +27,7 @@
     catch(err) {
     }
 //-->
-var data = {"i0":6,"i1":6,"i2":6,"i3":6,"i4":6,"i5":6,"i6":6};
+var data = {"i0":6,"i1":6,"i2":6,"i3":6,"i4":6,"i5":6,"i6":6,"i7":6,"i8":6};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],4:["t3","Abstract Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -198,6 +198,21 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <div class="block">Walks along a specified path without providing a region.</div>
 </td>
 </tr>
+<tr id="i7" class="rowColor">
+<td class="colFirst"><code>boolean</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#walkTo(helpers.utils.Tile)">walkTo</a></span>&#8203;(<a href="../helpers/utils/Tile.html" title="class in helpers.utils">Tile</a>&nbsp;worldmapTile)</code></th>
+<td class="colLast">
+<div class="block">Attempts to navigate to a specified world map tile.</div>
+</td>
+</tr>
+<tr id="i8" class="altColor">
+<td class="colFirst"><code>boolean</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#walkTo(helpers.utils.Tile,helpers.utils.RegionBox)">walkTo</a></span>&#8203;(<a href="../helpers/utils/Tile.html" title="class in helpers.utils">Tile</a>&nbsp;worldmapTile,
+      <a href="../helpers/utils/RegionBox.html" title="class in helpers.utils">RegionBox</a>&nbsp;region)</code></th>
+<td class="colLast">
+<div class="block">Attempts to navigate to a specified world map tile within a given region.</div>
+</td>
+</tr>
 </table>
 </li>
 </ul>
@@ -289,6 +304,56 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>worldmapPoint</code> - The tile to step to on the world map.</dd>
+</dl>
+</li>
+</ul>
+<a id="walkTo(helpers.utils.Tile)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>walkTo</h4>
+<pre class="methodSignature">boolean&nbsp;walkTo&#8203;(<a href="../helpers/utils/Tile.html" title="class in helpers.utils">Tile</a>&nbsp;worldmapTile)</pre>
+<div class="block">Attempts to navigate to a specified world map tile. This method calculates
+ the minimap point corresponding to the provided world map tile and performs
+ a tap action to initiate movement towards that location. The method includes
+ a randomization within a randomized small area on the minimap to simulate a more natural
+ movement pattern.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>worldmapTile</code> - The <a href="../helpers/utils/Tile.html" title="class in helpers.utils"><code>Tile</code></a> object representing the destination tile
+ on the world map. This is the target location the player is supposed to navigate to.</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd><code>true</code> if the method successfully initiates movement towards the
+ specified location, <code>false</code> otherwise. Note: returning <code>true</code> does not
+ guarantee that the destination will be reached, only that the navigation action
+ was successfully initiated.</dd>
+</dl>
+</li>
+</ul>
+<a id="walkTo(helpers.utils.Tile,helpers.utils.RegionBox)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>walkTo</h4>
+<pre class="methodSignature">boolean&nbsp;walkTo&#8203;(<a href="../helpers/utils/Tile.html" title="class in helpers.utils">Tile</a>&nbsp;worldmapTile,
+               <a href="../helpers/utils/RegionBox.html" title="class in helpers.utils">RegionBox</a>&nbsp;region)</pre>
+<div class="block">Attempts to navigate to a specified world map tile within a given region. This
+ method is similar to <a href="#walkTo(helpers.utils.Tile)"><code>walkTo(Tile)</code></a> but takes an additional <a href="../helpers/utils/RegionBox.html" title="class in helpers.utils"><code>RegionBox</code></a>
+ parameter that specifies the region within which the destination tile is located.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>worldmapTile</code> - The <a href="../helpers/utils/Tile.html" title="class in helpers.utils"><code>Tile</code></a> object representing the destination tile
+ on the world map within the specified region.</dd>
+<dd><code>region</code> - The <a href="../helpers/utils/RegionBox.html" title="class in helpers.utils"><code>RegionBox</code></a> defining the area within which the destination
+ tile is located. This parameter helps refine the navigation process by providing
+ additional context about the destination's location.</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd><code>true</code> if the method successfully initiates movement towards the
+ specified location within the given region, <code>false</code> otherwise. As with
+ <a href="#walkTo(helpers.utils.Tile)"><code>walkTo(Tile)</code></a>, success here indicates that the navigation action was
+ initiated, not necessarily that the destination will be reached.</dd>
 </dl>
 </li>
 </ul>

@@ -52,6 +52,40 @@ public interface iWalker {
      */
     void step(Tile worldmapPoint);
 
+
+    /**
+     * Attempts to navigate to a specified world map tile. This method calculates
+     * the minimap point corresponding to the provided world map tile and performs
+     * a tap action to initiate movement towards that location. The method includes
+     * a randomization within a randomized small area on the minimap to simulate a more natural
+     * movement pattern.
+     *
+     * @param worldmapTile The {@link Tile} object representing the destination tile
+     * on the world map. This is the target location the player is supposed to navigate to.
+     * @return {@code true} if the method successfully initiates movement towards the
+     * specified location, {@code false} otherwise. Note: returning {@code true} does not
+     * guarantee that the destination will be reached, only that the navigation action
+     * was successfully initiated.
+     */
+    boolean walkTo(Tile worldmapTile);
+
+    /**
+     * Attempts to navigate to a specified world map tile within a given region. This
+     * method is similar to {@link #walkTo(Tile)} but takes an additional {@link RegionBox}
+     * parameter that specifies the region within which the destination tile is located.
+     *
+     * @param worldmapTile The {@link Tile} object representing the destination tile
+     * on the world map within the specified region.
+     * @param region The {@link RegionBox} defining the area within which the destination
+     * tile is located. This parameter helps refine the navigation process by providing
+     * additional context about the destination's location.
+     * @return {@code true} if the method successfully initiates movement towards the
+     * specified location within the given region, {@code false} otherwise. As with
+     * {@link #walkTo(Tile)}, success here indicates that the navigation action was
+     * initiated, not necessarily that the destination will be reached.
+     */
+    boolean walkTo(Tile worldmapTile, RegionBox region);
+
     /**
      * Walks along a specified path within a given region.
      *
