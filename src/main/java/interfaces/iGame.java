@@ -49,4 +49,64 @@ public interface iGame {
      * @param Letters The 3 letters of the fairy ring code you'd like to travel to.
      * */
     void setFairyRing(String Letters);
+
+    /**
+     * Checks if the Tap to Drop action is currently enabled.
+     *
+     * @return true if the action is currently enabled.
+     */
+    public boolean isTapToDropEnabled();
+
+    /**
+     * Checks if the Single Tap action is currently enabled.
+     *
+     * @return true if the action is currently enabled.
+     */
+    public boolean isSingleTapEnabled();
+
+    /**
+     * Checks if the Keyboard action is currently enabled.
+     *
+     * @return true if the action is currently enabled.
+     */
+    public boolean isKeyboardActionEnabled();
+
+    /**
+     * Checks if there is currently no action selected at all.
+     *
+     * @return true if no action is currently selected.
+     */
+    public boolean isActionDisabled();
+
+    /**
+     * Checks if the action button is currently visible on the screen.
+     *
+     * @return true if the action button was located.
+     */
+    public boolean isActionButtonVisible();
+
+    /**
+     * Enables the Tap to Drop action mode.
+     * */
+    public void enableTapToDrop();
+
+    /**
+     * Disables the Tap to Drop action mode.
+     * */
+    public void disableTapToDrop();
+
+    /**
+     * Enables the Single Tap action mode.
+     * */
+    public void enableSingleTap();
+
+    /**
+     * Disables the Single Tap action mode.
+     * */
+    public void disableSingleTap();
+
+    /**
+     * Taps the keyboard action button to bring the keyboard up.
+     * */
+    public void showKeyboard();
 }
