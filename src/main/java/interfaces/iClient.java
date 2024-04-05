@@ -1,7 +1,5 @@
 package interfaces;
 
-import helpers.utils.MatchedRectangle;
-
 import java.awt.*;
 import java.io.File;
 import java.util.List;
@@ -71,13 +69,6 @@ public interface iClient {
      * @param rectangle the rectangle area where the long press should occur.
      */
     void longPress(Rectangle rectangle);
-
-    /**
-     * Simulates a long press action within a specified rectangle area.
-     *
-     * @param matchedRectangle the rectangle area where the long press should occur.
-     */
-    void longPress(MatchedRectangle matchedRectangle);
 
     /**
      * Sends a specific keystroke to the client.
