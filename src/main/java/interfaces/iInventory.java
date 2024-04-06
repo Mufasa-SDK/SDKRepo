@@ -125,5 +125,19 @@ public interface iInventory {
      * @return true if inventory is full
      */
     boolean isFull();
+
+    /**
+     * Checks how many inventory slots are currently in use.
+     *
+     * @return int representing the quantity of the used slots in the inventory.
+     */
+    int usedSlots();
+
+    /**
+     * Checks how many inventory slots are currently empty.
+     *
+     * @return int representing the quantity of the empty slots in the inventory.
+     */
+    int emptySlots();
 }
 

@@ -44,6 +44,13 @@ public interface iGame {
     void hop(String profileName, Boolean useWDH, Boolean useOnlyWDH);
 
     /**
+     * Instantly hops to a random world from the selected hop profile.
+     *
+     * @param profileName use the profileName that was selected in the ScriptUI config here by the user.
+     */
+    void instantHop(String profileName);
+
+    /**
      * Sets the letters on the fairy ring you'd like to travel to.
      *
      * @param Letters The 3 letters of the fairy ring code you'd like to travel to.
