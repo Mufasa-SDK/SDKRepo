@@ -27,7 +27,7 @@
     catch(err) {
     }
 //-->
-var data = {"i0":6,"i1":6,"i2":6,"i3":6,"i4":6,"i5":6,"i6":6,"i7":6,"i8":6,"i9":6,"i10":6,"i11":6,"i12":6,"i13":6,"i14":6,"i15":6};
+var data = {"i0":6,"i1":6,"i2":6,"i3":6,"i4":6,"i5":6,"i6":6,"i7":6,"i8":6,"i9":6,"i10":6,"i11":6,"i12":6,"i13":6,"i14":6,"i15":6,"i16":6,"i17":6};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],4:["t3","Abstract Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -250,7 +250,8 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </tr>
 <tr id="i13" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#tapItem(int,double)">tapItem</a></span>&#8203;(int&nbsp;itemId,
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#tapItem(int,boolean,double)">tapItem</a></span>&#8203;(int&nbsp;itemId,
+       boolean&nbsp;useCache,
        double&nbsp;threshold)</code></th>
 <td class="colLast">
 <div class="block">Initiates a tap action on a specified item in the inventory, based on a threshold.</div>
@@ -258,13 +259,30 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </tr>
 <tr id="i14" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#tapItem(java.lang.String,double)">tapItem</a></span>&#8203;(java.lang.String&nbsp;itemId,
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#tapItem(int,double)">tapItem</a></span>&#8203;(int&nbsp;itemId,
        double&nbsp;threshold)</code></th>
 <td class="colLast">
 <div class="block">Initiates a tap action on a specified item in the inventory, based on a threshold.</div>
 </td>
 </tr>
 <tr id="i15" class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#tapItem(java.lang.String,boolean,double)">tapItem</a></span>&#8203;(java.lang.String&nbsp;itemId,
+       boolean&nbsp;useCache,
+       double&nbsp;threshold)</code></th>
+<td class="colLast">
+<div class="block">Initiates a tap action on a specified item in the inventory, based on a threshold.</div>
+</td>
+</tr>
+<tr id="i16" class="altColor">
+<td class="colFirst"><code>void</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#tapItem(java.lang.String,double)">tapItem</a></span>&#8203;(java.lang.String&nbsp;itemId,
+       double&nbsp;threshold)</code></th>
+<td class="colLast">
+<div class="block">Initiates a tap action on a specified item in the inventory, based on a threshold.</div>
+</td>
+</tr>
+<tr id="i17" class="rowColor">
 <td class="colFirst"><code>int</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#usedSlots()">usedSlots</a></span>()</code></th>
 <td class="colLast">
@@ -458,6 +476,42 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>itemId</code> - The ID of the item to be tapped.</dd>
+<dd><code>threshold</code> - The threshold value used for identifying the item, threshold is a double where 1.0 represents 100% confidence. Usually above 0.80 (but often 0.90+).</dd>
+</dl>
+</li>
+</ul>
+<a id="tapItem(java.lang.String,boolean,double)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>tapItem</h4>
+<pre class="methodSignature">void&nbsp;tapItem&#8203;(java.lang.String&nbsp;itemId,
+             boolean&nbsp;useCache,
+             double&nbsp;threshold)</pre>
+<div class="block">Initiates a tap action on a specified item in the inventory, based on a threshold.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>itemId</code> - The ID of the item to be tapped.</dd>
+<dd><code>useCache</code> - Boolean to determine if we will be using the location cache or not.</dd>
+<dd><code>threshold</code> - The threshold value used for identifying the item, threshold is a double where 1.0 represents 100% confidence. Usually above 0.80 (but often 0.90+).</dd>
+</dl>
+</li>
+</ul>
+<a id="tapItem(int,boolean,double)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>tapItem</h4>
+<pre class="methodSignature">void&nbsp;tapItem&#8203;(int&nbsp;itemId,
+             boolean&nbsp;useCache,
+             double&nbsp;threshold)</pre>
+<div class="block">Initiates a tap action on a specified item in the inventory, based on a threshold.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>itemId</code> - The ID of the item to be tapped.</dd>
+<dd><code>useCache</code> - Boolean to determine if we will be using the location cache or not.</dd>
 <dd><code>threshold</code> - The threshold value used for identifying the item, threshold is a double where 1.0 represents 100% confidence. Usually above 0.80 (but often 0.90+).</dd>
 </dl>
 </li>
