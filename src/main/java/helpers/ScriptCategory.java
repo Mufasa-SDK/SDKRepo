@@ -24,6 +24,8 @@ public enum ScriptCategory {
     Smithing,
     Thieving,
     Woodcutting,
+    Moneymaking,
+    Minigames,
     /**
      * Represents scripts that are executed locally.
      */
