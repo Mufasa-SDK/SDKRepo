@@ -1,10 +1,19 @@
 package interfaces;
 
+import helpers.utils.Skills;
+
 /**
  * Interface defining interactions with the game's statistics interface.
  * This interface provides methods to check if the stats interface is open and to open it.
  */
 public interface iStats {
+    /**
+     * Gets the real level of the specified stat using OCR.
+     *
+     * @param skill of the skill level you want to check
+     * @return Integer indicating the real level of the skill you're checking.
+     */
+    Integer getRealLevel(Skills skill);
 
     /**
      * Gets the real level of the specified stat using OCR.

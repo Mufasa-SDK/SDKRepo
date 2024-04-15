@@ -1,29 +1,31 @@
 package helpers.utils;
 
-/**
+import org.opencv.core.Rect; /**
  * The {@code Skills} enum represents all the skills available in OSRS
  */
 public enum Skills {
-    AGILITY,
     ATTACK,
     STRENGHT,
     DEFENCE,
     RANGED,
-    COOKING,
-    CRAFTING,
-    CONSTRUCTION,
-    FARMING,
-    FIREMAKING,
-    FISHING,
-    FLETCHING,
-    HERBLORE,
-    HUNTER,
-    MAGIC,
-    MINING,
     PRAYER,
+    MAGIC,
     RUNECRAFTING,
-    SLAYER,
-    SMITHING,
+    CONSTRUCTION,
+    HITPOINTS,
+    AGILITY,
+    HERBLORE,
     THIEVING,
-    WOODCUTTING;
+    CRAFTING,
+    FLETCHING,
+    SLAYER,
+    HUNTER,
+    MINING,
+    SMITHING,
+    FISHING,
+    COOKING,
+    FIREMAKING,
+    WOODCUTTING,
+    FARMING,
+    TOTAL;
 }
