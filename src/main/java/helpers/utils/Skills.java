@@ -25,5 +25,5 @@ public enum Skills {
     SLAYER,
     SMITHING,
     THIEVING,
-    WOODCUTTING,
+    WOODCUTTING;
 }
