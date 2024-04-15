@@ -77,6 +77,36 @@ public interface iChatbox {
     void closeChatbox();
 
     /**
+     * Opens the 'All' section of the chatbox with random actions.
+     */
+    void openAllChat();
+
+    /**
+     * Opens the 'Game' section of the chatbox with random actions.
+     */
+    void openGameChat();
+
+    /**
+     * Opens the 'Private' section of the chatbox with random actions.
+     */
+    void openPrivateChat();
+
+    /**
+     * Opens the 'Friends' section of the chatbox with random actions.
+     */
+    void openFriendsChat();
+
+    /**
+     * Opens the 'Channel' section of the chatbox with random actions.
+     */
+    void openChannelChat();
+
+    /**
+     * Opens the 'Clan' section of the chatbox with random actions.
+     */
+    void openClanChat();
+
+    /**
      * Finds and returns the rectangle representing the chatbox menu.
      * @return A Rectangle object representing the area of the chatbox menu.
      */

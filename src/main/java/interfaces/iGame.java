@@ -51,6 +51,15 @@ public interface iGame {
     void instantHop(String profileName);
 
     /**
+     * Instantly switches to a random world from the selected hop profile.
+     * DISCLAIMER: This is only to be used when already on the login screen!
+     * Use the instantHop method when you are still logged in.
+     *
+     * @param profileName use the profileName that was selected in the ScriptUI config here by the user.
+     */
+    void switchWorld(String profileName);
+
+    /**
      * Sets the letters on the fairy ring you'd like to travel to.
      *
      * @param Letters The 3 letters of the fairy ring code you'd like to travel to.
