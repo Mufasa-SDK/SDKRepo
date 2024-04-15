@@ -1,6 +1,6 @@
 package helpers.utils;
 
-import org.opencv.core.Rect; /**
+/**
  * The {@code Skills} enum represents all the skills available in OSRS
  */
 public enum Skills {
