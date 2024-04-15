@@ -27,7 +27,7 @@
     catch(err) {
     }
 //-->
-var data = {"i0":6,"i1":6,"i2":6,"i3":6,"i4":6,"i5":6,"i6":6,"i7":6,"i8":6,"i9":6,"i10":6,"i11":6,"i12":6,"i13":6,"i14":6,"i15":6,"i16":6,"i17":6};
+var data = {"i0":6,"i1":6,"i2":6,"i3":6,"i4":6,"i5":6,"i6":6,"i7":6,"i8":6,"i9":6,"i10":6,"i11":6,"i12":6,"i13":6,"i14":6,"i15":6,"i16":6,"i17":6,"i18":6,"i19":6};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],4:["t3","Abstract Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -219,13 +219,29 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </td>
 </tr>
 <tr id="i9" class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getItemCenterPoint(int,double)">getItemCenterPoint</a></span>&#8203;(int&nbsp;itemId,
+                  double&nbsp;threshold)</code></th>
+<td class="colLast">
+<div class="block">Finds the specified item in your inventory, and returns the center location of it as a Point (x,y)</div>
+</td>
+</tr>
+<tr id="i10" class="altColor">
+<td class="colFirst"><code>void</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getItemCenterPoint(java.lang.String,double)">getItemCenterPoint</a></span>&#8203;(java.lang.String&nbsp;itemId,
+                  double&nbsp;threshold)</code></th>
+<td class="colLast">
+<div class="block">Finds the specified item in your inventory, and returns the center location of it as a Point (x,y)</div>
+</td>
+</tr>
+<tr id="i11" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#isFull()">isFull</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Check if inventory is full or not</div>
 </td>
 </tr>
-<tr id="i10" class="altColor">
+<tr id="i12" class="altColor">
 <td class="colFirst"><code>java.awt.Rectangle</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#itemPosition(java.lang.String,double)">itemPosition</a></span>&#8203;(java.lang.String&nbsp;itemID,
             double&nbsp;threshold)</code></th>
@@ -233,14 +249,14 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <div class="block">Finds the position of a specific item in the inventory, based on a threshold.</div>
 </td>
 </tr>
-<tr id="i11" class="rowColor">
+<tr id="i13" class="rowColor">
 <td class="colFirst"><code>int</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#stackSize(int)">stackSize</a></span>&#8203;(int&nbsp;itemID)</code></th>
 <td class="colLast">
 <div class="block">Reads the stack size of a specified item in the inventory.</div>
 </td>
 </tr>
-<tr id="i12" class="altColor">
+<tr id="i14" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#tapAllItems(int,double)">tapAllItems</a></span>&#8203;(int&nbsp;itemId,
            double&nbsp;threshold)</code></th>
@@ -248,7 +264,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <div class="block">Initiates a tap action on a all items in the inventory with the given item ID, based on a threshold.</div>
 </td>
 </tr>
-<tr id="i13" class="rowColor">
+<tr id="i15" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#tapItem(int,boolean,double)">tapItem</a></span>&#8203;(int&nbsp;itemId,
        boolean&nbsp;useCache,
@@ -257,7 +273,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <div class="block">Initiates a tap action on a specified item in the inventory, based on a threshold.</div>
 </td>
 </tr>
-<tr id="i14" class="altColor">
+<tr id="i16" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#tapItem(int,double)">tapItem</a></span>&#8203;(int&nbsp;itemId,
        double&nbsp;threshold)</code></th>
@@ -265,7 +281,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <div class="block">Initiates a tap action on a specified item in the inventory, based on a threshold.</div>
 </td>
 </tr>
-<tr id="i15" class="rowColor">
+<tr id="i17" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#tapItem(java.lang.String,boolean,double)">tapItem</a></span>&#8203;(java.lang.String&nbsp;itemId,
        boolean&nbsp;useCache,
@@ -274,7 +290,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <div class="block">Initiates a tap action on a specified item in the inventory, based on a threshold.</div>
 </td>
 </tr>
-<tr id="i16" class="altColor">
+<tr id="i18" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#tapItem(java.lang.String,double)">tapItem</a></span>&#8203;(java.lang.String&nbsp;itemId,
        double&nbsp;threshold)</code></th>
@@ -282,7 +298,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <div class="block">Initiates a tap action on a specified item in the inventory, based on a threshold.</div>
 </td>
 </tr>
-<tr id="i17" class="rowColor">
+<tr id="i19" class="rowColor">
 <td class="colFirst"><code>int</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#usedSlots()">usedSlots</a></span>()</code></th>
 <td class="colLast">
@@ -561,6 +577,38 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>itemId</code> - The ID of the food to be tapped.</dd>
 <dd><code>threshold</code> - The threshold value used for identifying the food, threshold is a double where 1.0 represents 100% confidence. Usually above 0.80 (but often 0.90+).</dd>
+</dl>
+</li>
+</ul>
+<a id="getItemCenterPoint(java.lang.String,double)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getItemCenterPoint</h4>
+<pre class="methodSignature">void&nbsp;getItemCenterPoint&#8203;(java.lang.String&nbsp;itemId,
+                        double&nbsp;threshold)</pre>
+<div class="block">Finds the specified item in your inventory, and returns the center location of it as a Point (x,y)</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>itemId</code> - The ID of the food to be tapped.</dd>
+<dd><code>threshold</code> - The threshold value used for identifying the item, threshold is a double where 1.0 represents 100% confidence. Usually above 0.80 (but often 0.90+).</dd>
+</dl>
+</li>
+</ul>
+<a id="getItemCenterPoint(int,double)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getItemCenterPoint</h4>
+<pre class="methodSignature">void&nbsp;getItemCenterPoint&#8203;(int&nbsp;itemId,
+                        double&nbsp;threshold)</pre>
+<div class="block">Finds the specified item in your inventory, and returns the center location of it as a Point (x,y)</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>itemId</code> - The ID of the food to be tapped.</dd>
+<dd><code>threshold</code> - The threshold value used for identifying the item, threshold is a double where 1.0 represents 100% confidence. Usually above 0.80 (but often 0.90+).</dd>
 </dl>
 </li>
 </ul>

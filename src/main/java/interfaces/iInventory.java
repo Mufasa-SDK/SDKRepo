@@ -138,6 +138,22 @@ public interface iInventory {
     void eat(int itemId, double threshold);
 
     /**
+     * Finds the specified item in your inventory, and returns the center location of it as a Point (x,y)
+     *
+     * @param itemId    The ID of the food to be tapped.
+     * @param threshold The threshold value used for identifying the item, threshold is a double where 1.0 represents 100% confidence. Usually above 0.80 (but often 0.90+).
+     */
+    void getItemCenterPoint(String itemId, double threshold);
+
+    /**
+     * Finds the specified item in your inventory, and returns the center location of it as a Point (x,y)
+     *
+     * @param itemId    The ID of the food to be tapped.
+     * @param threshold The threshold value used for identifying the item, threshold is a double where 1.0 represents 100% confidence. Usually above 0.80 (but often 0.90+).
+     */
+    void getItemCenterPoint(int itemId, double threshold);
+
+    /**
      * Check if inventory is full or not
      *
      * @return true if inventory is full
