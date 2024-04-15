@@ -11,4 +11,9 @@ public interface iScript {
      * to finish its current task or reach a safe state before stopping.
      */
     void stop();
+
+    /**
+     * Returns the current state of the cancellation token.
+     */
+    boolean isScriptStopping();
 }

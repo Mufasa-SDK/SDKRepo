@@ -27,7 +27,7 @@
     catch(err) {
     }
 //-->
-var data = {"i0":6};
+var data = {"i0":6,"i1":6};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],4:["t3","Abstract Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -146,6 +146,13 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <th class="colLast" scope="col">Description</th>
 </tr>
 <tr id="i0" class="altColor">
+<td class="colFirst"><code>boolean</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#isScriptStopping()">isScriptStopping</a></span>()</code></th>
+<td class="colLast">
+<div class="block">Returns the current state of the cancellation token.</div>
+</td>
+</tr>
+<tr id="i1" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#stop()">stop</a></span>()</code></th>
 <td class="colLast">
@@ -172,7 +179,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <a id="stop()">
 <!--   -->
 </a>
-<ul class="blockListLast">
+<ul class="blockList">
 <li class="blockList">
 <h4>stop</h4>
 <pre class="methodSignature">void&nbsp;stop()</pre>
@@ -180,6 +187,16 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
  This method should ensure that all necessary cleanup is performed
  and resources are released properly. It's designed to allow the script
  to finish its current task or reach a safe state before stopping.</div>
+</li>
+</ul>
+<a id="isScriptStopping()">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>isScriptStopping</h4>
+<pre class="methodSignature">boolean&nbsp;isScriptStopping()</pre>
+<div class="block">Returns the current state of the cancellation token.</div>
 </li>
 </ul>
 </li>
