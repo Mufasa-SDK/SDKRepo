@@ -1,4 +1,4 @@
-package helpers;
+package helpers.annotations;
 
 import helpers.ScriptCategory;
 import java.lang.annotation.ElementType;

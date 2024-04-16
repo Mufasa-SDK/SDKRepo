@@ -1,4 +1,4 @@
-package helpers;
+package helpers.annotations;
 
 /**
  * This annotation defines an allowed value for a script configuration option.
@@ -22,6 +22,9 @@ public @interface AllowedValue {
      */
     String optionName();
 
-    // Array of ScriptConfiguration to define nested configurations
+    /**
+     * Array of NestedScriptConfiguration to define nested configurations
+     * @return array of nested script configurations
+     */
     NestedScriptConfiguration[] nestedConfigs() default {};
 }

@@ -1,4 +1,4 @@
-package helpers;
+package helpers.annotations;
 
 public @interface NestedAllowedValue {
 
