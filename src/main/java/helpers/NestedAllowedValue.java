@@ -1,10 +1,6 @@
 package helpers;
 
-/**
- * This annotation defines an allowed value for a script configuration option.
- * It can specify an icon and a name for each allowed value.
- */
-public @interface AllowedValue {
+public @interface NestedAllowedValue {
 
     /**
      * The icon for the option. Default is "0".
@@ -21,7 +17,4 @@ public @interface AllowedValue {
      * @return the name of the option.
      */
     String optionName();
-
-    // Array of ScriptConfiguration to define nested configurations
-    NestedScriptConfiguration[] nestedConfigs() default {};
 }
