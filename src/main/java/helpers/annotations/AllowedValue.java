@@ -21,10 +21,4 @@ public @interface AllowedValue {
      * @return the name of the option.
      */
     String optionName();
-
-    /**
-     * Array of NestedScriptConfiguration to define nested configurations
-     * @return array of nested script configurations
-     */
-    NestedScriptConfiguration[] nestedConfigs() default {};
 }
