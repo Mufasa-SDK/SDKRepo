@@ -50,6 +50,14 @@ public @interface ScriptConfiguration {
     OptionType optionType();
 
     /**
+     * Optional attribute that specifies another configuration option
+     * that this one depends on. It could be used to enable/disable or show/hide
+     * this configuration option based on the value or presence of another.
+     * @return The name of the dependent configuration option.
+     */
+    String dependsOn() default "";
+
+    /**
      * Container annotation for repeating {@link ScriptConfiguration}.
      * This allows multiple {@link ScriptConfiguration} annotations on the same element.
      */

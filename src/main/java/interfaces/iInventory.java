@@ -142,6 +142,7 @@ public interface iInventory {
      *
      * @param itemId    The ID of the food to be tapped.
      * @param threshold The threshold value used for identifying the item, threshold is a double where 1.0 represents 100% confidence. Usually above 0.80 (but often 0.90+).
+     * @return Center Point location of specified item
      */
     Point getItemCenterPoint(String itemId, double threshold);
 
@@ -150,6 +151,7 @@ public interface iInventory {
      *
      * @param itemId    The ID of the food to be tapped.
      * @param threshold The threshold value used for identifying the item, threshold is a double where 1.0 represents 100% confidence. Usually above 0.80 (but often 0.90+).
+     * @return Center Point location of the specified item
      */
     Point getItemCenterPoint(int itemId, double threshold);
 

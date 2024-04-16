@@ -193,6 +193,14 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </td>
 </tr>
 <tr class="rowColor">
+<td class="colFirst"><code>java.lang.String</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#dependsOn()">dependsOn</a></span></code></th>
+<td class="colLast">
+<div class="block">Optional attribute that specifies another configuration option
+ that this one depends on.</div>
+</td>
+</tr>
+<tr class="altColor">
 <td class="colFirst"><code>int[]</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#minMaxIntValues()">minMaxIntValues</a></span></code></th>
 <td class="colLast">
@@ -319,7 +327,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <li class="blockList"><a id="minMaxIntValues()">
 <!--   -->
 </a>
-<ul class="blockListLast">
+<ul class="blockList">
 <li class="blockList">
 <h4>minMaxIntValues</h4>
 <pre>int[]&nbsp;minMaxIntValues</pre>
@@ -331,6 +339,31 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <dl>
 <dt>Default:</dt>
 <dd>{}</dd>
+</dl>
+</li>
+</ul>
+</li>
+</ul>
+</section>
+<section>
+<ul class="blockList">
+<li class="blockList"><a id="dependsOn()">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>dependsOn</h4>
+<pre>java.lang.String&nbsp;dependsOn</pre>
+<div class="block">Optional attribute that specifies another configuration option
+ that this one depends on. It could be used to enable/disable or show/hide
+ this configuration option based on the value or presence of another.</div>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>The name of the dependent configuration option.</dd>
+</dl>
+<dl>
+<dt>Default:</dt>
+<dd>""</dd>
 </dl>
 </li>
 </ul>

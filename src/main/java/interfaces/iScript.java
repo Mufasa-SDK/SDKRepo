@@ -14,6 +14,7 @@ public interface iScript {
 
     /**
      * Returns the current state of the cancellation token.
+     * @return true if script is requested to stop.
      */
     boolean isScriptStopping();
 }
