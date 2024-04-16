@@ -13,7 +13,7 @@ public enum OptionType {
         STRING,
 
         /**
-         * Represents a configuration option of type Integer. Remember to define minMaxIntValues()
+         * Represents a configuration option for a spinner-type Integer option. Remember to define minMaxIntValues()
          */
         INTEGER,
 
