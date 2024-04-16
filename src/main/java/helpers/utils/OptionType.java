@@ -13,9 +13,14 @@ public enum OptionType {
         STRING,
 
         /**
-         * Represents a configuration option of type Integer.
+         * Represents a configuration option of type Integer. Remember to define minMaxIntValues()
          */
         INTEGER,
+
+        /**
+         * Represents a configuration option for a slider-type Integer option. Remember to define minMaxIntValues()
+         */
+        INTEGER_SLIDER,
 
         /**
          * Represents a configuration option of type Boolean.
