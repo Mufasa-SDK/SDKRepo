@@ -126,4 +126,23 @@ public interface iPlayer {
      */
     void toggleRun();
 
+    /**
+     * Checks if auto retaliate is currently enabled or not.
+     *
+     * @return Returns a true/false boolean, true if auto retaliate is enabled, false if not.
+     */
+    boolean isAutoRetaliateOn();
+
+    /**
+     * Enables auto retaliate.
+     *
+     */
+    void enableAutoRetaliate();
+
+    /**
+     * Disables auto retaliate.
+     *
+     */
+    void disableAutoRetaliate();
+
 }

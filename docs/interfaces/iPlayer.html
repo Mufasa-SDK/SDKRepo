@@ -27,7 +27,7 @@
     catch(err) {
     }
 //-->
-var data = {"i0":6,"i1":6,"i2":6,"i3":6,"i4":6,"i5":6,"i6":6,"i7":6,"i8":6,"i9":6,"i10":6,"i11":6,"i12":6,"i13":6};
+var data = {"i0":6,"i1":6,"i2":6,"i3":6,"i4":6,"i5":6,"i6":6,"i7":6,"i8":6,"i9":6,"i10":6,"i11":6,"i12":6,"i13":6,"i14":6,"i15":6,"i16":6};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],4:["t3","Abstract Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -161,41 +161,62 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </td>
 </tr>
 <tr id="i2" class="altColor">
+<td class="colFirst"><code>void</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#disableAutoRetaliate()">disableAutoRetaliate</a></span>()</code></th>
+<td class="colLast">
+<div class="block">Disables auto retaliate.</div>
+</td>
+</tr>
+<tr id="i3" class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#enableAutoRetaliate()">enableAutoRetaliate</a></span>()</code></th>
+<td class="colLast">
+<div class="block">Enables auto retaliate.</div>
+</td>
+</tr>
+<tr id="i4" class="altColor">
 <td class="colFirst"><code>java.lang.Integer</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getHP()">getHP</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Gets the player's current HP based on the minimap orb.</div>
 </td>
 </tr>
-<tr id="i3" class="rowColor">
+<tr id="i5" class="rowColor">
 <td class="colFirst"><code>java.lang.Integer</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getPray()">getPray</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Gets the player's current Prayer points based on the minimap orb.</div>
 </td>
 </tr>
-<tr id="i4" class="altColor">
+<tr id="i6" class="altColor">
 <td class="colFirst"><code>java.lang.Integer</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getRun()">getRun</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Gets the player's current Run energy based on the minimap orb.</div>
 </td>
 </tr>
-<tr id="i5" class="rowColor">
+<tr id="i7" class="rowColor">
 <td class="colFirst"><code>java.lang.Integer</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getSpec()">getSpec</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Gets the player's current Special attack based on the minimap orb.</div>
 </td>
 </tr>
-<tr id="i6" class="altColor">
+<tr id="i8" class="altColor">
+<td class="colFirst"><code>boolean</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#isAutoRetaliateOn()">isAutoRetaliateOn</a></span>()</code></th>
+<td class="colLast">
+<div class="block">Checks if auto retaliate is currently enabled or not.</div>
+</td>
+</tr>
+<tr id="i9" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#isRunEnabled()">isRunEnabled</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Checks if run is currently enabled or not.</div>
 </td>
 </tr>
-<tr id="i7" class="rowColor">
+<tr id="i10" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#isTileWithinArea(helpers.utils.Tile,helpers.utils.Area)">isTileWithinArea</a></span>&#8203;(<a href="../helpers/utils/Tile.html" title="class in helpers.utils">Tile</a>&nbsp;tileToCheck,
                 <a href="../helpers/utils/Area.html" title="class in helpers.utils">Area</a>&nbsp;areaToCheckWithin)</code></th>
@@ -203,7 +224,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <div class="block">Checks if a given tile is within a specified area.</div>
 </td>
 </tr>
-<tr id="i8" class="altColor">
+<tr id="i11" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#isTileWithinRegionbox(helpers.utils.Tile,helpers.utils.RegionBox)">isTileWithinRegionbox</a></span>&#8203;(<a href="../helpers/utils/Tile.html" title="class in helpers.utils">Tile</a>&nbsp;tileToCheck,
                      <a href="../helpers/utils/RegionBox.html" title="class in helpers.utils">RegionBox</a>&nbsp;regionToCheckWithin)</code></th>
@@ -211,7 +232,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <div class="block">Checks if a given tile is within a specified area.</div>
 </td>
 </tr>
-<tr id="i9" class="rowColor">
+<tr id="i12" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#tileEquals(helpers.utils.Tile,helpers.utils.Tile)">tileEquals</a></span>&#8203;(<a href="../helpers/utils/Tile.html" title="class in helpers.utils">Tile</a>&nbsp;originTile,
           <a href="../helpers/utils/Tile.html" title="class in helpers.utils">Tile</a>&nbsp;tileToCheck)</code></th>
@@ -219,21 +240,21 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <div class="block">Compares two tiles for equality.</div>
 </td>
 </tr>
-<tr id="i10" class="altColor">
+<tr id="i13" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#toggleRun()">toggleRun</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Toggles the run on/off, use isRunEnabled() to check if run is on or not, this will always toggle it on/off, no matter what it currently is on.</div>
 </td>
 </tr>
-<tr id="i11" class="rowColor">
+<tr id="i14" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#within(helpers.utils.Area)">within</a></span>&#8203;(<a href="../helpers/utils/Area.html" title="class in helpers.utils">Area</a>&nbsp;areaToSearchIn)</code></th>
 <td class="colLast">
 <div class="block">Gets the player's current position and checks if it is within the specified area</div>
 </td>
 </tr>
-<tr id="i12" class="altColor">
+<tr id="i15" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#within(helpers.utils.Area,helpers.utils.RegionBox)">within</a></span>&#8203;(<a href="../helpers/utils/Area.html" title="class in helpers.utils">Area</a>&nbsp;areaToSearchIn,
       <a href="../helpers/utils/RegionBox.html" title="class in helpers.utils">RegionBox</a>&nbsp;mapRegion)</code></th>
@@ -241,7 +262,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <div class="block">Gets the player's current position and checks if it is within the specified area</div>
 </td>
 </tr>
-<tr id="i13" class="rowColor">
+<tr id="i16" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#within(helpers.utils.RegionBox)">within</a></span>&#8203;(<a href="../helpers/utils/RegionBox.html" title="class in helpers.utils">RegionBox</a>&nbsp;regionToSearchIn)</code></th>
 <td class="colLast">
@@ -488,11 +509,45 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <a id="toggleRun()">
 <!--   -->
 </a>
-<ul class="blockListLast">
+<ul class="blockList">
 <li class="blockList">
 <h4>toggleRun</h4>
 <pre class="methodSignature">void&nbsp;toggleRun()</pre>
 <div class="block">Toggles the run on/off, use isRunEnabled() to check if run is on or not, this will always toggle it on/off, no matter what it currently is on.</div>
+</li>
+</ul>
+<a id="isAutoRetaliateOn()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>isAutoRetaliateOn</h4>
+<pre class="methodSignature">boolean&nbsp;isAutoRetaliateOn()</pre>
+<div class="block">Checks if auto retaliate is currently enabled or not.</div>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>Returns a true/false boolean, true if auto retaliate is enabled, false if not.</dd>
+</dl>
+</li>
+</ul>
+<a id="enableAutoRetaliate()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>enableAutoRetaliate</h4>
+<pre class="methodSignature">void&nbsp;enableAutoRetaliate()</pre>
+<div class="block">Enables auto retaliate.</div>
+</li>
+</ul>
+<a id="disableAutoRetaliate()">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>disableAutoRetaliate</h4>
+<pre class="methodSignature">void&nbsp;disableAutoRetaliate()</pre>
+<div class="block">Disables auto retaliate.</div>
 </li>
 </ul>
 </li>
