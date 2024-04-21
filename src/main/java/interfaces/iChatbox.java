@@ -119,4 +119,39 @@ public interface iChatbox {
      */
     String readLastLine(Rectangle areaToOCR);
 
+    /**
+     * Checks if the "Game" chat tab is active
+     * @return true/false if It's active or not.
+     */
+    public boolean isGameChatActive();
+
+    /**
+     * Checks if the "Public" chat tab is active
+     * @return true/false if It's active or not.
+     */
+    public boolean isPublicChatActive();
+
+    /**
+     * Checks if the "Private" chat tab is active
+     * @return true/false if It's active or not.
+     */
+    public boolean isPrivateChatActive();
+
+    /**
+     * Checks if the "Channel" chat tab is active
+     * @return true/false if It's active or not.
+     */
+    public boolean isChannelChatActive();
+
+    /**
+     * Checks if the "Clan" chat tab is active
+     * @return true/false if It's active or not.
+     */
+    public boolean isClanChatActive();
+
+    /**
+     * Checks if the "Trade" chat tab is active
+     * @return true/false if It's active or not.
+     */
+    public boolean isTradeChatActive();
 }
