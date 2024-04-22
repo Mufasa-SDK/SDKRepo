@@ -25,6 +25,13 @@ public interface iBank {
     boolean isOpen();
 
     /**
+     * Checks if the specific bank tab is selected
+     * @param tab, an int from 0-9 for the bank tab.
+     * @return true if the tab is selected, false otherwise.
+     */
+    boolean isTabSelected(int tab);
+
+    /**
      * Checks if the bank contains an item with the specified ID and meets the threshold quantity.
      * @param itemId The ID of the item to check.
      * @param treshold The minimum quantity threshold.
