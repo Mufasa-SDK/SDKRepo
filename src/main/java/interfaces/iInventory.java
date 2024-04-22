@@ -63,6 +63,15 @@ public interface iInventory {
     int count(String itemID, double threshold);
 
     /**
+     * Counts the quantity of a specific item in the inventory, based on a threshold.
+     *
+     * @param itemID    The ID of the item to count in the inventory.
+     * @param threshold The threshold value used for the count, threshold is a double where 1.0 represents 100% confidence. Usually above 0.80 (but often 0.90+).
+     * @return int representing the quantity of the specified item in the inventory.
+     */
+    int count(int itemID, double threshold);
+
+    /**
      * Reads the stack size of a specified item in the inventory.
      *
      * @param itemID The ID of the item to count in the inventory.
