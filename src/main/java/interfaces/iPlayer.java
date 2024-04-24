@@ -9,6 +9,12 @@ import helpers.utils.Tile;
  */
 public interface iPlayer {
     /**
+     * Checks if the level-up widget is visible
+     * @return Returns true if the widget is visible
+     */
+    boolean leveledUp();
+
+    /**
      * Gets the player's current position and checks if it is within the specified area
      *
      * @param areaToSearchIn This is the Area of the world map area you'd like to search in.
