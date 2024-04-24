@@ -163,4 +163,23 @@ public interface iClient {
      * @return a list of Rectangles that contain the found color clusters
      */
     List<Rectangle> getObjectsFromColorsInRect(List<Color> colors, Rectangle searchRect, int tolerance);
+
+    /**
+     * Checks if a specified color is found on the game screen within the given rectangle
+     *
+     * @param colors a list of colors you want to search for
+     * @param tolerance the color tolerance for matching the target color
+     * @return a list of Point that has the found color
+     */
+    public List<Point> getPointsFromColors(List<Color> colors, int tolerance);
+
+    /**
+     * Checks if a specified color is found on the game screen within the given rectangle
+     *
+     * @param colors a list of colors you want to search for
+     * @param searchRect the rectangle to search for color clusters in
+     * @param tolerance the color tolerance for matching the target color
+     * @return a list of Point that has the found color
+     */
+    public List<Point> getPointsFromColorsInRect(List<Color> colors, Rectangle searchRect, int tolerance);
 }
