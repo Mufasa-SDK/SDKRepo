@@ -27,7 +27,7 @@
     catch(err) {
     }
 //-->
-var data = {"i0":6,"i1":6,"i2":6,"i3":6,"i4":6,"i5":6,"i6":6,"i7":6,"i8":6,"i9":6,"i10":6,"i11":6,"i12":6,"i13":6,"i14":6,"i15":6,"i16":6,"i17":6,"i18":6,"i19":6,"i20":6,"i21":6};
+var data = {"i0":6,"i1":6,"i2":6,"i3":6,"i4":6,"i5":6,"i6":6,"i7":6,"i8":6,"i9":6,"i10":6,"i11":6,"i12":6,"i13":6,"i14":6,"i15":6,"i16":6,"i17":6,"i18":6,"i19":6,"i20":6,"i21":6,"i22":6,"i23":6,"i24":6,"i25":6};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],4:["t3","Abstract Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -180,36 +180,86 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getObjectsFromColor(java.util.List,int)">getObjectsFromColor</a></span>&#8203;(java.util.List&lt;java.awt.Color&gt;&nbsp;colors,
                    int&nbsp;tolerance)</code></th>
 <td class="colLast">
-<div class="block">Checks if a specified color is found on the game screen</div>
+<div class="block">Retrieves a list of rectangles containing objects of specified colors with the given tolerance level.</div>
 </td>
 </tr>
 <tr id="i5" class="rowColor">
+<td class="colFirst"><code>java.util.List&lt;java.awt.Rectangle&gt;</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getObjectsFromColor(java.util.List,int,java.util.List,int)">getObjectsFromColor</a></span>&#8203;(java.util.List&lt;java.awt.Color&gt;&nbsp;colors,
+                   int&nbsp;tolerance,
+                   java.util.List&lt;java.awt.Color&gt;&nbsp;exclusionColors,
+                   int&nbsp;exclusionTolerance)</code></th>
+<td class="colLast">
+<div class="block">Retrieves a list of rectangles containing objects of specified colors with the given tolerance level,
+ excluding objects of specified exclusion colors with the given exclusion tolerance.</div>
+</td>
+</tr>
+<tr id="i6" class="altColor">
 <td class="colFirst"><code>java.util.List&lt;java.awt.Rectangle&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getObjectsFromColorsInRect(java.util.List,java.awt.Rectangle,int)">getObjectsFromColorsInRect</a></span>&#8203;(java.util.List&lt;java.awt.Color&gt;&nbsp;colors,
                           java.awt.Rectangle&nbsp;searchRect,
                           int&nbsp;tolerance)</code></th>
 <td class="colLast">
-<div class="block">Checks if a specified color is found on the game screen within the given rectangle</div>
+<div class="block">Retrieves a list of rectangles containing objects of specified colors within the given search rectangle.</div>
 </td>
 </tr>
-<tr id="i6" class="altColor">
+<tr id="i7" class="rowColor">
+<td class="colFirst"><code>java.util.List&lt;java.awt.Rectangle&gt;</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getObjectsFromColorsInRect(java.util.List,java.awt.Rectangle,int,java.util.List,int)">getObjectsFromColorsInRect</a></span>&#8203;(java.util.List&lt;java.awt.Color&gt;&nbsp;colors,
+                          java.awt.Rectangle&nbsp;searchRect,
+                          int&nbsp;tolerance,
+                          java.util.List&lt;java.awt.Color&gt;&nbsp;exclusionColors,
+                          int&nbsp;exclusionTolerance)</code></th>
+<td class="colLast">
+<div class="block">Retrieves a list of rectangles containing objects of specified colors within the given search rectangle,
+ excluding objects of specified exclusion colors.</div>
+</td>
+</tr>
+<tr id="i8" class="altColor">
 <td class="colFirst"><code>java.util.List&lt;java.awt.Point&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getPointsFromColors(java.util.List,int)">getPointsFromColors</a></span>&#8203;(java.util.List&lt;java.awt.Color&gt;&nbsp;colors,
                    int&nbsp;tolerance)</code></th>
 <td class="colLast">
-<div class="block">Checks if a specified color is found on the game screen within the given rectangle</div>
+<div class="block">Retrieves points on the current emulator screen where specified colors are found,
+ considering a specified tolerance for color matching.</div>
 </td>
 </tr>
-<tr id="i7" class="rowColor">
+<tr id="i9" class="rowColor">
+<td class="colFirst"><code>java.util.List&lt;java.awt.Point&gt;</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getPointsFromColors(java.util.List,int,java.util.List,int)">getPointsFromColors</a></span>&#8203;(java.util.List&lt;java.awt.Color&gt;&nbsp;colors,
+                   int&nbsp;tolerance,
+                   java.util.List&lt;java.awt.Color&gt;&nbsp;exclusionColors,
+                   int&nbsp;exclusionTolerance)</code></th>
+<td class="colLast">
+<div class="block">Retrieves points on the current emulator screen where specified colors are found,
+ excluding specified colors within a certain tolerance, and considering a specified
+ tolerance for the target colors.</div>
+</td>
+</tr>
+<tr id="i10" class="altColor">
 <td class="colFirst"><code>java.util.List&lt;java.awt.Point&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getPointsFromColorsInRect(java.util.List,java.awt.Rectangle,int)">getPointsFromColorsInRect</a></span>&#8203;(java.util.List&lt;java.awt.Color&gt;&nbsp;colors,
                          java.awt.Rectangle&nbsp;searchRect,
                          int&nbsp;tolerance)</code></th>
 <td class="colLast">
-<div class="block">Checks if a specified color is found on the game screen within the given rectangle</div>
+<div class="block">Searches for specified colors within a defined rectangular area of the game screen,
+ taking into account a specified color tolerance for matching.</div>
 </td>
 </tr>
-<tr id="i8" class="altColor">
+<tr id="i11" class="rowColor">
+<td class="colFirst"><code>java.util.List&lt;java.awt.Point&gt;</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getPointsFromColorsInRect(java.util.List,java.awt.Rectangle,int,java.util.List,int)">getPointsFromColorsInRect</a></span>&#8203;(java.util.List&lt;java.awt.Color&gt;&nbsp;colors,
+                         java.awt.Rectangle&nbsp;searchRect,
+                         int&nbsp;tolerance,
+                         java.util.List&lt;java.awt.Color&gt;&nbsp;exclusionColors,
+                         int&nbsp;exclusionTolerance)</code></th>
+<td class="colLast">
+<div class="block">Searches for specified colors within a defined rectangular area of the game screen,
+ excluding specified colors within a certain tolerance, and taking into account a specified
+ color tolerance for the target colors.</div>
+</td>
+</tr>
+<tr id="i12" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#isAnyColorInRect(java.util.List,java.awt.Rectangle,int)">isAnyColorInRect</a></span>&#8203;(java.util.List&lt;java.awt.Color&gt;&nbsp;targetColors,
                 java.awt.Rectangle&nbsp;regionToSearch,
@@ -218,7 +268,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <div class="block">Checks if specified colors is found within a rectangle area on the game screen</div>
 </td>
 </tr>
-<tr id="i9" class="rowColor">
+<tr id="i13" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#isColorAtPoint(java.awt.Color,java.awt.Point,int)">isColorAtPoint</a></span>&#8203;(java.awt.Color&nbsp;targetColor,
               java.awt.Point&nbsp;pointToSearch,
@@ -227,7 +277,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <div class="block">Checks if a specified color is found on a specific point on the game screen</div>
 </td>
 </tr>
-<tr id="i10" class="altColor">
+<tr id="i14" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#isColorInRect(java.awt.Color,java.awt.Rectangle,int)">isColorInRect</a></span>&#8203;(java.awt.Color&nbsp;targetColor,
              java.awt.Rectangle&nbsp;regionToSearch,
@@ -236,7 +286,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <div class="block">Checks if a specified color is found within a rectangle area on the game screen</div>
 </td>
 </tr>
-<tr id="i11" class="rowColor">
+<tr id="i15" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#longPress(int,int)">longPress</a></span>&#8203;(int&nbsp;x,
          int&nbsp;y)</code></th>
@@ -244,7 +294,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <div class="block">Simulates a long press action at a specified coordinate.</div>
 </td>
 </tr>
-<tr id="i12" class="altColor">
+<tr id="i16" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#longPress(java.awt.Color,java.awt.Rectangle,int)">longPress</a></span>&#8203;(java.awt.Color&nbsp;targetColor,
          java.awt.Rectangle&nbsp;boundingArea,
@@ -253,35 +303,35 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <div class="block">Simulates a long press action on a specific color within a defined area.</div>
 </td>
 </tr>
-<tr id="i13" class="rowColor">
+<tr id="i17" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#longPress(java.awt.Rectangle)">longPress</a></span>&#8203;(java.awt.Rectangle&nbsp;rectangle)</code></th>
 <td class="colLast">
 <div class="block">Simulates a long press action within a specified rectangle area.</div>
 </td>
 </tr>
-<tr id="i14" class="altColor">
+<tr id="i18" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#moveCameraUp()">moveCameraUp</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Simulates the action of moving the camera up.</div>
 </td>
 </tr>
-<tr id="i15" class="rowColor">
+<tr id="i19" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#restartApp()">restartApp</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Restarts the application associated with this client.</div>
 </td>
 </tr>
-<tr id="i16" class="altColor">
+<tr id="i20" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#sendKeystroke(java.lang.String)">sendKeystroke</a></span>&#8203;(java.lang.String&nbsp;keystroke)</code></th>
 <td class="colLast">
 <div class="block">Sends a specific keystroke to the client.</div>
 </td>
 </tr>
-<tr id="i17" class="rowColor">
+<tr id="i21" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#tap(int,int)">tap</a></span>&#8203;(int&nbsp;x,
    int&nbsp;y)</code></th>
@@ -289,7 +339,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <div class="block">Simulates a tap action at a specified coordinate.</div>
 </td>
 </tr>
-<tr id="i18" class="altColor">
+<tr id="i22" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#tap(java.awt.Color,java.awt.Rectangle,int)">tap</a></span>&#8203;(java.awt.Color&nbsp;targetColor,
    java.awt.Rectangle&nbsp;boundingArea,
@@ -298,21 +348,21 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <div class="block">Simulates a tap action on a specific color within a defined area.</div>
 </td>
 </tr>
-<tr id="i19" class="rowColor">
+<tr id="i23" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#tap(java.awt.Point)">tap</a></span>&#8203;(java.awt.Point&nbsp;point)</code></th>
 <td class="colLast">
 <div class="block">Simulates a tap action at a specified coordinate using a java.awt.Point.</div>
 </td>
 </tr>
-<tr id="i20" class="altColor">
+<tr id="i24" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#tap(java.awt.Polygon)">tap</a></span>&#8203;(java.awt.Polygon&nbsp;polygon)</code></th>
 <td class="colLast">
 <div class="block">Simulates a tap action inside a specific polygon.</div>
 </td>
 </tr>
-<tr id="i21" class="rowColor">
+<tr id="i25" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#tap(java.awt.Rectangle)">tap</a></span>&#8203;(java.awt.Rectangle&nbsp;rectangle)</code></th>
 <td class="colLast">
@@ -618,13 +668,37 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <h4>getObjectsFromColor</h4>
 <pre class="methodSignature">java.util.List&lt;java.awt.Rectangle&gt;&nbsp;getObjectsFromColor&#8203;(java.util.List&lt;java.awt.Color&gt;&nbsp;colors,
                                                        int&nbsp;tolerance)</pre>
-<div class="block">Checks if a specified color is found on the game screen</div>
+<div class="block">Retrieves a list of rectangles containing objects of specified colors with the given tolerance level.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>colors</code> - a list of colors you want to search for</dd>
-<dd><code>tolerance</code> - the color tolerance for matching the target color</dd>
+<dd><code>colors</code> - The list of colors to search for.</dd>
+<dd><code>tolerance</code> - The tolerance level for color matching.</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
-<dd>a list of Rectangles that contain the found color clusters</dd>
+<dd>A list of rectangles containing objects of the specified colors.</dd>
+</dl>
+</li>
+</ul>
+<a id="getObjectsFromColor(java.util.List,int,java.util.List,int)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getObjectsFromColor</h4>
+<pre class="methodSignature">java.util.List&lt;java.awt.Rectangle&gt;&nbsp;getObjectsFromColor&#8203;(java.util.List&lt;java.awt.Color&gt;&nbsp;colors,
+                                                       int&nbsp;tolerance,
+                                                       java.util.List&lt;java.awt.Color&gt;&nbsp;exclusionColors,
+                                                       int&nbsp;exclusionTolerance)</pre>
+<div class="block">Retrieves a list of rectangles containing objects of specified colors with the given tolerance level,
+ excluding objects of specified exclusion colors with the given exclusion tolerance.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>colors</code> - The list of colors to search for.</dd>
+<dd><code>tolerance</code> - The tolerance level for color matching.</dd>
+<dd><code>exclusionColors</code> - The list of colors to exclude from the search.</dd>
+<dd><code>exclusionTolerance</code> - The tolerance level for excluding colors.</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>A list of rectangles containing objects of the specified colors, excluding those
+                          of the specified exclusion colors.</dd>
 </dl>
 </li>
 </ul>
@@ -637,14 +711,40 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <pre class="methodSignature">java.util.List&lt;java.awt.Rectangle&gt;&nbsp;getObjectsFromColorsInRect&#8203;(java.util.List&lt;java.awt.Color&gt;&nbsp;colors,
                                                               java.awt.Rectangle&nbsp;searchRect,
                                                               int&nbsp;tolerance)</pre>
-<div class="block">Checks if a specified color is found on the game screen within the given rectangle</div>
+<div class="block">Retrieves a list of rectangles containing objects of specified colors within the given search rectangle.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>colors</code> - a list of colors you want to search for</dd>
-<dd><code>searchRect</code> - the rectangle to search for color clusters in</dd>
-<dd><code>tolerance</code> - the color tolerance for matching the target color</dd>
+<dd><code>colors</code> - The list of colors to search for.</dd>
+<dd><code>searchRect</code> - The rectangle within which to search for the colors.</dd>
+<dd><code>tolerance</code> - The tolerance level for color matching.</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
-<dd>a list of Rectangles that contain the found color clusters</dd>
+<dd>A list of rectangles containing objects of the specified colors.</dd>
+</dl>
+</li>
+</ul>
+<a id="getObjectsFromColorsInRect(java.util.List,java.awt.Rectangle,int,java.util.List,int)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getObjectsFromColorsInRect</h4>
+<pre class="methodSignature">java.util.List&lt;java.awt.Rectangle&gt;&nbsp;getObjectsFromColorsInRect&#8203;(java.util.List&lt;java.awt.Color&gt;&nbsp;colors,
+                                                              java.awt.Rectangle&nbsp;searchRect,
+                                                              int&nbsp;tolerance,
+                                                              java.util.List&lt;java.awt.Color&gt;&nbsp;exclusionColors,
+                                                              int&nbsp;exclusionTolerance)</pre>
+<div class="block">Retrieves a list of rectangles containing objects of specified colors within the given search rectangle,
+ excluding objects of specified exclusion colors.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>colors</code> - The list of colors to search for.</dd>
+<dd><code>searchRect</code> - The rectangle within which to search for the colors.</dd>
+<dd><code>tolerance</code> - The tolerance level for color matching.</dd>
+<dd><code>exclusionColors</code> - The list of colors to exclude from the search.</dd>
+<dd><code>exclusionTolerance</code> - The tolerance level for excluding colors.</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>A list of rectangles containing objects of the specified colors, excluding those
+                          of the specified exclusion colors.</dd>
 </dl>
 </li>
 </ul>
@@ -656,17 +756,74 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <h4>getPointsFromColors</h4>
 <pre class="methodSignature">java.util.List&lt;java.awt.Point&gt;&nbsp;getPointsFromColors&#8203;(java.util.List&lt;java.awt.Color&gt;&nbsp;colors,
                                                    int&nbsp;tolerance)</pre>
-<div class="block">Checks if a specified color is found on the game screen within the given rectangle</div>
+<div class="block">Retrieves points on the current emulator screen where specified colors are found,
+ considering a specified tolerance for color matching. This method acts as a convenience
+ wrapper by fetching the current emulator ID and delegating the color search.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>colors</code> - a list of colors you want to search for</dd>
-<dd><code>tolerance</code> - the color tolerance for matching the target color</dd>
+<dd><code>colors</code> - A list of <code>Color</code> objects representing the colors to search for.</dd>
+<dd><code>tolerance</code> - An int value representing the tolerance used for matching the colors.
+                  The higher the tolerance, the more variations of the color will be accepted.</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
-<dd>a list of Point that has the found color</dd>
+<dd>A List of <code>Point</code> objects, each point representing the location on the screen
+         where one of the specified colors was detected.</dd>
+</dl>
+</li>
+</ul>
+<a id="getPointsFromColors(java.util.List,int,java.util.List,int)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getPointsFromColors</h4>
+<pre class="methodSignature">java.util.List&lt;java.awt.Point&gt;&nbsp;getPointsFromColors&#8203;(java.util.List&lt;java.awt.Color&gt;&nbsp;colors,
+                                                   int&nbsp;tolerance,
+                                                   java.util.List&lt;java.awt.Color&gt;&nbsp;exclusionColors,
+                                                   int&nbsp;exclusionTolerance)</pre>
+<div class="block">Retrieves points on the current emulator screen where specified colors are found,
+ excluding specified colors within a certain tolerance, and considering a specified
+ tolerance for the target colors. This method provides an enhanced search by excluding
+ unwanted colors and is a convenience wrapper that fetches the current emulator ID
+ and delegates the color search.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>colors</code> - A list of <code>Color</code> objects representing the colors to search for.</dd>
+<dd><code>tolerance</code> - An int value representing the tolerance used for matching the target colors.
+                  The higher the tolerance, the more variations of the color will be accepted.</dd>
+<dd><code>exclusionColors</code> - A list of <code>Color</code> objects representing the colors to be excluded from the search.</dd>
+<dd><code>exclusionTolerance</code> - An int value representing the tolerance used to exclude the unwanted colors.
+                           Similar to 'tolerance', the higher this value, the more variations of the exclusion colors will be ignored.</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>A List of <code>Point</code> objects, each point representing the location on the screen
+         where one of the specified target colors was detected, excluding any matches found
+         within the exclusion tolerance for the colors specified in 'exclusionColors'.</dd>
 </dl>
 </li>
 </ul>
 <a id="getPointsFromColorsInRect(java.util.List,java.awt.Rectangle,int)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getPointsFromColorsInRect</h4>
+<pre class="methodSignature">java.util.List&lt;java.awt.Point&gt;&nbsp;getPointsFromColorsInRect&#8203;(java.util.List&lt;java.awt.Color&gt;&nbsp;colors,
+                                                         java.awt.Rectangle&nbsp;searchRect,
+                                                         int&nbsp;tolerance)</pre>
+<div class="block">Searches for specified colors within a defined rectangular area of the game screen,
+ taking into account a specified color tolerance for matching. This method will return
+ a list of points where the colors were found.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>colors</code> - A list of <code>Color</code> objects representing the colors to search for.</dd>
+<dd><code>searchRect</code> - A <code>Rectangle</code> defining the area within which to search for the colors.</dd>
+<dd><code>tolerance</code> - An int value representing the tolerance used to match the colors.
+               The higher the tolerance, the more variations of the color will be accepted.</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>A List of <code>Point</code> objects, each representing a pixel location where one of the specified colors was detected.</dd>
+</dl>
+</li>
+</ul>
+<a id="getPointsFromColorsInRect(java.util.List,java.awt.Rectangle,int,java.util.List,int)">
 <!--   -->
 </a>
 <ul class="blockListLast">
@@ -674,15 +831,25 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <h4>getPointsFromColorsInRect</h4>
 <pre class="methodSignature">java.util.List&lt;java.awt.Point&gt;&nbsp;getPointsFromColorsInRect&#8203;(java.util.List&lt;java.awt.Color&gt;&nbsp;colors,
                                                          java.awt.Rectangle&nbsp;searchRect,
-                                                         int&nbsp;tolerance)</pre>
-<div class="block">Checks if a specified color is found on the game screen within the given rectangle</div>
+                                                         int&nbsp;tolerance,
+                                                         java.util.List&lt;java.awt.Color&gt;&nbsp;exclusionColors,
+                                                         int&nbsp;exclusionTolerance)</pre>
+<div class="block">Searches for specified colors within a defined rectangular area of the game screen,
+ excluding specified colors within a certain tolerance, and taking into account a specified
+ color tolerance for the target colors. This method returns a list of points where the target
+ colors were found, excluding the specified unwanted colors.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>colors</code> - a list of colors you want to search for</dd>
-<dd><code>searchRect</code> - the rectangle to search for color clusters in</dd>
-<dd><code>tolerance</code> - the color tolerance for matching the target color</dd>
+<dd><code>colors</code> - A list of <code>Color</code> objects representing the colors to search for.</dd>
+<dd><code>searchRect</code> - A <code>Rectangle</code> defining the area within which to search for the colors.</dd>
+<dd><code>tolerance</code> - An int value representing the tolerance used to match the target colors.
+               The higher the tolerance, the more variations of the color will be accepted.</dd>
+<dd><code>exclusionColors</code> - A list of <code>Color</code> objects representing the colors to be excluded from the search.</dd>
+<dd><code>exclusionTolerance</code> - An int value representing the tolerance used to exclude the unwanted colors.
+               Similar to 'tolerance', the higher this value, the more variations of the exclusion colors will be ignored.</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
-<dd>a list of Point that has the found color</dd>
+<dd>A List of <code>Point</code> objects, each representing a pixel location where one of the specified target colors was detected,
+         excluding any matches found within the exclusion tolerance for the colors specified in 'exclusionColors'.</dd>
 </dl>
 </li>
 </ul>
