@@ -35,4 +35,14 @@ public class Tile {
     public int y() {
         return y;
     }
+
+    /**
+     * Returns a string representation of the tile with its coordinates.
+     *
+     * @return A string in the format "Tile(x, y)"
+     */
+    @Override
+    public String toString() {
+        return "Tile(" + x + ", " + y + ")";
+    }
 }

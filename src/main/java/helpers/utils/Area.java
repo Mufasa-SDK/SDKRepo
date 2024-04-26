@@ -43,4 +43,14 @@ public class Area {
     public Tile getBottomTile() {
         return bottomTile;
     }
+
+    /**
+     * Returns a string representation of the area, using the string representation of the top-left and bottom-right tiles.
+     *
+     * @return A string in the format "Area[Tile(x, y), Tile(x, y)]"
+     */
+    @Override
+    public String toString() {
+        return "Area[" + topTile + ", " + bottomTile + "]";
+    }
 }
