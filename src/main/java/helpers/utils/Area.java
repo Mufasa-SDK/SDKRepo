@@ -1,9 +1,12 @@
 package helpers.utils;
 
+import java.util.Random;
+
 /**
  * Represents a rectangular area defined by two {@link Tile} objects, one for the top-left corner and the other for the bottom-right corner.
  */
 public class Area {
+    private final Random random = new Random();
 
     /**
      * The {@link Tile} representing the top-left corner of the area.
@@ -42,6 +45,23 @@ public class Area {
      */
     public Tile getBottomTile() {
         return bottomTile;
+    }
+
+    /**
+     * Returns a randomly selected {@link Tile} within the area.
+     *
+     * @return a random {@link Tile} within the bounds of the area.
+     */
+    public Tile getRandomTile() {
+        int minX = Math.min(topTile.x(), bottomTile.x());
+        int maxX = Math.max(topTile.x(), bottomTile.x());
+        int minY = Math.min(topTile.y(), bottomTile.y());
+        int maxY = Math.max(topTile.y(), bottomTile.y());
+
+        int randomX = minX + random.nextInt(maxX - minX + 1);
+        int randomY = minY + random.nextInt(maxY - minY + 1);
+
+        return new Tile(randomX, randomY);
     }
 
     /**

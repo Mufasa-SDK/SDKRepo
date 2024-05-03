@@ -27,7 +27,7 @@
     catch(err) {
     }
 //-->
-var data = {"i0":10,"i1":10,"i2":10};
+var data = {"i0":10,"i1":10,"i2":10,"i3":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -162,6 +162,11 @@ extends java.lang.Object</pre>
 </td>
 </tr>
 <tr class="rowColor">
+<td class="colFirst"><code>private java.util.Random</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#random">random</a></span></code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="altColor">
 <td class="colFirst"><code>private <a href="Tile.html" title="class in helpers.utils">Tile</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#topTile">topTile</a></span></code></th>
 <td class="colLast">
@@ -219,12 +224,19 @@ extends java.lang.Object</pre>
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code><a href="Tile.html" title="class in helpers.utils">Tile</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getRandomTile()">getRandomTile</a></span>()</code></th>
+<td class="colLast">
+<div class="block">Returns a randomly selected <a href="Tile.html" title="class in helpers.utils"><code>Tile</code></a> within the area.</div>
+</td>
+</tr>
+<tr id="i2" class="altColor">
+<td class="colFirst"><code><a href="Tile.html" title="class in helpers.utils">Tile</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getTopTile()">getTopTile</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Returns the <a href="Tile.html" title="class in helpers.utils"><code>Tile</code></a> representing the top-left corner of the area.</div>
 </td>
 </tr>
-<tr id="i2" class="altColor">
+<tr id="i3" class="rowColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#toString()">toString</a></span>()</code></th>
 <td class="colLast">
@@ -255,6 +267,15 @@ extends java.lang.Object</pre>
 <!--   -->
 </a>
 <h3>Field Detail</h3>
+<a id="random">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>random</h4>
+<pre>private final&nbsp;java.util.Random random</pre>
+</li>
+</ul>
 <a id="topTile">
 <!--   -->
 </a>
@@ -336,6 +357,20 @@ extends java.lang.Object</pre>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>The <a href="Tile.html" title="class in helpers.utils"><code>Tile</code></a> at the bottom.</dd>
+</dl>
+</li>
+</ul>
+<a id="getRandomTile()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getRandomTile</h4>
+<pre class="methodSignature">public&nbsp;<a href="Tile.html" title="class in helpers.utils">Tile</a>&nbsp;getRandomTile()</pre>
+<div class="block">Returns a randomly selected <a href="Tile.html" title="class in helpers.utils"><code>Tile</code></a> within the area.</div>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>a random <a href="Tile.html" title="class in helpers.utils"><code>Tile</code></a> within the bounds of the area.</dd>
 </dl>
 </li>
 </ul>
