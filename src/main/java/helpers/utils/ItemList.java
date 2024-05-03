@@ -14012,4 +14012,6 @@ public class ItemList {
     public static final int BLOODY_BRACER_NOTED_22431=22431;
     public static final int EMERALD_SICKLE_B_22433=22433;
     public static final int ENCHANTED_EMERALD_SICKLE_B_22435=22435;
+    public static final int VENATOR_BOW_27610=27610;
+    public static final int VENATOR_BOW_UNCHARGED_27612=27612;
 }
