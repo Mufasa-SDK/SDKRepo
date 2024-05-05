@@ -80,13 +80,40 @@ public interface iInventory {
     int stackSize(int itemID);
 
     /**
-     * Finds the position of a specific item in the inventory, based on a threshold.
+     * Finds the first position of a specific item in the inventory, based on a threshold.
      *
      * @param itemID    The ID of the item whose position is to be found.
      * @param threshold The threshold value used for finding the item, threshold is a double where 1.0 represents 100% confidence. Usually above 0.80 (but often 0.90+).
      * @return Rectangle representing the position of the specified item in the inventory.
      */
     Rectangle itemPosition(String itemID, double threshold);
+
+    /**
+     * Finds the first position of a specific item in the inventory, based on a threshold.
+     *
+     * @param itemID    The ID of the item whose position is to be found.
+     * @param threshold The threshold value used for finding the item, threshold is a double where 1.0 represents 100% confidence. Usually above 0.80 (but often 0.90+).
+     * @return Rectangle representing the position of the specified item in the inventory.
+     */
+    Rectangle itemPosition(int itemID, double threshold);
+
+    /**
+     * Finds the last position of a specific item in the inventory, based on a threshold.
+     *
+     * @param itemID    The ID of the item whose position is to be found.
+     * @param threshold The threshold value used for finding the item, threshold is a double where 1.0 represents 100% confidence. Usually above 0.80 (but often 0.90+).
+     * @return Rectangle representing the position of the specified item in the inventory.
+     */
+    Rectangle lastItemPosition(String itemID, double threshold);
+
+    /**
+     * Finds the last position of a specific item in the inventory, based on a threshold.
+     *
+     * @param itemID    The ID of the item whose position is to be found.
+     * @param threshold The threshold value used for finding the item, threshold is a double where 1.0 represents 100% confidence. Usually above 0.80 (but often 0.90+).
+     * @return Rectangle representing the position of the specified item in the inventory.
+     */
+    Rectangle lastItemPosition(int itemID, double threshold);
 
     /**
      * Initiates a tap action on a specified item in the inventory, based on a threshold.
