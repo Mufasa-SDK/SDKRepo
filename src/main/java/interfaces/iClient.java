@@ -34,6 +34,14 @@ public interface iClient {
     void tap(List<Point> points);
 
     /**
+     * Simulates a tap action at a specified coordinate using a java.awt.Point.
+     *
+     * @param points A list of points chosen at random to tap.
+     * @param tapWithinRandom Using this it will generate a random weighted point from within your list of points to tap
+     */
+    void tap(List<Point> points, boolean tapWithinRandom);
+
+    /**
      * Simulates a tap action on a specific color within a defined area.
      *
      * @param targetColor the color to target for the tap.
