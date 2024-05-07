@@ -27,7 +27,7 @@
     catch(err) {
     }
 //-->
-var data = {"i0":6,"i1":6,"i2":6,"i3":6,"i4":6,"i5":6,"i6":6,"i7":6,"i8":6,"i9":6,"i10":6,"i11":6,"i12":6,"i13":6,"i14":6,"i15":6,"i16":6,"i17":6,"i18":6,"i19":6,"i20":6,"i21":6,"i22":6,"i23":6};
+var data = {"i0":6,"i1":6,"i2":6,"i3":6,"i4":6,"i5":6,"i6":6,"i7":6,"i8":6,"i9":6,"i10":6,"i11":6,"i12":6,"i13":6,"i14":6,"i15":6,"i16":6,"i17":6,"i18":6,"i19":6,"i20":6,"i21":6,"i22":6,"i23":6,"i24":6,"i25":6,"i26":6};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],4:["t3","Abstract Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -205,13 +205,29 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </tr>
 <tr id="i7" class="rowColor">
 <td class="colFirst"><code>void</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#dropInventItems(java.lang.Integer,boolean)">dropInventItems</a></span>&#8203;(java.lang.Integer&nbsp;exclusionSlot,
+               boolean&nbsp;useCache)</code></th>
+<td class="colLast">
+<div class="block">Drops all items in your inventory with a single excluded slot</div>
+</td>
+</tr>
+<tr id="i8" class="altColor">
+<td class="colFirst"><code>void</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#dropInventItems(java.util.List,boolean)">dropInventItems</a></span>&#8203;(java.util.List&lt;java.lang.Integer&gt;&nbsp;exclusionSlotList,
+               boolean&nbsp;useCache)</code></th>
+<td class="colLast">
+<div class="block">Drops all items in your inventory with a list of excluded slots</div>
+</td>
+</tr>
+<tr id="i9" class="rowColor">
+<td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#eat(int,double)">eat</a></span>&#8203;(int&nbsp;itemId,
    double&nbsp;threshold)</code></th>
 <td class="colLast">
 <div class="block">Initiates a tap action on a specified food in the inventory, based on a threshold without using a cache.</div>
 </td>
 </tr>
-<tr id="i8" class="altColor">
+<tr id="i10" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#eat(java.lang.String,double)">eat</a></span>&#8203;(java.lang.String&nbsp;itemId,
    double&nbsp;threshold)</code></th>
@@ -219,14 +235,14 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <div class="block">Initiates a tap action on a specified food in the inventory, based on a threshold without using a cache.</div>
 </td>
 </tr>
-<tr id="i9" class="rowColor">
+<tr id="i11" class="rowColor">
 <td class="colFirst"><code>int</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#emptySlots()">emptySlots</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Checks how many inventory slots are currently empty.</div>
 </td>
 </tr>
-<tr id="i10" class="altColor">
+<tr id="i12" class="altColor">
 <td class="colFirst"><code>java.awt.Point</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getItemCenterPoint(int,double)">getItemCenterPoint</a></span>&#8203;(int&nbsp;itemId,
                   double&nbsp;threshold)</code></th>
@@ -234,7 +250,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <div class="block">Finds the specified item in your inventory, and returns the center location of it as a Point (x,y)</div>
 </td>
 </tr>
-<tr id="i11" class="rowColor">
+<tr id="i13" class="rowColor">
 <td class="colFirst"><code>java.awt.Point</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getItemCenterPoint(java.lang.String,double)">getItemCenterPoint</a></span>&#8203;(java.lang.String&nbsp;itemId,
                   double&nbsp;threshold)</code></th>
@@ -242,14 +258,14 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <div class="block">Finds the specified item in your inventory, and returns the center location of it as a Point (x,y)</div>
 </td>
 </tr>
-<tr id="i12" class="altColor">
+<tr id="i14" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#isFull()">isFull</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Check if inventory is full or not</div>
 </td>
 </tr>
-<tr id="i13" class="rowColor">
+<tr id="i15" class="rowColor">
 <td class="colFirst"><code>java.awt.Rectangle</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#itemPosition(int,double)">itemPosition</a></span>&#8203;(int&nbsp;itemID,
             double&nbsp;threshold)</code></th>
@@ -257,7 +273,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <div class="block">Finds the first position of a specific item in the inventory, based on a threshold.</div>
 </td>
 </tr>
-<tr id="i14" class="altColor">
+<tr id="i16" class="altColor">
 <td class="colFirst"><code>java.awt.Rectangle</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#itemPosition(java.lang.String,double)">itemPosition</a></span>&#8203;(java.lang.String&nbsp;itemID,
             double&nbsp;threshold)</code></th>
@@ -265,7 +281,15 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <div class="block">Finds the first position of a specific item in the inventory, based on a threshold.</div>
 </td>
 </tr>
-<tr id="i15" class="rowColor">
+<tr id="i17" class="rowColor">
+<td class="colFirst"><code>java.lang.Integer</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#itemSlotPosition(int,double)">itemSlotPosition</a></span>&#8203;(int&nbsp;itemID,
+                double&nbsp;threshold)</code></th>
+<td class="colLast">
+<div class="block">Finds the position of a specific item in the inventory, based on a threshold.</div>
+</td>
+</tr>
+<tr id="i18" class="altColor">
 <td class="colFirst"><code>java.awt.Rectangle</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#lastItemPosition(int,double)">lastItemPosition</a></span>&#8203;(int&nbsp;itemID,
                 double&nbsp;threshold)</code></th>
@@ -273,7 +297,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <div class="block">Finds the last position of a specific item in the inventory, based on a threshold.</div>
 </td>
 </tr>
-<tr id="i16" class="altColor">
+<tr id="i19" class="rowColor">
 <td class="colFirst"><code>java.awt.Rectangle</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#lastItemPosition(java.lang.String,double)">lastItemPosition</a></span>&#8203;(java.lang.String&nbsp;itemID,
                 double&nbsp;threshold)</code></th>
@@ -281,14 +305,14 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <div class="block">Finds the last position of a specific item in the inventory, based on a threshold.</div>
 </td>
 </tr>
-<tr id="i17" class="rowColor">
+<tr id="i20" class="altColor">
 <td class="colFirst"><code>int</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#stackSize(int)">stackSize</a></span>&#8203;(int&nbsp;itemID)</code></th>
 <td class="colLast">
 <div class="block">Reads the stack size of a specified item in the inventory.</div>
 </td>
 </tr>
-<tr id="i18" class="altColor">
+<tr id="i21" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#tapAllItems(int,double)">tapAllItems</a></span>&#8203;(int&nbsp;itemId,
            double&nbsp;threshold)</code></th>
@@ -296,7 +320,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <div class="block">Initiates a tap action on a all items in the inventory with the given item ID, based on a threshold.</div>
 </td>
 </tr>
-<tr id="i19" class="rowColor">
+<tr id="i22" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#tapItem(int,boolean,double)">tapItem</a></span>&#8203;(int&nbsp;itemId,
        boolean&nbsp;useCache,
@@ -305,7 +329,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <div class="block">Initiates a tap action on a specified item in the inventory, based on a threshold.</div>
 </td>
 </tr>
-<tr id="i20" class="altColor">
+<tr id="i23" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#tapItem(int,double)">tapItem</a></span>&#8203;(int&nbsp;itemId,
        double&nbsp;threshold)</code></th>
@@ -313,7 +337,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <div class="block">Initiates a tap action on a specified item in the inventory, based on a threshold.</div>
 </td>
 </tr>
-<tr id="i21" class="rowColor">
+<tr id="i24" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#tapItem(java.lang.String,boolean,double)">tapItem</a></span>&#8203;(java.lang.String&nbsp;itemId,
        boolean&nbsp;useCache,
@@ -322,7 +346,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <div class="block">Initiates a tap action on a specified item in the inventory, based on a threshold.</div>
 </td>
 </tr>
-<tr id="i22" class="altColor">
+<tr id="i25" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#tapItem(java.lang.String,double)">tapItem</a></span>&#8203;(java.lang.String&nbsp;itemId,
        double&nbsp;threshold)</code></th>
@@ -330,7 +354,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <div class="block">Initiates a tap action on a specified item in the inventory, based on a threshold.</div>
 </td>
 </tr>
-<tr id="i23" class="rowColor">
+<tr id="i26" class="altColor">
 <td class="colFirst"><code>int</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#usedSlots()">usedSlots</a></span>()</code></th>
 <td class="colLast">
@@ -565,6 +589,56 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <dd><code>threshold</code> - The threshold value used for finding the item, threshold is a double where 1.0 represents 100% confidence. Usually above 0.80 (but often 0.90+).</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>Rectangle representing the position of the specified item in the inventory.</dd>
+</dl>
+</li>
+</ul>
+<a id="itemSlotPosition(int,double)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>itemSlotPosition</h4>
+<pre class="methodSignature">java.lang.Integer&nbsp;itemSlotPosition&#8203;(int&nbsp;itemID,
+                                   double&nbsp;threshold)</pre>
+<div class="block">Finds the position of a specific item in the inventory, based on a threshold.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>itemID</code> - The ID of the item whose position is to be found.</dd>
+<dd><code>threshold</code> - The threshold value used for finding the item, threshold is a double where 1.0 represents 100% confidence. Usually above 0.80 (but often 0.90+).</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>Integer representing the slot position of the specified item in the inventory (1-28).</dd>
+</dl>
+</li>
+</ul>
+<a id="dropInventItems(java.util.List,boolean)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>dropInventItems</h4>
+<pre class="methodSignature">void&nbsp;dropInventItems&#8203;(java.util.List&lt;java.lang.Integer&gt;&nbsp;exclusionSlotList,
+                     boolean&nbsp;useCache)</pre>
+<div class="block">Drops all items in your inventory with a list of excluded slots</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>exclusionSlotList</code> - A list of integers which slots should NOT be dropped (excluded from being dropped)</dd>
+<dd><code>useCache</code> - A boolean to use the cache or not, true will use the cache, false will not.</dd>
+</dl>
+</li>
+</ul>
+<a id="dropInventItems(java.lang.Integer,boolean)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>dropInventItems</h4>
+<pre class="methodSignature">void&nbsp;dropInventItems&#8203;(java.lang.Integer&nbsp;exclusionSlot,
+                     boolean&nbsp;useCache)</pre>
+<div class="block">Drops all items in your inventory with a single excluded slot</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>exclusionSlot</code> - An integer representing which slot should NOT be dropped (excluded from being dropped)</dd>
+<dd><code>useCache</code> - A boolean to use the cache or not, true will use the cache, false will not.</dd>
 </dl>
 </li>
 </ul>

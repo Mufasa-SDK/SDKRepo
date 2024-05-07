@@ -1,6 +1,7 @@
 package interfaces;
 
 import java.awt.*;
+import java.util.List;
 
 /**
  * Interface defining interactions with a game's inventory system.
@@ -114,6 +115,31 @@ public interface iInventory {
      * @return Rectangle representing the position of the specified item in the inventory.
      */
     Rectangle lastItemPosition(int itemID, double threshold);
+
+    /**
+     * Finds the position of a specific item in the inventory, based on a threshold.
+     *
+     * @param itemID    The ID of the item whose position is to be found.
+     * @param threshold The threshold value used for finding the item, threshold is a double where 1.0 represents 100% confidence. Usually above 0.80 (but often 0.90+).
+     * @return Integer representing the slot position of the specified item in the inventory (1-28).
+     */
+    Integer itemSlotPosition(int itemID, double threshold);
+
+    /**
+     * Drops all items in your inventory with a list of excluded slots
+     *
+     * @param exclusionSlotList   A list of integers which slots should NOT be dropped (excluded from being dropped)
+     * @param useCache A boolean to use the cache or not, true will use the cache, false will not.
+     */
+    void dropInventItems(List<Integer> exclusionSlotList, boolean useCache);
+
+    /**
+     * Drops all items in your inventory with a single excluded slot
+     *
+     * @param exclusionSlot   An integer representing which slot should NOT be dropped (excluded from being dropped)
+     * @param useCache A boolean to use the cache or not, true will use the cache, false will not.
+     */
+    void dropInventItems(Integer exclusionSlot, boolean useCache);
 
     /**
      * Initiates a tap action on a specified item in the inventory, based on a threshold.
