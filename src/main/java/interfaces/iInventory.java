@@ -126,6 +126,15 @@ public interface iInventory {
     Integer itemSlotPosition(int itemID, double threshold);
 
     /**
+     * Finds the position of the first hit of your array list of items in the inventory, based on a threshold.
+     *
+     * @param itemIDs    Array of item IDs of the items whose position is to be found.
+     * @param threshold The threshold value used for finding the item, threshold is a double where 1.0 represents 100% confidence. Usually above 0.80 (but often 0.90+).
+     * @return Integer representing the slot position of the found item in the inventory (1-28).
+     */
+    Integer itemSlotPosition(int[] itemIDs, double threshold);
+
+    /**
      * Drops all items in your inventory with a list of excluded slots
      *
      * @param exclusionSlotList   A list of integers which slots should NOT be dropped (excluded from being dropped)
