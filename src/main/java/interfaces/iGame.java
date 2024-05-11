@@ -125,4 +125,26 @@ public interface iGame {
      * Taps the keyboard action button to bring the keyboard up.
      * */
     public void showKeyboard();
+
+    /**
+     * Performs a random Anti-AFK action to simulate user activity.
+     * This method randomly chooses one of the predefined actions, each involving opening and
+     * closing a specific game tab. After performing an action, the method pauses execution for a
+     * random duration between 300ms and 2000ms to mimic human interaction delays.
+     *
+     * The purpose of these actions is to prevent the game from detecting and flagging the user as
+     * inactive.
+     *
+     * <p>Actions include:</p>
+     * <ul>
+     *   <li>Opening and closing the Stats tab.</li>
+     *   <li>Opening and closing the Settings tab.</li>
+     *   <li>Opening and closing the Equipment tab.</li>
+     *   <li>Opening and closing the Friends tab.</li>
+     *   <li>Opening and closing the Inventory tab.</li>
+     *   <li>It will also re-open the previous tab.</li>
+     * </ul>
+     *
+     */
+    public void antiAFK();
 }
