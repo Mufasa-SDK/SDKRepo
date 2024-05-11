@@ -151,10 +151,4 @@ public interface iPlayer {
      */
     void disableAutoRetaliate();
 
-    /**
-     * Performs an Anti-AFK action to prevent logging off because of being idle.
-     *
-     */
-    void performAntiAFK();
-
 }
