@@ -14012,6 +14012,22 @@ public class ItemList {
     public static final int BLOODY_BRACER_NOTED_22431=22431;
     public static final int EMERALD_SICKLE_B_22433=22433;
     public static final int ENCHANTED_EMERALD_SICKLE_B_22435=22435;
+    public static final int GILDED_PICKAXE_23276=23276;
+    public static final int CRYSTAL_AXE_23673=23673;
+    public static final int CRYSTAL_AXE_UNCHARGED_23675=23675;
+    public static final int CRYSTAL_PICKAXE_23680=23680;
+    public static final int CRYSTAL_PICKAXE_UNCHARGED_23682=23682;
     public static final int VENATOR_BOW_27610=27610;
     public static final int VENATOR_BOW_UNCHARGED_27612=27612;
+    public static final int BRONZE_FELLING_AXE_28196=28196;
+    public static final int IRON_FELLING_AXE_28199=28199;
+    public static final int STEEL_FELLING_AXE_28202=28202;
+    public static final int BLACK_FELLING_AXE_28205=28205;
+    public static final int MITHRIL_FELLING_AXE_28208=28208;
+    public static final int ADAMANT_FELLING_AXE_28211=28211;
+    public static final int RUNE_FELLING_AXE_28214=28214;
+    public static final int DRAGON_FELLING_AXE_28217=28217;
+    public static final int CRYSTAL_FELLING_AXE_28220=28220;
+    public static final int CRYSTAL_FELLING_AXE_UNCHARGED_28223=28223;
+    public static final int _3RD_AGE_FELLING_AXE_28226=28226;
 }
