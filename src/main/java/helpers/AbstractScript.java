@@ -47,7 +47,7 @@ public abstract class AbstractScript {
     }
 
     public void running() {
-        while (!Thread.interrupted()) {
+        if (!Thread.interrupted()) {
             checkAndPause();
             poll();
         }
