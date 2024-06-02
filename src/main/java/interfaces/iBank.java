@@ -87,6 +87,12 @@ public interface iBank {
     void stepToBank();
 
     /**
+     * Steps to the bank object (booth/chest) of the bank identifier, for example: Castle_wars_bank.
+     * @param bankLoc the string bankloc found from setupDynamicBank/findDynamicBank
+     */
+    void stepToBank(String bankLoc);
+
+    /**
      * Reads the stack size of a specified item in the bank interface.
      *
      * @param itemID The ID of the item to count in the bank.
