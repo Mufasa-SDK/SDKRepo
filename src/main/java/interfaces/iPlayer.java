@@ -151,4 +151,26 @@ public interface iPlayer {
      */
     void disableAutoRetaliate();
 
+    /**
+     * Checks if we are moving within a predefined number of position checks.
+     * The method continuously compares the current position of the device against its last recorded position.
+     * Movement is detected if the position changes at least once during the specified checks.
+     *
+     * @param checkTimes the number of times the device's position is checked for movement
+     * @param worldRegion the region within which the device's position is being tracked
+     * @return {@code true} if movement is detected within the given checks; {@code false} otherwise
+     */
+    boolean waitTillMoving(int checkTimes, RegionBox worldRegion);
+
+    /**
+     * Verifies that the specified device remains stationary over a series of position checks.
+     * The method checks the device's position repeatedly to ensure that it does not change.
+     * If the position remains unchanged for the consecutive checks specified, the method concludes
+     * that the device is not moving.
+     *
+     * @param checkTimes the number of times the device's position is checked for lack of movement
+     * @param worldRegion the region within which the device's position is being tracked
+     * @return {@code true} if no movement is detected across all checks; {@code false} if any movement is detected
+     */
+    boolean waitTillNotMoving(int checkTimes, RegionBox worldRegion);
 }

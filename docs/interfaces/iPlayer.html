@@ -27,7 +27,7 @@
     catch(err) {
     }
 //-->
-var data = {"i0":6,"i1":6,"i2":6,"i3":6,"i4":6,"i5":6,"i6":6,"i7":6,"i8":6,"i9":6,"i10":6,"i11":6,"i12":6,"i13":6,"i14":6,"i15":6,"i16":6,"i17":6};
+var data = {"i0":6,"i1":6,"i2":6,"i3":6,"i4":6,"i5":6,"i6":6,"i7":6,"i8":6,"i9":6,"i10":6,"i11":6,"i12":6,"i13":6,"i14":6,"i15":6,"i16":6,"i17":6,"i18":6,"i19":6};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],4:["t3","Abstract Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -256,12 +256,28 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </tr>
 <tr id="i15" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#waitTillMoving(int,helpers.utils.RegionBox)">waitTillMoving</a></span>&#8203;(int&nbsp;checkTimes,
+              <a href="../helpers/utils/RegionBox.html" title="class in helpers.utils">RegionBox</a>&nbsp;worldRegion)</code></th>
+<td class="colLast">
+<div class="block">Checks if we are moving within a predefined number of position checks.</div>
+</td>
+</tr>
+<tr id="i16" class="altColor">
+<td class="colFirst"><code>boolean</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#waitTillNotMoving(int,helpers.utils.RegionBox)">waitTillNotMoving</a></span>&#8203;(int&nbsp;checkTimes,
+                 <a href="../helpers/utils/RegionBox.html" title="class in helpers.utils">RegionBox</a>&nbsp;worldRegion)</code></th>
+<td class="colLast">
+<div class="block">Verifies that the specified device remains stationary over a series of position checks.</div>
+</td>
+</tr>
+<tr id="i17" class="rowColor">
+<td class="colFirst"><code>boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#within(helpers.utils.Area)">within</a></span>&#8203;(<a href="../helpers/utils/Area.html" title="class in helpers.utils">Area</a>&nbsp;areaToSearchIn)</code></th>
 <td class="colLast">
 <div class="block">Gets the player's current position and checks if it is within the specified area</div>
 </td>
 </tr>
-<tr id="i16" class="altColor">
+<tr id="i18" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#within(helpers.utils.Area,helpers.utils.RegionBox)">within</a></span>&#8203;(<a href="../helpers/utils/Area.html" title="class in helpers.utils">Area</a>&nbsp;areaToSearchIn,
       <a href="../helpers/utils/RegionBox.html" title="class in helpers.utils">RegionBox</a>&nbsp;mapRegion)</code></th>
@@ -269,7 +285,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <div class="block">Gets the player's current position and checks if it is within the specified area</div>
 </td>
 </tr>
-<tr id="i17" class="rowColor">
+<tr id="i19" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#within(helpers.utils.RegionBox)">within</a></span>&#8203;(<a href="../helpers/utils/RegionBox.html" title="class in helpers.utils">RegionBox</a>&nbsp;regionToSearchIn)</code></th>
 <td class="colLast">
@@ -564,11 +580,52 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <a id="disableAutoRetaliate()">
 <!--   -->
 </a>
-<ul class="blockListLast">
+<ul class="blockList">
 <li class="blockList">
 <h4>disableAutoRetaliate</h4>
 <pre class="methodSignature">void&nbsp;disableAutoRetaliate()</pre>
 <div class="block">Disables auto retaliate.</div>
+</li>
+</ul>
+<a id="waitTillMoving(int,helpers.utils.RegionBox)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>waitTillMoving</h4>
+<pre class="methodSignature">boolean&nbsp;waitTillMoving&#8203;(int&nbsp;checkTimes,
+                       <a href="../helpers/utils/RegionBox.html" title="class in helpers.utils">RegionBox</a>&nbsp;worldRegion)</pre>
+<div class="block">Checks if we are moving within a predefined number of position checks.
+ The method continuously compares the current position of the device against its last recorded position.
+ Movement is detected if the position changes at least once during the specified checks.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>checkTimes</code> - the number of times the device's position is checked for movement</dd>
+<dd><code>worldRegion</code> - the region within which the device's position is being tracked</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd><code>true</code> if movement is detected within the given checks; <code>false</code> otherwise</dd>
+</dl>
+</li>
+</ul>
+<a id="waitTillNotMoving(int,helpers.utils.RegionBox)">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>waitTillNotMoving</h4>
+<pre class="methodSignature">boolean&nbsp;waitTillNotMoving&#8203;(int&nbsp;checkTimes,
+                          <a href="../helpers/utils/RegionBox.html" title="class in helpers.utils">RegionBox</a>&nbsp;worldRegion)</pre>
+<div class="block">Verifies that the specified device remains stationary over a series of position checks.
+ The method checks the device's position repeatedly to ensure that it does not change.
+ If the position remains unchanged for the consecutive checks specified, the method concludes
+ that the device is not moving.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>checkTimes</code> - the number of times the device's position is checked for lack of movement</dd>
+<dd><code>worldRegion</code> - the region within which the device's position is being tracked</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd><code>true</code> if no movement is detected across all checks; <code>false</code> if any movement is detected</dd>
+</dl>
 </li>
 </ul>
 </li>
