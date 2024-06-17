@@ -47,6 +47,13 @@ public interface iBank {
     void withdrawItem(String itemId, double treshold);
 
     /**
+     * Withdraws an item from the bank with the specified ID, if it meets the threshold quantity.
+     * @param itemId The ID of the item to withdraw.
+     * @param treshold The minimum quantity threshold for withdrawal.
+     */
+    void withdrawItem(int itemId, double treshold);
+
+    /**
      * Gets the name of the currently open bank tab.
      * @return The name of the current bank tab.
      */
