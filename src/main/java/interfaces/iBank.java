@@ -64,7 +64,7 @@ public interface iBank {
      * @param returnInt boolean true to return it as int instead of String
      * @return The name of the current bank tab.
      */
-    boolean getCurrentTab(boolean returnInt);
+    int getCurrentTab(boolean returnInt);
 
     /**
      * Opens a specific bank tab.
