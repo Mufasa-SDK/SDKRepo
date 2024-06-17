@@ -53,6 +53,13 @@ public interface iBank {
     String getCurrentTab();
 
     /**
+     * Gets the int index of the currently open bank tab.
+     * @param returnInt boolean true to return it as int instead of String
+     * @return The name of the current bank tab.
+     */
+    boolean getCurrentTab(boolean returnInt);
+
+    /**
      * Opens a specific bank tab.
      * @param tabInt The index of the bank tab to be opened.
      */
