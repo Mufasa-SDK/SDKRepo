@@ -14030,5 +14030,5 @@ public class ItemList {
     public static final int CRYSTAL_FELLING_AXE_28220=28220;
     public static final int CRYSTAL_FELLING_AXE_UNCHARGED_28223=28223;
     public static final int _3RD_AGE_FELLING_AXE_28226=28226;
-    public static final int AMETHYST_DART_TIP=25853;
+    public static final int AMETHYST_DART_TIP_25853=25853;
 }
