@@ -27,7 +27,7 @@
     catch(err) {
     }
 //-->
-var data = {"i0":6,"i1":6,"i2":6,"i3":6,"i4":6,"i5":6,"i6":6,"i7":6,"i8":6,"i9":6,"i10":6,"i11":6,"i12":6,"i13":6,"i14":6};
+var data = {"i0":6,"i1":6,"i2":6,"i3":6,"i4":6,"i5":6,"i6":6,"i7":6,"i8":6,"i9":6,"i10":6,"i11":6,"i12":6,"i13":6,"i14":6,"i15":6};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],4:["t3","Abstract Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -162,20 +162,27 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </td>
 </tr>
 <tr id="i2" class="altColor">
+<td class="colFirst"><code>boolean</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#isReachable(helpers.utils.Tile)">isReachable</a></span>&#8203;(<a href="../helpers/utils/Tile.html" title="class in helpers.utils">Tile</a>&nbsp;tile)</code></th>
+<td class="colLast">
+<div class="block">Determines if the specified Tile is visible on the minimap.</div>
+</td>
+</tr>
+<tr id="i3" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setup(java.lang.String)">setup</a></span>&#8203;(java.lang.String&nbsp;customMapfilePath)</code></th>
 <td class="colLast">
 <div class="block">Configures the system to use a custom map file instead of the default worldmap.</div>
 </td>
 </tr>
-<tr id="i3" class="rowColor">
+<tr id="i4" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#step(helpers.utils.Tile)">step</a></span>&#8203;(<a href="../helpers/utils/Tile.html" title="class in helpers.utils">Tile</a>&nbsp;worldmapPoint)</code></th>
 <td class="colLast">
 <div class="block">Takes a step to a specified Tile without providing a search region.</div>
 </td>
 </tr>
-<tr id="i4" class="altColor">
+<tr id="i5" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#step(helpers.utils.Tile,helpers.utils.RegionBox)">step</a></span>&#8203;(<a href="../helpers/utils/Tile.html" title="class in helpers.utils">Tile</a>&nbsp;worldmapPoint,
     <a href="../helpers/utils/RegionBox.html" title="class in helpers.utils">RegionBox</a>&nbsp;region)</code></th>
@@ -183,7 +190,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <div class="block">Takes a step to a specified Tile.</div>
 </td>
 </tr>
-<tr id="i5" class="rowColor">
+<tr id="i6" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#step(helpers.utils.Tile,helpers.utils.RegionBox,java.lang.Runnable)">step</a></span>&#8203;(<a href="../helpers/utils/Tile.html" title="class in helpers.utils">Tile</a>&nbsp;worldmapPoint,
     <a href="../helpers/utils/RegionBox.html" title="class in helpers.utils">RegionBox</a>&nbsp;region,
@@ -192,7 +199,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <div class="block">Takes a step to a specified Tile.</div>
 </td>
 </tr>
-<tr id="i6" class="altColor">
+<tr id="i7" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#step(helpers.utils.Tile,java.lang.Runnable)">step</a></span>&#8203;(<a href="../helpers/utils/Tile.html" title="class in helpers.utils">Tile</a>&nbsp;worldmapPoint,
     java.lang.Runnable&nbsp;actionWhileStepping)</code></th>
@@ -200,7 +207,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <div class="block">Takes a step to a specified Tile without providing a search region.</div>
 </td>
 </tr>
-<tr id="i7" class="rowColor">
+<tr id="i8" class="altColor">
 <td class="colFirst"><code>java.lang.Boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#walkPath(helpers.utils.RegionBox,helpers.utils.Tile%5B%5D)">walkPath</a></span>&#8203;(<a href="../helpers/utils/RegionBox.html" title="class in helpers.utils">RegionBox</a>&nbsp;region,
         <a href="../helpers/utils/Tile.html" title="class in helpers.utils">Tile</a>[]&nbsp;path)</code></th>
@@ -208,7 +215,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <div class="block">Walks along a specified path within a given region.</div>
 </td>
 </tr>
-<tr id="i8" class="altColor">
+<tr id="i9" class="rowColor">
 <td class="colFirst"><code>java.lang.Boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#walkPath(helpers.utils.RegionBox,helpers.utils.Tile%5B%5D,java.lang.Runnable)">walkPath</a></span>&#8203;(<a href="../helpers/utils/RegionBox.html" title="class in helpers.utils">RegionBox</a>&nbsp;region,
         <a href="../helpers/utils/Tile.html" title="class in helpers.utils">Tile</a>[]&nbsp;path,
@@ -217,14 +224,14 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <div class="block">Walks along a specified path within a given region.</div>
 </td>
 </tr>
-<tr id="i9" class="rowColor">
+<tr id="i10" class="altColor">
 <td class="colFirst"><code>java.lang.Boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#walkPath(helpers.utils.Tile%5B%5D)">walkPath</a></span>&#8203;(<a href="../helpers/utils/Tile.html" title="class in helpers.utils">Tile</a>[]&nbsp;path)</code></th>
 <td class="colLast">
 <div class="block">Walks along a specified path without providing a region.</div>
 </td>
 </tr>
-<tr id="i10" class="altColor">
+<tr id="i11" class="rowColor">
 <td class="colFirst"><code>java.lang.Boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#walkPath(helpers.utils.Tile%5B%5D,java.lang.Runnable)">walkPath</a></span>&#8203;(<a href="../helpers/utils/Tile.html" title="class in helpers.utils">Tile</a>[]&nbsp;path,
         java.lang.Runnable&nbsp;whileRunning)</code></th>
@@ -232,14 +239,14 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <div class="block">Walks along a specified path without providing a region.</div>
 </td>
 </tr>
-<tr id="i11" class="rowColor">
+<tr id="i12" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#walkTo(helpers.utils.Tile)">walkTo</a></span>&#8203;(<a href="../helpers/utils/Tile.html" title="class in helpers.utils">Tile</a>&nbsp;worldmapTile)</code></th>
 <td class="colLast">
 <div class="block">Attempts to navigate to a specified world map tile.</div>
 </td>
 </tr>
-<tr id="i12" class="altColor">
+<tr id="i13" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#walkTo(helpers.utils.Tile,helpers.utils.RegionBox)">walkTo</a></span>&#8203;(<a href="../helpers/utils/Tile.html" title="class in helpers.utils">Tile</a>&nbsp;worldmapTile,
       <a href="../helpers/utils/RegionBox.html" title="class in helpers.utils">RegionBox</a>&nbsp;region)</code></th>
@@ -247,7 +254,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <div class="block">Attempts to navigate to a specified world map tile within a given region.</div>
 </td>
 </tr>
-<tr id="i13" class="rowColor">
+<tr id="i14" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#walkTo(helpers.utils.Tile,helpers.utils.RegionBox,java.lang.Runnable)">walkTo</a></span>&#8203;(<a href="../helpers/utils/Tile.html" title="class in helpers.utils">Tile</a>&nbsp;worldmapTile,
       <a href="../helpers/utils/RegionBox.html" title="class in helpers.utils">RegionBox</a>&nbsp;region,
@@ -256,7 +263,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <div class="block">Attempts to navigate to a specified world map tile within a given region.</div>
 </td>
 </tr>
-<tr id="i14" class="altColor">
+<tr id="i15" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#walkTo(helpers.utils.Tile,java.lang.Runnable)">walkTo</a></span>&#8203;(<a href="../helpers/utils/Tile.html" title="class in helpers.utils">Tile</a>&nbsp;worldmapTile,
       java.lang.Runnable&nbsp;actionWhileWalking)</code></th>
@@ -553,7 +560,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <a id="walkPath(helpers.utils.Tile[],java.lang.Runnable)">
 <!--   -->
 </a>
-<ul class="blockListLast">
+<ul class="blockList">
 <li class="blockList">
 <h4>walkPath</h4>
 <pre class="methodSignature">java.lang.Boolean&nbsp;walkPath&#8203;(<a href="../helpers/utils/Tile.html" title="class in helpers.utils">Tile</a>[]&nbsp;path,
@@ -565,6 +572,25 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <dd><code>whileRunning</code> - an action to be performed while waiting between points</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>Boolean indicating whether the path was successfully walked.</dd>
+</dl>
+</li>
+</ul>
+<a id="isReachable(helpers.utils.Tile)">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>isReachable</h4>
+<pre class="methodSignature">boolean&nbsp;isReachable&#8203;(<a href="../helpers/utils/Tile.html" title="class in helpers.utils">Tile</a>&nbsp;tile)</pre>
+<div class="block">Determines if the specified Tile is visible on the minimap.
+
+ This method checks whether a given tile can be reached based on its visibility on the minimap,
+ implying that it is within a certain range or not obstructed.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>tile</code> - The Tile to check for reachability.</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd><code>true</code> if the tile is visible and potentially reachable on the minimap; <code>false</code> otherwise.</dd>
 </dl>
 </li>
 </ul>

@@ -172,4 +172,15 @@ public interface iWalker {
      * @return Boolean indicating whether the path was successfully walked.
      */
     Boolean walkPath(Tile[] path, Runnable whileRunning);
+
+    /**
+     * Determines if the specified Tile is visible on the minimap.
+     *
+     * This method checks whether a given tile can be reached based on its visibility on the minimap,
+     * implying that it is within a certain range or not obstructed.
+     *
+     * @param tile The Tile to check for reachability.
+     * @return {@code true} if the tile is visible and potentially reachable on the minimap; {@code false} otherwise.
+     */
+    boolean isReachable(Tile tile);
 }
