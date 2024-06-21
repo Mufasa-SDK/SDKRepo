@@ -151,6 +151,14 @@ public interface iInventory {
     void dropInventItems(Integer exclusionSlot, boolean useCache);
 
     /**
+     * Initiates a tap action on a specific inventory slot identified by its slot ID.
+     * This method directly interacts with the inventory slot without additional checks or parameters.
+     *
+     * @param slotID The slot ID of the inventory slot to be tapped.
+     */
+    void tapItem(Integer slotID);
+
+    /**
      * Initiates a tap action on a specified item in the inventory, based on a threshold.
      *
      * @param itemId    The ID of the item to be tapped.
