@@ -7,9 +7,9 @@ package interfaces;
 public interface iXPBar {
 
     /**
-     * Retrieves the current experience points (XP) displayed on the XP bar.
+     * Retrieves the current experience points (XP) displayed on the XP bar. This requires the XP bar to be visible.
      *
-     * @return String representing the current XP value.
+     * @return int representing the current XP value.
      */
-    String getXP();
+    int getXP();
 }
