@@ -94,30 +94,30 @@ public interface iPlayer {
     /**
      * Gets the player's current Prayer points based on the minimap orb.
      *
-     * @return Returns an integer that represents the current Prayer points value of the player.
+     * @return Returns an int that represents the current Prayer points value of the player.
      */
-    Integer getPray();
+    int getPray();
 
     /**
      * Gets the player's current HP based on the minimap orb.
      *
-     * @return Returns an integer that represents the current HP value of the player.
+     * @return Returns an int that represents the current HP value of the player.
      */
-    Integer getHP();
+    int getHP();
 
     /**
      * Gets the player's current Special attack based on the minimap orb.
      *
-     * @return Returns an integer that represents the current Special attack energy value of the player.
+     * @return Returns an int that represents the current Special attack energy value of the player.
      */
-    Integer getSpec();
+    int getSpec();
 
     /**
      * Gets the player's current Run energy based on the minimap orb.
      *
-     * @return Returns an integer that represents the current Run energy value of the player.
+     * @return Returns an int that represents the current Run energy value of the player.
      */
-    Integer getRun();
+    int getRun();
 
     /**
      * Checks if run is currently enabled or not.
