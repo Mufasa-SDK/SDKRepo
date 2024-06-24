@@ -36,4 +36,17 @@ public interface iObjects {
      * @return A Rectangle representing the nearest object's location and size; returns null if no object is found.
      */
     Rectangle getNearest(String filePath);
+
+    /**
+     * Finds the game object that best matches the provided image file, based on a similarity threshold.
+     * This method compares the specified image file against objects within the game view and identifies
+     * the best match that meets or exceeds the given similarity threshold.
+     *
+     * @param filePath Path to the image file used for object recognition.
+     * @param threshold The minimum similarity score required for a match. The threshold should be between 0 and 1,
+     *                  where 1 indicates an exact match.
+     * @return A Rectangle representing the location and size of the best matching game object; returns null if no
+     *         suitable match is found.
+     */
+    Rectangle getBestMatch(String filePath, double threshold);
 }

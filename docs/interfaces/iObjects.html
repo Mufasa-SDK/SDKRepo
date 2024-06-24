@@ -27,7 +27,7 @@
     catch(err) {
     }
 //-->
-var data = {"i0":6,"i1":6,"i2":6};
+var data = {"i0":6,"i1":6,"i2":6,"i3":6};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],4:["t3","Abstract Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -148,12 +148,20 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </tr>
 <tr id="i0" class="altColor">
 <td class="colFirst"><code>java.awt.Rectangle</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getBestMatch(java.lang.String,double)">getBestMatch</a></span>&#8203;(java.lang.String&nbsp;filePath,
+            double&nbsp;threshold)</code></th>
+<td class="colLast">
+<div class="block">Finds the game object that best matches the provided image file, based on a similarity threshold.</div>
+</td>
+</tr>
+<tr id="i1" class="rowColor">
+<td class="colFirst"><code>java.awt.Rectangle</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getNearest(java.lang.String)">getNearest</a></span>&#8203;(java.lang.String&nbsp;filePath)</code></th>
 <td class="colLast">
 <div class="block">Finds the game object nearest to the center of the game view.</div>
 </td>
 </tr>
-<tr id="i1" class="rowColor">
+<tr id="i2" class="altColor">
 <td class="colFirst"><code>java.util.List&lt;java.awt.Rectangle&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#within(int,boolean,java.lang.String)">within</a></span>&#8203;(int&nbsp;tileRadius,
       boolean&nbsp;returnAll,
@@ -162,7 +170,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <div class="block">Finds the first game object within a specified tile radius from the center of the game view.</div>
 </td>
 </tr>
-<tr id="i2" class="altColor">
+<tr id="i3" class="rowColor">
 <td class="colFirst"><code>java.util.List&lt;java.awt.Rectangle&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#within(java.awt.Rectangle,boolean,java.lang.String)">within</a></span>&#8203;(java.awt.Rectangle&nbsp;rect,
       boolean&nbsp;returnAll,
@@ -231,7 +239,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <a id="getNearest(java.lang.String)">
 <!--   -->
 </a>
-<ul class="blockListLast">
+<ul class="blockList">
 <li class="blockList">
 <h4>getNearest</h4>
 <pre class="methodSignature">java.awt.Rectangle&nbsp;getNearest&#8203;(java.lang.String&nbsp;filePath)</pre>
@@ -241,6 +249,28 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <dd><code>filePath</code> - Path to the image file used for object recognition.</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>A Rectangle representing the nearest object's location and size; returns null if no object is found.</dd>
+</dl>
+</li>
+</ul>
+<a id="getBestMatch(java.lang.String,double)">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>getBestMatch</h4>
+<pre class="methodSignature">java.awt.Rectangle&nbsp;getBestMatch&#8203;(java.lang.String&nbsp;filePath,
+                                double&nbsp;threshold)</pre>
+<div class="block">Finds the game object that best matches the provided image file, based on a similarity threshold.
+ This method compares the specified image file against objects within the game view and identifies
+ the best match that meets or exceeds the given similarity threshold.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>filePath</code> - Path to the image file used for object recognition.</dd>
+<dd><code>threshold</code> - The minimum similarity score required for a match. The threshold should be between 0 and 1,
+                  where 1 indicates an exact match.</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>A Rectangle representing the location and size of the best matching game object; returns null if no
+         suitable match is found.</dd>
 </dl>
 </li>
 </ul>
