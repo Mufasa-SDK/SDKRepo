@@ -64,6 +64,19 @@ public class Area {
         return new Tile(randomX, randomY);
     }
 
+    public static Tile getRandomTile(Area area) {
+        int minX = Math.min(area.getTopTile().x(), area.getBottomTile().x());
+        int maxX = Math.max(area.getTopTile().x(), area.getBottomTile().x());
+        int minY = Math.min(area.getTopTile().y(), area.getBottomTile().y());
+        int maxY = Math.max(area.getTopTile().y(), area.getBottomTile().y());
+
+        Random random = new Random();
+        int randomX = minX + random.nextInt(maxX - minX + 1);
+        int randomY = minY + random.nextInt(maxY - minY + 1);
+
+        return new Tile(randomX, randomY);
+    }
+
     /**
      * Returns a string representation of the area, using the string representation of the top-left and bottom-right tiles.
      *
