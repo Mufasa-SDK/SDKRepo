@@ -23,6 +23,10 @@ public abstract class AbstractScript {
         return configurations;
     }
 
+    public boolean isPaused() {
+        return paused;
+    }
+
     // Method to set the paused state
     public void setPaused(boolean paused) {
         synchronized (pauseLock) {
