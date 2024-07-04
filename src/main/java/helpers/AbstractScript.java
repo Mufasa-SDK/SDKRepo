@@ -1,12 +1,14 @@
 package helpers;
 
 import interfaces.*;
+import javafx.beans.property.BooleanProperty;
+import javafx.beans.property.SimpleBooleanProperty;
 
 import java.util.Map;
 
 public abstract class AbstractScript {
     private final Object pauseLock = new Object();
-    private boolean paused = false;
+    private final BooleanProperty paused = new SimpleBooleanProperty(false);
     private boolean isInitialized = false;
 
     public void initialize(iLogger logger, iBank bank, iClient client, iCondition condition, iDepositBox depositBox, iEquipment equipment, iGame game, iGameTabs gameTabs, iInventory inventory, iLogin login, iLogout logout, iMagic magic, iOverlay overlay, iPlayer player, iPrayer prayer, iStats stats, iWalker walker, iXPBar xpBar, iChatbox chatbox, iObjects objects, iScript script) {
@@ -24,13 +26,13 @@ public abstract class AbstractScript {
     }
 
     public boolean isPaused() {
-        return paused;
+        return paused.get();
     }
 
     // Method to set the paused state
     public void setPaused(boolean paused) {
         synchronized (pauseLock) {
-            this.paused = paused;
+            this.paused.set(paused);
             if (!paused) {
                 pauseLock.notifyAll(); // Wake up the thread if it's waiting
             }
@@ -40,7 +42,7 @@ public abstract class AbstractScript {
     // Method to check and wait if paused
     protected void checkAndPause() {
         synchronized (pauseLock) {
-            while (paused) {
+            while (paused.get()) {
                 try {
                     pauseLock.wait(); // Wait until notified
                 } catch (InterruptedException e) {
