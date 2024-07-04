@@ -30,6 +30,9 @@ repositories {
 
 dependencies {
     implementation 'org.openpnp:opencv:4.5.3-4'
+    implementation 'org.openjfx:javafx-base:19'
+    implementation 'org.openjfx:javafx-controls:19'
+    implementation 'org.openjfx:javafx-graphics:19'
 }
 
 compileJava {
