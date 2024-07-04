@@ -44,7 +44,9 @@ public abstract class AbstractScript {
                 try {
                     pauseLock.wait(); // Wait until notified
                 } catch (InterruptedException e) {
-                    System.out.println("We caught an exception while script pausing" + e.getMessage());
+                    // Re-interrupt the thread
+                    Thread.currentThread().interrupt();
+                    break;
                 }
             }
         }
