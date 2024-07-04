@@ -28,7 +28,12 @@ public abstract class AbstractScript {
 
     // Method to set the paused state
     public void setPaused(boolean state) {
-        paused = state;
+        synchronized (pauseLock) {
+            paused = state;
+            if (!paused) {
+                pauseLock.notifyAll(); // Wake up the thread if it's waiting
+            }
+        }
     }
 
     // Method to check and wait if paused
