@@ -28,6 +28,7 @@ public class Interfaces {
     public static iChatbox Chatbox;
     public static iObjects Objects;
     public static iScript Script;
+    public static iPaint Paint;
 
     /**
      * Initializes the static references to the various game interfaces.
@@ -54,8 +55,9 @@ public class Interfaces {
      * @param chatbox The chatbox interface.
      * @param objects The objects interface.
      * @param script The script interface.
+     * @param paint The paint interface.
      */
-    public static void initialize(iLogger logger, iBank bank, iClient client, iCondition condition, iDepositBox depositBox, iEquipment equipment, iGame game, iGameTabs gameTabs, iInventory inventory, iLogin login, iLogout logout, iMagic magic, iOverlay overlay, iPlayer player, iPrayer prayer, iStats stats, iWalker walker, iXPBar xpBar, iChatbox chatbox, iObjects objects, iScript script) {
+    public static void initialize(iLogger logger, iBank bank, iClient client, iCondition condition, iDepositBox depositBox, iEquipment equipment, iGame game, iGameTabs gameTabs, iInventory inventory, iLogin login, iLogout logout, iMagic magic, iOverlay overlay, iPlayer player, iPrayer prayer, iStats stats, iWalker walker, iXPBar xpBar, iChatbox chatbox, iObjects objects, iScript script, iPaint paint) {
         Interfaces.Logger = logger;
         Interfaces.Bank = bank;
         Interfaces.Client = client;
@@ -77,5 +79,6 @@ public class Interfaces {
         Interfaces.Chatbox = chatbox;
         Interfaces.Objects = objects;
         Interfaces.Script = script;
+        Interfaces.Paint = paint;
     }
 }
