@@ -114,6 +114,13 @@ public interface iBank {
      */
     int stackSize(int itemID);
 
+    /**
+     * Checks if the bank search interface is currently open.
+     *
+     * @return {@code true} if the bank search interface is open; {@code false} otherwise.
+     */
+    boolean isSearchOpen();
+
     // Methods for finding different bank interface components
     // Each method returns the screen area (as a Rectangle) for a specific bank interface component
     Rectangle findBankCloseButton();
