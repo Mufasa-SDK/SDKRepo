@@ -180,7 +180,8 @@ public interface iWalker {
      * implying that it is within a certain range or not obstructed.
      *
      * @param tile The Tile to check for reachability.
+     * @param mapRegion The mapregion to get player position from.
      * @return {@code true} if the tile is visible and potentially reachable on the minimap; {@code false} otherwise.
      */
-    boolean isReachable(Tile tile);
+    boolean isReachable(Tile tile, RegionBox mapRegion);
 }

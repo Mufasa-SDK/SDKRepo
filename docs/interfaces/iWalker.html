@@ -163,7 +163,8 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </tr>
 <tr id="i2" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#isReachable(helpers.utils.Tile)">isReachable</a></span>&#8203;(<a href="../helpers/utils/Tile.html" title="class in helpers.utils">Tile</a>&nbsp;tile)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#isReachable(helpers.utils.Tile,helpers.utils.RegionBox)">isReachable</a></span>&#8203;(<a href="../helpers/utils/Tile.html" title="class in helpers.utils">Tile</a>&nbsp;tile,
+           <a href="../helpers/utils/RegionBox.html" title="class in helpers.utils">RegionBox</a>&nbsp;mapRegion)</code></th>
 <td class="colLast">
 <div class="block">Determines if the specified Tile is visible on the minimap.</div>
 </td>
@@ -575,13 +576,14 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </dl>
 </li>
 </ul>
-<a id="isReachable(helpers.utils.Tile)">
+<a id="isReachable(helpers.utils.Tile,helpers.utils.RegionBox)">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>isReachable</h4>
-<pre class="methodSignature">boolean&nbsp;isReachable&#8203;(<a href="../helpers/utils/Tile.html" title="class in helpers.utils">Tile</a>&nbsp;tile)</pre>
+<pre class="methodSignature">boolean&nbsp;isReachable&#8203;(<a href="../helpers/utils/Tile.html" title="class in helpers.utils">Tile</a>&nbsp;tile,
+                    <a href="../helpers/utils/RegionBox.html" title="class in helpers.utils">RegionBox</a>&nbsp;mapRegion)</pre>
 <div class="block">Determines if the specified Tile is visible on the minimap.
 
  This method checks whether a given tile can be reached based on its visibility on the minimap,
@@ -589,6 +591,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>tile</code> - The Tile to check for reachability.</dd>
+<dd><code>mapRegion</code> - The mapregion to get player position from.</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd><code>true</code> if the tile is visible and potentially reachable on the minimap; <code>false</code> otherwise.</dd>
 </dl>
