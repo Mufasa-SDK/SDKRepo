@@ -27,7 +27,7 @@
     catch(err) {
     }
 //-->
-var data = {"i0":6,"i1":6,"i2":6};
+var data = {"i0":6,"i1":6,"i2":6,"i3":6,"i4":6,"i5":6,"i6":6,"i7":6,"i8":6,"i9":6,"i10":6};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],4:["t3","Abstract Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -147,24 +147,88 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <th class="colLast" scope="col">Description</th>
 </tr>
 <tr id="i0" class="altColor">
+<td class="colFirst"><code>java.util.List&lt;java.awt.Rectangle&gt;</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#findAgilityOverlay(java.awt.Rectangle)">findAgilityOverlay</a></span>&#8203;(java.awt.Rectangle&nbsp;searchArea)</code></th>
+<td class="colLast">
+<div class="block">Scans the game view for agility overlays within the specified search area and returns a list of rectangles
+ representing the bounding boxes of the detected agility overlays.</div>
+</td>
+</tr>
+<tr id="i1" class="rowColor">
+<td class="colFirst"><code>java.util.List&lt;java.awt.Rectangle&gt;</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#findFishingOverlay(java.awt.Rectangle)">findFishingOverlay</a></span>&#8203;(java.awt.Rectangle&nbsp;searchArea)</code></th>
+<td class="colLast">
+<div class="block">Scans the game view for fishing overlays within the specified search area and returns a list of rectangles
+ representing the bounding boxes of the detected fishing overlays.</div>
+</td>
+</tr>
+<tr id="i2" class="altColor">
+<td class="colFirst"><code>java.util.List&lt;java.awt.Rectangle&gt;</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#findGroundItems(java.awt.Rectangle)">findGroundItems</a></span>&#8203;(java.awt.Rectangle&nbsp;searchArea)</code></th>
+<td class="colLast">
+<div class="block">Scans the game view for ground item overlays within the specified search area and returns a list of rectangles
+ representing the bounding boxes of the detected ground item overlays.</div>
+</td>
+</tr>
+<tr id="i3" class="rowColor">
 <td class="colFirst"><code>java.awt.Polygon</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#findNearest(java.awt.Color)">findNearest</a></span>&#8203;(java.awt.Color&nbsp;color)</code></th>
 <td class="colLast">
 <div class="block">Finds and returns the polygon representing the overlay that is closest to the center of the screen.</div>
 </td>
 </tr>
-<tr id="i1" class="rowColor">
+<tr id="i4" class="altColor">
+<td class="colFirst"><code>java.awt.Rectangle</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#findNearestAgility(java.awt.Rectangle)">findNearestAgility</a></span>&#8203;(java.awt.Rectangle&nbsp;searchArea)</code></th>
+<td class="colLast">
+<div class="block">Scans the game view for agility overlays within the specified search area and returns the bounding box
+ of the nearest detected agility overlay.</div>
+</td>
+</tr>
+<tr id="i5" class="rowColor">
+<td class="colFirst"><code>java.awt.Rectangle</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#findNearestFishing(java.awt.Rectangle)">findNearestFishing</a></span>&#8203;(java.awt.Rectangle&nbsp;searchArea)</code></th>
+<td class="colLast">
+<div class="block">Scans the game view for fishing overlays within the specified search area and returns the bounding box
+ of the nearest detected fishing overlay.</div>
+</td>
+</tr>
+<tr id="i6" class="altColor">
+<td class="colFirst"><code>java.awt.Rectangle</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#findNearestGroundItem(java.awt.Rectangle)">findNearestGroundItem</a></span>&#8203;(java.awt.Rectangle&nbsp;searchArea)</code></th>
+<td class="colLast">
+<div class="block">Scans the game view for ground item overlays within the specified search area and returns the bounding box
+ of the nearest detected ground item overlay.</div>
+</td>
+</tr>
+<tr id="i7" class="rowColor">
 <td class="colFirst"><code>java.util.List&lt;java.awt.Polygon&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#findOverlays(java.awt.Color)">findOverlays</a></span>&#8203;(java.awt.Color&nbsp;color)</code></th>
 <td class="colLast">
 <div class="block">Finds and returns a list of polygons representing overlays of a specified color.</div>
 </td>
 </tr>
-<tr id="i2" class="altColor">
+<tr id="i8" class="altColor">
 <td class="colFirst"><code>java.awt.Polygon</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#findSecondNearest(java.awt.Color)">findSecondNearest</a></span>&#8203;(java.awt.Color&nbsp;color)</code></th>
 <td class="colLast">
 <div class="block">Finds and returns the polygon representing the overlay that is second closest to the center of the screen.</div>
+</td>
+</tr>
+<tr id="i9" class="rowColor">
+<td class="colFirst"><code>java.awt.Rectangle</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#findSecondNearestAgility(java.awt.Rectangle)">findSecondNearestAgility</a></span>&#8203;(java.awt.Rectangle&nbsp;searchArea)</code></th>
+<td class="colLast">
+<div class="block">Scans the game view for agility overlays within the specified search area and returns the bounding box
+ of the second nearest detected agility overlay.</div>
+</td>
+</tr>
+<tr id="i10" class="altColor">
+<td class="colFirst"><code>java.awt.Rectangle</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#findSecondNearestFishing(java.awt.Rectangle)">findSecondNearestFishing</a></span>&#8203;(java.awt.Rectangle&nbsp;searchArea)</code></th>
+<td class="colLast">
+<div class="block">Scans the game view for fishing overlays within the specified search area and returns the bounding box
+ of the second nearest detected fishing overlay.</div>
 </td>
 </tr>
 </table>
@@ -184,6 +248,142 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <!--   -->
 </a>
 <h3>Method Detail</h3>
+<a id="findFishingOverlay(java.awt.Rectangle)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>findFishingOverlay</h4>
+<pre class="methodSignature">java.util.List&lt;java.awt.Rectangle&gt;&nbsp;findFishingOverlay&#8203;(java.awt.Rectangle&nbsp;searchArea)</pre>
+<div class="block">Scans the game view for fishing overlays within the specified search area and returns a list of rectangles
+ representing the bounding boxes of the detected fishing overlays.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>searchArea</code> - The area within which to search for fishing overlays.</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>A list of rectangles representing the bounding boxes of the detected fishing overlays.</dd>
+</dl>
+</li>
+</ul>
+<a id="findNearestFishing(java.awt.Rectangle)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>findNearestFishing</h4>
+<pre class="methodSignature">java.awt.Rectangle&nbsp;findNearestFishing&#8203;(java.awt.Rectangle&nbsp;searchArea)</pre>
+<div class="block">Scans the game view for fishing overlays within the specified search area and returns the bounding box
+ of the nearest detected fishing overlay.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>searchArea</code> - The area within which to search for the nearest fishing overlay.</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>A rectangle representing the bounding box of the nearest detected fishing overlay.</dd>
+</dl>
+</li>
+</ul>
+<a id="findSecondNearestFishing(java.awt.Rectangle)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>findSecondNearestFishing</h4>
+<pre class="methodSignature">java.awt.Rectangle&nbsp;findSecondNearestFishing&#8203;(java.awt.Rectangle&nbsp;searchArea)</pre>
+<div class="block">Scans the game view for fishing overlays within the specified search area and returns the bounding box
+ of the second nearest detected fishing overlay.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>searchArea</code> - The area within which to search for the second nearest fishing overlay.</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>A rectangle representing the bounding box of the second nearest detected fishing overlay.</dd>
+</dl>
+</li>
+</ul>
+<a id="findAgilityOverlay(java.awt.Rectangle)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>findAgilityOverlay</h4>
+<pre class="methodSignature">java.util.List&lt;java.awt.Rectangle&gt;&nbsp;findAgilityOverlay&#8203;(java.awt.Rectangle&nbsp;searchArea)</pre>
+<div class="block">Scans the game view for agility overlays within the specified search area and returns a list of rectangles
+ representing the bounding boxes of the detected agility overlays.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>searchArea</code> - The area within which to search for agility overlays.</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>A list of rectangles representing the bounding boxes of the detected agility overlays.</dd>
+</dl>
+</li>
+</ul>
+<a id="findNearestAgility(java.awt.Rectangle)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>findNearestAgility</h4>
+<pre class="methodSignature">java.awt.Rectangle&nbsp;findNearestAgility&#8203;(java.awt.Rectangle&nbsp;searchArea)</pre>
+<div class="block">Scans the game view for agility overlays within the specified search area and returns the bounding box
+ of the nearest detected agility overlay.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>searchArea</code> - The area within which to search for the nearest agility overlay.</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>A rectangle representing the bounding box of the nearest detected agility overlay.</dd>
+</dl>
+</li>
+</ul>
+<a id="findSecondNearestAgility(java.awt.Rectangle)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>findSecondNearestAgility</h4>
+<pre class="methodSignature">java.awt.Rectangle&nbsp;findSecondNearestAgility&#8203;(java.awt.Rectangle&nbsp;searchArea)</pre>
+<div class="block">Scans the game view for agility overlays within the specified search area and returns the bounding box
+ of the second nearest detected agility overlay.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>searchArea</code> - The area within which to search for the second nearest agility overlay.</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>A rectangle representing the bounding box of the second nearest detected agility overlay.</dd>
+</dl>
+</li>
+</ul>
+<a id="findGroundItems(java.awt.Rectangle)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>findGroundItems</h4>
+<pre class="methodSignature">java.util.List&lt;java.awt.Rectangle&gt;&nbsp;findGroundItems&#8203;(java.awt.Rectangle&nbsp;searchArea)</pre>
+<div class="block">Scans the game view for ground item overlays within the specified search area and returns a list of rectangles
+ representing the bounding boxes of the detected ground item overlays.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>searchArea</code> - The area within which to search for ground item overlays.</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>A list of rectangles representing the bounding boxes of the detected ground item overlays.</dd>
+</dl>
+</li>
+</ul>
+<a id="findNearestGroundItem(java.awt.Rectangle)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>findNearestGroundItem</h4>
+<pre class="methodSignature">java.awt.Rectangle&nbsp;findNearestGroundItem&#8203;(java.awt.Rectangle&nbsp;searchArea)</pre>
+<div class="block">Scans the game view for ground item overlays within the specified search area and returns the bounding box
+ of the nearest detected ground item overlay.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>searchArea</code> - The area within which to search for the nearest ground item overlay.</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>A rectangle representing the bounding box of the nearest detected ground item overlay.</dd>
+</dl>
+</li>
+</ul>
 <a id="findOverlays(java.awt.Color)">
 <!--   -->
 </a>
