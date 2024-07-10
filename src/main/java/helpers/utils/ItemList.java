@@ -937,6 +937,14 @@ public class ItemList {
     public static final int SINISTER_KEY_993=993;
     public static final int SINISTER_KEY_NOTED_994=994;
     public static final int COINS_995=995;
+    public static final int COINS_2_996=996;
+    public static final int COINS_3_997=997;
+    public static final int COINS_4_998=998;
+    public static final int COINS_5_999=999;
+    public static final int COINS_6_1001=1001;
+    public static final int COINS_7_1002=1002;
+    public static final int COINS_8_1003=1003;
+    public static final int COINS_9_1004=1004;
     public static final int WHITE_APRON_1005=1005;
     public static final int WHITE_APRON_NOTED_1006=1006;
     public static final int RED_CAPE_1007=1007;
@@ -6159,7 +6167,6 @@ public class ItemList {
     public static final int BAGUETTE_6961=6961;
     public static final int TRIANGLE_SANDWICH_6962=6962;
     public static final int ROLL_6963=6963;
-    public static final int COINS_6964=6964;
     public static final int SQUARE_SANDWICH_6965=6965;
     public static final int PRISON_KEY_6966=6966;
     public static final int DRAGON_MED_HELM_6967=6967;
@@ -7892,7 +7899,6 @@ public class ItemList {
     public static final int ZANIK_8887=8887;
     public static final int ZANIK_HAM_8888=8888;
     public static final int ZANIK_SHOWDOWN_8889=8889;
-    public static final int COINS_8890=8890;
     public static final int CAVE_HORROR_8900=8900;
     public static final int BLACK_MASK_10_8901=8901;
     public static final int BLACK_MASK_10_NOTED_8902=8902;
