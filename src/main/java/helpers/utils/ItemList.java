@@ -3609,6 +3609,9 @@ public class ItemList {
     public static final int IRON_SICKLE_3899=3899;
     public static final int IRON_SICKLE_NOTED_3900=3900;
     public static final int GHRIMS_BOOK_3901=3901;
+    public static final int AMETHYST_JAVELIN_HEAD_3963=3963;
+    public static final int AMETHYST_JAVELIN_HEAD_3965=3965;
+    public static final int AMETHYST_JAVELIN_HEAD_3967=3967;
     public static final int WILDERNESS_SWORD_3981=3981;
     public static final int WESTERN_BANNER_3983=3983;
     public static final int HARDY_GOUT_TUBER_4001=4001;
@@ -11651,6 +11654,7 @@ public class ItemList {
     public static final int LION_TOY_13216=13216;
     public static final int SNOW_LEOPARD_TOY_13217=13217;
     public static final int AMUR_LEOPARD_TOY_13218=13218;
+    public static final int AMETHYST_JAVELIN_HEAD_13220=13220;
     public static final int MUSIC_CAPE_13221=13221;
     public static final int MUSIC_CAPET_13222=13222;
     public static final int MUSIC_HOOD_13223=13223;
