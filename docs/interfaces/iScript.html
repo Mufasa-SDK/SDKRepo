@@ -27,7 +27,7 @@
     catch(err) {
     }
 //-->
-var data = {"i0":6,"i1":6};
+var data = {"i0":6,"i1":6,"i2":6};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],4:["t3","Abstract Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -153,6 +153,13 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </td>
 </tr>
 <tr id="i1" class="rowColor">
+<td class="colFirst"><code>boolean</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#isTimeForBreak()">isTimeForBreak</a></span>()</code></th>
+<td class="colLast">
+<div class="block">Checks if its time to go to break</div>
+</td>
+</tr>
+<tr id="i2" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#stop()">stop</a></span>()</code></th>
 <td class="colLast">
@@ -192,7 +199,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <a id="isScriptStopping()">
 <!--   -->
 </a>
-<ul class="blockListLast">
+<ul class="blockList">
 <li class="blockList">
 <h4>isScriptStopping</h4>
 <pre class="methodSignature">boolean&nbsp;isScriptStopping()</pre>
@@ -200,6 +207,20 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>true if script is requested to stop.</dd>
+</dl>
+</li>
+</ul>
+<a id="isTimeForBreak()">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>isTimeForBreak</h4>
+<pre class="methodSignature">boolean&nbsp;isTimeForBreak()</pre>
+<div class="block">Checks if its time to go to break</div>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>true if script is requested to enter break.</dd>
 </dl>
 </li>
 </ul>

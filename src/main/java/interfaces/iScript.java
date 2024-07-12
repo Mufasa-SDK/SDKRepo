@@ -17,4 +17,10 @@ public interface iScript {
      * @return true if script is requested to stop.
      */
     boolean isScriptStopping();
+
+    /**
+     * Checks if its time to go to break
+     * @return true if script is requested to enter break.
+     */
+    boolean isTimeForBreak();
 }
