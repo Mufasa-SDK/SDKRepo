@@ -14027,6 +14027,9 @@ public class ItemList {
     public static final int CRYSTAL_AXE_UNCHARGED_23675=23675;
     public static final int CRYSTAL_PICKAXE_23680=23680;
     public static final int CRYSTAL_PICKAXE_UNCHARGED_23682=23682;
+    public static final int AMETHYST_DART_TIP_25853=25853;
+    public static final int BLOOD_ESSENCE_INACTIVE_26390=26390;
+    public static final int BLOOD_ESSENCE_ACTIVE_26392=26392;
     public static final int VENATOR_BOW_27610=27610;
     public static final int VENATOR_BOW_UNCHARGED_27612=27612;
     public static final int BRONZE_FELLING_AXE_28196=28196;
@@ -14040,6 +14043,5 @@ public class ItemList {
     public static final int CRYSTAL_FELLING_AXE_28220=28220;
     public static final int CRYSTAL_FELLING_AXE_UNCHARGED_28223=28223;
     public static final int _3RD_AGE_FELLING_AXE_28226=28226;
-    public static final int AMETHYST_DART_TIP_25853=25853;
     public static final int WINTERTODT_BRAZIER_99999=99999;
 }

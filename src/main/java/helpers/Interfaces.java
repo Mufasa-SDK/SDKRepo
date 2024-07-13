@@ -35,6 +35,7 @@ public class Interfaces {
      * Initializes the static references to the various game interfaces.
      * This method is called to set up all interfaces required for the script.
      *
+     * @param ge The Grand Exchange interface.
      * @param logger The logging interface.
      * @param bank The banking interface.
      * @param client The client interface.
