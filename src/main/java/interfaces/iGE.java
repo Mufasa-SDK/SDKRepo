@@ -8,5 +8,5 @@ public interface iGE {
      * @param itemID the ID of the item to fetch the price for.
      * @return the latest high price if available, otherwise the low price. Returns -1 if both prices are unavailable or in case of an error.
      */
-    int fetchGEPrice(int itemID);
+    int getItemPrice(int itemID);
 }
