@@ -27,7 +27,7 @@
     catch(err) {
     }
 //-->
-var data = {"i0":6,"i1":6,"i2":6,"i3":6,"i4":6,"i5":6,"i6":6,"i7":6,"i8":6,"i9":6,"i10":6,"i11":6,"i12":6,"i13":6,"i14":6,"i15":6,"i16":6,"i17":6,"i18":6,"i19":6,"i20":6,"i21":6,"i22":6};
+var data = {"i0":6,"i1":6,"i2":6,"i3":6,"i4":6,"i5":6,"i6":6,"i7":6,"i8":6,"i9":6,"i10":6,"i11":6,"i12":6,"i13":6,"i14":6,"i15":6,"i16":6,"i17":6,"i18":6,"i19":6,"i20":6,"i21":6,"i22":6,"i23":6};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],4:["t3","Abstract Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -310,6 +310,13 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <div class="block">Instantly switches to a random world from the selected hop profile.</div>
 </td>
 </tr>
+<tr id="i23" class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#switchWorldNoProfile()">switchWorldNoProfile</a></span>()</code></th>
+<td class="colLast">
+<div class="block">Instantly switches to a random world from the default profile settings.</div>
+</td>
+</tr>
 </table>
 </li>
 </ul>
@@ -430,6 +437,18 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>profileName</code> - use the profileName that was selected in the ScriptUI config here by the user.</dd>
 </dl>
+</li>
+</ul>
+<a id="switchWorldNoProfile()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>switchWorldNoProfile</h4>
+<pre class="methodSignature">void&nbsp;switchWorldNoProfile()</pre>
+<div class="block">Instantly switches to a random world from the default profile settings.
+ DISCLAIMER: This is only to be used when already on the login screen!
+ Use the instantHop method when you are still logged in.</div>
 </li>
 </ul>
 <a id="setFairyRing(java.lang.String)">

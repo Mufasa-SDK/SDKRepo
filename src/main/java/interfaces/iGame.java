@@ -62,6 +62,15 @@ public interface iGame {
     void switchWorld(String profileName);
 
     /**
+     * Instantly switches to a random world from the default profile settings.
+     * DISCLAIMER: This is only to be used when already on the login screen!
+     * Use the instantHop method when you are still logged in.
+     *
+     */
+    void switchWorldNoProfile();
+
+
+    /**
      * Sets the letters on the fairy ring you'd like to travel to.
      *
      * @param Letters The 3 letters of the fairy ring code you'd like to travel to.
