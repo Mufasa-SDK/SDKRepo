@@ -14058,10 +14058,10 @@ public class ItemList {
     public static final int SKILL_CRAFTING_ICON_99990=99990;
     public static final int SKILL_MINING_ICON_99989=99989;
     public static final int SKILL_SMITHING_ICON_99988=99988;
-    public static final int SKILL_FISHING_ICON_99988=99987;
-    public static final int SKILL_COOKING_ICON_99987=99986;
-    public static final int SKILL_FIREMAKING_ICON_99986=99985;
-    public static final int SKILL_WOODCUTTING_ICON_99985=99984;
+    public static final int SKILL_FISHING_ICON_99987=99987;
+    public static final int SKILL_COOKING_ICON_99986=99986;
+    public static final int SKILL_FIREMAKING_ICON_99985=99985;
+    public static final int SKILL_WOODCUTTING_ICON_99984=99984;
     public static final int SKILL_AGILITY_ICON_99983=99983;
     public static final int SKILL_HERBLORE_ICON_99982=99982;
     public static final int SKILL_THIEVING_ICON_99981=999881;
