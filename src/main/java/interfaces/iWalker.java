@@ -23,6 +23,24 @@ public interface iWalker {
     void setup(String customMapfilePath);
 
     /**
+     * Configures the system to use a custom map file instead of the default worldmap.
+     * This method must be called before any operations that require map data are performed
+     * to ensure the custom map is loaded and ready for use. If a custom map is not set up
+     * using this method, the system will revert to using the default map.
+     *
+     * @param customMapfilePath The relative file path to the custom map file. Path must be relative to your script directory.
+     * @param regionBox the regionBox you would like the walker to use by default.
+     */
+    void setup(String customMapfilePath, RegionBox regionBox);
+
+    /**
+     * Updates the region box for the walker. In case you need to swap it with a teleport, for example.
+     *
+     * @param regionBox The new region box to associate with the device.
+     */
+    void changeRegion(RegionBox regionBox);
+
+    /**
      * Gets the player's current position.
      *
      * @return Tile representing the player's current position on the map.
