@@ -14043,5 +14043,35 @@ public class ItemList {
     public static final int CRYSTAL_FELLING_AXE_28220=28220;
     public static final int CRYSTAL_FELLING_AXE_UNCHARGED_28223=28223;
     public static final int _3RD_AGE_FELLING_AXE_28226=28226;
+
+    // CUSTOM ICONS
+
+    // skills
+    public static final int SKILL_STRENGHT_ICON_99998=99998;
+    public static final int SKILL_ATTACK_ICON_99997=99997;
+    public static final int SKILL_DEFENCE_ICON_99996=99996;
+    public static final int SKILL_RANGE_ICON_99995=99995;
+    public static final int SKILL_PRAYER_ICON_99994=99994;
+    public static final int SKILL_MAGIC_ICON_99993=99993;
+    public static final int SKILL_RUNECRAFTING_ICON_99992=99992;
+    public static final int SKILL_HITPOINTS_ICON_99991=99991;
+    public static final int SKILL_CRAFTING_ICON_99990=99990;
+    public static final int SKILL_MINING_ICON_99989=99989;
+    public static final int SKILL_SMITHING_ICON_99988=99988;
+    public static final int SKILL_FISHING_ICON_99988=99987;
+    public static final int SKILL_COOKING_ICON_99987=99986;
+    public static final int SKILL_FIREMAKING_ICON_99986=99985;
+    public static final int SKILL_WOODCUTTING_ICON_99985=99984;
+    public static final int SKILL_AGILITY_ICON_99983=99983;
+    public static final int SKILL_HERBLORE_ICON_99982=99982;
+    public static final int SKILL_THIEVING_ICON_99981=999881;
+    public static final int SKILL_FLETCHING_ICON_99980=99980;
+    public static final int SKILL_SLAYER_ICON_99979=99979;
+    public static final int SKILL_FARMING_ICON_99978=99978;
+    public static final int SKILL_CONSTRUCTION_ICON_99977=99977;
+    public static final int SKILL_HUNTER_ICON_99976=99976;
+
+    // Others
     public static final int WINTERTODT_BRAZIER_99999=99999;
+    public static final int STONKS_99960=99960;
 }
