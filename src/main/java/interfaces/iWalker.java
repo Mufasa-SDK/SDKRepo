@@ -23,7 +23,17 @@ public interface iWalker {
     void setup(String customMapfilePath);
 
     /**
-     * Configures the system to use a custom map file instead of the default worldmap.
+     * Configures the system to use a regionbox with the full worldmap.
+     * This method must be called before any operations that require map data are performed
+     * to ensure the custom map is loaded and ready for use. If a custom map is not set up
+     * using this method, the system will revert to using the default map.
+     *
+     * @param regionBox The regionbox you would like to use on the FULL worldmap
+     */
+    void setup(RegionBox regionBox);
+
+    /**
+     * Configures the system to use a custom map file instead of the default worldmap with a regionbox defined.
      * This method must be called before any operations that require map data are performed
      * to ensure the custom map is loaded and ready for use. If a custom map is not set up
      * using this method, the system will revert to using the default map.
