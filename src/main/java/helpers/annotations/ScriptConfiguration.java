@@ -32,6 +32,12 @@ public @interface ScriptConfiguration {
     String defaultValue();
 
     /**
+     * Specific configuration for worldhopper to seperate the default values for the two settings
+     * @return The default value as a String.
+     */
+    String wdhEnabled() default "false";
+
+    /**
      * Defines the allowed values for a STRING type option.
      * @return An array of allowed values.
      */
