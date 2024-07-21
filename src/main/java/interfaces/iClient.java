@@ -70,6 +70,13 @@ public interface iClient {
     void longPress(int x, int y);
 
     /**
+     * Simulates a long press action at a specified coordinate with a list of points to generate its bounding and weighted taps from.
+     *
+     * @param points the points list you want to generate a tap from
+     */
+    void longPress(List<Point> points);
+
+    /**
      * Simulates a long press action on a specific color within a defined area.
      *
      * @param targetColor the color to target for the long press.

@@ -160,30 +160,37 @@ public interface iGame {
     public void antiAFK();
 
     /**
-     * Retrieves the rectangle representing the "bank" option for the current emulator.
+     * Retrieves the rectangle representing the "bank" option.
      *
      * @return Rectangle the area on the screen representing the "bank" option, or null if not found.
      */
     Rectangle findBankOption();
 
     /**
-     * Retrieves the rectangle representing the "collect" option for the current emulator.
+     * Retrieves the rectangle representing the "collect" option.
      *
      * @return Rectangle the area on the screen representing the "collect" option, or null if not found.
      */
     Rectangle findCollectOption();
 
     /**
-     * Retrieves the rectangle representing the "talk-to" option for the current emulator.
+     * Retrieves the rectangle representing the "talk-to" option.
      *
      * @return Rectangle the area on the screen representing the "talk-to" option, or null if not found.
      */
     Rectangle findTalkToOption();
 
     /**
-     * Retrieves the rectangle representing the "pickpocket" option for the current emulator.
+     * Retrieves the rectangle representing the "pickpocket" option.
      *
      * @return Rectangle the area on the screen representing the "pickpocket" option, or null if not found.
      */
     Rectangle findPickpocketOption();
+
+    /**
+     * Retrieves the rectangle representing the "buy-plank" option.
+     *
+     * @return Rectangle the area on the screen representing the "buy-plank" option, or null if not found.
+     */
+    Rectangle findBuyPlanksOption();
 }
