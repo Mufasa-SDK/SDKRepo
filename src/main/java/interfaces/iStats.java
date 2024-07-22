@@ -10,7 +10,7 @@ public interface iStats {
     /**
      * Gets the real level of the specified stat using OCR.
      *
-     * @param skill of the skill level you want to check
+     * @param skill of the skill level you want to check from the @Skills enum
      * @return Integer indicating the real level of the skill you're checking.
      */
     Integer getRealLevel(Skills skill);
@@ -30,6 +30,14 @@ public interface iStats {
      * @return Integer indicating the effective level of the skill you're checking.
      */
     Integer getEffectiveLevel(String skill);
+
+    /**
+     * Gets the effective (boosted or reduced) level of the specified stat using OCR.
+     *
+     * @param skill of the skill level you want to check from the @Skills enum
+     * @return Integer indicating the real level of the skill you're checking.
+     */
+    Integer getEffectiveLevel(Skills skill);
 
     /**
      * Gets the total level using OCR.
