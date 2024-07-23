@@ -193,4 +193,11 @@ public interface iGame {
      * @return Rectangle the area on the screen representing the "buy-plank" option, or null if not found.
      */
     Rectangle findBuyPlanksOption();
+
+    /**
+     * Retrieves the rectangle representing the "bloom" or "cast bloom" option.
+     *
+     * @return Rectangle the area on the screen representing the "bloom" or "cast bloom" option, or null if not found.
+     */
+    Rectangle findBloomOption();
 }
