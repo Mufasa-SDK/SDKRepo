@@ -14071,6 +14071,7 @@ public class ItemList {
     public static final int WEAK_CELL_26883 = 26833;
     public static final int CATALYTIC_GUARDIAN_STONE_26880 = 26880;
     public static final int ELEMENTAL_GUARDIAN_STONE_26881 = 26881;
+    public static final int POLYELEMENTAL_GUARDIAN_STONE_26941 = 26941;
     public static final int VENATOR_BOW_27610=27610;
     public static final int VENATOR_BOW_UNCHARGED_27612=27612;
     public static final int BRONZE_FELLING_AXE_28196=28196;
