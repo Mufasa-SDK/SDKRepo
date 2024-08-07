@@ -27,7 +27,7 @@
     catch(err) {
     }
 //-->
-var data = {"i0":6,"i1":6,"i2":6,"i3":6,"i4":6,"i5":6,"i6":6,"i7":6,"i8":6,"i9":6,"i10":6,"i11":6,"i12":6,"i13":6,"i14":6,"i15":6,"i16":6,"i17":6,"i18":6,"i19":6};
+var data = {"i0":6,"i1":6,"i2":6,"i3":6,"i4":6,"i5":6,"i6":6,"i7":6,"i8":6,"i9":6,"i10":6,"i11":6,"i12":6,"i13":6,"i14":6,"i15":6,"i16":6,"i17":6,"i18":6,"i19":6,"i20":6,"i21":6};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],4:["t3","Abstract Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -299,6 +299,21 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
       java.lang.Runnable&nbsp;actionWhileWalking)</code></th>
 <td class="colLast">
 <div class="block">Attempts to navigate to a specified world map tile.</div>
+</td>
+</tr>
+<tr id="i20" class="altColor">
+<td class="colFirst"><code>boolean</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#webWalk(helpers.utils.Tile)">webWalk</a></span>&#8203;(<a href="../helpers/utils/Tile.html" title="class in helpers.utils">Tile</a>&nbsp;destinationTile)</code></th>
+<td class="colLast">
+<div class="block">Walks to a specified destination tile using a dynamic path calculation.</div>
+</td>
+</tr>
+<tr id="i21" class="rowColor">
+<td class="colFirst"><code>boolean</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#webWalk(helpers.utils.Tile,helpers.utils.RegionBox)">webWalk</a></span>&#8203;(<a href="../helpers/utils/Tile.html" title="class in helpers.utils">Tile</a>&nbsp;destinationTile,
+       <a href="../helpers/utils/RegionBox.html" title="class in helpers.utils">RegionBox</a>&nbsp;region)</code></th>
+<td class="colLast">
+<div class="block">Walks to a specified destination tile within a given region box using a dynamic path calculation.</div>
 </td>
 </tr>
 </table>
@@ -652,6 +667,43 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <dd><code>whileRunning</code> - an action to be performed while waiting between points</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>Boolean indicating whether the path was successfully walked.</dd>
+</dl>
+</li>
+</ul>
+<a id="webWalk(helpers.utils.Tile)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>webWalk</h4>
+<pre class="methodSignature">boolean&nbsp;webWalk&#8203;(<a href="../helpers/utils/Tile.html" title="class in helpers.utils">Tile</a>&nbsp;destinationTile)</pre>
+<div class="block">Walks to a specified destination tile using a dynamic path calculation. This method calculates the best possible
+ path to the end destination tile.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>destinationTile</code> - The Tile representing the end destination.</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>Boolean indicating whether the destination was successfully reached.</dd>
+</dl>
+</li>
+</ul>
+<a id="webWalk(helpers.utils.Tile,helpers.utils.RegionBox)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>webWalk</h4>
+<pre class="methodSignature">boolean&nbsp;webWalk&#8203;(<a href="../helpers/utils/Tile.html" title="class in helpers.utils">Tile</a>&nbsp;destinationTile,
+                <a href="../helpers/utils/RegionBox.html" title="class in helpers.utils">RegionBox</a>&nbsp;region)</pre>
+<div class="block">Walks to a specified destination tile within a given region box using a dynamic path calculation. This method
+ calculates the best possible path to the end destination tile, optionally including a RegionBox for the region
+ of interest (ROI) on the map.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>destinationTile</code> - The Tile representing the end destination.</dd>
+<dd><code>region</code> - The RegionBox representing the region of interest (ROI) on the map.</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>Boolean indicating whether the destination was successfully reached.</dd>
 </dl>
 </li>
 </ul>

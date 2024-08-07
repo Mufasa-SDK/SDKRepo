@@ -202,6 +202,27 @@ public interface iWalker {
     Boolean walkPath(Tile[] path, Runnable whileRunning);
 
     /**
+     * Walks to a specified destination tile using a dynamic path calculation. This method calculates the best possible
+     * path to the end destination tile.
+     *
+     * @param destinationTile The Tile representing the end destination.
+     * @return Boolean indicating whether the destination was successfully reached.
+     */
+    boolean webWalk(Tile destinationTile);
+
+    /**
+     * Walks to a specified destination tile within a given region box using a dynamic path calculation. This method
+     * calculates the best possible path to the end destination tile, optionally including a RegionBox for the region
+     * of interest (ROI) on the map.
+     *
+     * @param destinationTile The Tile representing the end destination.
+     * @param region The RegionBox representing the region of interest (ROI) on the map.
+     * @return Boolean indicating whether the destination was successfully reached.
+     */
+    boolean webWalk(Tile destinationTile, RegionBox region);
+
+
+    /**
      * Determines if the specified Tile is visible on the minimap.
      *
      * This method checks whether a given tile can be reached based on its visibility on the minimap,
