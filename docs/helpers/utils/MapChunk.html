@@ -27,7 +27,7 @@
     catch(err) {
     }
 //-->
-var data = {"i0":10};
+var data = {"i0":10,"i1":10,"i2":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -155,7 +155,12 @@ extends java.lang.Object</pre>
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code>private java.util.List&lt;java.lang.String&gt;</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#coordinates">coordinates</a></span></code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#chunks">chunks</a></span></code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>private java.util.List&lt;java.lang.String&gt;</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#planes">planes</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 </table>
@@ -176,7 +181,8 @@ extends java.lang.Object</pre>
 <th class="colLast" scope="col">Description</th>
 </tr>
 <tr class="altColor">
-<th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="#%3Cinit%3E(java.lang.String...)">MapChunk</a></span>&#8203;(java.lang.String...&nbsp;chunks)</code></th>
+<th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="#%3Cinit%3E(java.lang.String%5B%5D,java.lang.String...)">MapChunk</a></span>&#8203;(java.lang.String[]&nbsp;chunks,
+        java.lang.String...&nbsp;planes)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 </table>
@@ -200,6 +206,16 @@ extends java.lang.Object</pre>
 <tr id="i0" class="altColor">
 <td class="colFirst"><code>java.util.List&lt;java.lang.String&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getChunks()">getChunks</a></span>()</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i1" class="rowColor">
+<td class="colFirst"><code>java.util.List&lt;java.lang.String&gt;</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getPlanes()">getPlanes</a></span>()</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i2" class="altColor">
+<td class="colFirst"><code>private boolean</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#isValidPlane(java.lang.String)">isValidPlane</a></span>&#8203;(java.lang.String&nbsp;plane)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 </table>
@@ -226,13 +242,22 @@ extends java.lang.Object</pre>
 <!--   -->
 </a>
 <h3>Field Detail</h3>
-<a id="coordinates">
+<a id="chunks">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>chunks</h4>
+<pre>private final&nbsp;java.util.List&lt;java.lang.String&gt; chunks</pre>
+</li>
+</ul>
+<a id="planes">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
-<h4>coordinates</h4>
-<pre>private final&nbsp;java.util.List&lt;java.lang.String&gt; coordinates</pre>
+<h4>planes</h4>
+<pre>private final&nbsp;java.util.List&lt;java.lang.String&gt; planes</pre>
 </li>
 </ul>
 </li>
@@ -245,13 +270,14 @@ extends java.lang.Object</pre>
 <!--   -->
 </a>
 <h3>Constructor Detail</h3>
-<a id="&lt;init&gt;(java.lang.String...)">
+<a id="&lt;init&gt;(java.lang.String[],java.lang.String...)">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>MapChunk</h4>
-<pre>public&nbsp;MapChunk&#8203;(java.lang.String...&nbsp;chunks)</pre>
+<pre>public&nbsp;MapChunk&#8203;(java.lang.String[]&nbsp;chunks,
+                java.lang.String...&nbsp;planes)</pre>
 </li>
 </ul>
 </li>
@@ -264,13 +290,31 @@ extends java.lang.Object</pre>
 <!--   -->
 </a>
 <h3>Method Detail</h3>
+<a id="isValidPlane(java.lang.String)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>isValidPlane</h4>
+<pre class="methodSignature">private&nbsp;boolean&nbsp;isValidPlane&#8203;(java.lang.String&nbsp;plane)</pre>
+</li>
+</ul>
 <a id="getChunks()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getChunks</h4>
+<pre class="methodSignature">public&nbsp;java.util.List&lt;java.lang.String&gt;&nbsp;getChunks()</pre>
+</li>
+</ul>
+<a id="getPlanes()">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
-<h4>getChunks</h4>
-<pre class="methodSignature">public&nbsp;java.util.List&lt;java.lang.String&gt;&nbsp;getChunks()</pre>
+<h4>getPlanes</h4>
+<pre class="methodSignature">public&nbsp;java.util.List&lt;java.lang.String&gt;&nbsp;getPlanes()</pre>
 </li>
 </ul>
 </li>
