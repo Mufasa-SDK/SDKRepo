@@ -5,7 +5,7 @@ package helpers.utils;
  */
 public enum Skills {
     ATTACK,
-    STRENGHT,
+    STRENGTH,
     DEFENCE,
     RANGED,
     PRAYER,
