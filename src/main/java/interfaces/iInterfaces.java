@@ -1,5 +1,7 @@
 package interfaces;
 
+import java.awt.*;
+
 /**
  * Interface defining interactions with various game interfaces.
  * This interface includes methods for interacting with smithing and crafting interfaces,
@@ -83,4 +85,13 @@ public interface iInterfaces {
      * @return boolean indicating whether the 'Make All' option is selected.
      */
     boolean isSelectedMakeAll();
+
+
+    /**
+     * Returns the read stack size within a given ROI
+     *
+     * @param ROI java awt Rectangle of the ROI you'd like to read the stack size in.
+     * @return integer indicating the read stack size in the ROI you've given.
+     */
+    public int readStackSize(Rectangle ROI);
 }

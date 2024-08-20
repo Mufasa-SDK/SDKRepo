@@ -143,6 +143,13 @@ public interface iInventory {
     void dropInventItems(List<Integer> exclusionSlotList, boolean useCache);
 
     /**
+     * Drops all items in your inventory with a given list of slots
+     *
+     * @param dropSlotList A list of integers which slots should be dropped
+     */
+    void dropInventItems(List<Integer> dropSlotList);
+
+    /**
      * Drops all items in your inventory with a single excluded slot
      *
      * @param exclusionSlot   An integer representing which slot should NOT be dropped (excluded from being dropped)

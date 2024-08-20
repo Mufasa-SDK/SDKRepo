@@ -43,14 +43,22 @@ public interface iGame {
      * @param useWDH Boolean to enable/disable WDH. If true, this will instantly hop when a player is around us. Otherwise it will wait till the next hop time.
      * @param useOnlyWDH Boolean to set the mode to use WDH only, this overrides the normal hopping schedule and only hops when players are around.
      */
-    void hop(String profileName, Boolean useWDH, Boolean useOnlyWDH);
+    public void hop(String profileName, Boolean useWDH, Boolean useOnlyWDH);
 
     /**
      * Instantly hops to a random world from the selected hop profile.
      *
      * @param profileName use the profileName that was selected in the ScriptUI config here by the user.
      */
-    void instantHop(String profileName);
+    public void instantHop(String profileName);
+
+    /**
+     * Instantly hops to a random world from the selected hop profile.
+     *
+     * @param profileName use the profileName that was selected in the ScriptUI config here by the user.
+     * @param world integer presenting the world you'd like to hop to.
+     */
+    public void instantHop(String profileName, Integer world);
 
     /**
      * Instantly switches to a random world from the selected hop profile.
@@ -59,7 +67,7 @@ public interface iGame {
      *
      * @param profileName use the profileName that was selected in the ScriptUI config here by the user.
      */
-    void switchWorld(String profileName);
+    public void switchWorld(String profileName);
 
     /**
      * Instantly switches to a random world from the default profile settings.
@@ -67,15 +75,39 @@ public interface iGame {
      * Use the instantHop method when you are still logged in.
      *
      */
-    void switchWorldNoProfile();
+    public void switchWorld();
 
+    /**
+     * Instantly switches to a random world from the selected hop profile.
+     * DISCLAIMER: This is only to be used when already on the login screen!
+     * Use the instantHop method when you are still logged in.
+     *
+     * @param profileName use the profileName that was selected in the ScriptUI config here by the user.
+     * @param world integer presenting the world you'd like to switch to.
+     */
+    public void switchWorld(String profileName, Integer world);
 
     /**
      * Sets the letters on the fairy ring you'd like to travel to.
      *
      * @param Letters The 3 letters of the fairy ring code you'd like to travel to.
      * */
-    void setFairyRing(String Letters);
+    public void setFairyRing(String Letters);
+
+    /**
+     * Retrieves the world list from the given profile
+     *
+     * @param profileName use the profileName that was selected in the ScriptUI config here by the user.
+     * @return a list of integers of each world that is in the given hop profile.
+     * */
+    public java.util.List<Integer> getWorldList(String profileName);
+
+    /**
+     * Checks if it is time to hop or not.
+     *
+     * @return true if it is time to hop.
+     */
+    public boolean timeToHop();
 
     /**
      * Checks if the Tap to Drop action is currently enabled.
