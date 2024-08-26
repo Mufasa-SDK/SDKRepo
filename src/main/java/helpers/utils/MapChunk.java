@@ -8,15 +8,15 @@ public class MapChunk {
     private final List<String> chunks;
     private final List<String> planes;
 
-    // Constructor to initialize MapChunk with one or multiple coordinates
-    public MapChunk(String[] chunks, String... planes) {
+    public MapChunk(String[] chunks, String planes) {
         this.chunks = new ArrayList<>(Arrays.asList(chunks));
         this.planes = new ArrayList<>();
-        for (String plane : planes) {
+        // Split the planes string by commas and validate each plane
+        String[] planeArray = planes.split(",");
+        for (String plane : planeArray) {
+            plane = plane.trim(); // Trim any whitespace
             if (isValidPlane(plane)) {
                 this.planes.add(plane);
-            } else {
-                throw new IllegalArgumentException("Plane must be between 0 and 3: " + plane);
             }
         }
     }
