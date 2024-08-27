@@ -21,6 +21,11 @@ public class MapChunk {
         }
     }
 
+    public void setChunks(List<String> newChunks) {
+        this.chunks.clear();
+        this.chunks.addAll(newChunks);
+    }
+
     // Method to check if a plane is valid (0-3)
     private boolean isValidPlane(String plane) {
         return plane.matches("[0-3]");
