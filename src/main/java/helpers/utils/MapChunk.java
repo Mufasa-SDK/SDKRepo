@@ -8,13 +8,10 @@ public class MapChunk {
     private final List<String> chunks;
     private final List<String> planes;
 
-    public MapChunk(String[] chunks, String planes) {
+    public MapChunk(String[] chunks, String... planes) {
         this.chunks = new ArrayList<>(Arrays.asList(chunks));
         this.planes = new ArrayList<>();
-        // Split the planes string by commas and validate each plane
-        String[] planeArray = planes.split(",");
-        for (String plane : planeArray) {
-            plane = plane.trim(); // Trim any whitespace
+        for (String plane : planes) {
             if (isValidPlane(plane)) {
                 this.planes.add(plane);
             }
