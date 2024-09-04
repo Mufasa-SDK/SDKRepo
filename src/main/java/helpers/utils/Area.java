@@ -57,11 +57,14 @@ public class Area {
         int maxX = Math.max(topTile.x(), bottomTile.x());
         int minY = Math.min(topTile.y(), bottomTile.y());
         int maxY = Math.max(topTile.y(), bottomTile.y());
+        int minZ = Math.min(topTile.z(), bottomTile.z());
+        int maxZ = Math.max(topTile.z(), bottomTile.z());
 
         int randomX = minX + random.nextInt(maxX - minX + 1);
         int randomY = minY + random.nextInt(maxY - minY + 1);
+        int randomZ = minZ + random.nextInt(maxZ - minZ + 1);
 
-        return new Tile(randomX, randomY);
+        return new Tile(randomX, randomY, randomZ);
     }
 
     public static Tile getRandomTile(Area area) {
@@ -69,12 +72,15 @@ public class Area {
         int maxX = Math.max(area.getTopTile().x(), area.getBottomTile().x());
         int minY = Math.min(area.getTopTile().y(), area.getBottomTile().y());
         int maxY = Math.max(area.getTopTile().y(), area.getBottomTile().y());
+        int minZ = Math.min(area.getTopTile().z(), area.getBottomTile().z());
+        int maxZ = Math.max(area.getTopTile().z(), area.getBottomTile().z());
 
         Random random = new Random();
         int randomX = minX + random.nextInt(maxX - minX + 1);
         int randomY = minY + random.nextInt(maxY - minY + 1);
+        int randomZ = minZ + random.nextInt(maxZ - minZ + 1);
 
-        return new Tile(randomX, randomY);
+        return new Tile(randomX, randomY, randomZ);
     }
 
     /**
