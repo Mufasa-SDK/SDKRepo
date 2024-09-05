@@ -27,7 +27,7 @@
     catch(err) {
     }
 //-->
-var data = {"i0":6,"i1":6,"i2":6,"i3":6,"i4":6,"i5":6,"i6":6,"i7":6,"i8":6,"i9":6,"i10":6,"i11":6,"i12":6,"i13":6,"i14":6,"i15":6,"i16":6,"i17":6,"i18":6,"i19":6,"i20":6,"i21":6};
+var data = {"i0":6,"i1":6,"i2":6,"i3":6,"i4":6,"i5":6,"i6":6,"i7":6,"i8":6,"i9":6};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],4:["t3","Abstract Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -148,88 +148,35 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <th class="colLast" scope="col">Description</th>
 </tr>
 <tr id="i0" class="altColor">
-<td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#changeRegion(helpers.utils.RegionBox)">changeRegion</a></span>&#8203;(<a href="../helpers/utils/RegionBox.html" title="class in helpers.utils">RegionBox</a>&nbsp;regionBox)</code></th>
-<td class="colLast">
-<div class="block">Updates the region box for the walker.</div>
-</td>
-</tr>
-<tr id="i1" class="rowColor">
 <td class="colFirst"><code><a href="../helpers/utils/Tile.html" title="class in helpers.utils">Tile</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getPlayerPosition()">getPlayerPosition</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Gets the player's current position.</div>
 </td>
 </tr>
-<tr id="i2" class="altColor">
-<td class="colFirst"><code><a href="../helpers/utils/Tile.html" title="class in helpers.utils">Tile</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getPlayerPosition(helpers.utils.RegionBox)">getPlayerPosition</a></span>&#8203;(<a href="../helpers/utils/RegionBox.html" title="class in helpers.utils">RegionBox</a>&nbsp;region)</code></th>
-<td class="colLast">
-<div class="block">Gets the player's current position within a specified region.</div>
-</td>
-</tr>
-<tr id="i3" class="rowColor">
+<tr id="i1" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#isReachable(helpers.utils.Tile)">isReachable</a></span>&#8203;(<a href="../helpers/utils/Tile.html" title="class in helpers.utils">Tile</a>&nbsp;destinationTile)</code></th>
 <td class="colLast">
 <div class="block">Determines if the specified Tile is visible on the minimap, using the already set-up Region from Walker.setup.</div>
 </td>
 </tr>
-<tr id="i4" class="altColor">
-<td class="colFirst"><code>boolean</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#isReachable(helpers.utils.Tile,helpers.utils.RegionBox)">isReachable</a></span>&#8203;(<a href="../helpers/utils/Tile.html" title="class in helpers.utils">Tile</a>&nbsp;tile,
-           <a href="../helpers/utils/RegionBox.html" title="class in helpers.utils">RegionBox</a>&nbsp;mapRegion)</code></th>
-<td class="colLast">
-<div class="block">Determines if the specified Tile is visible on the minimap.</div>
-</td>
-</tr>
-<tr id="i5" class="rowColor">
+<tr id="i2" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setup(helpers.utils.RegionBox)">setup</a></span>&#8203;(<a href="../helpers/utils/RegionBox.html" title="class in helpers.utils">RegionBox</a>&nbsp;regionBox)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setup(helpers.utils.MapChunk)">setup</a></span>&#8203;(<a href="../helpers/utils/MapChunk.html" title="class in helpers.utils">MapChunk</a>&nbsp;mapChunk)</code></th>
 <td class="colLast">
-<div class="block">Configures the system to use a regionbox with the full worldmap.</div>
+<div class="block">This method must be called before any operations that require map data are performed
+ to ensure the map is loaded and ready for use.</div>
 </td>
 </tr>
-<tr id="i6" class="altColor">
-<td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setup(java.lang.String)">setup</a></span>&#8203;(java.lang.String&nbsp;customMapfilePath)</code></th>
-<td class="colLast">
-<div class="block">Configures the system to use a custom map file instead of the default worldmap.</div>
-</td>
-</tr>
-<tr id="i7" class="rowColor">
-<td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setup(java.lang.String,helpers.utils.RegionBox)">setup</a></span>&#8203;(java.lang.String&nbsp;customMapfilePath,
-     <a href="../helpers/utils/RegionBox.html" title="class in helpers.utils">RegionBox</a>&nbsp;regionBox)</code></th>
-<td class="colLast">
-<div class="block">Configures the system to use a custom map file instead of the default worldmap with a regionbox defined.</div>
-</td>
-</tr>
-<tr id="i8" class="altColor">
+<tr id="i3" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#step(helpers.utils.Tile)">step</a></span>&#8203;(<a href="../helpers/utils/Tile.html" title="class in helpers.utils">Tile</a>&nbsp;worldmapPoint)</code></th>
 <td class="colLast">
 <div class="block">Takes a step to a specified Tile without providing a search region.</div>
 </td>
 </tr>
-<tr id="i9" class="rowColor">
-<td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#step(helpers.utils.Tile,helpers.utils.RegionBox)">step</a></span>&#8203;(<a href="../helpers/utils/Tile.html" title="class in helpers.utils">Tile</a>&nbsp;worldmapPoint,
-    <a href="../helpers/utils/RegionBox.html" title="class in helpers.utils">RegionBox</a>&nbsp;region)</code></th>
-<td class="colLast">
-<div class="block">Takes a step to a specified Tile.</div>
-</td>
-</tr>
-<tr id="i10" class="altColor">
-<td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#step(helpers.utils.Tile,helpers.utils.RegionBox,java.lang.Runnable)">step</a></span>&#8203;(<a href="../helpers/utils/Tile.html" title="class in helpers.utils">Tile</a>&nbsp;worldmapPoint,
-    <a href="../helpers/utils/RegionBox.html" title="class in helpers.utils">RegionBox</a>&nbsp;region,
-    java.lang.Runnable&nbsp;actionWhileStepping)</code></th>
-<td class="colLast">
-<div class="block">Takes a step to a specified Tile.</div>
-</td>
-</tr>
-<tr id="i11" class="rowColor">
+<tr id="i4" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#step(helpers.utils.Tile,java.lang.Runnable)">step</a></span>&#8203;(<a href="../helpers/utils/Tile.html" title="class in helpers.utils">Tile</a>&nbsp;worldmapPoint,
     java.lang.Runnable&nbsp;actionWhileStepping)</code></th>
@@ -237,31 +184,14 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <div class="block">Takes a step to a specified Tile without providing a search region.</div>
 </td>
 </tr>
-<tr id="i12" class="altColor">
-<td class="colFirst"><code>java.lang.Boolean</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#walkPath(helpers.utils.RegionBox,helpers.utils.Tile%5B%5D)">walkPath</a></span>&#8203;(<a href="../helpers/utils/RegionBox.html" title="class in helpers.utils">RegionBox</a>&nbsp;region,
-        <a href="../helpers/utils/Tile.html" title="class in helpers.utils">Tile</a>[]&nbsp;path)</code></th>
-<td class="colLast">
-<div class="block">Walks along a specified path within a given region.</div>
-</td>
-</tr>
-<tr id="i13" class="rowColor">
-<td class="colFirst"><code>java.lang.Boolean</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#walkPath(helpers.utils.RegionBox,helpers.utils.Tile%5B%5D,java.lang.Runnable)">walkPath</a></span>&#8203;(<a href="../helpers/utils/RegionBox.html" title="class in helpers.utils">RegionBox</a>&nbsp;region,
-        <a href="../helpers/utils/Tile.html" title="class in helpers.utils">Tile</a>[]&nbsp;path,
-        java.lang.Runnable&nbsp;whileRunning)</code></th>
-<td class="colLast">
-<div class="block">Walks along a specified path within a given region.</div>
-</td>
-</tr>
-<tr id="i14" class="altColor">
+<tr id="i5" class="rowColor">
 <td class="colFirst"><code>java.lang.Boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#walkPath(helpers.utils.Tile%5B%5D)">walkPath</a></span>&#8203;(<a href="../helpers/utils/Tile.html" title="class in helpers.utils">Tile</a>[]&nbsp;path)</code></th>
 <td class="colLast">
 <div class="block">Walks along a specified path without providing a region.</div>
 </td>
 </tr>
-<tr id="i15" class="rowColor">
+<tr id="i6" class="altColor">
 <td class="colFirst"><code>java.lang.Boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#walkPath(helpers.utils.Tile%5B%5D,java.lang.Runnable)">walkPath</a></span>&#8203;(<a href="../helpers/utils/Tile.html" title="class in helpers.utils">Tile</a>[]&nbsp;path,
         java.lang.Runnable&nbsp;whileRunning)</code></th>
@@ -269,31 +199,14 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <div class="block">Walks along a specified path without providing a region.</div>
 </td>
 </tr>
-<tr id="i16" class="altColor">
+<tr id="i7" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#walkTo(helpers.utils.Tile)">walkTo</a></span>&#8203;(<a href="../helpers/utils/Tile.html" title="class in helpers.utils">Tile</a>&nbsp;worldmapTile)</code></th>
 <td class="colLast">
 <div class="block">Attempts to navigate to a specified world map tile.</div>
 </td>
 </tr>
-<tr id="i17" class="rowColor">
-<td class="colFirst"><code>boolean</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#walkTo(helpers.utils.Tile,helpers.utils.RegionBox)">walkTo</a></span>&#8203;(<a href="../helpers/utils/Tile.html" title="class in helpers.utils">Tile</a>&nbsp;worldmapTile,
-      <a href="../helpers/utils/RegionBox.html" title="class in helpers.utils">RegionBox</a>&nbsp;region)</code></th>
-<td class="colLast">
-<div class="block">Attempts to navigate to a specified world map tile within a given region.</div>
-</td>
-</tr>
-<tr id="i18" class="altColor">
-<td class="colFirst"><code>boolean</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#walkTo(helpers.utils.Tile,helpers.utils.RegionBox,java.lang.Runnable)">walkTo</a></span>&#8203;(<a href="../helpers/utils/Tile.html" title="class in helpers.utils">Tile</a>&nbsp;worldmapTile,
-      <a href="../helpers/utils/RegionBox.html" title="class in helpers.utils">RegionBox</a>&nbsp;region,
-      java.lang.Runnable&nbsp;actionWhileWalking)</code></th>
-<td class="colLast">
-<div class="block">Attempts to navigate to a specified world map tile within a given region.</div>
-</td>
-</tr>
-<tr id="i19" class="rowColor">
+<tr id="i8" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#walkTo(helpers.utils.Tile,java.lang.Runnable)">walkTo</a></span>&#8203;(<a href="../helpers/utils/Tile.html" title="class in helpers.utils">Tile</a>&nbsp;worldmapTile,
       java.lang.Runnable&nbsp;actionWhileWalking)</code></th>
@@ -301,19 +214,11 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <div class="block">Attempts to navigate to a specified world map tile.</div>
 </td>
 </tr>
-<tr id="i20" class="altColor">
+<tr id="i9" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#webWalk(helpers.utils.Tile)">webWalk</a></span>&#8203;(<a href="../helpers/utils/Tile.html" title="class in helpers.utils">Tile</a>&nbsp;destinationTile)</code></th>
 <td class="colLast">
 <div class="block">Walks to a specified destination tile using a dynamic path calculation.</div>
-</td>
-</tr>
-<tr id="i21" class="rowColor">
-<td class="colFirst"><code>boolean</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#webWalk(helpers.utils.Tile,helpers.utils.RegionBox)">webWalk</a></span>&#8203;(<a href="../helpers/utils/Tile.html" title="class in helpers.utils">Tile</a>&nbsp;destinationTile,
-       <a href="../helpers/utils/RegionBox.html" title="class in helpers.utils">RegionBox</a>&nbsp;region)</code></th>
-<td class="colLast">
-<div class="block">Walks to a specified destination tile within a given region box using a dynamic path calculation.</div>
 </td>
 </tr>
 </table>
@@ -333,70 +238,18 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <!--   -->
 </a>
 <h3>Method Detail</h3>
-<a id="setup(java.lang.String)">
+<a id="setup(helpers.utils.MapChunk)">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>setup</h4>
-<pre class="methodSignature">void&nbsp;setup&#8203;(java.lang.String&nbsp;customMapfilePath)</pre>
-<div class="block">Configures the system to use a custom map file instead of the default worldmap.
- This method must be called before any operations that require map data are performed
- to ensure the custom map is loaded and ready for use. If a custom map is not set up
- using this method, the system will revert to using the default map.</div>
+<pre class="methodSignature">void&nbsp;setup&#8203;(<a href="../helpers/utils/MapChunk.html" title="class in helpers.utils">MapChunk</a>&nbsp;mapChunk)</pre>
+<div class="block">This method must be called before any operations that require map data are performed
+ to ensure the map is loaded and ready for use.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>customMapfilePath</code> - The relative file path to the custom map file. Path must be relative to your script directory.</dd>
-</dl>
-</li>
-</ul>
-<a id="setup(helpers.utils.RegionBox)">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>setup</h4>
-<pre class="methodSignature">void&nbsp;setup&#8203;(<a href="../helpers/utils/RegionBox.html" title="class in helpers.utils">RegionBox</a>&nbsp;regionBox)</pre>
-<div class="block">Configures the system to use a regionbox with the full worldmap.
- This method must be called before any operations that require map data are performed
- to ensure the custom map is loaded and ready for use. If a custom map is not set up
- using this method, the system will revert to using the default map.</div>
-<dl>
-<dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>regionBox</code> - The regionbox you would like to use on the FULL worldmap</dd>
-</dl>
-</li>
-</ul>
-<a id="setup(java.lang.String,helpers.utils.RegionBox)">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>setup</h4>
-<pre class="methodSignature">void&nbsp;setup&#8203;(java.lang.String&nbsp;customMapfilePath,
-           <a href="../helpers/utils/RegionBox.html" title="class in helpers.utils">RegionBox</a>&nbsp;regionBox)</pre>
-<div class="block">Configures the system to use a custom map file instead of the default worldmap with a regionbox defined.
- This method must be called before any operations that require map data are performed
- to ensure the custom map is loaded and ready for use. If a custom map is not set up
- using this method, the system will revert to using the default map.</div>
-<dl>
-<dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>customMapfilePath</code> - The relative file path to the custom map file. Path must be relative to your script directory.</dd>
-<dd><code>regionBox</code> - the regionBox you would like the walker to use by default.</dd>
-</dl>
-</li>
-</ul>
-<a id="changeRegion(helpers.utils.RegionBox)">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>changeRegion</h4>
-<pre class="methodSignature">void&nbsp;changeRegion&#8203;(<a href="../helpers/utils/RegionBox.html" title="class in helpers.utils">RegionBox</a>&nbsp;regionBox)</pre>
-<div class="block">Updates the region box for the walker. In case you need to swap it with a teleport, for example.</div>
-<dl>
-<dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>regionBox</code> - The new region box to associate with the device.</dd>
+<dd><code>mapChunk</code> - The mapchunk object to generate the map from.</dd>
 </dl>
 </li>
 </ul>
@@ -414,38 +267,6 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </dl>
 </li>
 </ul>
-<a id="getPlayerPosition(helpers.utils.RegionBox)">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>getPlayerPosition</h4>
-<pre class="methodSignature"><a href="../helpers/utils/Tile.html" title="class in helpers.utils">Tile</a>&nbsp;getPlayerPosition&#8203;(<a href="../helpers/utils/RegionBox.html" title="class in helpers.utils">RegionBox</a>&nbsp;region)</pre>
-<div class="block">Gets the player's current position within a specified region.</div>
-<dl>
-<dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>region</code> - The region for which to determine the player's position.</dd>
-<dt><span class="returnLabel">Returns:</span></dt>
-<dd>Tile representing the player's current position within the region.</dd>
-</dl>
-</li>
-</ul>
-<a id="step(helpers.utils.Tile,helpers.utils.RegionBox)">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>step</h4>
-<pre class="methodSignature">void&nbsp;step&#8203;(<a href="../helpers/utils/Tile.html" title="class in helpers.utils">Tile</a>&nbsp;worldmapPoint,
-          <a href="../helpers/utils/RegionBox.html" title="class in helpers.utils">RegionBox</a>&nbsp;region)</pre>
-<div class="block">Takes a step to a specified Tile. Needs to be visible on the minimap.</div>
-<dl>
-<dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>worldmapPoint</code> - The tile to step to on the world map.</dd>
-<dd><code>region</code> - the RegionBox region you are in on the worldmap.</dd>
-</dl>
-</li>
-</ul>
 <a id="step(helpers.utils.Tile)">
 <!--   -->
 </a>
@@ -457,24 +278,6 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>worldmapPoint</code> - The tile to step to on the world map.</dd>
-</dl>
-</li>
-</ul>
-<a id="step(helpers.utils.Tile,helpers.utils.RegionBox,java.lang.Runnable)">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>step</h4>
-<pre class="methodSignature">void&nbsp;step&#8203;(<a href="../helpers/utils/Tile.html" title="class in helpers.utils">Tile</a>&nbsp;worldmapPoint,
-          <a href="../helpers/utils/RegionBox.html" title="class in helpers.utils">RegionBox</a>&nbsp;region,
-          java.lang.Runnable&nbsp;actionWhileStepping)</pre>
-<div class="block">Takes a step to a specified Tile. Needs to be visible on the minimap.</div>
-<dl>
-<dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>worldmapPoint</code> - The tile to step to on the world map.</dd>
-<dd><code>region</code> - the RegionBox region you are in on the worldmap.</dd>
-<dd><code>actionWhileStepping</code> - a runnable to perform while waiting till destination is reached</dd>
 </dl>
 </li>
 </ul>
@@ -518,60 +321,6 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </dl>
 </li>
 </ul>
-<a id="walkTo(helpers.utils.Tile,helpers.utils.RegionBox)">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>walkTo</h4>
-<pre class="methodSignature">boolean&nbsp;walkTo&#8203;(<a href="../helpers/utils/Tile.html" title="class in helpers.utils">Tile</a>&nbsp;worldmapTile,
-               <a href="../helpers/utils/RegionBox.html" title="class in helpers.utils">RegionBox</a>&nbsp;region)</pre>
-<div class="block">Attempts to navigate to a specified world map tile within a given region. This
- method is similar to <a href="#walkTo(helpers.utils.Tile)"><code>walkTo(Tile)</code></a> but takes an additional <a href="../helpers/utils/RegionBox.html" title="class in helpers.utils"><code>RegionBox</code></a>
- parameter that specifies the region within which the destination tile is located.</div>
-<dl>
-<dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>worldmapTile</code> - The <a href="../helpers/utils/Tile.html" title="class in helpers.utils"><code>Tile</code></a> object representing the destination tile
- on the world map within the specified region.</dd>
-<dd><code>region</code> - The <a href="../helpers/utils/RegionBox.html" title="class in helpers.utils"><code>RegionBox</code></a> defining the area within which the destination
- tile is located. This parameter helps refine the navigation process by providing
- additional context about the destination's location.</dd>
-<dt><span class="returnLabel">Returns:</span></dt>
-<dd><code>true</code> if the method successfully initiates movement towards the
- specified location within the given region, <code>false</code> otherwise. As with
- <a href="#walkTo(helpers.utils.Tile)"><code>walkTo(Tile)</code></a>, success here indicates that the navigation action was
- initiated, not necessarily that the destination will be reached.</dd>
-</dl>
-</li>
-</ul>
-<a id="walkTo(helpers.utils.Tile,helpers.utils.RegionBox,java.lang.Runnable)">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>walkTo</h4>
-<pre class="methodSignature">boolean&nbsp;walkTo&#8203;(<a href="../helpers/utils/Tile.html" title="class in helpers.utils">Tile</a>&nbsp;worldmapTile,
-               <a href="../helpers/utils/RegionBox.html" title="class in helpers.utils">RegionBox</a>&nbsp;region,
-               java.lang.Runnable&nbsp;actionWhileWalking)</pre>
-<div class="block">Attempts to navigate to a specified world map tile within a given region. This
- method is similar to <a href="#walkTo(helpers.utils.Tile)"><code>walkTo(Tile)</code></a> but takes an additional <a href="../helpers/utils/RegionBox.html" title="class in helpers.utils"><code>RegionBox</code></a>
- parameter that specifies the region within which the destination tile is located.</div>
-<dl>
-<dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>worldmapTile</code> - The <a href="../helpers/utils/Tile.html" title="class in helpers.utils"><code>Tile</code></a> object representing the destination tile
- on the world map within the specified region.</dd>
-<dd><code>region</code> - The <a href="../helpers/utils/RegionBox.html" title="class in helpers.utils"><code>RegionBox</code></a> defining the area within which the destination
- tile is located. This parameter helps refine the navigation process by providing
- additional context about the destination's location.</dd>
-<dd><code>actionWhileWalking</code> - an action to be performed while walking</dd>
-<dt><span class="returnLabel">Returns:</span></dt>
-<dd><code>true</code> if the method successfully initiates movement towards the
- specified location within the given region, <code>false</code> otherwise. As with
- <a href="#walkTo(helpers.utils.Tile)"><code>walkTo(Tile)</code></a>, success here indicates that the navigation action was
- initiated, not necessarily that the destination will be reached.</dd>
-</dl>
-</li>
-</ul>
 <a id="walkTo(helpers.utils.Tile,java.lang.Runnable)">
 <!--   -->
 </a>
@@ -598,24 +347,6 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </dl>
 </li>
 </ul>
-<a id="walkPath(helpers.utils.RegionBox,helpers.utils.Tile[])">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>walkPath</h4>
-<pre class="methodSignature">java.lang.Boolean&nbsp;walkPath&#8203;(<a href="../helpers/utils/RegionBox.html" title="class in helpers.utils">RegionBox</a>&nbsp;region,
-                           <a href="../helpers/utils/Tile.html" title="class in helpers.utils">Tile</a>[]&nbsp;path)</pre>
-<div class="block">Walks along a specified path within a given region.</div>
-<dl>
-<dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>region</code> - The region within which to walk the path.</dd>
-<dd><code>path</code> - An array of Tiles representing the path to walk.</dd>
-<dt><span class="returnLabel">Returns:</span></dt>
-<dd>Boolean indicating whether the path was successfully walked.</dd>
-</dl>
-</li>
-</ul>
 <a id="walkPath(helpers.utils.Tile[])">
 <!--   -->
 </a>
@@ -627,26 +358,6 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>path</code> - An array of Tiles representing the path to walk.</dd>
-<dt><span class="returnLabel">Returns:</span></dt>
-<dd>Boolean indicating whether the path was successfully walked.</dd>
-</dl>
-</li>
-</ul>
-<a id="walkPath(helpers.utils.RegionBox,helpers.utils.Tile[],java.lang.Runnable)">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>walkPath</h4>
-<pre class="methodSignature">java.lang.Boolean&nbsp;walkPath&#8203;(<a href="../helpers/utils/RegionBox.html" title="class in helpers.utils">RegionBox</a>&nbsp;region,
-                           <a href="../helpers/utils/Tile.html" title="class in helpers.utils">Tile</a>[]&nbsp;path,
-                           java.lang.Runnable&nbsp;whileRunning)</pre>
-<div class="block">Walks along a specified path within a given region.</div>
-<dl>
-<dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>region</code> - The region within which to walk the path.</dd>
-<dd><code>path</code> - An array of Tiles representing the path to walk.</dd>
-<dd><code>whileRunning</code> - an action to be performed while waiting between points</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>Boolean indicating whether the path was successfully walked.</dd>
 </dl>
@@ -684,47 +395,6 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <dd><code>destinationTile</code> - The Tile representing the end destination.</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>Boolean indicating whether the destination was successfully reached.</dd>
-</dl>
-</li>
-</ul>
-<a id="webWalk(helpers.utils.Tile,helpers.utils.RegionBox)">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>webWalk</h4>
-<pre class="methodSignature">boolean&nbsp;webWalk&#8203;(<a href="../helpers/utils/Tile.html" title="class in helpers.utils">Tile</a>&nbsp;destinationTile,
-                <a href="../helpers/utils/RegionBox.html" title="class in helpers.utils">RegionBox</a>&nbsp;region)</pre>
-<div class="block">Walks to a specified destination tile within a given region box using a dynamic path calculation. This method
- calculates the best possible path to the end destination tile, optionally including a RegionBox for the region
- of interest (ROI) on the map.</div>
-<dl>
-<dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>destinationTile</code> - The Tile representing the end destination.</dd>
-<dd><code>region</code> - The RegionBox representing the region of interest (ROI) on the map.</dd>
-<dt><span class="returnLabel">Returns:</span></dt>
-<dd>Boolean indicating whether the destination was successfully reached.</dd>
-</dl>
-</li>
-</ul>
-<a id="isReachable(helpers.utils.Tile,helpers.utils.RegionBox)">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>isReachable</h4>
-<pre class="methodSignature">boolean&nbsp;isReachable&#8203;(<a href="../helpers/utils/Tile.html" title="class in helpers.utils">Tile</a>&nbsp;tile,
-                    <a href="../helpers/utils/RegionBox.html" title="class in helpers.utils">RegionBox</a>&nbsp;mapRegion)</pre>
-<div class="block">Determines if the specified Tile is visible on the minimap.
-
- This method checks whether a given tile can be reached based on its visibility on the minimap,
- implying that it is within a certain range or not obstructed.</div>
-<dl>
-<dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>tile</code> - The Tile to check for reachability.</dd>
-<dd><code>mapRegion</code> - The mapregion to get player position from.</dd>
-<dt><span class="returnLabel">Returns:</span></dt>
-<dd><code>true</code> if the tile is visible and potentially reachable on the minimap; <code>false</code> otherwise.</dd>
 </dl>
 </li>
 </ul>
