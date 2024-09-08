@@ -157,10 +157,9 @@ public interface iPlayer {
      * Movement is detected if the position changes at least once during the specified checks.
      *
      * @param checkTimes the number of times the device's position is checked for movement
-     * @param worldRegion the region within which the device's position is being tracked
      * @return {@code true} if movement is detected within the given checks; {@code false} otherwise
      */
-    boolean waitTillMoving(int checkTimes, RegionBox worldRegion);
+    boolean waitTillMoving(int checkTimes);
 
     /**
      * Verifies that the specified device remains stationary over a series of position checks.
@@ -169,8 +168,7 @@ public interface iPlayer {
      * that the device is not moving.
      *
      * @param checkTimes the number of times the device's position is checked for lack of movement
-     * @param worldRegion the region within which the device's position is being tracked
      * @return {@code true} if no movement is detected across all checks; {@code false} if any movement is detected
      */
-    boolean waitTillNotMoving(int checkTimes, RegionBox worldRegion);
+    boolean waitTillNotMoving(int checkTimes);
 }
