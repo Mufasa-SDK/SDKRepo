@@ -1,5 +1,7 @@
 package interfaces;
 
+import helpers.utils.GameObject;
+
 import java.awt.*;
 
 /**
@@ -7,6 +9,32 @@ import java.awt.*;
  * This interface provides a method to send chat messages in the game.
  */
 public interface iGame {
+
+    /**
+     * Checks if the specified game object is present at the given world position relative to the player's position.
+     *
+     * This method translates the given world position into game coordinates based on the player's position
+     * and checks the surrounding area within a small radius for the presence of the specified game object.
+     *
+     * @param gameObject the game object to check for
+     * @param playerPosition the current position of the player
+     * @param worldPosition the world position to check for the game object
+     * @return true if the game object is present at the specified position, false otherwise
+     */
+    public boolean isGameObjectAt(GameObject gameObject, org.opencv.core.Point playerPosition, org.opencv.core.Point worldPosition);
+
+    /**
+     * Checks if the specified game object is present at the given world position.
+     *
+     * This method translates the given world position into game coordinates based on the player's position
+     * and checks the surrounding area within a small radius for the presence of the specified game object.
+     *
+     * @param gameObject the game object to check for
+     * @param worldPosition the world position to check for the game object
+     * @return true if the game object is present at the specified position, false otherwise
+     */
+    public boolean isGameObjectAt(GameObject gameObject, Point worldPosition);
+
     /**
      * Sends a chat message in the game.
      *

@@ -27,7 +27,7 @@
     catch(err) {
     }
 //-->
-var data = {"i0":6,"i1":6,"i2":6,"i3":6,"i4":6,"i5":6,"i6":6,"i7":6,"i8":6,"i9":6,"i10":6,"i11":6,"i12":6,"i13":6,"i14":6,"i15":6,"i16":6,"i17":6,"i18":6,"i19":6,"i20":6,"i21":6,"i22":6,"i23":6,"i24":6,"i25":6,"i26":6,"i27":6,"i28":6,"i29":6};
+var data = {"i0":6,"i1":6,"i2":6,"i3":6,"i4":6,"i5":6,"i6":6,"i7":6,"i8":6,"i9":6,"i10":6,"i11":6,"i12":6,"i13":6,"i14":6,"i15":6,"i16":6,"i17":6,"i18":6,"i19":6,"i20":6,"i21":6,"i22":6,"i23":6,"i24":6,"i25":6,"i26":6,"i27":6,"i28":6,"i29":6,"i30":6,"i31":6};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],4:["t3","Abstract Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -271,82 +271,99 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </tr>
 <tr id="i17" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#isGameObjectAt(helpers.utils.GameObject,java.awt.Point)">isGameObjectAt</a></span>&#8203;(<a href="../helpers/utils/GameObject.html" title="enum in helpers.utils">GameObject</a>&nbsp;gameObject,
+              java.awt.Point&nbsp;worldPosition)</code></th>
+<td class="colLast">
+<div class="block">Checks if the specified game object is present at the given world position.</div>
+</td>
+</tr>
+<tr id="i18" class="altColor">
+<td class="colFirst"><code>boolean</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#isGameObjectAt(helpers.utils.GameObject,org.opencv.core.Point,org.opencv.core.Point)">isGameObjectAt</a></span>&#8203;(<a href="../helpers/utils/GameObject.html" title="enum in helpers.utils">GameObject</a>&nbsp;gameObject,
+              org.opencv.core.Point&nbsp;playerPosition,
+              org.opencv.core.Point&nbsp;worldPosition)</code></th>
+<td class="colLast">
+<div class="block">Checks if the specified game object is present at the given world position relative to the player's position.</div>
+</td>
+</tr>
+<tr id="i19" class="rowColor">
+<td class="colFirst"><code>boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#isKeyboardActionEnabled()">isKeyboardActionEnabled</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Checks if the Keyboard action is currently enabled.</div>
 </td>
 </tr>
-<tr id="i18" class="altColor">
+<tr id="i20" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#isPlayersAround()">isPlayersAround</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Check if there are other players around you or under you.</div>
 </td>
 </tr>
-<tr id="i19" class="rowColor">
+<tr id="i21" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#isPlayersUnderUs()">isPlayersUnderUs</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Check ONLY if there are other players under your character specifically</div>
 </td>
 </tr>
-<tr id="i20" class="altColor">
+<tr id="i22" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#isSingleTapEnabled()">isSingleTapEnabled</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Checks if the Single Tap action is currently enabled.</div>
 </td>
 </tr>
-<tr id="i21" class="rowColor">
+<tr id="i23" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#isTapToDropEnabled()">isTapToDropEnabled</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Checks if the Tap to Drop action is currently enabled.</div>
 </td>
 </tr>
-<tr id="i22" class="altColor">
+<tr id="i24" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#sendChatMessage(java.lang.String)">sendChatMessage</a></span>&#8203;(java.lang.String&nbsp;message)</code></th>
 <td class="colLast">
 <div class="block">Sends a chat message in the game.</div>
 </td>
 </tr>
-<tr id="i23" class="rowColor">
+<tr id="i25" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setFairyRing(java.lang.String)">setFairyRing</a></span>&#8203;(java.lang.String&nbsp;Letters)</code></th>
 <td class="colLast">
 <div class="block">Sets the letters on the fairy ring you'd like to travel to.</div>
 </td>
 </tr>
-<tr id="i24" class="altColor">
+<tr id="i26" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setZoom(java.lang.String)">setZoom</a></span>&#8203;(java.lang.String&nbsp;zoomLevel)</code></th>
 <td class="colLast">
 <div class="block">Sets the zoom to a specific level.</div>
 </td>
 </tr>
-<tr id="i25" class="rowColor">
+<tr id="i27" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#showKeyboard()">showKeyboard</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Taps the keyboard action button to bring the keyboard up.</div>
 </td>
 </tr>
-<tr id="i26" class="altColor">
+<tr id="i28" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#switchWorld()">switchWorld</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Instantly switches to a random world from the default profile settings.</div>
 </td>
 </tr>
-<tr id="i27" class="rowColor">
+<tr id="i29" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#switchWorld(java.lang.String)">switchWorld</a></span>&#8203;(java.lang.String&nbsp;profileName)</code></th>
 <td class="colLast">
 <div class="block">Instantly switches to a random world from the selected hop profile.</div>
 </td>
 </tr>
-<tr id="i28" class="altColor">
+<tr id="i30" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#switchWorld(java.lang.String,java.lang.Integer)">switchWorld</a></span>&#8203;(java.lang.String&nbsp;profileName,
            java.lang.Integer&nbsp;world)</code></th>
@@ -354,7 +371,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <div class="block">Instantly switches to a random world from the selected hop profile.</div>
 </td>
 </tr>
-<tr id="i29" class="rowColor">
+<tr id="i31" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#timeToHop()">timeToHop</a></span>()</code></th>
 <td class="colLast">
@@ -378,6 +395,50 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <!--   -->
 </a>
 <h3>Method Detail</h3>
+<a id="isGameObjectAt(helpers.utils.GameObject,org.opencv.core.Point,org.opencv.core.Point)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>isGameObjectAt</h4>
+<pre class="methodSignature">boolean&nbsp;isGameObjectAt&#8203;(<a href="../helpers/utils/GameObject.html" title="enum in helpers.utils">GameObject</a>&nbsp;gameObject,
+                       org.opencv.core.Point&nbsp;playerPosition,
+                       org.opencv.core.Point&nbsp;worldPosition)</pre>
+<div class="block">Checks if the specified game object is present at the given world position relative to the player's position.
+
+ This method translates the given world position into game coordinates based on the player's position
+ and checks the surrounding area within a small radius for the presence of the specified game object.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>gameObject</code> - the game object to check for</dd>
+<dd><code>playerPosition</code> - the current position of the player</dd>
+<dd><code>worldPosition</code> - the world position to check for the game object</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>true if the game object is present at the specified position, false otherwise</dd>
+</dl>
+</li>
+</ul>
+<a id="isGameObjectAt(helpers.utils.GameObject,java.awt.Point)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>isGameObjectAt</h4>
+<pre class="methodSignature">boolean&nbsp;isGameObjectAt&#8203;(<a href="../helpers/utils/GameObject.html" title="enum in helpers.utils">GameObject</a>&nbsp;gameObject,
+                       java.awt.Point&nbsp;worldPosition)</pre>
+<div class="block">Checks if the specified game object is present at the given world position.
+
+ This method translates the given world position into game coordinates based on the player's position
+ and checks the surrounding area within a small radius for the presence of the specified game object.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>gameObject</code> - the game object to check for</dd>
+<dd><code>worldPosition</code> - the world position to check for the game object</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>true if the game object is present at the specified position, false otherwise</dd>
+</dl>
+</li>
+</ul>
 <a id="sendChatMessage(java.lang.String)">
 <!--   -->
 </a>
