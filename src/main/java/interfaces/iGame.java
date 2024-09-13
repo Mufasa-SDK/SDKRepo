@@ -21,7 +21,7 @@ public interface iGame {
      * @param worldPosition the world position to check for the game object
      * @return true if the game object is present at the specified position, false otherwise
      */
-    public boolean isGameObjectAt(GameObject gameObject, org.opencv.core.Point playerPosition, org.opencv.core.Point worldPosition);
+    public boolean isGameObjectAt(GameObject gameObject, Point playerPosition, Point worldPosition);
 
     /**
      * Checks if the specified game object is present at the given world position.
