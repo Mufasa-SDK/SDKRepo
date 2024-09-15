@@ -102,6 +102,20 @@ public interface iWalker {
     boolean webWalk(Tile destinationTile);
 
     /**
+     * Builds and returns a path from the current position to the specified end tile.
+     * The path is represented as an array of {@link Tile} objects.
+     *
+     * This method utilizes a pathfinding algorithm to calculate the shortest or most optimal
+     * path between the current position (retrieved from the device) and the provided
+     * destination {@code endTile}. If no valid path is found, an empty array is returned.
+     *
+     * @param endTile The destination {@link Tile} to which the path should be built.
+     * @return A {@code Tile[]} array representing the calculated path. If no path is found,
+     *         an empty {@code Tile[]} array is returned.
+     */
+    Tile[] buildPath(Tile endTile);
+    
+    /**
      * Determines if the specified Tile is visible on the minimap, using the already set-up Region from Walker.setup.
      *
      * This method checks whether a given tile can be reached based on its visibility on the minimap,
