@@ -76,7 +76,7 @@ public interface iWalker {
     boolean walkTo(Tile worldmapTile, Runnable actionWhileWalking);
 
     /**
-     * Walks along a specified path without providing a region. This should primarily be used if using custom maps
+     * Walks along a specified path. This should primarily be used if using custom maps
      *
      * @param path An array of Tiles representing the path to walk.
      * @return Boolean indicating whether the path was successfully walked.
@@ -84,7 +84,7 @@ public interface iWalker {
     Boolean walkPath(Tile[] path);
 
     /**
-     * Walks along a specified path without providing a region. This should primarily be used if using custom maps
+     * Walks along a specified path. This should primarily be used if using custom maps
      *
      * @param path An array of Tiles representing the path to walk.
      * @param whileRunning an action to be performed while waiting between points
@@ -102,6 +102,16 @@ public interface iWalker {
     boolean webWalk(Tile destinationTile);
 
     /**
+     * Walks to a specified destination tile using a dynamic path calculation. This method calculates the best possible
+     * path to the end destination tile.
+     *
+     * @param destinationTile The Tile representing the end destination.
+     * @param whileRunning an action to be performed while waiting between points
+     * @return Boolean indicating whether the destination was successfully reached.
+     */
+    boolean webWalk(Tile destinationTile, Runnable whileRunning);
+
+    /**
      * Builds and returns a path from the current position to the specified end tile.
      * The path is represented as an array of {@link Tile} objects.
      *
@@ -114,7 +124,7 @@ public interface iWalker {
      *         an empty {@code Tile[]} array is returned.
      */
     Tile[] buildPath(Tile endTile);
-    
+
     /**
      * Determines if the specified Tile is visible on the minimap, using the already set-up Region from Walker.setup.
      *
