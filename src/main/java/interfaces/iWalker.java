@@ -21,6 +21,12 @@ public interface iWalker {
     void setup(MapChunk mapChunk);
 
     /**
+     * Gets the player's current position while specifying a custom minimap region size to use
+     *
+     * @return Tile representing the player's current position on the map.
+     */
+    Tile getPlayerPosition(int regionSize);
+    /**
      * Gets the player's current position.
      *
      * @return Tile representing the player's current position on the map.
