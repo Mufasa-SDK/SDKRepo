@@ -1,7 +1,6 @@
 package interfaces;
 
 import helpers.utils.Area;
-import helpers.utils.RegionBox;
 import helpers.utils.Tile;
 
 /**
@@ -17,36 +16,10 @@ public interface iPlayer {
     /**
      * Gets the player's current position and checks if it is within the specified area
      *
-     * @param areaToSearchIn This is the Area of the world map area you'd like to search in.
-     * @param mapRegion This is the RegionBox of the world map you want to check against.
-     * @return Returns a true/false boolean, true if you are in the targetRegionBox, false if not.
-     */
-    boolean within(Area areaToSearchIn, RegionBox mapRegion);
-
-    /**
-     * Gets the player's current position and checks if it is within the specified area
-     *
      * @param areaToSearchIn This is the Area of the custom map you want to check if you are in.
      * @return Returns a true/false boolean, true if you are in the RegionBox, false if not.
      */
     boolean within(Area areaToSearchIn);
-
-    /**
-     * Gets the player's current position and checks if it is within the specified area
-     *
-     * @param regionToSearchIn This is the RegionBox you want to check if you are in.
-     * @return Returns a true/false boolean, true if you are in the RegionBox, false if not.
-     */
-    boolean within(RegionBox regionToSearchIn);
-
-    /**
-     * Checks if player is at that specific tile within your set worldmap inside a specific region
-     *
-     * @param tileToCheck The tile to be checked for presence within the map region.
-     * @param mapRegion This is the RegionBox of the world map you want to check against.
-     * @return true if the player is on the tile in the specified map region, false otherwise.
-     */
-    boolean atTile(Tile tileToCheck, RegionBox mapRegion);
 
     /**
      * Checks if player is at that specific tile within your set worldmap
@@ -68,17 +41,6 @@ public interface iPlayer {
      */
     boolean isTileWithinArea(Tile tileToCheck, Area areaToCheckWithin);
 
-    /**
-     * Checks if a given tile is within a specified area.
-     * <p>
-     * This method determines whether the provided tile (represented by {@code tileToCheck})
-     * is located within the bounds of the RegionBox defined by {@code regionToCheckWithin}.
-     * <p>
-     * @param tileToCheck The tile whose presence within the area is being checked.
-     * @param regionToCheckWithin The RegionBox within which the tile's presence is checked.
-     * @return true if {@code tileToCheck} is within the bounds of {@code areaToCheckWithin}, false otherwise.
-     */
-    boolean isTileWithinRegionbox(Tile tileToCheck, RegionBox regionToCheckWithin);
     /**
      * Compares two tiles for equality.
      * <p>

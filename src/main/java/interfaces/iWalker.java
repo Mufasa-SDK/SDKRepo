@@ -1,10 +1,7 @@
 package interfaces;
 
 import helpers.utils.MapChunk;
-import helpers.utils.RegionBox;
 import helpers.utils.Tile;
-
-import java.awt.*;
 
 /**
  * Interface defining navigation and walking functionalities in a game environment.
