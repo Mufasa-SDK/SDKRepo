@@ -21,11 +21,20 @@ public interface iWalker {
     void setup(MapChunk mapChunk);
 
     /**
+     * Finds and returns the nearest bank area to the player's current position.
+     *
+     * @return The nearest center Tile to the closest bank, or null if no banks are found.
+     */
+    Tile getNearestBank();
+
+    /**
      * Gets the player's current position while specifying a custom minimap region size to use
      *
+     * @param regionSize the regionSize representing the minimap region size to cut out and use for position finding
      * @return Tile representing the player's current position on the map.
      */
     Tile getPlayerPosition(int regionSize);
+
     /**
      * Gets the player's current position.
      *

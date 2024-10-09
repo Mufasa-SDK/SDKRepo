@@ -27,7 +27,7 @@
     catch(err) {
     }
 //-->
-var data = {"i0":6,"i1":6,"i2":6,"i3":6,"i4":6,"i5":6,"i6":6,"i7":6,"i8":6,"i9":6,"i10":6,"i11":6};
+var data = {"i0":6,"i1":6,"i2":6,"i3":6,"i4":6,"i5":6,"i6":6,"i7":6,"i8":6,"i9":6,"i10":6,"i11":6,"i12":6,"i13":6};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],4:["t3","Abstract Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -156,19 +156,33 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code><a href="../helpers/utils/Tile.html" title="class in helpers.utils">Tile</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getNearestBank()">getNearestBank</a></span>()</code></th>
+<td class="colLast">
+<div class="block">Finds and returns the nearest bank area to the player's current position.</div>
+</td>
+</tr>
+<tr id="i2" class="altColor">
+<td class="colFirst"><code><a href="../helpers/utils/Tile.html" title="class in helpers.utils">Tile</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getPlayerPosition()">getPlayerPosition</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Gets the player's current position.</div>
 </td>
 </tr>
-<tr id="i2" class="altColor">
+<tr id="i3" class="rowColor">
+<td class="colFirst"><code><a href="../helpers/utils/Tile.html" title="class in helpers.utils">Tile</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getPlayerPosition(int)">getPlayerPosition</a></span>&#8203;(int&nbsp;regionSize)</code></th>
+<td class="colLast">
+<div class="block">Gets the player's current position while specifying a custom minimap region size to use</div>
+</td>
+</tr>
+<tr id="i4" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#isReachable(helpers.utils.Tile)">isReachable</a></span>&#8203;(<a href="../helpers/utils/Tile.html" title="class in helpers.utils">Tile</a>&nbsp;destinationTile)</code></th>
 <td class="colLast">
 <div class="block">Determines if the specified Tile is visible on the minimap, using the already set-up Region from Walker.setup.</div>
 </td>
 </tr>
-<tr id="i3" class="rowColor">
+<tr id="i5" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setup(helpers.utils.MapChunk)">setup</a></span>&#8203;(<a href="../helpers/utils/MapChunk.html" title="class in helpers.utils">MapChunk</a>&nbsp;mapChunk)</code></th>
 <td class="colLast">
@@ -176,14 +190,14 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
  to ensure the map is loaded and ready for use.</div>
 </td>
 </tr>
-<tr id="i4" class="altColor">
+<tr id="i6" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#step(helpers.utils.Tile)">step</a></span>&#8203;(<a href="../helpers/utils/Tile.html" title="class in helpers.utils">Tile</a>&nbsp;worldmapPoint)</code></th>
 <td class="colLast">
 <div class="block">Takes a step to a specified Tile without providing a search region.</div>
 </td>
 </tr>
-<tr id="i5" class="rowColor">
+<tr id="i7" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#step(helpers.utils.Tile,java.lang.Runnable)">step</a></span>&#8203;(<a href="../helpers/utils/Tile.html" title="class in helpers.utils">Tile</a>&nbsp;worldmapPoint,
     java.lang.Runnable&nbsp;actionWhileStepping)</code></th>
@@ -191,14 +205,14 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <div class="block">Takes a step to a specified Tile without providing a search region.</div>
 </td>
 </tr>
-<tr id="i6" class="altColor">
+<tr id="i8" class="altColor">
 <td class="colFirst"><code>java.lang.Boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#walkPath(helpers.utils.Tile%5B%5D)">walkPath</a></span>&#8203;(<a href="../helpers/utils/Tile.html" title="class in helpers.utils">Tile</a>[]&nbsp;path)</code></th>
 <td class="colLast">
 <div class="block">Walks along a specified path.</div>
 </td>
 </tr>
-<tr id="i7" class="rowColor">
+<tr id="i9" class="rowColor">
 <td class="colFirst"><code>java.lang.Boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#walkPath(helpers.utils.Tile%5B%5D,java.lang.Runnable)">walkPath</a></span>&#8203;(<a href="../helpers/utils/Tile.html" title="class in helpers.utils">Tile</a>[]&nbsp;path,
         java.lang.Runnable&nbsp;whileRunning)</code></th>
@@ -206,14 +220,14 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <div class="block">Walks along a specified path.</div>
 </td>
 </tr>
-<tr id="i8" class="altColor">
+<tr id="i10" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#walkTo(helpers.utils.Tile)">walkTo</a></span>&#8203;(<a href="../helpers/utils/Tile.html" title="class in helpers.utils">Tile</a>&nbsp;worldmapTile)</code></th>
 <td class="colLast">
 <div class="block">Attempts to navigate to a specified world map tile.</div>
 </td>
 </tr>
-<tr id="i9" class="rowColor">
+<tr id="i11" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#walkTo(helpers.utils.Tile,java.lang.Runnable)">walkTo</a></span>&#8203;(<a href="../helpers/utils/Tile.html" title="class in helpers.utils">Tile</a>&nbsp;worldmapTile,
       java.lang.Runnable&nbsp;actionWhileWalking)</code></th>
@@ -221,14 +235,14 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <div class="block">Attempts to navigate to a specified world map tile.</div>
 </td>
 </tr>
-<tr id="i10" class="altColor">
+<tr id="i12" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#webWalk(helpers.utils.Tile)">webWalk</a></span>&#8203;(<a href="../helpers/utils/Tile.html" title="class in helpers.utils">Tile</a>&nbsp;destinationTile)</code></th>
 <td class="colLast">
 <div class="block">Walks to a specified destination tile using a dynamic path calculation.</div>
 </td>
 </tr>
-<tr id="i11" class="rowColor">
+<tr id="i13" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#webWalk(helpers.utils.Tile,java.lang.Runnable)">webWalk</a></span>&#8203;(<a href="../helpers/utils/Tile.html" title="class in helpers.utils">Tile</a>&nbsp;destinationTile,
        java.lang.Runnable&nbsp;whileRunning)</code></th>
@@ -265,6 +279,36 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>mapChunk</code> - The mapchunk object to generate the map from.</dd>
+</dl>
+</li>
+</ul>
+<a id="getNearestBank()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getNearestBank</h4>
+<pre class="methodSignature"><a href="../helpers/utils/Tile.html" title="class in helpers.utils">Tile</a>&nbsp;getNearestBank()</pre>
+<div class="block">Finds and returns the nearest bank area to the player's current position.</div>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>The nearest center Tile to the closest bank, or null if no banks are found.</dd>
+</dl>
+</li>
+</ul>
+<a id="getPlayerPosition(int)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getPlayerPosition</h4>
+<pre class="methodSignature"><a href="../helpers/utils/Tile.html" title="class in helpers.utils">Tile</a>&nbsp;getPlayerPosition&#8203;(int&nbsp;regionSize)</pre>
+<div class="block">Gets the player's current position while specifying a custom minimap region size to use</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>regionSize</code> - the regionSize representing the minimap region size to cut out and use for position finding</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>Tile representing the player's current position on the map.</dd>
 </dl>
 </li>
 </ul>
