@@ -14,6 +14,32 @@ public interface iPlayer {
     boolean leveledUp();
 
     /**
+     * Checks if the player is idle based on the median pixel shift.
+     *
+     * This method determines whether the player is currently idle by calculating
+     * the median pixel shift over a set of recent frames. It compares the median shift
+     * to a predefined threshold to determine if there is significant movement. If the
+     * shift is below the threshold, the player is considered idle.
+     *
+     * @return {@code true} if the player is idle (i.e., the median pixel shift is below
+     * the threshold), {@code false} otherwise.
+     */
+    boolean isIdle();
+
+    /**
+     * Calculates the current median pixel shift for the player.
+     *
+     * This method computes the pixel shift between the current frame and the last frame
+     * captured, and stores the shift in a rolling cache. It then calculates the median
+     * of the pixel shifts stored in the cache to smooth out short-term fluctuations.
+     * The median shift can be used to analyze whether the player is moving or idle.
+     *
+     * @return the current median pixel shift as a {@code double}. If the cache is reset
+     * due to frame expiration, the shift will be {@code 0.0} until new data is gathered.
+     */
+    double currentPixelShift();
+
+    /**
      * Gets the player's current position and checks if it is within the specified area
      *
      * @param areaToSearchIn This is the Area of the custom map you want to check if you are in.
