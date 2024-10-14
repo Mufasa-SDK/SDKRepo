@@ -125,7 +125,7 @@ public interface iChatbox {
      * @param areaToOCR A java.awt.Rectangle with the area you want to perform OCR on.
      * @param colorsToScan A java.util.List with java.awt.Colors in it that you'd like to use to read.
      */
-    String readDigitsInArea(Rectangle areaToOCR, java.util.List<Color> colorsToScan);
+    int readDigitsInArea(Rectangle areaToOCR, java.util.List<Color> colorsToScan);
 
     /**
      * Checks if the "Game" chat tab is active
