@@ -135,6 +135,16 @@ public interface iWalker {
     boolean webWalk(Tile destinationTile, Runnable whileRunning, boolean stepToEnd);
 
     /**
+     * Walks to a specified destination tile using a dynamic path calculation. This method calculates the best possible
+     * path to the end destination tile.
+     *
+     * @param destinationTile The Tile representing the end destination.
+     * @param stepToEnd indicating if you would like to step or walkTo to end destination (True to step)
+     * @return Boolean indicating whether the destination was successfully reached.
+     */
+    boolean webWalk(Tile destinationTile, boolean stepToEnd);
+
+    /**
      * Builds and returns a path from the current position to the specified end tile.
      * The path is represented as an array of {@link Tile} objects.
      *

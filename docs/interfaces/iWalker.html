@@ -27,7 +27,7 @@
     catch(err) {
     }
 //-->
-var data = {"i0":6,"i1":6,"i2":6,"i3":6,"i4":6,"i5":6,"i6":6,"i7":6,"i8":6,"i9":6,"i10":6,"i11":6,"i12":6,"i13":6,"i14":6};
+var data = {"i0":6,"i1":6,"i2":6,"i3":6,"i4":6,"i5":6,"i6":6,"i7":6,"i8":6,"i9":6,"i10":6,"i11":6,"i12":6,"i13":6,"i14":6,"i15":6};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],4:["t3","Abstract Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -244,13 +244,21 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </tr>
 <tr id="i13" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#webWalk(helpers.utils.Tile,boolean)">webWalk</a></span>&#8203;(<a href="../helpers/utils/Tile.html" title="class in helpers.utils">Tile</a>&nbsp;destinationTile,
+       boolean&nbsp;stepToEnd)</code></th>
+<td class="colLast">
+<div class="block">Walks to a specified destination tile using a dynamic path calculation.</div>
+</td>
+</tr>
+<tr id="i14" class="altColor">
+<td class="colFirst"><code>boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#webWalk(helpers.utils.Tile,java.lang.Runnable)">webWalk</a></span>&#8203;(<a href="../helpers/utils/Tile.html" title="class in helpers.utils">Tile</a>&nbsp;destinationTile,
        java.lang.Runnable&nbsp;whileRunning)</code></th>
 <td class="colLast">
 <div class="block">Walks to a specified destination tile using a dynamic path calculation.</div>
 </td>
 </tr>
-<tr id="i14" class="altColor">
+<tr id="i15" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#webWalk(helpers.utils.Tile,java.lang.Runnable,boolean)">webWalk</a></span>&#8203;(<a href="../helpers/utils/Tile.html" title="class in helpers.utils">Tile</a>&nbsp;destinationTile,
        java.lang.Runnable&nbsp;whileRunning,
@@ -500,6 +508,25 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>destinationTile</code> - The Tile representing the end destination.</dd>
 <dd><code>whileRunning</code> - an action to be performed while waiting between points</dd>
+<dd><code>stepToEnd</code> - indicating if you would like to step or walkTo to end destination (True to step)</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>Boolean indicating whether the destination was successfully reached.</dd>
+</dl>
+</li>
+</ul>
+<a id="webWalk(helpers.utils.Tile,boolean)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>webWalk</h4>
+<pre class="methodSignature">boolean&nbsp;webWalk&#8203;(<a href="../helpers/utils/Tile.html" title="class in helpers.utils">Tile</a>&nbsp;destinationTile,
+                boolean&nbsp;stepToEnd)</pre>
+<div class="block">Walks to a specified destination tile using a dynamic path calculation. This method calculates the best possible
+ path to the end destination tile.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>destinationTile</code> - The Tile representing the end destination.</dd>
 <dd><code>stepToEnd</code> - indicating if you would like to step or walkTo to end destination (True to step)</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>Boolean indicating whether the destination was successfully reached.</dd>
