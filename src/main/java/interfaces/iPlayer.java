@@ -14,6 +14,21 @@ public interface iPlayer {
     boolean leveledUp();
 
     /**
+     * Checks if the XP gained has changed since the last check. The default resetThreshold is 4000ms(4s). Meaning the checks will reset itself and invalidate the last call after 4s of not calling the method.
+     *
+     * @return true if XP has changed, false otherwise
+     */
+    public boolean xpGained();
+
+    /**
+     * Checks if the XP gained has changed since the last check.
+     *
+     * @param resetThreshold the maximum allowed duration before resetting the check, call this if you want to specify your own reset time, e.g. if the default is too short/too long.
+     * @return true if XP has changed, false otherwise
+     */
+    public boolean xpGained(int resetThreshold);
+
+    /**
      * Checks if the player is idle based on the median pixel shift.
      *
      * This method determines whether the player is currently idle by calculating

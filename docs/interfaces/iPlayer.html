@@ -27,7 +27,7 @@
     catch(err) {
     }
 //-->
-var data = {"i0":6,"i1":6,"i2":6,"i3":6,"i4":6,"i5":6,"i6":6,"i7":6,"i8":6,"i9":6,"i10":6,"i11":6,"i12":6,"i13":6,"i14":6,"i15":6,"i16":6,"i17":6};
+var data = {"i0":6,"i1":6,"i2":6,"i3":6,"i4":6,"i5":6,"i6":6,"i7":6,"i8":6,"i9":6,"i10":6,"i11":6,"i12":6,"i13":6,"i14":6,"i15":6,"i16":6,"i17":6,"i18":6,"i19":6};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],4:["t3","Abstract Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -273,6 +273,20 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <div class="block">Gets the player's current position and checks if it is within the specified area</div>
 </td>
 </tr>
+<tr id="i18" class="altColor">
+<td class="colFirst"><code>boolean</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#xpGained()">xpGained</a></span>()</code></th>
+<td class="colLast">
+<div class="block">Checks if the XP gained has changed since the last check.</div>
+</td>
+</tr>
+<tr id="i19" class="rowColor">
+<td class="colFirst"><code>boolean</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#xpGained(int)">xpGained</a></span>&#8203;(int&nbsp;resetThreshold)</code></th>
+<td class="colLast">
+<div class="block">Checks if the XP gained has changed since the last check.</div>
+</td>
+</tr>
 </table>
 </li>
 </ul>
@@ -301,6 +315,36 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>Returns true if the widget is visible</dd>
+</dl>
+</li>
+</ul>
+<a id="xpGained()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>xpGained</h4>
+<pre class="methodSignature">boolean&nbsp;xpGained()</pre>
+<div class="block">Checks if the XP gained has changed since the last check. The default resetThreshold is 4000ms(4s). Meaning the checks will reset itself and invalidate the last call after 4s of not calling the method.</div>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>true if XP has changed, false otherwise</dd>
+</dl>
+</li>
+</ul>
+<a id="xpGained(int)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>xpGained</h4>
+<pre class="methodSignature">boolean&nbsp;xpGained&#8203;(int&nbsp;resetThreshold)</pre>
+<div class="block">Checks if the XP gained has changed since the last check.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>resetThreshold</code> - the maximum allowed duration before resetting the check, call this if you want to specify your own reset time, e.g. if the default is too short/too long.</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>true if XP has changed, false otherwise</dd>
 </dl>
 </li>
 </ul>
