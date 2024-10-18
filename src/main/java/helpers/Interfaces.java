@@ -8,6 +8,7 @@ import interfaces.*;
  */
 public class Interfaces {
     public static iGE GrandExchange;
+    public static iInterfaces interfaces;
     public static iBank Bank;
     public static iClient Client;
     public static iCondition Condition;
@@ -36,6 +37,7 @@ public class Interfaces {
      * This method is called to set up all interfaces required for the script.
      *
      * @param ge The Grand Exchange interface.
+     * @param interfaces The Interfaces interface.
      * @param logger The logging interface.
      * @param bank The banking interface.
      * @param client The client interface.
@@ -59,8 +61,9 @@ public class Interfaces {
      * @param script The script interface.
      * @param paint The paint interface.
      */
-    public static void initialize(iGE ge, iLogger logger, iBank bank, iClient client, iCondition condition, iDepositBox depositBox, iEquipment equipment, iGame game, iGameTabs gameTabs, iInventory inventory, iLogin login, iLogout logout, iMagic magic, iOverlay overlay, iPlayer player, iPrayer prayer, iStats stats, iWalker walker, iXPBar xpBar, iChatbox chatbox, iObjects objects, iScript script, iPaint paint) {
+    public static void initialize(iGE ge,iInterfaces interfaces, iLogger logger, iBank bank, iClient client, iCondition condition, iDepositBox depositBox, iEquipment equipment, iGame game, iGameTabs gameTabs, iInventory inventory, iLogin login, iLogout logout, iMagic magic, iOverlay overlay, iPlayer player, iPrayer prayer, iStats stats, iWalker walker, iXPBar xpBar, iChatbox chatbox, iObjects objects, iScript script, iPaint paint) {
         Interfaces.GrandExchange = ge;
+        Interfaces.interfaces = interfaces;
         Interfaces.Logger = logger;
         Interfaces.Bank = bank;
         Interfaces.Client = client;
