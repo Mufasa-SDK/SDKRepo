@@ -3,6 +3,7 @@ package interfaces;
 import java.awt.*;
 import java.io.File;
 import java.util.List;
+import java.util.Map;
 
 /**
  * Interface defining the actions for client interaction.
@@ -93,10 +94,65 @@ public interface iClient {
     void longPress(Rectangle rectangle);
 
     /**
+     * Simulates a long press at the specified coordinates and then searches for a specific string in the menu that appears to tap on.
+     *
+     * @param x           The x-coordinate for the long press action.
+     * @param y           The y-coordinate for the long press action.
+     * @param rectHeight  The height of the region to search for the menu.
+     * @param rectWidth   The width of the region to search for the menu.
+     * @param colors      The list of colors (of the text) to target in the menu.
+     * @param stringToFind The string to search for in the menu.
+     */
+    void longPressWithMenuAction(int x, int y, int rectHeight, int rectWidth, List<Color> colors, String stringToFind);
+
+    /**
+     * Simulates a long press at the specified coordinates and then searches for a specific string in the menu that appears to tap on.
+     * This version allows the use of letter patterns for finding the menu options.
+     *
+     * @param x             The x-coordinate for the long press action.
+     * @param y             The y-coordinate for the long press action.
+     * @param rectHeight    The height of the region to search for the menu.
+     * @param rectWidth     The width of the region to search for the menu.
+     * @param letterPatterns The map containing letter patterns for the OCR matching of the menu text.
+     * @param colors        The list of colors (of the text) to target in the menu.
+     * @param stringToFind  The string to search for in the menu.
+     */
+    void longPressWithMenuAction(int x, int y, int rectHeight, int rectWidth, Map<String, int[][]> letterPatterns, List<Color> colors, String stringToFind);
+    /**
      * Sends a specific keystroke to the client.
      *
      * @param keystroke the string representing the keystroke to be sent.
      */
+
+    /**
+     * Simulates a long press at the specified coordinates and then searches for a specific string in the menu that appears to tap on.
+     *
+     * @param clickRect     The java.awt.Rectangle to randomly tap in
+     * @param rectHeight  The height of the region to search for the menu.
+     * @param rectWidth   The width of the region to search for the menu.
+     * @param colors      The list of colors (of the text) to target in the menu.
+     * @param stringToFind The string to search for in the menu.
+     */
+    void longPressWithMenuAction(Rectangle clickRect, int rectHeight, int rectWidth, List<Color> colors, String stringToFind);
+
+    /**
+     * Simulates a long press at the specified coordinates and then searches for a specific string in the menu that appears to tap on.
+     * This version allows the use of letter patterns for finding the menu options.
+     *
+     * @param clickRect     The java.awt.Rectangle to randomly tap in
+     * @param rectHeight    The height of the region to search for the menu.
+     * @param rectWidth     The width of the region to search for the menu.
+     * @param letterPatterns The map containing letter patterns for the OCR matching of the menu text.
+     * @param colors        The list of colors (of the text) to target in the menu.
+     * @param stringToFind  The string to search for in the menu.
+     */
+    void longPressWithMenuAction(Rectangle clickRect, int rectHeight, int rectWidth, Map<String, int[][]> letterPatterns, List<Color> colors, String stringToFind);
+    /**
+     * Sends a specific keystroke to the client.
+     *
+     * @param keystroke the string representing the keystroke to be sent.
+     */
+
     void sendKeystroke(String keystroke);
 
     /**
