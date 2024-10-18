@@ -985,7 +985,15 @@ public class ItemList {
     public static final int MUDDY_KEY_NOTED_992 = 992;
     public static final int SINISTER_KEY_993 = 993;
     public static final int SINISTER_KEY_NOTED_994 = 994;
-    public static final int COINS_995 = 995;
+    public static final int COINS_1_995 = 995;
+    public static final int COINS_2_996 = 996;
+    public static final int COINS_3_997 = 997;
+    public static final int COINS_4_998 = 998;
+    public static final int COINS_5_999 = 999;
+    public static final int COINS_10_1001 = 1001;
+    public static final int COINS_100_1002 = 1002;
+    public static final int COINS_1000_1003 = 1003;
+    public static final int COINS_10000_1004 = 1004;
     public static final int WHITE_APRON_1005 = 1005;
     public static final int WHITE_APRON_1006 = 1006;
     public static final int RED_CAPE_1007 = 1007;
