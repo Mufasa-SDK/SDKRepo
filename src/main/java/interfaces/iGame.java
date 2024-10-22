@@ -1,5 +1,6 @@
 package interfaces;
 
+import helpers.utils.CompassAngle;
 import helpers.utils.GameObject;
 
 import java.awt.*;
@@ -9,6 +10,14 @@ import java.awt.*;
  * This interface provides a method to send chat messages in the game.
  */
 public interface iGame {
+
+    /**
+     * Sets the current view angle.
+     *
+     * @param compassAngle The desired compass angle.
+     *                     Possible values are {@code NORTH}, {@code SOUTH}, {@code EAST}, or {@code WEST}.
+     */
+    public void setCompassAngle(CompassAngle compassAngle);
 
     /**
      * Checks if the specified game object is present at the given world position relative to the player's position.
