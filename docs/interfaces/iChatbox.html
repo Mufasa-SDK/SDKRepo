@@ -27,7 +27,7 @@
     catch(err) {
     }
 //-->
-var data = {"i0":6,"i1":6,"i2":6,"i3":6,"i4":6,"i5":6,"i6":6,"i7":6,"i8":6,"i9":6,"i10":6,"i11":6,"i12":6,"i13":6,"i14":6,"i15":6,"i16":6,"i17":6,"i18":6,"i19":6,"i20":6,"i21":6,"i22":6,"i23":6,"i24":6,"i25":6,"i26":6};
+var data = {"i0":6,"i1":6,"i2":6,"i3":6,"i4":6,"i5":6,"i6":6,"i7":6,"i8":6,"i9":6,"i10":6,"i11":6,"i12":6,"i13":6,"i14":6,"i15":6,"i16":6,"i17":6,"i18":6,"i19":6,"i20":6,"i21":6,"i22":6,"i23":6,"i24":6,"i25":6,"i26":6,"i27":6,"i28":6};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],4:["t3","Abstract Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -149,7 +149,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#closeChatbox()">closeChatbox</a></span>()</code></th>
 <td class="colLast">
-<div class="block">Closes the chatbox with random actions.</div>
+<div class="block">Closes the chatbox.</div>
 </td>
 </tr>
 <tr id="i1" class="rowColor">
@@ -161,131 +161,145 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </tr>
 <tr id="i2" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#isAllChatActive()">isAllChatActive</a></span>()</code></th>
+<td class="colLast">
+<div class="block">Checks if the "All" chat tab is active</div>
+</td>
+</tr>
+<tr id="i3" class="rowColor">
+<td class="colFirst"><code>boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#isChannelChatActive()">isChannelChatActive</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Checks if the "Channel" chat tab is active</div>
 </td>
 </tr>
-<tr id="i3" class="rowColor">
+<tr id="i4" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#isClanChatActive()">isClanChatActive</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Checks if the "Clan" chat tab is active</div>
 </td>
 </tr>
-<tr id="i4" class="altColor">
+<tr id="i5" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#isGameChatActive()">isGameChatActive</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Checks if the "Game" chat tab is active</div>
 </td>
 </tr>
-<tr id="i5" class="rowColor">
+<tr id="i6" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#isMakeMenuVisible()">isMakeMenuVisible</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Checks if the make menu is visible in the chatbox.</div>
 </td>
 </tr>
-<tr id="i6" class="altColor">
+<tr id="i7" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#isPrivateChatActive()">isPrivateChatActive</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Checks if the "Private" chat tab is active</div>
 </td>
 </tr>
-<tr id="i7" class="rowColor">
+<tr id="i8" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#isPublicChatActive()">isPublicChatActive</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Checks if the "Public" chat tab is active</div>
 </td>
 </tr>
-<tr id="i8" class="altColor">
+<tr id="i9" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#isSelectedMake1()">isSelectedMake1</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Checks if the "Make 1" option is selected.</div>
 </td>
 </tr>
-<tr id="i9" class="rowColor">
+<tr id="i10" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#isSelectedMake10()">isSelectedMake10</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Checks if the "Make 10" option is selected.</div>
 </td>
 </tr>
-<tr id="i10" class="altColor">
+<tr id="i11" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#isSelectedMake5()">isSelectedMake5</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Checks if the "Make 5" option is selected.</div>
 </td>
 </tr>
-<tr id="i11" class="rowColor">
+<tr id="i12" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#isSelectedMakeAll()">isSelectedMakeAll</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Checks if the "Make All" option is selected.</div>
 </td>
 </tr>
-<tr id="i12" class="altColor">
+<tr id="i13" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#isTradeChatActive()">isTradeChatActive</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Checks if the "Trade" chat tab is active</div>
 </td>
 </tr>
-<tr id="i13" class="rowColor">
+<tr id="i14" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#makeOption(int)">makeOption</a></span>&#8203;(int&nbsp;optionNumber)</code></th>
 <td class="colLast">
 <div class="block">Selects a make option based on the specified option number.</div>
 </td>
 </tr>
-<tr id="i14" class="altColor">
+<tr id="i15" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#openAllChat()">openAllChat</a></span>()</code></th>
 <td class="colLast">
-<div class="block">Opens the 'All' section of the chatbox with random actions.</div>
-</td>
-</tr>
-<tr id="i15" class="rowColor">
-<td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#openChannelChat()">openChannelChat</a></span>()</code></th>
-<td class="colLast">
-<div class="block">Opens the 'Channel' section of the chatbox with random actions.</div>
+<div class="block">Opens the 'All' section of the chatbox.</div>
 </td>
 </tr>
 <tr id="i16" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#openClanChat()">openClanChat</a></span>()</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#openChannelChat()">openChannelChat</a></span>()</code></th>
 <td class="colLast">
-<div class="block">Opens the 'Clan' section of the chatbox with random actions.</div>
+<div class="block">Opens the 'Channel' section of the chatbox.</div>
 </td>
 </tr>
 <tr id="i17" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#openFriendsChat()">openFriendsChat</a></span>()</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#openClanChat()">openClanChat</a></span>()</code></th>
 <td class="colLast">
-<div class="block">Opens the 'Friends' section of the chatbox with random actions.</div>
+<div class="block">Opens the 'Clan' section of the chatbox.</div>
 </td>
 </tr>
 <tr id="i18" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#openGameChat()">openGameChat</a></span>()</code></th>
 <td class="colLast">
-<div class="block">Opens the 'Game' section of the chatbox with random actions.</div>
+<div class="block">Opens the 'Game' section of the chatbox.</div>
 </td>
 </tr>
 <tr id="i19" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#openPrivateChat()">openPrivateChat</a></span>()</code></th>
 <td class="colLast">
-<div class="block">Opens the 'Private' section of the chatbox with random actions.</div>
+<div class="block">Opens the 'Private' section of the chatbox.</div>
 </td>
 </tr>
 <tr id="i20" class="altColor">
+<td class="colFirst"><code>void</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#openPublicChat()">openPublicChat</a></span>()</code></th>
+<td class="colLast">
+<div class="block">Opens the 'Public' section of the chatbox.</div>
+</td>
+</tr>
+<tr id="i21" class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#openTradeChat()">openTradeChat</a></span>()</code></th>
+<td class="colLast">
+<div class="block">Opens the 'Trade' section of the chatbox.</div>
+</td>
+</tr>
+<tr id="i22" class="altColor">
 <td class="colFirst"><code>int</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#readDigitsInArea(java.awt.Rectangle,java.util.List)">readDigitsInArea</a></span>&#8203;(java.awt.Rectangle&nbsp;areaToOCR,
                 java.util.List&lt;java.awt.Color&gt;&nbsp;colorsToScan)</code></th>
@@ -293,42 +307,42 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <div class="block">Reads the specific area, and returns the digits (0-9) it was able to read.</div>
 </td>
 </tr>
-<tr id="i21" class="rowColor">
+<tr id="i23" class="rowColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#readLastLine(java.awt.Rectangle)">readLastLine</a></span>&#8203;(java.awt.Rectangle&nbsp;areaToOCR)</code></th>
 <td class="colLast">
 <div class="block">Reads the specific area, and returns what it was able to read.</div>
 </td>
 </tr>
-<tr id="i22" class="altColor">
+<tr id="i24" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#selectMake1()">selectMake1</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Selects the "Make 1" option.</div>
 </td>
 </tr>
-<tr id="i23" class="rowColor">
+<tr id="i25" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#selectMake10()">selectMake10</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Selects the "Make 10" option.</div>
 </td>
 </tr>
-<tr id="i24" class="altColor">
+<tr id="i26" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#selectMake5()">selectMake5</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Selects the "Make 5" option.</div>
 </td>
 </tr>
-<tr id="i25" class="rowColor">
+<tr id="i27" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#selectMakeAll()">selectMakeAll</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Selects the "Make All" option.</div>
 </td>
 </tr>
-<tr id="i26" class="altColor">
+<tr id="i28" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#selectMakeX()">selectMakeX</a></span>()</code></th>
 <td class="colLast">
@@ -494,7 +508,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <li class="blockList">
 <h4>closeChatbox</h4>
 <pre class="methodSignature">void&nbsp;closeChatbox()</pre>
-<div class="block">Closes the chatbox with random actions.</div>
+<div class="block">Closes the chatbox.</div>
 </li>
 </ul>
 <a id="openAllChat()">
@@ -504,7 +518,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <li class="blockList">
 <h4>openAllChat</h4>
 <pre class="methodSignature">void&nbsp;openAllChat()</pre>
-<div class="block">Opens the 'All' section of the chatbox with random actions.</div>
+<div class="block">Opens the 'All' section of the chatbox.</div>
 </li>
 </ul>
 <a id="openGameChat()">
@@ -514,7 +528,17 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <li class="blockList">
 <h4>openGameChat</h4>
 <pre class="methodSignature">void&nbsp;openGameChat()</pre>
-<div class="block">Opens the 'Game' section of the chatbox with random actions.</div>
+<div class="block">Opens the 'Game' section of the chatbox.</div>
+</li>
+</ul>
+<a id="openPublicChat()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>openPublicChat</h4>
+<pre class="methodSignature">void&nbsp;openPublicChat()</pre>
+<div class="block">Opens the 'Public' section of the chatbox.</div>
 </li>
 </ul>
 <a id="openPrivateChat()">
@@ -524,17 +548,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <li class="blockList">
 <h4>openPrivateChat</h4>
 <pre class="methodSignature">void&nbsp;openPrivateChat()</pre>
-<div class="block">Opens the 'Private' section of the chatbox with random actions.</div>
-</li>
-</ul>
-<a id="openFriendsChat()">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>openFriendsChat</h4>
-<pre class="methodSignature">void&nbsp;openFriendsChat()</pre>
-<div class="block">Opens the 'Friends' section of the chatbox with random actions.</div>
+<div class="block">Opens the 'Private' section of the chatbox.</div>
 </li>
 </ul>
 <a id="openChannelChat()">
@@ -544,7 +558,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <li class="blockList">
 <h4>openChannelChat</h4>
 <pre class="methodSignature">void&nbsp;openChannelChat()</pre>
-<div class="block">Opens the 'Channel' section of the chatbox with random actions.</div>
+<div class="block">Opens the 'Channel' section of the chatbox.</div>
 </li>
 </ul>
 <a id="openClanChat()">
@@ -554,7 +568,17 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <li class="blockList">
 <h4>openClanChat</h4>
 <pre class="methodSignature">void&nbsp;openClanChat()</pre>
-<div class="block">Opens the 'Clan' section of the chatbox with random actions.</div>
+<div class="block">Opens the 'Clan' section of the chatbox.</div>
+</li>
+</ul>
+<a id="openTradeChat()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>openTradeChat</h4>
+<pre class="methodSignature">void&nbsp;openTradeChat()</pre>
+<div class="block">Opens the 'Trade' section of the chatbox.</div>
 </li>
 </ul>
 <a id="findChatboxMenu()">
@@ -602,6 +626,20 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <dd><code>colorsToScan</code> - A java.util.List with java.awt.Colors in it that you'd like to use to read.</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>An integer that represents the value that was read</dd>
+</dl>
+</li>
+</ul>
+<a id="isAllChatActive()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>isAllChatActive</h4>
+<pre class="methodSignature">boolean&nbsp;isAllChatActive()</pre>
+<div class="block">Checks if the "All" chat tab is active</div>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>true/false if It's active or not.</dd>
 </dl>
 </li>
 </ul>

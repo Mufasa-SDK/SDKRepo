@@ -72,39 +72,44 @@ public interface iChatbox {
     void selectMakeAll();
 
     /**
-     * Closes the chatbox with random actions.
+     * Closes the chatbox.
      */
     void closeChatbox();
 
     /**
-     * Opens the 'All' section of the chatbox with random actions.
+     * Opens the 'All' section of the chatbox.
      */
     void openAllChat();
 
     /**
-     * Opens the 'Game' section of the chatbox with random actions.
+     * Opens the 'Game' section of the chatbox.
      */
     void openGameChat();
 
     /**
-     * Opens the 'Private' section of the chatbox with random actions.
+     * Opens the 'Public' section of the chatbox.
+     */
+    void openPublicChat();
+
+    /**
+     * Opens the 'Private' section of the chatbox.
      */
     void openPrivateChat();
 
     /**
-     * Opens the 'Friends' section of the chatbox with random actions.
-     */
-    void openFriendsChat();
-
-    /**
-     * Opens the 'Channel' section of the chatbox with random actions.
+     * Opens the 'Channel' section of the chatbox.
      */
     void openChannelChat();
 
     /**
-     * Opens the 'Clan' section of the chatbox with random actions.
+     * Opens the 'Clan' section of the chatbox.
      */
     void openClanChat();
+
+    /**
+     * Opens the 'Trade' section of the chatbox.
+     */
+    void openTradeChat();
 
     /**
      * Finds and returns the rectangle representing the chatbox menu.
@@ -126,6 +131,12 @@ public interface iChatbox {
      * @param colorsToScan A java.util.List with java.awt.Colors in it that you'd like to use to read.
      */
     int readDigitsInArea(Rectangle areaToOCR, java.util.List<Color> colorsToScan);
+
+    /**
+     * Checks if the "All" chat tab is active
+     * @return true/false if It's active or not.
+     */
+    public boolean isAllChatActive();
 
     /**
      * Checks if the "Game" chat tab is active

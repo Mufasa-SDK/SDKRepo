@@ -142,7 +142,9 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <hr>
 <pre>public enum <span class="typeNameLabel">CompassAngle</span>
 extends java.lang.Enum&lt;<a href="CompassAngle.html" title="enum in helpers.utils">CompassAngle</a>&gt;</pre>
-<div class="block">Defines the type of options available when rotating the compass.</div>
+<div class="block">Defines the compass direction options for the minimap rotation.
+ The default direction is <code>NORTH</code>, which represents no rotation.
+ The other directions represent the required rotation to align the minimap so that the given direction faces North.</div>
 </li>
 </ul>
 </div>
@@ -164,19 +166,27 @@ extends java.lang.Enum&lt;<a href="CompassAngle.html" title="enum in helpers.uti
 </tr>
 <tr class="altColor">
 <th class="colFirst" scope="row"><code><span class="memberNameLink"><a href="#EAST">EAST</a></span></code></th>
-<td class="colLast">&nbsp;</td>
+<td class="colLast">
+<div class="block">Represents the East direction.</div>
+</td>
 </tr>
 <tr class="rowColor">
 <th class="colFirst" scope="row"><code><span class="memberNameLink"><a href="#NORTH">NORTH</a></span></code></th>
-<td class="colLast">&nbsp;</td>
+<td class="colLast">
+<div class="block">Represents the North direction.</div>
+</td>
 </tr>
 <tr class="altColor">
 <th class="colFirst" scope="row"><code><span class="memberNameLink"><a href="#SOUTH">SOUTH</a></span></code></th>
-<td class="colLast">&nbsp;</td>
+<td class="colLast">
+<div class="block">Represents the South direction.</div>
+</td>
 </tr>
 <tr class="rowColor">
 <th class="colFirst" scope="row"><code><span class="memberNameLink"><a href="#WEST">WEST</a></span></code></th>
-<td class="colLast">&nbsp;</td>
+<td class="colLast">
+<div class="block">Represents the West direction.</div>
+</td>
 </tr>
 </table>
 </li>
@@ -272,6 +282,8 @@ the order they are declared.</div>
 <li class="blockList">
 <h4>NORTH</h4>
 <pre>public static final&nbsp;<a href="CompassAngle.html" title="enum in helpers.utils">CompassAngle</a> NORTH</pre>
+<div class="block">Represents the North direction.
+ This is the default orientation where no rotation is needed.</div>
 </li>
 </ul>
 <a id="SOUTH">
@@ -281,6 +293,7 @@ the order they are declared.</div>
 <li class="blockList">
 <h4>SOUTH</h4>
 <pre>public static final&nbsp;<a href="CompassAngle.html" title="enum in helpers.utils">CompassAngle</a> SOUTH</pre>
+<div class="block">Represents the South direction.</div>
 </li>
 </ul>
 <a id="EAST">
@@ -290,6 +303,7 @@ the order they are declared.</div>
 <li class="blockList">
 <h4>EAST</h4>
 <pre>public static final&nbsp;<a href="CompassAngle.html" title="enum in helpers.utils">CompassAngle</a> EAST</pre>
+<div class="block">Represents the East direction.</div>
 </li>
 </ul>
 <a id="WEST">
@@ -299,6 +313,7 @@ the order they are declared.</div>
 <li class="blockList">
 <h4>WEST</h4>
 <pre>public static final&nbsp;<a href="CompassAngle.html" title="enum in helpers.utils">CompassAngle</a> WEST</pre>
+<div class="block">Represents the West direction.</div>
 </li>
 </ul>
 </li>
