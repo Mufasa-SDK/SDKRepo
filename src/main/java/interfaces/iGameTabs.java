@@ -1,5 +1,7 @@
 package interfaces;
 
+import helpers.utils.UITabs;
+
 import java.awt.*;
 
 /**
@@ -10,6 +12,13 @@ import java.awt.*;
 public interface iGameTabs {
     
     // isTabOpen checks
+    /**
+     * Checks if a certain UI tab is open or not.
+     *
+     * @param UITab The UI Tab you'd like to check, pre-defined as enum.
+     * @return True/false if the tab is currently open or not.
+     */
+    boolean isTabOpen(UITabs UITab);
     boolean isInventoryTabOpen();
     boolean isCombatTabOpen();
     boolean isStatsTabOpen();
@@ -26,6 +35,12 @@ public interface iGameTabs {
     boolean isMusicTabOpen();
 
     // openTab calls
+    /**
+     * Opens the selected UI Tab (if not already open currently)
+     *
+     * @param UITab The UI Tab you'd like to open, pre-defined as enum.
+     */
+    void openTab(UITabs UITab);
     void openInventoryTab();
     void openCombatTab();
     void openStatsTab();
@@ -42,6 +57,12 @@ public interface iGameTabs {
     void openMusicTab();
 
     // closeTab calls
+    /**
+     * Closes the selected UI Tab (if it is open currently)
+     *
+     * @param UITab The UI Tab you'd like to close, pre-defined as enum.
+     */
+    void closeTab(UITabs UITab);
     void closeInventoryTab();
     void closeCombatTab();
     void closeStatsTab();
