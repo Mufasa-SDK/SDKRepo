@@ -3,7 +3,7 @@ package helpers.utils;
 /**
  * Defines the type of options available when querying for a tab of the game UI.
  */
-public enum GameTabs {
+public enum UITabs {
     ACCOUNT,
     CLAN,
     COMBAT,
