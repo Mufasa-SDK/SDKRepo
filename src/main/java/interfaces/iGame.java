@@ -168,13 +168,6 @@ public interface iGame {
     public boolean isKeyboardActionEnabled();
 
     /**
-     * Checks if there is currently no action selected at all.
-     *
-     * @return true if no action is currently selected.
-     */
-    public boolean isActionDisabled();
-
-    /**
      * Checks if the action button is currently visible on the screen.
      *
      * @return true if the action button was located.
