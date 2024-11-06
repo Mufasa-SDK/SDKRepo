@@ -34,13 +34,6 @@ public interface iEquipment {
     Boolean itemAt(EquipmentSlot equipmentSlot, int itemToCheck);
 
     /**
-     * Finds the rectangle representing the selected equipment tab.
-     *
-     * @return Rectangle of the selected equipment tab.
-     */
-    Rectangle selectedEquipmentTab();
-
-    /**
      * Finds the rectangle representing the helm slot.
      *
      * @return Rectangle for the helm slot.

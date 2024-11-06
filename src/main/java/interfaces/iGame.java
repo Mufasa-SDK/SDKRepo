@@ -161,27 +161,6 @@ public interface iGame {
     public boolean isSingleTapEnabled();
 
     /**
-     * Checks if the Keyboard action is currently enabled.
-     *
-     * @return true if the action is currently enabled.
-     */
-    public boolean isKeyboardActionEnabled();
-
-    /**
-     * Checks if there is currently no action selected at all.
-     *
-     * @return true if no action is currently selected.
-     */
-    public boolean isActionDisabled();
-
-    /**
-     * Checks if the action button is currently visible on the screen.
-     *
-     * @return true if the action button was located.
-     */
-    public boolean isActionButtonVisible();
-
-    /**
      * Enables the Tap to Drop action mode.
      * */
     public void enableTapToDrop();
@@ -202,9 +181,14 @@ public interface iGame {
     public void disableSingleTap();
 
     /**
-     * Taps the keyboard action button to bring the keyboard up.
+     * Opens the hotkey menu on the left-hand side of the UI.
      * */
-    public void showKeyboard();
+    public void openHotkeymenu();
+
+    /**
+     * Closes the hotkey menu on the left-hand side of the UI.
+     * */
+    public void closeHotkeymenu();
 
     /**
      * Performs a random Anti-AFK action to simulate user activity.
