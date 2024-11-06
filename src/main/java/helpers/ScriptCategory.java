@@ -26,6 +26,8 @@ public enum ScriptCategory {
     Woodcutting,
     Moneymaking,
     Minigames,
+    Misc,
+    Ironman,
     /**
      * Represents scripts that are executed locally.
      */
