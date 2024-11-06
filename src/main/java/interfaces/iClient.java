@@ -147,12 +147,86 @@ public interface iClient {
      * @param stringToFind  The string to search for in the menu.
      */
     void longPressWithMenuAction(Rectangle clickRect, int rectHeight, int rectWidth, Map<String, int[][]> letterPatterns, List<Color> colors, String stringToFind);
+
+    /**
+     * Simulates a tap at the specified coordinates and then searches for a specific string in the menu that appears to tap on.
+     * THIS SHOULD ONLY BE USED IN COMBINATION WITH SINGLE-TAP MODE!
+     *
+     * @param x           The x-coordinate for the long press action.
+     * @param y           The y-coordinate for the long press action.
+     * @param rectHeight  The height of the region to search for the menu.
+     * @param rectWidth   The width of the region to search for the menu.
+     * @param colors      The list of colors (of the text) to target in the menu.
+     * @param stringToFind The string to search for in the menu.
+     */
+    void tapWithMenuAction(int x, int y, int rectHeight, int rectWidth, List<Color> colors, String stringToFind);
+
+    /**
+     * Simulates a tap at the specified coordinates and then searches for a specific string in the menu that appears to tap on.
+     * This version allows the use of letter patterns for finding the menu options.
+     * THIS SHOULD ONLY BE USED IN COMBINATION WITH SINGLE-TAP MODE!
+     *
+     * @param x             The x-coordinate for the long press action.
+     * @param y             The y-coordinate for the long press action.
+     * @param rectHeight    The height of the region to search for the menu.
+     * @param rectWidth     The width of the region to search for the menu.
+     * @param letterPatterns The map containing letter patterns for the OCR matching of the menu text.
+     * @param colors        The list of colors (of the text) to target in the menu.
+     * @param stringToFind  The string to search for in the menu.
+     */
+    void tapWithMenuAction(int x, int y, int rectHeight, int rectWidth, Map<String, int[][]> letterPatterns, List<Color> colors, String stringToFind);
+
+    /**
+     * Simulates a tap at the specified coordinates and then searches for a specific string in the menu that appears to tap on.
+     * THIS SHOULD ONLY BE USED IN COMBINATION WITH SINGLE-TAP MODE!
+     *
+     * @param clickRect     The java.awt.Rectangle to randomly tap in
+     * @param rectHeight  The height of the region to search for the menu.
+     * @param rectWidth   The width of the region to search for the menu.
+     * @param colors      The list of colors (of the text) to target in the menu.
+     * @param stringToFind The string to search for in the menu.
+     */
+    void tapWithMenuAction(Rectangle clickRect, int rectHeight, int rectWidth, List<Color> colors, String stringToFind);
+
+    /**
+     * Simulates a tap at the specified coordinates and then searches for a specific string in the menu that appears to tap on.
+     * This version allows the use of letter patterns for finding the menu options.
+     * THIS SHOULD ONLY BE USED IN COMBINATION WITH SINGLE-TAP MODE!
+     *
+     * @param clickRect     The java.awt.Rectangle to randomly tap in
+     * @param rectHeight    The height of the region to search for the menu.
+     * @param rectWidth     The width of the region to search for the menu.
+     * @param letterPatterns The map containing letter patterns for the OCR matching of the menu text.
+     * @param colors        The list of colors (of the text) to target in the menu.
+     * @param stringToFind  The string to search for in the menu.
+     */
+    void tapWithMenuAction(Rectangle clickRect, int rectHeight, int rectWidth, Map<String, int[][]> letterPatterns, List<Color> colors, String stringToFind);
+
+    /**
+     * Searches for a specific string in the menu to tap on.
+     *
+     * @param searchArea    The area to search your menu option in.
+     * @param letterPatterns The map containing letter patterns for the OCR matching of the menu text.
+     * @param colors        The list of colors (of the text) to target in the menu.
+     * @param stringToFind  The string to search for in the menu.
+     */
+    void findAndTapMenuOption(Rectangle searchArea, List<Color> colors, Map<String, int[][]> letterPatterns, String stringToFind);
+
+    /**
+     * Searches for a specific string in the menu to tap on.
+     * This version allows the use of letter patterns for finding the menu options.
+     *
+     * @param searchArea    The area to search your menu option in.
+     * @param colors        The list of colors (of the text) to target in the menu.
+     * @param stringToFind  The string to search for in the menu.
+     */
+    void findAndTapMenuOption(Rectangle searchArea, List<Color> colors, String stringToFind);
+
     /**
      * Sends a specific keystroke to the client.
      *
      * @param keystroke the string representing the keystroke to be sent.
      */
-
     void sendKeystroke(String keystroke);
 
     /**
