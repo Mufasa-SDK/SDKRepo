@@ -161,13 +161,6 @@ public interface iGame {
     public boolean isSingleTapEnabled();
 
     /**
-     * Checks if the action button is currently visible on the screen.
-     *
-     * @return true if the action button was located.
-     */
-    public boolean isActionButtonVisible();
-
-    /**
      * Enables the Tap to Drop action mode.
      * */
     public void enableTapToDrop();
