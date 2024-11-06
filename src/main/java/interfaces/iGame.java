@@ -188,6 +188,16 @@ public interface iGame {
     public void disableSingleTap();
 
     /**
+     * Opens the hotkey menu on the left-hand side of the UI.
+     * */
+    public void openHotkeymenu();
+
+    /**
+     * Closes the hotkey menu on the left-hand side of the UI.
+     * */
+    public void closeHotkeymenu();
+
+    /**
      * Performs a random Anti-AFK action to simulate user activity.
      * This method randomly chooses one of the predefined actions, each involving opening and
      * closing a specific game tab. After performing an action, the method pauses execution for a
