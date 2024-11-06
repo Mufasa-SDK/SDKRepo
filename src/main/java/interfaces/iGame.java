@@ -161,13 +161,6 @@ public interface iGame {
     public boolean isSingleTapEnabled();
 
     /**
-     * Checks if the Keyboard action is currently enabled.
-     *
-     * @return true if the action is currently enabled.
-     */
-    public boolean isKeyboardActionEnabled();
-
-    /**
      * Checks if the action button is currently visible on the screen.
      *
      * @return true if the action button was located.
@@ -193,11 +186,6 @@ public interface iGame {
      * Disables the Single Tap action mode.
      * */
     public void disableSingleTap();
-
-    /**
-     * Taps the keyboard action button to bring the keyboard up.
-     * */
-    public void showKeyboard();
 
     /**
      * Performs a random Anti-AFK action to simulate user activity.
