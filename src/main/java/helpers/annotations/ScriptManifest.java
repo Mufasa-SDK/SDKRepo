@@ -43,6 +43,13 @@ public @interface ScriptManifest {
     String guideLink();
 
     /**
+     * Specifies if the preSetup should skip setting the zoom level for the script
+     *
+     * @return True if we should skip, false if not
+     */
+    boolean skipZoomSetup() default false;
+
+    /**
      * Indicates the category of the script based on predefined script types.
      *
      * @return The categories of the script from the {@link ScriptCategory} enumeration.
