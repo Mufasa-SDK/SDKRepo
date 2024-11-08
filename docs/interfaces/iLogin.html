@@ -169,7 +169,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </tr>
 <tr id="i3" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#preSetup()">preSetup</a></span>()</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#preSetup(boolean)">preSetup</a></span>&#8203;(boolean&nbsp;skipZoom)</code></th>
 <td class="colLast">
 <div class="block">Performs any necessary setup before script start.</div>
 </td>
@@ -230,15 +230,19 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
  This method should contain the necessary steps to log into the game.</div>
 </li>
 </ul>
-<a id="preSetup()">
+<a id="preSetup(boolean)">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>preSetup</h4>
-<pre class="methodSignature">void&nbsp;preSetup()</pre>
+<pre class="methodSignature">void&nbsp;preSetup&#8203;(boolean&nbsp;skipZoom)</pre>
 <div class="block">Performs any necessary setup before script start.
  This includes setting up configurations or preparing the login interface and setting camera orientation etc.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>skipZoom</code> - decides if you want to skip setting zoom levels in the pre-setup call</dd>
+</dl>
 </li>
 </ul>
 </li>

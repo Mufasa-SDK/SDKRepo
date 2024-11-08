@@ -30,6 +30,8 @@ public interface iLogin {
     /**
      * Performs any necessary setup before script start.
      * This includes setting up configurations or preparing the login interface and setting camera orientation etc.
+     *
+     * @param skipZoom decides if you want to skip setting zoom levels in the pre-setup call
      */
-    void preSetup();
+    void preSetup(boolean skipZoom);
 }
