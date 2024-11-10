@@ -26,7 +26,7 @@ public interface iInventory {
      * @param matchColor The color to match the specific item with, for example the blue in a Rune scimitar.
      * @return boolean indicating whether any of the specified items are present in the inventory.
      */
-    boolean contains(String[] itemIDs, double threshold, Color matchColor);
+    boolean contains(int[] itemIDs, double threshold, Color matchColor);
 
     /**
      * Checks if the inventory contains a specific item, based on a threshold.
@@ -45,7 +45,7 @@ public interface iInventory {
      * @param matchColor The color to match the specific item with, for example the blue in a Rune scimitar.
      * @return boolean indicating whether the specified item is present in the inventory.
      */
-    boolean contains(String itemID, double threshold, Color matchColor);
+    boolean contains(int itemID, double threshold, Color matchColor);
 
     /**
      * Checks if the inventory contains any of the specified items, based on a threshold.
@@ -230,7 +230,7 @@ public interface iInventory {
      * @param threshold The threshold value used for identifying the item, threshold is a double where 1.0 represents 100% confidence. Usually above 0.80 (but often 0.90+).
      * @param matchColor The color to match the specific item with, for example the blue in a Rune scimitar.
      */
-    void tapItem(String itemId, double threshold, Color matchColor);
+    void tapItem(int itemId, double threshold, Color matchColor);
 
     /**
      * Initiates a tap action on a specified item in the inventory, based on a threshold.

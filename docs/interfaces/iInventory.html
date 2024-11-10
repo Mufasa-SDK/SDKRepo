@@ -149,13 +149,31 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </tr>
 <tr id="i0" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#contains(int%5B%5D,double,java.awt.Color)">contains</a></span>&#8203;(int[]&nbsp;itemIDs,
+        double&nbsp;threshold,
+        java.awt.Color&nbsp;matchColor)</code></th>
+<td class="colLast">
+<div class="block">Checks if the inventory contains any of the specified items, based on a threshold.</div>
+</td>
+</tr>
+<tr id="i1" class="rowColor">
+<td class="colFirst"><code>boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#contains(int,double)">contains</a></span>&#8203;(int&nbsp;itemID,
         double&nbsp;threshold)</code></th>
 <td class="colLast">
 <div class="block">Checks if the inventory contains a specific item, based on a threshold.</div>
 </td>
 </tr>
-<tr id="i1" class="rowColor">
+<tr id="i2" class="altColor">
+<td class="colFirst"><code>boolean</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#contains(int,double,java.awt.Color)">contains</a></span>&#8203;(int&nbsp;itemID,
+        double&nbsp;threshold,
+        java.awt.Color&nbsp;matchColor)</code></th>
+<td class="colLast">
+<div class="block">Checks if the inventory contains a specific item, based on a threshold.</div>
+</td>
+</tr>
+<tr id="i3" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#contains(java.lang.String%5B%5D,double)">contains</a></span>&#8203;(java.lang.String[]&nbsp;itemIDs,
         double&nbsp;threshold)</code></th>
@@ -163,28 +181,10 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <div class="block">Checks if the inventory contains any of the specified items, based on a threshold.</div>
 </td>
 </tr>
-<tr id="i2" class="altColor">
-<td class="colFirst"><code>boolean</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#contains(java.lang.String%5B%5D,double,java.awt.Color)">contains</a></span>&#8203;(java.lang.String[]&nbsp;itemIDs,
-        double&nbsp;threshold,
-        java.awt.Color&nbsp;matchColor)</code></th>
-<td class="colLast">
-<div class="block">Checks if the inventory contains any of the specified items, based on a threshold.</div>
-</td>
-</tr>
-<tr id="i3" class="rowColor">
+<tr id="i4" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#contains(java.lang.String,double)">contains</a></span>&#8203;(java.lang.String&nbsp;itemID,
         double&nbsp;threshold)</code></th>
-<td class="colLast">
-<div class="block">Checks if the inventory contains a specific item, based on a threshold.</div>
-</td>
-</tr>
-<tr id="i4" class="altColor">
-<td class="colFirst"><code>boolean</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#contains(java.lang.String,double,java.awt.Color)">contains</a></span>&#8203;(java.lang.String&nbsp;itemID,
-        double&nbsp;threshold,
-        java.awt.Color&nbsp;matchColor)</code></th>
 <td class="colLast">
 <div class="block">Checks if the inventory contains a specific item, based on a threshold.</div>
 </td>
@@ -399,12 +399,21 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </tr>
 <tr id="i31" class="rowColor">
 <td class="colFirst"><code>void</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#tapItem(int,double,java.awt.Color)">tapItem</a></span>&#8203;(int&nbsp;itemId,
+       double&nbsp;threshold,
+       java.awt.Color&nbsp;matchColor)</code></th>
+<td class="colLast">
+<div class="block">Initiates a tap action on a specified item in the inventory, based on a threshold.</div>
+</td>
+</tr>
+<tr id="i32" class="altColor">
+<td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#tapItem(java.lang.Integer)">tapItem</a></span>&#8203;(java.lang.Integer&nbsp;slotID)</code></th>
 <td class="colLast">
 <div class="block">Initiates a tap action on a specific inventory slot identified by its slot ID.</div>
 </td>
 </tr>
-<tr id="i32" class="altColor">
+<tr id="i33" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#tapItem(java.lang.String,boolean,double)">tapItem</a></span>&#8203;(java.lang.String&nbsp;itemId,
        boolean&nbsp;useCache,
@@ -413,19 +422,10 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <div class="block">Initiates a tap action on a specified item in the inventory, based on a threshold.</div>
 </td>
 </tr>
-<tr id="i33" class="rowColor">
+<tr id="i34" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#tapItem(java.lang.String,double)">tapItem</a></span>&#8203;(java.lang.String&nbsp;itemId,
        double&nbsp;threshold)</code></th>
-<td class="colLast">
-<div class="block">Initiates a tap action on a specified item in the inventory, based on a threshold.</div>
-</td>
-</tr>
-<tr id="i34" class="altColor">
-<td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#tapItem(java.lang.String,double,java.awt.Color)">tapItem</a></span>&#8203;(java.lang.String&nbsp;itemId,
-       double&nbsp;threshold,
-       java.awt.Color&nbsp;matchColor)</code></th>
 <td class="colLast">
 <div class="block">Initiates a tap action on a specified item in the inventory, based on a threshold.</div>
 </td>
@@ -472,13 +472,13 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </dl>
 </li>
 </ul>
-<a id="contains(java.lang.String[],double,java.awt.Color)">
+<a id="contains(int[],double,java.awt.Color)">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>contains</h4>
-<pre class="methodSignature">boolean&nbsp;contains&#8203;(java.lang.String[]&nbsp;itemIDs,
+<pre class="methodSignature">boolean&nbsp;contains&#8203;(int[]&nbsp;itemIDs,
                  double&nbsp;threshold,
                  java.awt.Color&nbsp;matchColor)</pre>
 <div class="block">Checks if the inventory contains any of the specified items, based on a threshold.</div>
@@ -510,13 +510,13 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </dl>
 </li>
 </ul>
-<a id="contains(java.lang.String,double,java.awt.Color)">
+<a id="contains(int,double,java.awt.Color)">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>contains</h4>
-<pre class="methodSignature">boolean&nbsp;contains&#8203;(java.lang.String&nbsp;itemID,
+<pre class="methodSignature">boolean&nbsp;contains&#8203;(int&nbsp;itemID,
                  double&nbsp;threshold,
                  java.awt.Color&nbsp;matchColor)</pre>
 <div class="block">Checks if the inventory contains a specific item, based on a threshold.</div>
@@ -881,13 +881,13 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </dl>
 </li>
 </ul>
-<a id="tapItem(java.lang.String,double,java.awt.Color)">
+<a id="tapItem(int,double,java.awt.Color)">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>tapItem</h4>
-<pre class="methodSignature">void&nbsp;tapItem&#8203;(java.lang.String&nbsp;itemId,
+<pre class="methodSignature">void&nbsp;tapItem&#8203;(int&nbsp;itemId,
              double&nbsp;threshold,
              java.awt.Color&nbsp;matchColor)</pre>
 <div class="block">Initiates a tap action on a specified item in the inventory, based on a threshold.</div>
