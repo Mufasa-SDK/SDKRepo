@@ -34,24 +34,76 @@ public interface iBank {
     /**
      * Checks if the bank contains an item with the specified ID and meets the threshold quantity.
      * @param itemId The ID of the item to check.
-     * @param treshold The minimum quantity threshold.
+     * @param threshold The minimum quantity threshold.
      * @return true if the item exists in the bank in the specified quantity, false otherwise.
      */
-    boolean contains(String itemId, double treshold);
+    boolean contains(String itemId, double threshold);
+
+    /**
+     * Checks if the bank contains an item with the specified ID and meets the threshold quantity.
+     * @param itemID The ID of the item to check.
+     * @param threshold The minimum quantity threshold.
+     * @return true if the item exists in the bank in the specified quantity, false otherwise.
+     */
+    boolean contains(int itemID, double threshold);
+
+    /**
+     * Checks if the bank contains an item with the specified ID and meets the threshold quantity.
+     * @param itemId The ID of the item to check.
+     * @param threshold The minimum quantity threshold.
+     * @param searchColor The java.awt.Color to color find for the item you need to find
+     *                    This is helpful to make the search more accurate, for example, finding a
+     *                    specific Scimitar, rune, orb, staff and so on.
+     *
+     * @return true if the item exists in the bank in the specified quantity, false otherwise.
+     */
+    boolean contains(String itemId, double threshold, Color searchColor);
+
+    /**
+     * Checks if the bank contains an item with the specified ID and meets the threshold quantity.
+     * @param itemID The ID of the item to check.
+     * @param threshold The minimum quantity threshold.
+     * @param searchColor The java.awt.Color to color find for the item you need to find
+     *                    This is helpful to make the search more accurate, for example, finding a
+     *                    specific Scimitar, rune, orb, staff and so on.
+     *
+     * @return true if the item exists in the bank in the specified quantity, false otherwise.
+     */
+    boolean contains(int itemID, double threshold, Color searchColor);
 
     /**
      * Withdraws an item from the bank with the specified ID, if it meets the threshold quantity.
      * @param itemId The ID of the item to withdraw.
-     * @param treshold The minimum quantity threshold for withdrawal.
+     * @param threshold The minimum quantity threshold for withdrawal.
      */
-    void withdrawItem(String itemId, double treshold);
+    void withdrawItem(String itemId, double threshold);
 
     /**
      * Withdraws an item from the bank with the specified ID, if it meets the threshold quantity.
      * @param itemId The ID of the item to withdraw.
-     * @param treshold The minimum quantity threshold for withdrawal.
+     * @param threshold The minimum quantity threshold for withdrawal.
      */
-    void withdrawItem(int itemId, double treshold);
+    void withdrawItem(int itemId, double threshold);
+
+    /**
+     * Withdraws an item from the bank with the specified ID, if it meets the threshold quantity.
+     * @param itemID The ID of the item to withdraw.
+     * @param threshold The minimum quantity threshold for withdrawal.
+     * @param searchColor The java.awt.Color to color find for the item you need to find
+     *                    This is helpful to make the search more accurate, for example, finding a
+     *                    specific Scimitar, rune, orb, staff and so on.
+     */
+    void withdrawItem(String itemID, double threshold, Color searchColor);
+
+    /**
+     * Withdraws an item from the bank with the specified ID, if it meets the threshold quantity.
+     * @param itemID The ID of the item to withdraw.
+     * @param threshold The minimum quantity threshold for withdrawal.
+     * @param searchColor The java.awt.Color to color find for the item you need to find
+     *                    This is helpful to make the search more accurate, for example, finding a
+     *                    specific Scimitar, rune, orb, staff and so on.
+     */
+    void withdrawItem(int itemID, double threshold, Color searchColor);
 
     /**
      * Gets the name of the currently open bank tab.
@@ -113,6 +165,18 @@ public interface iBank {
      * @return int representing the stack quantity of the specified item in the bank.
      */
     int stackSize(int itemID);
+
+    /**
+     * Reads the stack size of a specified item in the bank interface.
+     *
+     * @param itemID The ID of the item to count in the bank.
+     * @param searchColor The java.awt.Color to color find for the item you need to find
+     *                    This is helpful to make the search more accurate, for example, finding a
+     *                    specific Scimitar, rune, orb, staff and so on.
+     *
+     * @return int representing the stack quantity of the specified item in the bank.
+     */
+    int stackSize(int itemID, Color searchColor);
 
     /**
      * Checks if the bank search interface is currently open.
