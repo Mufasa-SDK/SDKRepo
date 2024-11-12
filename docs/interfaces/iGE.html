@@ -27,7 +27,7 @@
     catch(err) {
     }
 //-->
-var data = {"i0":6};
+var data = {"i0":6,"i1":6,"i2":6,"i3":6,"i4":6,"i5":6,"i6":6,"i7":6,"i8":6,"i9":6,"i10":6,"i11":6,"i12":6,"i13":6};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],4:["t3","Abstract Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -146,9 +146,105 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </tr>
 <tr id="i0" class="altColor">
 <td class="colFirst"><code>int</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#buyItem(java.lang.String,int,int,int)">buyItem</a></span>&#8203;(java.lang.String&nbsp;searchString,
+       int&nbsp;itemID,
+       int&nbsp;quantity,
+       int&nbsp;price)</code></th>
+<td class="colLast">
+<div class="block">Buys one or more items in the Grand Exchange</div>
+</td>
+</tr>
+<tr id="i1" class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#collectAllItems()">collectAllItems</a></span>()</code></th>
+<td class="colLast">
+<div class="block">Checks if there are items to collect, if so it taps the collect button to collect all collectable orders.</div>
+</td>
+</tr>
+<tr id="i2" class="altColor">
+<td class="colFirst"><code>int</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getCanceled()">getCanceled</a></span>()</code></th>
+<td class="colLast">
+<div class="block">Checks the number of canceled orders within the Grand Exchange</div>
+</td>
+</tr>
+<tr id="i3" class="rowColor">
+<td class="colFirst"><code>int</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getCompleted()">getCompleted</a></span>()</code></th>
+<td class="colLast">
+<div class="block">Checks the number of completed orders within the Grand Exchange</div>
+</td>
+</tr>
+<tr id="i4" class="altColor">
+<td class="colFirst"><code>int</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getFirstAvailableSlot()">getFirstAvailableSlot</a></span>()</code></th>
+<td class="colLast">
+<div class="block">Checks for the first available slot in the Grand Exchange interface</div>
+</td>
+</tr>
+<tr id="i5" class="rowColor">
+<td class="colFirst"><code>int</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getItemPrice(int)">getItemPrice</a></span>&#8203;(int&nbsp;itemID)</code></th>
 <td class="colLast">
 <div class="block">Fetches the Grand Exchange price for a given item ID from the OSRS price API.</div>
+</td>
+</tr>
+<tr id="i6" class="altColor">
+<td class="colFirst"><code>int</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getSlotProgress(int)">getSlotProgress</a></span>&#8203;(int&nbsp;slot)</code></th>
+<td class="colLast">
+<div class="block">Checks how far your buy/sell offer is within the Grand Exchange.</div>
+</td>
+</tr>
+<tr id="i7" class="rowColor">
+<td class="colFirst"><code>boolean</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#has1stItemToCollect()">has1stItemToCollect</a></span>()</code></th>
+<td class="colLast">
+<div class="block">Checks if there is an item to collect inside a slot, specifically the first collect slot of the GE slot.</div>
+</td>
+</tr>
+<tr id="i8" class="altColor">
+<td class="colFirst"><code>boolean</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#has2ndItemToCollect()">has2ndItemToCollect</a></span>()</code></th>
+<td class="colLast">
+<div class="block">Checks if there is an item to collect inside a slot, specifically the second collect slot of the GE slot.</div>
+</td>
+</tr>
+<tr id="i9" class="rowColor">
+<td class="colFirst"><code>boolean</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#hasCollectableItems()">hasCollectableItems</a></span>()</code></th>
+<td class="colLast">
+<div class="block">Checks if there are items to be collected in the Grand Exchange</div>
+</td>
+</tr>
+<tr id="i10" class="altColor">
+<td class="colFirst"><code>boolean</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#isOpen()">isOpen</a></span>()</code></th>
+<td class="colLast">
+<div class="block">Checks if the Grand Exchange interface is currently open.</div>
+</td>
+</tr>
+<tr id="i11" class="rowColor">
+<td class="colFirst"><code>boolean</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#isSlotAvailable(int)">isSlotAvailable</a></span>&#8203;(int&nbsp;slot)</code></th>
+<td class="colLast">
+<div class="block">Checks if a specific slot is available/empty in the Grand Exchange interface</div>
+</td>
+</tr>
+<tr id="i12" class="altColor">
+<td class="colFirst"><code>int</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#sellItem(int,int,int)">sellItem</a></span>&#8203;(int&nbsp;itemID,
+        int&nbsp;quantity,
+        int&nbsp;price)</code></th>
+<td class="colLast">
+<div class="block">Sells one or more items in the Grand Exchange</div>
+</td>
+</tr>
+<tr id="i13" class="rowColor">
+<td class="colFirst"><code>boolean</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#slotsAvailable()">slotsAvailable</a></span>()</code></th>
+<td class="colLast">
+<div class="block">Checks the number of slots available/empty in the Grand Exchange interface</div>
 </td>
 </tr>
 </table>
@@ -171,7 +267,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <a id="getItemPrice(int)">
 <!--   -->
 </a>
-<ul class="blockListLast">
+<ul class="blockList">
 <li class="blockList">
 <h4>getItemPrice</h4>
 <pre class="methodSignature">int&nbsp;getItemPrice&#8203;(int&nbsp;itemID)</pre>
@@ -181,6 +277,208 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <dd><code>itemID</code> - the ID of the item to fetch the price for.</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the latest high price if available, otherwise the low price. Returns -1 if both prices are unavailable or in case of an error.</dd>
+</dl>
+</li>
+</ul>
+<a id="isOpen()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>isOpen</h4>
+<pre class="methodSignature">boolean&nbsp;isOpen()</pre>
+<div class="block">Checks if the Grand Exchange interface is currently open.</div>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>a true/false statement if the Grand Exchange is open or not.</dd>
+</dl>
+</li>
+</ul>
+<a id="getSlotProgress(int)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getSlotProgress</h4>
+<pre class="methodSignature">int&nbsp;getSlotProgress&#8203;(int&nbsp;slot)</pre>
+<div class="block">Checks how far your buy/sell offer is within the Grand Exchange.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>slot</code> - the slot number (1-8) of the slot you'd like to check the sale/buy progress for</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>an integer representing the % progress of your buy/sale progress. E.G. 50 would mean it's 50% processed.</dd>
+</dl>
+</li>
+</ul>
+<a id="getCanceled()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getCanceled</h4>
+<pre class="methodSignature">int&nbsp;getCanceled()</pre>
+<div class="block">Checks the number of canceled orders within the Grand Exchange</div>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>an integer representing the number of canceled orders.</dd>
+</dl>
+</li>
+</ul>
+<a id="getCompleted()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getCompleted</h4>
+<pre class="methodSignature">int&nbsp;getCompleted()</pre>
+<div class="block">Checks the number of completed orders within the Grand Exchange</div>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>an integer representing the number of completed orders.</dd>
+</dl>
+</li>
+</ul>
+<a id="collectAllItems()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>collectAllItems</h4>
+<pre class="methodSignature">void&nbsp;collectAllItems()</pre>
+<div class="block">Checks if there are items to collect, if so it taps the collect button to collect all collectable orders.</div>
+</li>
+</ul>
+<a id="hasCollectableItems()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>hasCollectableItems</h4>
+<pre class="methodSignature">boolean&nbsp;hasCollectableItems()</pre>
+<div class="block">Checks if there are items to be collected in the Grand Exchange</div>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>a true/false statement if the Grand Exchange has items to collect or not.</dd>
+</dl>
+</li>
+</ul>
+<a id="buyItem(java.lang.String,int,int,int)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>buyItem</h4>
+<pre class="methodSignature">int&nbsp;buyItem&#8203;(java.lang.String&nbsp;searchString,
+            int&nbsp;itemID,
+            int&nbsp;quantity,
+            int&nbsp;price)</pre>
+<div class="block">Buys one or more items in the Grand Exchange</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>searchString</code> - The string (item name) to search for, make sure the string ensures you desired item is in the top results (visible without scrolling)</dd>
+<dd><code>itemID</code> - The itemID of the item you'd like to buy, use /ID in Discord to find your IDs.</dd>
+<dd><code>quantity</code> - The quantity (amount) you'd like to buy of the item.</dd>
+<dd><code>price</code> - The price you want to buy the items at.</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>an integer representing slot number your buy order is created in.
+ A -1 return means something failed, or no slots are available.</dd>
+</dl>
+</li>
+</ul>
+<a id="sellItem(int,int,int)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>sellItem</h4>
+<pre class="methodSignature">int&nbsp;sellItem&#8203;(int&nbsp;itemID,
+             int&nbsp;quantity,
+             int&nbsp;price)</pre>
+<div class="block">Sells one or more items in the Grand Exchange</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>itemID</code> - The itemID of the item you'd like to sell, use /ID in Discord to find your IDs.</dd>
+<dd><code>quantity</code> - The quantity (amount) you'd like to sell of the item.</dd>
+<dd><code>price</code> - The price you want to sell the items at.</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>an integer representing slot number your sell order is created in.
+ A -1 return means something failed, or no slots are available.</dd>
+</dl>
+</li>
+</ul>
+<a id="getFirstAvailableSlot()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getFirstAvailableSlot</h4>
+<pre class="methodSignature">int&nbsp;getFirstAvailableSlot()</pre>
+<div class="block">Checks for the first available slot in the Grand Exchange interface</div>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>an integer representing the slot number of the first available GE slot.
+ A -1 return means no slots are available, or the correct interface is not open.</dd>
+</dl>
+</li>
+</ul>
+<a id="isSlotAvailable(int)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>isSlotAvailable</h4>
+<pre class="methodSignature">boolean&nbsp;isSlotAvailable&#8203;(int&nbsp;slot)</pre>
+<div class="block">Checks if a specific slot is available/empty in the Grand Exchange interface</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>slot</code> - an integer representing the slot you'd like to check (1-8)</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>a true/false statement if the Grand Exchange slot is available/empty or not.</dd>
+</dl>
+</li>
+</ul>
+<a id="slotsAvailable()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>slotsAvailable</h4>
+<pre class="methodSignature">boolean&nbsp;slotsAvailable()</pre>
+<div class="block">Checks the number of slots available/empty in the Grand Exchange interface</div>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>an integer representing the slot numbers available in the GE.
+ A -1 return means no slots are available, or the correct interface is not open.</dd>
+</dl>
+</li>
+</ul>
+<a id="has1stItemToCollect()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>has1stItemToCollect</h4>
+<pre class="methodSignature">boolean&nbsp;has1stItemToCollect()</pre>
+<div class="block">Checks if there is an item to collect inside a slot, specifically the first collect slot of the GE slot.
+ This method is only to be used when a slot is already open!</div>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>a true/false statement if there is an item to be collected or not.</dd>
+</dl>
+</li>
+</ul>
+<a id="has2ndItemToCollect()">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>has2ndItemToCollect</h4>
+<pre class="methodSignature">boolean&nbsp;has2ndItemToCollect()</pre>
+<div class="block">Checks if there is an item to collect inside a slot, specifically the second collect slot of the GE slot.
+ This method is only to be used when a slot is already open!</div>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>a true/false statement if there is an item to be collected or not.</dd>
 </dl>
 </li>
 </ul>
