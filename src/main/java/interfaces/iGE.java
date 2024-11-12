@@ -98,7 +98,7 @@ public interface iGE {
      * @return an integer representing the slot numbers available in the GE.
      * A -1 return means no slots are available, or the correct interface is not open.
      */
-    boolean slotsAvailable();
+    int slotsAvailable();
 
     /**
      * Checks if there is an item to collect inside a slot, specifically the first collect slot of the GE slot.
