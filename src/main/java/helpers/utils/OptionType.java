@@ -26,6 +26,12 @@ public enum OptionType {
          * Represents a configuration option of type Boolean.
          */
         BOOLEAN,
+
+        /**
+         * Represents a multi-selection dropdown
+         */
+        MULTI_SELECTION,
+
         /**
          * Represents a configuration option of type Slider.
          */
