@@ -223,6 +223,39 @@ public interface iClient {
     void findAndTapMenuOption(Rectangle searchArea, List<Color> colors, String stringToFind);
 
     /**
+     * Performs a drag/swipe action with a start/end area and a duration.
+     * The X/Y (both start and end) are slightly randomized, as well as the duration.
+     *
+     * @param startX The X coordinate to initiate the swipe/drag action from
+     * @param startY The Y coordinate to initiate the swipe/drag action from
+     * @param endX The X coordinate to end the swipe/drag action from
+     * @param endY The Y coordinate to end the swipe/drag action from
+     * @param duration The duration in ms of how long the swipe/drag action should take
+     */
+    void drag(int startX, int startY, int endX, int endY, int duration);
+
+    /**
+     * Performs a drag/swipe action with a start/end area and a duration.
+     * The rectangles (both start and end) are used to randomly pick points within it.
+     * The duration is also slightly randomized each time.
+     *
+     * @param startRect The java.awt.Rectangle to initiate the swipe/drag action from (random coordinate picked from within your rectangle)
+     * @param endRect The java.awt.Rectangle to end the swipe/drag action from (random coordinate picked from within your rectangle)
+     * @param duration The duration in ms of how long the swipe/drag action should take
+     */
+    void drag(Rectangle startRect, Rectangle endRect, int duration);
+
+    /**
+     * Performs a drag/swipe action with a start/end area and a duration.
+     * The X/Y (both start and end points) are slightly randomized, as well as the duration.
+     *
+     * @param startPoint The java.awt.Point to initiate the swipe/drag action from
+     * @param endPoint The java.awt.Point to end the swipe/drag action from
+     * @param duration The duration in ms of how long the swipe/drag action should take
+     */
+    void drag(Point startPoint, Point endPoint, int duration);
+
+    /**
      * Sends a specific keystroke to the client.
      *
      * @param keystroke the string representing the keystroke to be sent.
