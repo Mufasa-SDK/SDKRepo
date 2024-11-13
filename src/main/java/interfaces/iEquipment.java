@@ -34,6 +34,16 @@ public interface iEquipment {
     Boolean itemAt(EquipmentSlot equipmentSlot, int itemToCheck);
 
     /**
+     * Attempts to check for a specified itemID in the specified EquipmentSlot while also verifying a color on the item
+     *
+     * @param equipmentSlot uses the SDK enum EquipmentSlot
+     * @param itemToCheck is the itemID you are looking for
+     * @param checkColor the color to match the item with (for example the blue in a Rune scimitar)
+     * @return Boolean indicating whether the itemID was found in that equipment slot
+     */
+    Boolean itemAt(EquipmentSlot equipmentSlot, int itemToCheck, Color checkColor);
+
+    /**
      * Finds the rectangle representing the helm slot.
      *
      * @return Rectangle for the helm slot.
