@@ -86,6 +86,14 @@ public interface iBank {
     void withdrawItem(int itemId, double threshold);
 
     /**
+     * Withdraws an item from the bank with the specified ID, if it meets the threshold quantity, with the option to use a cached location.
+     * @param itemId The ID of the item to withdraw.
+     * @param useCache A boolean representing to use a cached location or not
+     * @param threshold The minimum quantity threshold for withdrawal.
+     */
+    void withdrawItem(int itemId, boolean useCache, double threshold);
+
+    /**
      * Withdraws an item from the bank with the specified ID, if it meets the threshold quantity.
      * @param itemID The ID of the item to withdraw.
      * @param threshold The minimum quantity threshold for withdrawal.
@@ -94,6 +102,17 @@ public interface iBank {
      *                    specific Scimitar, rune, orb, staff and so on.
      */
     void withdrawItem(String itemID, double threshold, Color searchColor);
+
+    /**
+     * Withdraws an item from the bank with the specified ID, if it meets the threshold quantity, with the option to use a cached location.
+     * @param itemID The ID of the item to withdraw.
+     * @param useCache A boolean representing to use a cached location or not
+     * @param threshold The minimum quantity threshold for withdrawal.
+     * @param searchColor The java.awt.Color to color find for the item you need to find
+     *                    This is helpful to make the search more accurate, for example, finding a
+     *                    specific Scimitar, rune, orb, staff and so on.
+     */
+    void withdrawItem(int itemID, boolean useCache, double threshold, Color searchColor);
 
     /**
      * Withdraws an item from the bank with the specified ID, if it meets the threshold quantity.
