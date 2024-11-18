@@ -1,5 +1,7 @@
 package interfaces;
 
+import helpers.utils.SmithItems;
+
 import java.awt.*;
 
 /**
@@ -32,9 +34,9 @@ public interface iInterfaces {
     /**
      * Initiates the action of smithing an item identified by its name.
      *
-     * @param itemName the name of the item to smith.
+     * @param itemName The item you'd like to smith, based on a pre-defined smith able item list.
      */
-    void smithItem(String itemName);
+    void smithItem(SmithItems itemName);
 
     // CRAFTING SECTION //
     /**
