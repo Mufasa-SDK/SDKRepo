@@ -50,6 +50,13 @@ public @interface ScriptManifest {
     boolean skipZoomSetup() default false;
 
     /**
+     * Specifies if the client should skip the pre-setup entirely. This will then require the script to set up everything.
+     *
+     * @return True if we should skip, false if not
+     */
+    boolean skipClientSetup() default false;
+
+    /**
      * Indicates the category of the script based on predefined script types.
      *
      * @return The categories of the script from the {@link ScriptCategory} enumeration.

@@ -195,6 +195,13 @@ public @interface <span class="memberNameLabel">ScriptManifest</span></pre>
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code>boolean</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#skipClientSetup()">skipClientSetup</a></span></code></th>
+<td class="colLast">
+<div class="block">Specifies if the client should skip the pre-setup entirely.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#skipZoomSetup()">skipZoomSetup</a></span></code></th>
 <td class="colLast">
 <div class="block">Specifies if the preSetup should skip setting the zoom level for the script</div>
@@ -316,11 +323,34 @@ public @interface <span class="memberNameLabel">ScriptManifest</span></pre>
 <li class="blockList"><a id="skipZoomSetup()">
 <!--   -->
 </a>
-<ul class="blockListLast">
+<ul class="blockList">
 <li class="blockList">
 <h4>skipZoomSetup</h4>
 <pre>boolean&nbsp;skipZoomSetup</pre>
 <div class="block">Specifies if the preSetup should skip setting the zoom level for the script</div>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>True if we should skip, false if not</dd>
+</dl>
+<dl>
+<dt>Default:</dt>
+<dd>false</dd>
+</dl>
+</li>
+</ul>
+</li>
+</ul>
+</section>
+<section>
+<ul class="blockList">
+<li class="blockList"><a id="skipClientSetup()">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>skipClientSetup</h4>
+<pre>boolean&nbsp;skipClientSetup</pre>
+<div class="block">Specifies if the client should skip the pre-setup entirely. This will then require the script to set up everything.</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>True if we should skip, false if not</dd>
