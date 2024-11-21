@@ -29,4 +29,10 @@ public interface iScript {
      * @return true if breaks are enabled.
      */
     boolean isAccountBreaksEnabled();
+
+    /**
+     * Checks if the script is currently requested to be paused
+     * @return true if paused is requested.
+     */
+    boolean isPaused();
 }
