@@ -27,7 +27,7 @@
     catch(err) {
     }
 //-->
-var data = {"i0":6,"i1":6,"i2":6,"i3":6,"i4":6,"i5":6,"i6":6,"i7":6,"i8":6,"i9":6,"i10":6,"i11":6,"i12":6,"i13":6,"i14":6,"i15":6,"i16":6,"i17":6,"i18":6,"i19":6};
+var data = {"i0":6,"i1":6,"i2":6,"i3":6,"i4":6,"i5":6,"i6":6,"i7":6,"i8":6,"i9":6,"i10":6,"i11":6,"i12":6,"i13":6,"i14":6,"i15":6,"i16":6,"i17":6,"i18":6,"i19":6,"i20":6};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],4:["t3","Abstract Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -253,34 +253,41 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </td>
 </tr>
 <tr id="i15" class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#useSpec()">useSpec</a></span>()</code></th>
+<td class="colLast">
+<div class="block">Tap the spec bar to use the current equipped weapon spec</div>
+</td>
+</tr>
+<tr id="i16" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#waitTillMoving(int)">waitTillMoving</a></span>&#8203;(int&nbsp;checkTimes)</code></th>
 <td class="colLast">
 <div class="block">Checks if we are moving within a predefined number of position checks.</div>
 </td>
 </tr>
-<tr id="i16" class="altColor">
+<tr id="i17" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#waitTillNotMoving(int)">waitTillNotMoving</a></span>&#8203;(int&nbsp;checkTimes)</code></th>
 <td class="colLast">
 <div class="block">Verifies that the specified device remains stationary over a series of position checks.</div>
 </td>
 </tr>
-<tr id="i17" class="rowColor">
+<tr id="i18" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#within(helpers.utils.Area)">within</a></span>&#8203;(<a href="../helpers/utils/Area.html" title="class in helpers.utils">Area</a>&nbsp;areaToSearchIn)</code></th>
 <td class="colLast">
 <div class="block">Gets the player's current position and checks if it is within the specified area</div>
 </td>
 </tr>
-<tr id="i18" class="altColor">
+<tr id="i19" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#xpGained()">xpGained</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Checks if the XP gained has changed since the last check.</div>
 </td>
 </tr>
-<tr id="i19" class="rowColor">
+<tr id="i20" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#xpGained(int)">xpGained</a></span>&#8203;(int&nbsp;resetThreshold)</code></th>
 <td class="colLast">
@@ -504,6 +511,16 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>Returns an int that represents the current Special attack energy value of the player.</dd>
 </dl>
+</li>
+</ul>
+<a id="useSpec()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>useSpec</h4>
+<pre class="methodSignature">void&nbsp;useSpec()</pre>
+<div class="block">Tap the spec bar to use the current equipped weapon spec</div>
 </li>
 </ul>
 <a id="getRun()">

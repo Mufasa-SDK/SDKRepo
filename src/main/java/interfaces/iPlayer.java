@@ -116,6 +116,11 @@ public interface iPlayer {
     int getSpec();
 
     /**
+     * Tap the spec bar to use the current equipped weapon spec
+     */
+    void useSpec();
+
+    /**
      * Gets the player's current Run energy based on the minimap orb.
      *
      * @return Returns an int that represents the current Run energy value of the player.
