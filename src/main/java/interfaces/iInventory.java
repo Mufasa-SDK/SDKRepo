@@ -1,6 +1,6 @@
 package interfaces;
 
-import javafx.util.Pair;
+import helpers.utils.ItemPair;
 
 import java.awt.*;
 import java.util.List;
@@ -274,7 +274,7 @@ public interface iInventory {
      * @param itemPairs Pairs of item ID and Color for matching
      * @param threshold The threshold value used for identifying the item, threshold is a double where 1.0 represents 100% confidence. Usually above 0.80 (but often 0.90+).
      */
-    void tapAllItems(List<Pair<Integer, Color>> itemPairs, double threshold);
+    void tapAllItems(List<ItemPair> itemPairs, double threshold);
 
     /**
      * Initiates a tap action on a specified food in the inventory, based on a threshold without using a cache.
