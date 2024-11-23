@@ -51,7 +51,6 @@ public class ItemPair {
 
     /**
      * Returns a string representation of this ItemPair.
-     * The format is "ItemID=<itemID>, checkColor=<checkColor>".
      *
      * @return a string representation of this ItemPair
      */

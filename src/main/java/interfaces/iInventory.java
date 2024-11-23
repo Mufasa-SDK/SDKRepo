@@ -277,6 +277,16 @@ public interface iInventory {
     void tapAllItems(List<ItemPair> itemPairs, double threshold);
 
     /**
+     * Checks whether a specific inventory slot contains the given item.
+     *
+     * @param slot      The inventory slot number (1-based index). Valid range is 1 to 28.
+     * @param itemID    The ID of the item to check for in the slot.
+     * @param threshold The threshold for template matching. A higher threshold requires a closer match.
+     * @return {@code true} if the specified slot contains the item; {@code false} otherwise.
+     */
+    boolean slotContains(int slot, int itemID, double threshold);
+
+    /**
      * Initiates a tap action on a specified food in the inventory, based on a threshold without using a cache.
      *
      * @param itemId    The ID of the food to be tapped.
