@@ -27,7 +27,7 @@
     catch(err) {
     }
 //-->
-var data = {"i0":6,"i1":6,"i2":6,"i3":6,"i4":6,"i5":6,"i6":6,"i7":6,"i8":6,"i9":6,"i10":6,"i11":6,"i12":6,"i13":6,"i14":6,"i15":6,"i16":6,"i17":6,"i18":6,"i19":6,"i20":6,"i21":6,"i22":6,"i23":6,"i24":6,"i25":6,"i26":6,"i27":6,"i28":6,"i29":6,"i30":6,"i31":6,"i32":6,"i33":6,"i34":6,"i35":6,"i36":6,"i37":6};
+var data = {"i0":6,"i1":6,"i2":6,"i3":6,"i4":6,"i5":6,"i6":6,"i7":6,"i8":6,"i9":6,"i10":6,"i11":6,"i12":6,"i13":6,"i14":6,"i15":6,"i16":6,"i17":6,"i18":6,"i19":6,"i20":6,"i21":6,"i22":6,"i23":6,"i24":6,"i25":6,"i26":6,"i27":6,"i28":6,"i29":6,"i30":6,"i31":6,"i32":6,"i33":6,"i34":6,"i35":6,"i36":6,"i37":6,"i38":6};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],4:["t3","Abstract Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -395,10 +395,18 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#tapAllItems(int,double)">tapAllItems</a></span>&#8203;(int&nbsp;itemId,
            double&nbsp;threshold)</code></th>
 <td class="colLast">
-<div class="block">Initiates a tap action on a all items in the inventory with the given item ID, based on a threshold.</div>
+<div class="block">Initiates a tap action on all items in the inventory with the given item ID, based on a threshold.</div>
 </td>
 </tr>
 <tr id="i31" class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#tapAllItems(java.util.List,double)">tapAllItems</a></span>&#8203;(java.util.List&lt;javafx.util.Pair&lt;java.lang.Integer,&#8203;java.awt.Color&gt;&gt;&nbsp;itemPairs,
+           double&nbsp;threshold)</code></th>
+<td class="colLast">
+<div class="block">Initiates a tap action on all items in the inventory for each pair of ItemID and Color, based on a threshold.</div>
+</td>
+</tr>
+<tr id="i32" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#tapItem(int,boolean,double)">tapItem</a></span>&#8203;(int&nbsp;itemId,
        boolean&nbsp;useCache,
@@ -407,7 +415,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <div class="block">Initiates a tap action on a specified item in the inventory, based on a threshold.</div>
 </td>
 </tr>
-<tr id="i32" class="altColor">
+<tr id="i33" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#tapItem(int,double)">tapItem</a></span>&#8203;(int&nbsp;itemId,
        double&nbsp;threshold)</code></th>
@@ -415,7 +423,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <div class="block">Initiates a tap action on a specified item in the inventory, based on a threshold.</div>
 </td>
 </tr>
-<tr id="i33" class="rowColor">
+<tr id="i34" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#tapItem(int,double,java.awt.Color)">tapItem</a></span>&#8203;(int&nbsp;itemId,
        double&nbsp;threshold,
@@ -424,14 +432,14 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <div class="block">Initiates a tap action on a specified item in the inventory, based on a threshold.</div>
 </td>
 </tr>
-<tr id="i34" class="altColor">
+<tr id="i35" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#tapItem(java.lang.Integer)">tapItem</a></span>&#8203;(java.lang.Integer&nbsp;slotID)</code></th>
 <td class="colLast">
 <div class="block">Initiates a tap action on a specific inventory slot identified by its slot ID.</div>
 </td>
 </tr>
-<tr id="i35" class="rowColor">
+<tr id="i36" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#tapItem(java.lang.String,boolean,double)">tapItem</a></span>&#8203;(java.lang.String&nbsp;itemId,
        boolean&nbsp;useCache,
@@ -440,7 +448,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <div class="block">Initiates a tap action on a specified item in the inventory, based on a threshold.</div>
 </td>
 </tr>
-<tr id="i36" class="altColor">
+<tr id="i37" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#tapItem(java.lang.String,double)">tapItem</a></span>&#8203;(java.lang.String&nbsp;itemId,
        double&nbsp;threshold)</code></th>
@@ -448,7 +456,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <div class="block">Initiates a tap action on a specified item in the inventory, based on a threshold.</div>
 </td>
 </tr>
-<tr id="i37" class="rowColor">
+<tr id="i38" class="altColor">
 <td class="colFirst"><code>int</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#usedSlots()">usedSlots</a></span>()</code></th>
 <td class="colLast">
@@ -977,10 +985,26 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <h4>tapAllItems</h4>
 <pre class="methodSignature">void&nbsp;tapAllItems&#8203;(int&nbsp;itemId,
                  double&nbsp;threshold)</pre>
-<div class="block">Initiates a tap action on a all items in the inventory with the given item ID, based on a threshold.</div>
+<div class="block">Initiates a tap action on all items in the inventory with the given item ID, based on a threshold.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>itemId</code> - The ID of the item to be tapped.</dd>
+<dd><code>threshold</code> - The threshold value used for identifying the item, threshold is a double where 1.0 represents 100% confidence. Usually above 0.80 (but often 0.90+).</dd>
+</dl>
+</li>
+</ul>
+<a id="tapAllItems(java.util.List,double)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>tapAllItems</h4>
+<pre class="methodSignature">void&nbsp;tapAllItems&#8203;(java.util.List&lt;javafx.util.Pair&lt;java.lang.Integer,&#8203;java.awt.Color&gt;&gt;&nbsp;itemPairs,
+                 double&nbsp;threshold)</pre>
+<div class="block">Initiates a tap action on all items in the inventory for each pair of ItemID and Color, based on a threshold.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>itemPairs</code> - Pairs of item ID and Color for matching</dd>
 <dd><code>threshold</code> - The threshold value used for identifying the item, threshold is a double where 1.0 represents 100% confidence. Usually above 0.80 (but often 0.90+).</dd>
 </dl>
 </li>

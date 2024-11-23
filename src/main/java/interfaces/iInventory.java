@@ -1,5 +1,7 @@
 package interfaces;
 
+import javafx.util.Pair;
+
 import java.awt.*;
 import java.util.List;
 
@@ -259,12 +261,20 @@ public interface iInventory {
     void tapItem(int itemId, boolean useCache, double threshold);
 
     /**
-     * Initiates a tap action on a all items in the inventory with the given item ID, based on a threshold.
+     * Initiates a tap action on all items in the inventory with the given item ID, based on a threshold.
      *
      * @param itemId    The ID of the item to be tapped.
      * @param threshold The threshold value used for identifying the item, threshold is a double where 1.0 represents 100% confidence. Usually above 0.80 (but often 0.90+).
      */
     void tapAllItems(int itemId, double threshold);
+
+    /**
+     * Initiates a tap action on all items in the inventory for each pair of ItemID and Color, based on a threshold.
+     *
+     * @param itemPairs Pairs of item ID and Color for matching
+     * @param threshold The threshold value used for identifying the item, threshold is a double where 1.0 represents 100% confidence. Usually above 0.80 (but often 0.90+).
+     */
+    void tapAllItems(List<Pair<Integer, Color>> itemPairs, double threshold);
 
     /**
      * Initiates a tap action on a specified food in the inventory, based on a threshold without using a cache.
