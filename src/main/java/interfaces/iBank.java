@@ -125,6 +125,13 @@ public interface iBank {
     void withdrawItem(int itemID, double threshold, Color searchColor);
 
     /**
+     * Sets the specified custom quantity within the bank interface.
+     *
+     * @param quantity The custom withdraw quantity to set in the bank interface
+     */
+    void setCustomQuantity(int quantity);
+
+    /**
      * Gets the name of the currently open bank tab.
      * @return The name of the current bank tab.
      */
