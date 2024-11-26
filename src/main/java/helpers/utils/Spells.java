@@ -1,5 +1,8 @@
 package helpers.utils;
 
+/**
+ * An enum defining all of the spells available
+ */
 public enum Spells {
     LUMBRIDGE_HOME_TELEPORT,
     WIND_STRIKE,
