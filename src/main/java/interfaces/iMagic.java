@@ -27,4 +27,10 @@ public interface iMagic {
      */
     public void castSpell(Spells spell);
 
+    /**
+     * Checks if the "info" box is active on the Spells tab. Make sure spells tab is open before checking.
+     * @return true if enabled
+     */
+    public boolean isInfoEnabled();
+
 }

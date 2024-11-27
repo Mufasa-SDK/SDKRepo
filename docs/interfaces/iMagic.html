@@ -14,7 +14,7 @@
 <!--[if IE]>
 <script type="text/javascript" src="../jquery/jszip-utils/dist/jszip-utils-ie.min.js"></script>
 <![endif]-->
-<script type="text/javascript" src="../jquery/jquery-3.7.1.min.js"></script>
+<script type="text/javascript" src="../jquery/jquery-3.6.1.min.js"></script>
 <script type="text/javascript" src="../jquery/jquery-ui.min.js"></script>
 </head>
 <body>
@@ -27,7 +27,7 @@
     catch(err) {
     }
 //-->
-var data = {"i0":6,"i1":6};
+var data = {"i0":6,"i1":6,"i2":6};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],4:["t3","Abstract Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -162,6 +162,13 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <div class="block">Checks if a spell is cast able or not (enough runes / high enough magic level)</div>
 </td>
 </tr>
+<tr id="i2" class="altColor">
+<td class="colFirst"><code>boolean</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#isInfoEnabled()">isInfoEnabled</a></span>()</code></th>
+<td class="colLast">
+<div class="block">Checks if the "info" box is active on the Spells tab.</div>
+</td>
+</tr>
 </table>
 </li>
 </ul>
@@ -198,7 +205,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <a id="castSpell(helpers.utils.Spells)">
 <!--   -->
 </a>
-<ul class="blockListLast">
+<ul class="blockList">
 <li class="blockList">
 <h4>castSpell</h4>
 <pre class="methodSignature">void&nbsp;castSpell&#8203;(<a href="../helpers/utils/Spells.html" title="enum in helpers.utils">Spells</a>&nbsp;spell)</pre>
@@ -207,6 +214,20 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>spell</code> - The spell, selectable from the Spells enum.</dd>
+</dl>
+</li>
+</ul>
+<a id="isInfoEnabled()">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>isInfoEnabled</h4>
+<pre class="methodSignature">boolean&nbsp;isInfoEnabled()</pre>
+<div class="block">Checks if the "info" box is active on the Spells tab. Make sure spells tab is open before checking.</div>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>true if enabled</dd>
 </dl>
 </li>
 </ul>
