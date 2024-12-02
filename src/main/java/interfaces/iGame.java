@@ -2,6 +2,7 @@ package interfaces;
 
 import helpers.utils.CompassAngle;
 import helpers.utils.GameObject;
+import helpers.utils.Tile;
 
 import java.awt.*;
 
@@ -71,6 +72,23 @@ public interface iGame {
      * @return true if players under you
      */
     public boolean isPlayersUnderUs();
+
+    /**
+     * Check if there is a player at a specific @Tile
+     *
+     * @param tileToCheck The tile to check for player at on the minimap
+     * @return true if player at @Tile
+     */
+    public boolean isPlayerAt(Tile tileToCheck);
+
+    /**
+     * Check if there are other players around specific @Tile in a radius on the minimap.
+     *
+     * @param tileToCheck The tile to check for player at
+     * @param radius The radius to check for players in, in pixels
+     * @return true if players around
+     */
+    public boolean isPlayersAround(Tile tileToCheck, int radius);
 
     /**
      * Hops to a random world from the selected hop profile, or if other players are found around us (if activated)
