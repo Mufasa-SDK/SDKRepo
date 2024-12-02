@@ -14,7 +14,7 @@
 <!--[if IE]>
 <script type="text/javascript" src="../jquery/jszip-utils/dist/jszip-utils-ie.min.js"></script>
 <![endif]-->
-<script type="text/javascript" src="../jquery/jquery-3.6.1.min.js"></script>
+<script type="text/javascript" src="../jquery/jquery-3.7.1.min.js"></script>
 <script type="text/javascript" src="../jquery/jquery-ui.min.js"></script>
 </head>
 <body>
@@ -27,7 +27,7 @@
     catch(err) {
     }
 //-->
-var data = {"i0":6,"i1":6,"i2":6,"i3":6,"i4":6,"i5":6,"i6":6,"i7":6,"i8":6,"i9":6,"i10":6,"i11":6,"i12":6};
+var data = {"i0":6,"i1":6,"i2":6,"i3":6,"i4":6,"i5":6,"i6":6,"i7":6,"i8":6,"i9":6,"i10":6,"i11":6,"i12":6,"i13":6};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],4:["t3","Abstract Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -191,47 +191,56 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </tr>
 <tr id="i6" class="altColor">
 <td class="colFirst"><code>int</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#readCustomStackSize(java.awt.Rectangle,java.util.List,java.util.Map)">readCustomStackSize</a></span>&#8203;(java.awt.Rectangle&nbsp;ROI,
+                   java.util.List&lt;java.awt.Color&gt;&nbsp;textColors,
+                   java.util.Map&lt;java.lang.String,&#8203;int[][]&gt;&nbsp;digitPatterns)</code></th>
+<td class="colLast">
+<div class="block">Reads the stack size within a given ROI using custom digit patterns and text colors.</div>
+</td>
+</tr>
+<tr id="i7" class="rowColor">
+<td class="colFirst"><code>int</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#readStackSize(java.awt.Rectangle)">readStackSize</a></span>&#8203;(java.awt.Rectangle&nbsp;ROI)</code></th>
 <td class="colLast">
 <div class="block">Returns the read stack size within a given ROI</div>
 </td>
 </tr>
-<tr id="i7" class="rowColor">
+<tr id="i8" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#selectMake1()">selectMake1</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Selects the option to make one unit of an item.</div>
 </td>
 </tr>
-<tr id="i8" class="altColor">
+<tr id="i9" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#selectMakeAll()">selectMakeAll</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Selects the option to make all units of an item.</div>
 </td>
 </tr>
-<tr id="i9" class="rowColor">
+<tr id="i10" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#selectMakeX()">selectMakeX</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Selects the option to make a custom number of units of an item.</div>
 </td>
 </tr>
-<tr id="i10" class="altColor">
+<tr id="i11" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#smithingIsOpen()">smithingIsOpen</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Checks if the smithing interface is currently open.</div>
 </td>
 </tr>
-<tr id="i11" class="rowColor">
+<tr id="i12" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#smithItem(int)">smithItem</a></span>&#8203;(int&nbsp;itemId)</code></th>
 <td class="colLast">
 <div class="block">Initiates the action of smithing an item identified by its item ID.</div>
 </td>
 </tr>
-<tr id="i12" class="altColor">
+<tr id="i13" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#smithItem(helpers.utils.SmithItems)">smithItem</a></span>&#8203;(<a href="../helpers/utils/SmithItems.html" title="enum in helpers.utils">SmithItems</a>&nbsp;itemName)</code></th>
 <td class="colLast">
@@ -406,7 +415,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <a id="readStackSize(java.awt.Rectangle)">
 <!--   -->
 </a>
-<ul class="blockListLast">
+<ul class="blockList">
 <li class="blockList">
 <h4>readStackSize</h4>
 <pre class="methodSignature">int&nbsp;readStackSize&#8203;(java.awt.Rectangle&nbsp;ROI)</pre>
@@ -416,6 +425,26 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <dd><code>ROI</code> - java awt Rectangle of the ROI you'd like to read the stack size in.</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>integer indicating the read stack size in the ROI you've given.</dd>
+</dl>
+</li>
+</ul>
+<a id="readCustomStackSize(java.awt.Rectangle,java.util.List,java.util.Map)">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>readCustomStackSize</h4>
+<pre class="methodSignature">int&nbsp;readCustomStackSize&#8203;(java.awt.Rectangle&nbsp;ROI,
+                        java.util.List&lt;java.awt.Color&gt;&nbsp;textColors,
+                        java.util.Map&lt;java.lang.String,&#8203;int[][]&gt;&nbsp;digitPatterns)</pre>
+<div class="block">Reads the stack size within a given ROI using custom digit patterns and text colors.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>ROI</code> - the java.awt.Rectangle representing the ROI (Region of Interest) where the stack size will be read.</dd>
+<dd><code>textColors</code> - a List of Colors used for detecting digits in the given ROI.</dd>
+<dd><code>digitPatterns</code> - a Map containing the custom digit patterns to be used for digit recognition.</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>an Integer indicating the detected stack size within the given ROI, or null if the detection fails.</dd>
 </dl>
 </li>
 </ul>

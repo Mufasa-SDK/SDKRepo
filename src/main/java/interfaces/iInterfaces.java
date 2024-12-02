@@ -3,6 +3,7 @@ package interfaces;
 import helpers.utils.SmithItems;
 
 import java.awt.*;
+import java.util.Map;
 
 /**
  * Interface defining interactions with various game interfaces.
@@ -96,4 +97,14 @@ public interface iInterfaces {
      * @return integer indicating the read stack size in the ROI you've given.
      */
     public int readStackSize(Rectangle ROI);
+
+    /**
+     * Reads the stack size within a given ROI using custom digit patterns and text colors.
+     *
+     * @param ROI          the java.awt.Rectangle representing the ROI (Region of Interest) where the stack size will be read.
+     * @param textColors   a List of Colors used for detecting digits in the given ROI.
+     * @param digitPatterns a Map containing the custom digit patterns to be used for digit recognition.
+     * @return an Integer indicating the detected stack size within the given ROI, or null if the detection fails.
+     */
+    public int readCustomStackSize(Rectangle ROI, java.util.List<Color> textColors, Map<String, int[][]> digitPatterns);
 }
