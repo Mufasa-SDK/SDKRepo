@@ -3,6 +3,8 @@ package interfaces;
 import org.opencv.core.Rect;
 
 import java.awt.*;
+import java.util.List;
+import java.util.Map;
 
 /**
  * Interface representing chatbox operations.
@@ -131,6 +133,16 @@ public interface iChatbox {
      * @param colorsToScan A java.util.List with java.awt.Colors in it that you'd like to use to read.
      */
     int readDigitsInArea(Rectangle areaToOCR, java.util.List<Color> colorsToScan);
+
+    /**
+     * Reads the specific area, and returns true/false if it was able to read or not.
+     * @return true/false if we found the text or not
+     * @param searchArea A java.awt.Rectangle with the area you want to perform OCR on.
+     * @param colors A java.util.List with java.awt.Colors in it that you'd like to use to read.
+     * @param letterPatterns The map containing letter patterns for the OCR matching of the menu text.
+     * @param stringToFind  The string to search for in your given area.
+     */
+    boolean isTextVisible(Rectangle searchArea, java.util.List<Color> colors, Map<String, int[][]> letterPatterns, String stringToFind);
 
     /**
      * Checks if the "All" chat tab is active
