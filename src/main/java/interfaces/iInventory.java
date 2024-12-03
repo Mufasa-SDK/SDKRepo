@@ -325,6 +325,18 @@ public interface iInventory {
     void eat(int itemId, double threshold, Color searchColor);
 
     /**
+     * Initiates a tap action on a specified food in the inventory, based on a threshold without using a cache.
+     *
+     * @param itemId    The ID of the item we need to find.
+     * @param threshold The threshold value used for identifying the item, threshold is a double where 1.0 represents 100% confidence. Usually above 0.80 (but often 0.90+).
+     * @param searchColor The java.awt.Color to color find for the item you need to find
+     *                    This is helpful to make the search more accurate, for example, finding a
+     *                    specific Scimitar, rune, orb, staff and so on.
+     *                    If you want to search without a color check, simply set this to null.
+     */
+    Rectangle findItem(int itemId, double threshold, Color searchColor);
+
+    /**
      * Finds the specified item in your inventory, and returns the center location of it as a Point (x,y)
      *
      * @param itemId    The ID of the food to be tapped.
