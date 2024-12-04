@@ -333,6 +333,7 @@ public interface iInventory {
      *                    This is helpful to make the search more accurate, for example, finding a
      *                    specific Scimitar, rune, orb, staff and so on.
      *                    If you want to search without a color check, simply set this to null.
+     * @return Rectangle representing where the item is
      */
     Rectangle findItem(int itemId, double threshold, Color searchColor);
 

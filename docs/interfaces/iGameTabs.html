@@ -14,7 +14,7 @@
 <!--[if IE]>
 <script type="text/javascript" src="../jquery/jszip-utils/dist/jszip-utils-ie.min.js"></script>
 <![endif]-->
-<script type="text/javascript" src="../jquery/jquery-3.7.1.min.js"></script>
+<script type="text/javascript" src="../jquery/jquery-3.6.1.min.js"></script>
 <script type="text/javascript" src="../jquery/jquery-ui.min.js"></script>
 </head>
 <body>
@@ -27,8 +27,8 @@
     catch(err) {
     }
 //-->
-var data = {"i0":6,"i1":6,"i2":6,"i3":6,"i4":6,"i5":6,"i6":6,"i7":6,"i8":6,"i9":6,"i10":6,"i11":6,"i12":6,"i13":6,"i14":6,"i15":6,"i16":6,"i17":6,"i18":6,"i19":6,"i20":6,"i21":6,"i22":6,"i23":6,"i24":6,"i25":6,"i26":6,"i27":6,"i28":6,"i29":6,"i30":6,"i31":6,"i32":6,"i33":6,"i34":6,"i35":6,"i36":6,"i37":6,"i38":6,"i39":6,"i40":6,"i41":6,"i42":6,"i43":6,"i44":6,"i45":6,"i46":6,"i47":6,"i48":6,"i49":6,"i50":6,"i51":6,"i52":6,"i53":6,"i54":6,"i55":6,"i56":6,"i57":6,"i58":6};
-var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],4:["t3","Abstract Methods"]};
+var data = {"i0":38,"i1":38,"i2":38,"i3":38,"i4":38,"i5":38,"i6":38,"i7":38,"i8":38,"i9":38,"i10":38,"i11":38,"i12":38,"i13":38,"i14":6,"i15":6,"i16":6,"i17":6,"i18":6,"i19":6,"i20":6,"i21":6,"i22":6,"i23":6,"i24":6,"i25":6,"i26":6,"i27":6,"i28":6,"i29":38,"i30":38,"i31":38,"i32":38,"i33":38,"i34":38,"i35":38,"i36":38,"i37":38,"i38":38,"i39":38,"i40":38,"i41":38,"i42":38,"i43":6,"i44":38,"i45":38,"i46":38,"i47":38,"i48":38,"i49":38,"i50":38,"i51":38,"i52":38,"i53":38,"i54":38,"i55":38,"i56":38,"i57":38,"i58":6};
+var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],4:["t3","Abstract Methods"],32:["t6","Deprecated Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
 var tableTab = "tableTab";
@@ -141,7 +141,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </a>
 <h3>Method Summary</h3>
 <table class="memberSummary">
-<caption><span id="t0" class="activeTableTab"><span>All Methods</span><span class="tabEnd">&nbsp;</span></span><span id="t2" class="tableTab"><span><a href="javascript:show(2);">Instance Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t3" class="tableTab"><span><a href="javascript:show(4);">Abstract Methods</a></span><span class="tabEnd">&nbsp;</span></span></caption>
+<caption><span id="t0" class="activeTableTab"><span>All Methods</span><span class="tabEnd">&nbsp;</span></span><span id="t2" class="tableTab"><span><a href="javascript:show(2);">Instance Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t3" class="tableTab"><span><a href="javascript:show(4);">Abstract Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t6" class="tableTab"><span><a href="javascript:show(32);">Deprecated Methods</a></span><span class="tabEnd">&nbsp;</span></span></caption>
 <tr>
 <th class="colFirst" scope="col">Modifier and Type</th>
 <th class="colSecond" scope="col">Method</th>
@@ -150,72 +150,128 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <tr id="i0" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#closeAccountTab()">closeAccountTab</a></span>()</code></th>
-<td class="colLast">&nbsp;</td>
+<td class="colLast">
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>
+<div class="deprecationComment">Use <a href="#closeTab(helpers.utils.UITabs)"><code>closeTab(UITabs)</code></a> instead.</div>
+</div>
+</td>
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#closeClanTab()">closeClanTab</a></span>()</code></th>
-<td class="colLast">&nbsp;</td>
+<td class="colLast">
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>
+<div class="deprecationComment">Use <a href="#closeTab(helpers.utils.UITabs)"><code>closeTab(UITabs)</code></a> instead.</div>
+</div>
+</td>
 </tr>
 <tr id="i2" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#closeCombatTab()">closeCombatTab</a></span>()</code></th>
-<td class="colLast">&nbsp;</td>
+<td class="colLast">
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>
+<div class="deprecationComment">Use <a href="#closeTab(helpers.utils.UITabs)"><code>closeTab(UITabs)</code></a> instead.</div>
+</div>
+</td>
 </tr>
 <tr id="i3" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#closeEmotesTab()">closeEmotesTab</a></span>()</code></th>
-<td class="colLast">&nbsp;</td>
+<td class="colLast">
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>
+<div class="deprecationComment">Use <a href="#closeTab(helpers.utils.UITabs)"><code>closeTab(UITabs)</code></a> instead.</div>
+</div>
+</td>
 </tr>
 <tr id="i4" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#closeEquipTab()">closeEquipTab</a></span>()</code></th>
-<td class="colLast">&nbsp;</td>
+<td class="colLast">
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>
+<div class="deprecationComment">Use <a href="#closeTab(helpers.utils.UITabs)"><code>closeTab(UITabs)</code></a> instead.</div>
+</div>
+</td>
 </tr>
 <tr id="i5" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#closeFriendsTab()">closeFriendsTab</a></span>()</code></th>
-<td class="colLast">&nbsp;</td>
+<td class="colLast">
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>
+<div class="deprecationComment">Use <a href="#closeTab(helpers.utils.UITabs)"><code>closeTab(UITabs)</code></a> instead.</div>
+</div>
+</td>
 </tr>
 <tr id="i6" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#closeInventoryTab()">closeInventoryTab</a></span>()</code></th>
-<td class="colLast">&nbsp;</td>
+<td class="colLast">
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>
+<div class="deprecationComment">Use <a href="#closeTab(helpers.utils.UITabs)"><code>closeTab(UITabs)</code></a> instead.</div>
+</div>
+</td>
 </tr>
 <tr id="i7" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#closeLogoutTab()">closeLogoutTab</a></span>()</code></th>
-<td class="colLast">&nbsp;</td>
+<td class="colLast">
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>
+<div class="deprecationComment">Use <a href="#closeTab(helpers.utils.UITabs)"><code>closeTab(UITabs)</code></a> instead.</div>
+</div>
+</td>
 </tr>
 <tr id="i8" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#closeMagicTab()">closeMagicTab</a></span>()</code></th>
-<td class="colLast">&nbsp;</td>
+<td class="colLast">
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>
+<div class="deprecationComment">Use <a href="#closeTab(helpers.utils.UITabs)"><code>closeTab(UITabs)</code></a> instead.</div>
+</div>
+</td>
 </tr>
 <tr id="i9" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#closeMusicTab()">closeMusicTab</a></span>()</code></th>
-<td class="colLast">&nbsp;</td>
+<td class="colLast">
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>
+<div class="deprecationComment">Use <a href="#closeTab(helpers.utils.UITabs)"><code>closeTab(UITabs)</code></a> instead.</div>
+</div>
+</td>
 </tr>
 <tr id="i10" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#closePrayerTab()">closePrayerTab</a></span>()</code></th>
-<td class="colLast">&nbsp;</td>
+<td class="colLast">
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>
+<div class="deprecationComment">Use <a href="#closeTab(helpers.utils.UITabs)"><code>closeTab(UITabs)</code></a> instead.</div>
+</div>
+</td>
 </tr>
 <tr id="i11" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#closeQuestsTab()">closeQuestsTab</a></span>()</code></th>
-<td class="colLast">&nbsp;</td>
+<td class="colLast">
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>
+<div class="deprecationComment">Use <a href="#closeTab(helpers.utils.UITabs)"><code>closeTab(UITabs)</code></a> instead.</div>
+</div>
+</td>
 </tr>
 <tr id="i12" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#closeSettingsTab()">closeSettingsTab</a></span>()</code></th>
-<td class="colLast">&nbsp;</td>
+<td class="colLast">
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>
+<div class="deprecationComment">Use <a href="#closeTab(helpers.utils.UITabs)"><code>closeTab(UITabs)</code></a> instead.</div>
+</div>
+</td>
 </tr>
 <tr id="i13" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#closeStatsTab()">closeStatsTab</a></span>()</code></th>
-<td class="colLast">&nbsp;</td>
+<td class="colLast">
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>
+<div class="deprecationComment">Use <a href="#closeTab(helpers.utils.UITabs)"><code>closeTab(UITabs)</code></a> instead.</div>
+</div>
+</td>
 </tr>
 <tr id="i14" class="altColor">
 <td class="colFirst"><code>void</code></td>
@@ -297,72 +353,128 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <tr id="i29" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#isAccountTabOpen()">isAccountTabOpen</a></span>()</code></th>
-<td class="colLast">&nbsp;</td>
+<td class="colLast">
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>
+<div class="deprecationComment">Use <a href="#isTabOpen(helpers.utils.UITabs)"><code>isTabOpen(UITabs)</code></a> instead.</div>
+</div>
+</td>
 </tr>
 <tr id="i30" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#isClanTabOpen()">isClanTabOpen</a></span>()</code></th>
-<td class="colLast">&nbsp;</td>
+<td class="colLast">
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>
+<div class="deprecationComment">Use <a href="#isTabOpen(helpers.utils.UITabs)"><code>isTabOpen(UITabs)</code></a> instead.</div>
+</div>
+</td>
 </tr>
 <tr id="i31" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#isCombatTabOpen()">isCombatTabOpen</a></span>()</code></th>
-<td class="colLast">&nbsp;</td>
+<td class="colLast">
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>
+<div class="deprecationComment">Use <a href="#isTabOpen(helpers.utils.UITabs)"><code>isTabOpen(UITabs)</code></a> instead.</div>
+</div>
+</td>
 </tr>
 <tr id="i32" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#isEmotesTabOpen()">isEmotesTabOpen</a></span>()</code></th>
-<td class="colLast">&nbsp;</td>
+<td class="colLast">
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>
+<div class="deprecationComment">Use <a href="#isTabOpen(helpers.utils.UITabs)"><code>isTabOpen(UITabs)</code></a> instead.</div>
+</div>
+</td>
 </tr>
 <tr id="i33" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#isEquipTabOpen()">isEquipTabOpen</a></span>()</code></th>
-<td class="colLast">&nbsp;</td>
+<td class="colLast">
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>
+<div class="deprecationComment">Use <a href="#isTabOpen(helpers.utils.UITabs)"><code>isTabOpen(UITabs)</code></a> instead.</div>
+</div>
+</td>
 </tr>
 <tr id="i34" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#isFriendsTabOpen()">isFriendsTabOpen</a></span>()</code></th>
-<td class="colLast">&nbsp;</td>
+<td class="colLast">
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>
+<div class="deprecationComment">Use <a href="#isTabOpen(helpers.utils.UITabs)"><code>isTabOpen(UITabs)</code></a> instead.</div>
+</div>
+</td>
 </tr>
 <tr id="i35" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#isInventoryTabOpen()">isInventoryTabOpen</a></span>()</code></th>
-<td class="colLast">&nbsp;</td>
+<td class="colLast">
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>
+<div class="deprecationComment">Use <a href="#isTabOpen(helpers.utils.UITabs)"><code>isTabOpen(UITabs)</code></a> instead.</div>
+</div>
+</td>
 </tr>
 <tr id="i36" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#isLogoutTabOpen()">isLogoutTabOpen</a></span>()</code></th>
-<td class="colLast">&nbsp;</td>
+<td class="colLast">
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>
+<div class="deprecationComment">Use <a href="#isTabOpen(helpers.utils.UITabs)"><code>isTabOpen(UITabs)</code></a> instead.</div>
+</div>
+</td>
 </tr>
 <tr id="i37" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#isMagicTabOpen()">isMagicTabOpen</a></span>()</code></th>
-<td class="colLast">&nbsp;</td>
+<td class="colLast">
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>
+<div class="deprecationComment">Use <a href="#isTabOpen(helpers.utils.UITabs)"><code>isTabOpen(UITabs)</code></a> instead.</div>
+</div>
+</td>
 </tr>
 <tr id="i38" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#isMusicTabOpen()">isMusicTabOpen</a></span>()</code></th>
-<td class="colLast">&nbsp;</td>
+<td class="colLast">
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>
+<div class="deprecationComment">Use <a href="#isTabOpen(helpers.utils.UITabs)"><code>isTabOpen(UITabs)</code></a> instead.</div>
+</div>
+</td>
 </tr>
 <tr id="i39" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#isPrayerTabOpen()">isPrayerTabOpen</a></span>()</code></th>
-<td class="colLast">&nbsp;</td>
+<td class="colLast">
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>
+<div class="deprecationComment">Use <a href="#isTabOpen(helpers.utils.UITabs)"><code>isTabOpen(UITabs)</code></a> instead.</div>
+</div>
+</td>
 </tr>
 <tr id="i40" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#isQuestsTabOpen()">isQuestsTabOpen</a></span>()</code></th>
-<td class="colLast">&nbsp;</td>
+<td class="colLast">
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>
+<div class="deprecationComment">Use <a href="#isTabOpen(helpers.utils.UITabs)"><code>isTabOpen(UITabs)</code></a> instead.</div>
+</div>
+</td>
 </tr>
 <tr id="i41" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#isSettingsTabOpen()">isSettingsTabOpen</a></span>()</code></th>
-<td class="colLast">&nbsp;</td>
+<td class="colLast">
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>
+<div class="deprecationComment">Use <a href="#isTabOpen(helpers.utils.UITabs)"><code>isTabOpen(UITabs)</code></a> instead.</div>
+</div>
+</td>
 </tr>
 <tr id="i42" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#isStatsTabOpen()">isStatsTabOpen</a></span>()</code></th>
-<td class="colLast">&nbsp;</td>
+<td class="colLast">
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>
+<div class="deprecationComment">Use <a href="#isTabOpen(helpers.utils.UITabs)"><code>isTabOpen(UITabs)</code></a> instead.</div>
+</div>
+</td>
 </tr>
 <tr id="i43" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
@@ -374,72 +486,128 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <tr id="i44" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#openAccountTab()">openAccountTab</a></span>()</code></th>
-<td class="colLast">&nbsp;</td>
+<td class="colLast">
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>
+<div class="deprecationComment">Use <a href="#openTab(helpers.utils.UITabs)"><code>openTab(UITabs)</code></a> instead.</div>
+</div>
+</td>
 </tr>
 <tr id="i45" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#openClanTab()">openClanTab</a></span>()</code></th>
-<td class="colLast">&nbsp;</td>
+<td class="colLast">
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>
+<div class="deprecationComment">Use <a href="#openTab(helpers.utils.UITabs)"><code>openTab(UITabs)</code></a> instead.</div>
+</div>
+</td>
 </tr>
 <tr id="i46" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#openCombatTab()">openCombatTab</a></span>()</code></th>
-<td class="colLast">&nbsp;</td>
+<td class="colLast">
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>
+<div class="deprecationComment">Use <a href="#openTab(helpers.utils.UITabs)"><code>openTab(UITabs)</code></a> instead.</div>
+</div>
+</td>
 </tr>
 <tr id="i47" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#openEmotesTab()">openEmotesTab</a></span>()</code></th>
-<td class="colLast">&nbsp;</td>
+<td class="colLast">
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>
+<div class="deprecationComment">Use <a href="#openTab(helpers.utils.UITabs)"><code>openTab(UITabs)</code></a> instead.</div>
+</div>
+</td>
 </tr>
 <tr id="i48" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#openEquipTab()">openEquipTab</a></span>()</code></th>
-<td class="colLast">&nbsp;</td>
+<td class="colLast">
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>
+<div class="deprecationComment">Use <a href="#openTab(helpers.utils.UITabs)"><code>openTab(UITabs)</code></a> instead.</div>
+</div>
+</td>
 </tr>
 <tr id="i49" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#openFriendsTab()">openFriendsTab</a></span>()</code></th>
-<td class="colLast">&nbsp;</td>
+<td class="colLast">
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>
+<div class="deprecationComment">Use <a href="#openTab(helpers.utils.UITabs)"><code>openTab(UITabs)</code></a> instead.</div>
+</div>
+</td>
 </tr>
 <tr id="i50" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#openInventoryTab()">openInventoryTab</a></span>()</code></th>
-<td class="colLast">&nbsp;</td>
+<td class="colLast">
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>
+<div class="deprecationComment">Use <a href="#openTab(helpers.utils.UITabs)"><code>openTab(UITabs)</code></a> instead.</div>
+</div>
+</td>
 </tr>
 <tr id="i51" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#openLogoutTab()">openLogoutTab</a></span>()</code></th>
-<td class="colLast">&nbsp;</td>
+<td class="colLast">
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>
+<div class="deprecationComment">Use <a href="#openTab(helpers.utils.UITabs)"><code>openTab(UITabs)</code></a> instead.</div>
+</div>
+</td>
 </tr>
 <tr id="i52" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#openMagicTab()">openMagicTab</a></span>()</code></th>
-<td class="colLast">&nbsp;</td>
+<td class="colLast">
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>
+<div class="deprecationComment">Use <a href="#openTab(helpers.utils.UITabs)"><code>openTab(UITabs)</code></a> instead.</div>
+</div>
+</td>
 </tr>
 <tr id="i53" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#openMusicTab()">openMusicTab</a></span>()</code></th>
-<td class="colLast">&nbsp;</td>
+<td class="colLast">
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>
+<div class="deprecationComment">Use <a href="#openTab(helpers.utils.UITabs)"><code>openTab(UITabs)</code></a> instead.</div>
+</div>
+</td>
 </tr>
 <tr id="i54" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#openPrayerTab()">openPrayerTab</a></span>()</code></th>
-<td class="colLast">&nbsp;</td>
+<td class="colLast">
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>
+<div class="deprecationComment">Use <a href="#openTab(helpers.utils.UITabs)"><code>openTab(UITabs)</code></a> instead.</div>
+</div>
+</td>
 </tr>
 <tr id="i55" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#openQuestsTab()">openQuestsTab</a></span>()</code></th>
-<td class="colLast">&nbsp;</td>
+<td class="colLast">
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>
+<div class="deprecationComment">Use <a href="#openTab(helpers.utils.UITabs)"><code>openTab(UITabs)</code></a> instead.</div>
+</div>
+</td>
 </tr>
 <tr id="i56" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#openSettingsTab()">openSettingsTab</a></span>()</code></th>
-<td class="colLast">&nbsp;</td>
+<td class="colLast">
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>
+<div class="deprecationComment">Use <a href="#openTab(helpers.utils.UITabs)"><code>openTab(UITabs)</code></a> instead.</div>
+</div>
+</td>
 </tr>
 <tr id="i57" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#openStatsTab()">openStatsTab</a></span>()</code></th>
-<td class="colLast">&nbsp;</td>
+<td class="colLast">
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>
+<div class="deprecationComment">Use <a href="#openTab(helpers.utils.UITabs)"><code>openTab(UITabs)</code></a> instead.</div>
+</div>
+</td>
 </tr>
 <tr id="i58" class="altColor">
 <td class="colFirst"><code>void</code></td>
@@ -487,7 +655,15 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <ul class="blockList">
 <li class="blockList">
 <h4>isInventoryTabOpen</h4>
-<pre class="methodSignature">boolean&nbsp;isInventoryTabOpen()</pre>
+<pre class="methodSignature">@Deprecated
+boolean&nbsp;isInventoryTabOpen()</pre>
+<div class="deprecationBlock"><span class="deprecatedLabel">Deprecated.</span>
+<div class="deprecationComment">Use <a href="#isTabOpen(helpers.utils.UITabs)"><code>isTabOpen(UITabs)</code></a> instead.</div>
+</div>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>True if the inventory tab is open; false otherwise.</dd>
+</dl>
 </li>
 </ul>
 <a id="isCombatTabOpen()">
@@ -496,7 +672,15 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <ul class="blockList">
 <li class="blockList">
 <h4>isCombatTabOpen</h4>
-<pre class="methodSignature">boolean&nbsp;isCombatTabOpen()</pre>
+<pre class="methodSignature">@Deprecated
+boolean&nbsp;isCombatTabOpen()</pre>
+<div class="deprecationBlock"><span class="deprecatedLabel">Deprecated.</span>
+<div class="deprecationComment">Use <a href="#isTabOpen(helpers.utils.UITabs)"><code>isTabOpen(UITabs)</code></a> instead.</div>
+</div>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>True if the combat tab is open; false otherwise.</dd>
+</dl>
 </li>
 </ul>
 <a id="isStatsTabOpen()">
@@ -505,7 +689,15 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <ul class="blockList">
 <li class="blockList">
 <h4>isStatsTabOpen</h4>
-<pre class="methodSignature">boolean&nbsp;isStatsTabOpen()</pre>
+<pre class="methodSignature">@Deprecated
+boolean&nbsp;isStatsTabOpen()</pre>
+<div class="deprecationBlock"><span class="deprecatedLabel">Deprecated.</span>
+<div class="deprecationComment">Use <a href="#isTabOpen(helpers.utils.UITabs)"><code>isTabOpen(UITabs)</code></a> instead.</div>
+</div>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>True if the stats tab is open; false otherwise.</dd>
+</dl>
 </li>
 </ul>
 <a id="isQuestsTabOpen()">
@@ -514,7 +706,15 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <ul class="blockList">
 <li class="blockList">
 <h4>isQuestsTabOpen</h4>
-<pre class="methodSignature">boolean&nbsp;isQuestsTabOpen()</pre>
+<pre class="methodSignature">@Deprecated
+boolean&nbsp;isQuestsTabOpen()</pre>
+<div class="deprecationBlock"><span class="deprecatedLabel">Deprecated.</span>
+<div class="deprecationComment">Use <a href="#isTabOpen(helpers.utils.UITabs)"><code>isTabOpen(UITabs)</code></a> instead.</div>
+</div>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>True if the quests tab is open; false otherwise.</dd>
+</dl>
 </li>
 </ul>
 <a id="isEquipTabOpen()">
@@ -523,7 +723,15 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <ul class="blockList">
 <li class="blockList">
 <h4>isEquipTabOpen</h4>
-<pre class="methodSignature">boolean&nbsp;isEquipTabOpen()</pre>
+<pre class="methodSignature">@Deprecated
+boolean&nbsp;isEquipTabOpen()</pre>
+<div class="deprecationBlock"><span class="deprecatedLabel">Deprecated.</span>
+<div class="deprecationComment">Use <a href="#isTabOpen(helpers.utils.UITabs)"><code>isTabOpen(UITabs)</code></a> instead.</div>
+</div>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>True if the equip tab is open; false otherwise.</dd>
+</dl>
 </li>
 </ul>
 <a id="isPrayerTabOpen()">
@@ -532,7 +740,15 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <ul class="blockList">
 <li class="blockList">
 <h4>isPrayerTabOpen</h4>
-<pre class="methodSignature">boolean&nbsp;isPrayerTabOpen()</pre>
+<pre class="methodSignature">@Deprecated
+boolean&nbsp;isPrayerTabOpen()</pre>
+<div class="deprecationBlock"><span class="deprecatedLabel">Deprecated.</span>
+<div class="deprecationComment">Use <a href="#isTabOpen(helpers.utils.UITabs)"><code>isTabOpen(UITabs)</code></a> instead.</div>
+</div>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>True if the prayer tab is open; false otherwise.</dd>
+</dl>
 </li>
 </ul>
 <a id="isMagicTabOpen()">
@@ -541,7 +757,15 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <ul class="blockList">
 <li class="blockList">
 <h4>isMagicTabOpen</h4>
-<pre class="methodSignature">boolean&nbsp;isMagicTabOpen()</pre>
+<pre class="methodSignature">@Deprecated
+boolean&nbsp;isMagicTabOpen()</pre>
+<div class="deprecationBlock"><span class="deprecatedLabel">Deprecated.</span>
+<div class="deprecationComment">Use <a href="#isTabOpen(helpers.utils.UITabs)"><code>isTabOpen(UITabs)</code></a> instead.</div>
+</div>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>True if the magic tab is open; false otherwise.</dd>
+</dl>
 </li>
 </ul>
 <a id="isClanTabOpen()">
@@ -550,7 +774,15 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <ul class="blockList">
 <li class="blockList">
 <h4>isClanTabOpen</h4>
-<pre class="methodSignature">boolean&nbsp;isClanTabOpen()</pre>
+<pre class="methodSignature">@Deprecated
+boolean&nbsp;isClanTabOpen()</pre>
+<div class="deprecationBlock"><span class="deprecatedLabel">Deprecated.</span>
+<div class="deprecationComment">Use <a href="#isTabOpen(helpers.utils.UITabs)"><code>isTabOpen(UITabs)</code></a> instead.</div>
+</div>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>True if the clan tab is open; false otherwise.</dd>
+</dl>
 </li>
 </ul>
 <a id="isFriendsTabOpen()">
@@ -559,7 +791,15 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <ul class="blockList">
 <li class="blockList">
 <h4>isFriendsTabOpen</h4>
-<pre class="methodSignature">boolean&nbsp;isFriendsTabOpen()</pre>
+<pre class="methodSignature">@Deprecated
+boolean&nbsp;isFriendsTabOpen()</pre>
+<div class="deprecationBlock"><span class="deprecatedLabel">Deprecated.</span>
+<div class="deprecationComment">Use <a href="#isTabOpen(helpers.utils.UITabs)"><code>isTabOpen(UITabs)</code></a> instead.</div>
+</div>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>True if the friends tab is open; false otherwise.</dd>
+</dl>
 </li>
 </ul>
 <a id="isAccountTabOpen()">
@@ -568,7 +808,15 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <ul class="blockList">
 <li class="blockList">
 <h4>isAccountTabOpen</h4>
-<pre class="methodSignature">boolean&nbsp;isAccountTabOpen()</pre>
+<pre class="methodSignature">@Deprecated
+boolean&nbsp;isAccountTabOpen()</pre>
+<div class="deprecationBlock"><span class="deprecatedLabel">Deprecated.</span>
+<div class="deprecationComment">Use <a href="#isTabOpen(helpers.utils.UITabs)"><code>isTabOpen(UITabs)</code></a> instead.</div>
+</div>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>True if the account tab is open; false otherwise.</dd>
+</dl>
 </li>
 </ul>
 <a id="isLogoutTabOpen()">
@@ -577,7 +825,15 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <ul class="blockList">
 <li class="blockList">
 <h4>isLogoutTabOpen</h4>
-<pre class="methodSignature">boolean&nbsp;isLogoutTabOpen()</pre>
+<pre class="methodSignature">@Deprecated
+boolean&nbsp;isLogoutTabOpen()</pre>
+<div class="deprecationBlock"><span class="deprecatedLabel">Deprecated.</span>
+<div class="deprecationComment">Use <a href="#isTabOpen(helpers.utils.UITabs)"><code>isTabOpen(UITabs)</code></a> instead.</div>
+</div>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>True if the logout tab is open; false otherwise.</dd>
+</dl>
 </li>
 </ul>
 <a id="isSettingsTabOpen()">
@@ -586,7 +842,15 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <ul class="blockList">
 <li class="blockList">
 <h4>isSettingsTabOpen</h4>
-<pre class="methodSignature">boolean&nbsp;isSettingsTabOpen()</pre>
+<pre class="methodSignature">@Deprecated
+boolean&nbsp;isSettingsTabOpen()</pre>
+<div class="deprecationBlock"><span class="deprecatedLabel">Deprecated.</span>
+<div class="deprecationComment">Use <a href="#isTabOpen(helpers.utils.UITabs)"><code>isTabOpen(UITabs)</code></a> instead.</div>
+</div>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>True if the settings tab is open; false otherwise.</dd>
+</dl>
 </li>
 </ul>
 <a id="isEmotesTabOpen()">
@@ -595,7 +859,15 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <ul class="blockList">
 <li class="blockList">
 <h4>isEmotesTabOpen</h4>
-<pre class="methodSignature">boolean&nbsp;isEmotesTabOpen()</pre>
+<pre class="methodSignature">@Deprecated
+boolean&nbsp;isEmotesTabOpen()</pre>
+<div class="deprecationBlock"><span class="deprecatedLabel">Deprecated.</span>
+<div class="deprecationComment">Use <a href="#isTabOpen(helpers.utils.UITabs)"><code>isTabOpen(UITabs)</code></a> instead.</div>
+</div>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>True if the emotes tab is open; false otherwise.</dd>
+</dl>
 </li>
 </ul>
 <a id="isMusicTabOpen()">
@@ -604,7 +876,15 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <ul class="blockList">
 <li class="blockList">
 <h4>isMusicTabOpen</h4>
-<pre class="methodSignature">boolean&nbsp;isMusicTabOpen()</pre>
+<pre class="methodSignature">@Deprecated
+boolean&nbsp;isMusicTabOpen()</pre>
+<div class="deprecationBlock"><span class="deprecatedLabel">Deprecated.</span>
+<div class="deprecationComment">Use <a href="#isTabOpen(helpers.utils.UITabs)"><code>isTabOpen(UITabs)</code></a> instead.</div>
+</div>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>True if the music tab is open; false otherwise.</dd>
+</dl>
 </li>
 </ul>
 <a id="openTab(helpers.utils.UITabs)">
@@ -627,7 +907,11 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <ul class="blockList">
 <li class="blockList">
 <h4>openInventoryTab</h4>
-<pre class="methodSignature">void&nbsp;openInventoryTab()</pre>
+<pre class="methodSignature">@Deprecated
+void&nbsp;openInventoryTab()</pre>
+<div class="deprecationBlock"><span class="deprecatedLabel">Deprecated.</span>
+<div class="deprecationComment">Use <a href="#openTab(helpers.utils.UITabs)"><code>openTab(UITabs)</code></a> instead.</div>
+</div>
 </li>
 </ul>
 <a id="openCombatTab()">
@@ -636,7 +920,11 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <ul class="blockList">
 <li class="blockList">
 <h4>openCombatTab</h4>
-<pre class="methodSignature">void&nbsp;openCombatTab()</pre>
+<pre class="methodSignature">@Deprecated
+void&nbsp;openCombatTab()</pre>
+<div class="deprecationBlock"><span class="deprecatedLabel">Deprecated.</span>
+<div class="deprecationComment">Use <a href="#openTab(helpers.utils.UITabs)"><code>openTab(UITabs)</code></a> instead.</div>
+</div>
 </li>
 </ul>
 <a id="openStatsTab()">
@@ -645,7 +933,11 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <ul class="blockList">
 <li class="blockList">
 <h4>openStatsTab</h4>
-<pre class="methodSignature">void&nbsp;openStatsTab()</pre>
+<pre class="methodSignature">@Deprecated
+void&nbsp;openStatsTab()</pre>
+<div class="deprecationBlock"><span class="deprecatedLabel">Deprecated.</span>
+<div class="deprecationComment">Use <a href="#openTab(helpers.utils.UITabs)"><code>openTab(UITabs)</code></a> instead.</div>
+</div>
 </li>
 </ul>
 <a id="openQuestsTab()">
@@ -654,7 +946,11 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <ul class="blockList">
 <li class="blockList">
 <h4>openQuestsTab</h4>
-<pre class="methodSignature">void&nbsp;openQuestsTab()</pre>
+<pre class="methodSignature">@Deprecated
+void&nbsp;openQuestsTab()</pre>
+<div class="deprecationBlock"><span class="deprecatedLabel">Deprecated.</span>
+<div class="deprecationComment">Use <a href="#openTab(helpers.utils.UITabs)"><code>openTab(UITabs)</code></a> instead.</div>
+</div>
 </li>
 </ul>
 <a id="openEquipTab()">
@@ -663,7 +959,11 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <ul class="blockList">
 <li class="blockList">
 <h4>openEquipTab</h4>
-<pre class="methodSignature">void&nbsp;openEquipTab()</pre>
+<pre class="methodSignature">@Deprecated
+void&nbsp;openEquipTab()</pre>
+<div class="deprecationBlock"><span class="deprecatedLabel">Deprecated.</span>
+<div class="deprecationComment">Use <a href="#openTab(helpers.utils.UITabs)"><code>openTab(UITabs)</code></a> instead.</div>
+</div>
 </li>
 </ul>
 <a id="openPrayerTab()">
@@ -672,7 +972,11 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <ul class="blockList">
 <li class="blockList">
 <h4>openPrayerTab</h4>
-<pre class="methodSignature">void&nbsp;openPrayerTab()</pre>
+<pre class="methodSignature">@Deprecated
+void&nbsp;openPrayerTab()</pre>
+<div class="deprecationBlock"><span class="deprecatedLabel">Deprecated.</span>
+<div class="deprecationComment">Use <a href="#openTab(helpers.utils.UITabs)"><code>openTab(UITabs)</code></a> instead.</div>
+</div>
 </li>
 </ul>
 <a id="openMagicTab()">
@@ -681,7 +985,11 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <ul class="blockList">
 <li class="blockList">
 <h4>openMagicTab</h4>
-<pre class="methodSignature">void&nbsp;openMagicTab()</pre>
+<pre class="methodSignature">@Deprecated
+void&nbsp;openMagicTab()</pre>
+<div class="deprecationBlock"><span class="deprecatedLabel">Deprecated.</span>
+<div class="deprecationComment">Use <a href="#openTab(helpers.utils.UITabs)"><code>openTab(UITabs)</code></a> instead.</div>
+</div>
 </li>
 </ul>
 <a id="openClanTab()">
@@ -690,7 +998,11 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <ul class="blockList">
 <li class="blockList">
 <h4>openClanTab</h4>
-<pre class="methodSignature">void&nbsp;openClanTab()</pre>
+<pre class="methodSignature">@Deprecated
+void&nbsp;openClanTab()</pre>
+<div class="deprecationBlock"><span class="deprecatedLabel">Deprecated.</span>
+<div class="deprecationComment">Use <a href="#openTab(helpers.utils.UITabs)"><code>openTab(UITabs)</code></a> instead.</div>
+</div>
 </li>
 </ul>
 <a id="openFriendsTab()">
@@ -699,7 +1011,11 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <ul class="blockList">
 <li class="blockList">
 <h4>openFriendsTab</h4>
-<pre class="methodSignature">void&nbsp;openFriendsTab()</pre>
+<pre class="methodSignature">@Deprecated
+void&nbsp;openFriendsTab()</pre>
+<div class="deprecationBlock"><span class="deprecatedLabel">Deprecated.</span>
+<div class="deprecationComment">Use <a href="#openTab(helpers.utils.UITabs)"><code>openTab(UITabs)</code></a> instead.</div>
+</div>
 </li>
 </ul>
 <a id="openAccountTab()">
@@ -708,7 +1024,11 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <ul class="blockList">
 <li class="blockList">
 <h4>openAccountTab</h4>
-<pre class="methodSignature">void&nbsp;openAccountTab()</pre>
+<pre class="methodSignature">@Deprecated
+void&nbsp;openAccountTab()</pre>
+<div class="deprecationBlock"><span class="deprecatedLabel">Deprecated.</span>
+<div class="deprecationComment">Use <a href="#openTab(helpers.utils.UITabs)"><code>openTab(UITabs)</code></a> instead.</div>
+</div>
 </li>
 </ul>
 <a id="openLogoutTab()">
@@ -717,7 +1037,11 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <ul class="blockList">
 <li class="blockList">
 <h4>openLogoutTab</h4>
-<pre class="methodSignature">void&nbsp;openLogoutTab()</pre>
+<pre class="methodSignature">@Deprecated
+void&nbsp;openLogoutTab()</pre>
+<div class="deprecationBlock"><span class="deprecatedLabel">Deprecated.</span>
+<div class="deprecationComment">Use <a href="#openTab(helpers.utils.UITabs)"><code>openTab(UITabs)</code></a> instead.</div>
+</div>
 </li>
 </ul>
 <a id="openSettingsTab()">
@@ -726,7 +1050,11 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <ul class="blockList">
 <li class="blockList">
 <h4>openSettingsTab</h4>
-<pre class="methodSignature">void&nbsp;openSettingsTab()</pre>
+<pre class="methodSignature">@Deprecated
+void&nbsp;openSettingsTab()</pre>
+<div class="deprecationBlock"><span class="deprecatedLabel">Deprecated.</span>
+<div class="deprecationComment">Use <a href="#openTab(helpers.utils.UITabs)"><code>openTab(UITabs)</code></a> instead.</div>
+</div>
 </li>
 </ul>
 <a id="openEmotesTab()">
@@ -735,7 +1063,11 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <ul class="blockList">
 <li class="blockList">
 <h4>openEmotesTab</h4>
-<pre class="methodSignature">void&nbsp;openEmotesTab()</pre>
+<pre class="methodSignature">@Deprecated
+void&nbsp;openEmotesTab()</pre>
+<div class="deprecationBlock"><span class="deprecatedLabel">Deprecated.</span>
+<div class="deprecationComment">Use <a href="#openTab(helpers.utils.UITabs)"><code>openTab(UITabs)</code></a> instead.</div>
+</div>
 </li>
 </ul>
 <a id="openMusicTab()">
@@ -744,7 +1076,11 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <ul class="blockList">
 <li class="blockList">
 <h4>openMusicTab</h4>
-<pre class="methodSignature">void&nbsp;openMusicTab()</pre>
+<pre class="methodSignature">@Deprecated
+void&nbsp;openMusicTab()</pre>
+<div class="deprecationBlock"><span class="deprecatedLabel">Deprecated.</span>
+<div class="deprecationComment">Use <a href="#openTab(helpers.utils.UITabs)"><code>openTab(UITabs)</code></a> instead.</div>
+</div>
 </li>
 </ul>
 <a id="closeTab(helpers.utils.UITabs)">
@@ -767,7 +1103,11 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <ul class="blockList">
 <li class="blockList">
 <h4>closeInventoryTab</h4>
-<pre class="methodSignature">void&nbsp;closeInventoryTab()</pre>
+<pre class="methodSignature">@Deprecated
+void&nbsp;closeInventoryTab()</pre>
+<div class="deprecationBlock"><span class="deprecatedLabel">Deprecated.</span>
+<div class="deprecationComment">Use <a href="#closeTab(helpers.utils.UITabs)"><code>closeTab(UITabs)</code></a> instead.</div>
+</div>
 </li>
 </ul>
 <a id="closeCombatTab()">
@@ -776,7 +1116,11 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <ul class="blockList">
 <li class="blockList">
 <h4>closeCombatTab</h4>
-<pre class="methodSignature">void&nbsp;closeCombatTab()</pre>
+<pre class="methodSignature">@Deprecated
+void&nbsp;closeCombatTab()</pre>
+<div class="deprecationBlock"><span class="deprecatedLabel">Deprecated.</span>
+<div class="deprecationComment">Use <a href="#closeTab(helpers.utils.UITabs)"><code>closeTab(UITabs)</code></a> instead.</div>
+</div>
 </li>
 </ul>
 <a id="closeStatsTab()">
@@ -785,7 +1129,11 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <ul class="blockList">
 <li class="blockList">
 <h4>closeStatsTab</h4>
-<pre class="methodSignature">void&nbsp;closeStatsTab()</pre>
+<pre class="methodSignature">@Deprecated
+void&nbsp;closeStatsTab()</pre>
+<div class="deprecationBlock"><span class="deprecatedLabel">Deprecated.</span>
+<div class="deprecationComment">Use <a href="#closeTab(helpers.utils.UITabs)"><code>closeTab(UITabs)</code></a> instead.</div>
+</div>
 </li>
 </ul>
 <a id="closeQuestsTab()">
@@ -794,7 +1142,11 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <ul class="blockList">
 <li class="blockList">
 <h4>closeQuestsTab</h4>
-<pre class="methodSignature">void&nbsp;closeQuestsTab()</pre>
+<pre class="methodSignature">@Deprecated
+void&nbsp;closeQuestsTab()</pre>
+<div class="deprecationBlock"><span class="deprecatedLabel">Deprecated.</span>
+<div class="deprecationComment">Use <a href="#closeTab(helpers.utils.UITabs)"><code>closeTab(UITabs)</code></a> instead.</div>
+</div>
 </li>
 </ul>
 <a id="closeEquipTab()">
@@ -803,7 +1155,11 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <ul class="blockList">
 <li class="blockList">
 <h4>closeEquipTab</h4>
-<pre class="methodSignature">void&nbsp;closeEquipTab()</pre>
+<pre class="methodSignature">@Deprecated
+void&nbsp;closeEquipTab()</pre>
+<div class="deprecationBlock"><span class="deprecatedLabel">Deprecated.</span>
+<div class="deprecationComment">Use <a href="#closeTab(helpers.utils.UITabs)"><code>closeTab(UITabs)</code></a> instead.</div>
+</div>
 </li>
 </ul>
 <a id="closePrayerTab()">
@@ -812,7 +1168,11 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <ul class="blockList">
 <li class="blockList">
 <h4>closePrayerTab</h4>
-<pre class="methodSignature">void&nbsp;closePrayerTab()</pre>
+<pre class="methodSignature">@Deprecated
+void&nbsp;closePrayerTab()</pre>
+<div class="deprecationBlock"><span class="deprecatedLabel">Deprecated.</span>
+<div class="deprecationComment">Use <a href="#closeTab(helpers.utils.UITabs)"><code>closeTab(UITabs)</code></a> instead.</div>
+</div>
 </li>
 </ul>
 <a id="closeMagicTab()">
@@ -821,7 +1181,11 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <ul class="blockList">
 <li class="blockList">
 <h4>closeMagicTab</h4>
-<pre class="methodSignature">void&nbsp;closeMagicTab()</pre>
+<pre class="methodSignature">@Deprecated
+void&nbsp;closeMagicTab()</pre>
+<div class="deprecationBlock"><span class="deprecatedLabel">Deprecated.</span>
+<div class="deprecationComment">Use <a href="#closeTab(helpers.utils.UITabs)"><code>closeTab(UITabs)</code></a> instead.</div>
+</div>
 </li>
 </ul>
 <a id="closeClanTab()">
@@ -830,7 +1194,11 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <ul class="blockList">
 <li class="blockList">
 <h4>closeClanTab</h4>
-<pre class="methodSignature">void&nbsp;closeClanTab()</pre>
+<pre class="methodSignature">@Deprecated
+void&nbsp;closeClanTab()</pre>
+<div class="deprecationBlock"><span class="deprecatedLabel">Deprecated.</span>
+<div class="deprecationComment">Use <a href="#closeTab(helpers.utils.UITabs)"><code>closeTab(UITabs)</code></a> instead.</div>
+</div>
 </li>
 </ul>
 <a id="closeFriendsTab()">
@@ -839,7 +1207,11 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <ul class="blockList">
 <li class="blockList">
 <h4>closeFriendsTab</h4>
-<pre class="methodSignature">void&nbsp;closeFriendsTab()</pre>
+<pre class="methodSignature">@Deprecated
+void&nbsp;closeFriendsTab()</pre>
+<div class="deprecationBlock"><span class="deprecatedLabel">Deprecated.</span>
+<div class="deprecationComment">Use <a href="#closeTab(helpers.utils.UITabs)"><code>closeTab(UITabs)</code></a> instead.</div>
+</div>
 </li>
 </ul>
 <a id="closeAccountTab()">
@@ -848,7 +1220,11 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <ul class="blockList">
 <li class="blockList">
 <h4>closeAccountTab</h4>
-<pre class="methodSignature">void&nbsp;closeAccountTab()</pre>
+<pre class="methodSignature">@Deprecated
+void&nbsp;closeAccountTab()</pre>
+<div class="deprecationBlock"><span class="deprecatedLabel">Deprecated.</span>
+<div class="deprecationComment">Use <a href="#closeTab(helpers.utils.UITabs)"><code>closeTab(UITabs)</code></a> instead.</div>
+</div>
 </li>
 </ul>
 <a id="closeLogoutTab()">
@@ -857,7 +1233,11 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <ul class="blockList">
 <li class="blockList">
 <h4>closeLogoutTab</h4>
-<pre class="methodSignature">void&nbsp;closeLogoutTab()</pre>
+<pre class="methodSignature">@Deprecated
+void&nbsp;closeLogoutTab()</pre>
+<div class="deprecationBlock"><span class="deprecatedLabel">Deprecated.</span>
+<div class="deprecationComment">Use <a href="#closeTab(helpers.utils.UITabs)"><code>closeTab(UITabs)</code></a> instead.</div>
+</div>
 </li>
 </ul>
 <a id="closeSettingsTab()">
@@ -866,7 +1246,11 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <ul class="blockList">
 <li class="blockList">
 <h4>closeSettingsTab</h4>
-<pre class="methodSignature">void&nbsp;closeSettingsTab()</pre>
+<pre class="methodSignature">@Deprecated
+void&nbsp;closeSettingsTab()</pre>
+<div class="deprecationBlock"><span class="deprecatedLabel">Deprecated.</span>
+<div class="deprecationComment">Use <a href="#closeTab(helpers.utils.UITabs)"><code>closeTab(UITabs)</code></a> instead.</div>
+</div>
 </li>
 </ul>
 <a id="closeEmotesTab()">
@@ -875,7 +1259,11 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <ul class="blockList">
 <li class="blockList">
 <h4>closeEmotesTab</h4>
-<pre class="methodSignature">void&nbsp;closeEmotesTab()</pre>
+<pre class="methodSignature">@Deprecated
+void&nbsp;closeEmotesTab()</pre>
+<div class="deprecationBlock"><span class="deprecatedLabel">Deprecated.</span>
+<div class="deprecationComment">Use <a href="#closeTab(helpers.utils.UITabs)"><code>closeTab(UITabs)</code></a> instead.</div>
+</div>
 </li>
 </ul>
 <a id="closeMusicTab()">
@@ -884,7 +1272,11 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <ul class="blockList">
 <li class="blockList">
 <h4>closeMusicTab</h4>
-<pre class="methodSignature">void&nbsp;closeMusicTab()</pre>
+<pre class="methodSignature">@Deprecated
+void&nbsp;closeMusicTab()</pre>
+<div class="deprecationBlock"><span class="deprecatedLabel">Deprecated.</span>
+<div class="deprecationComment">Use <a href="#closeTab(helpers.utils.UITabs)"><code>closeTab(UITabs)</code></a> instead.</div>
+</div>
 </li>
 </ul>
 <a id="findInventoryTab()">
