@@ -134,6 +134,18 @@ public interface iGame {
     public void switchWorld();
 
     /**
+     * Checks if XP drops are enabled/showing and disables them if that is not the case.
+     *
+     */
+    public void showXPDrops();
+
+    /**
+     * Checks if XP drops are enabled/showing and disables them if that is the case.
+     *
+     */
+    public void hideXPDrops();
+
+    /**
      * Instantly switches to a random world from the selected hop profile.
      * DISCLAIMER: This is only to be used when already on the login screen!
      * Use the instantHop method when you are still logged in.
@@ -178,6 +190,13 @@ public interface iGame {
      * @return true if the action is currently enabled.
      */
     public boolean isSingleTapEnabled();
+
+    /**
+     * Checks if XP drops are enabled/showing or not.
+     *
+     * @return true if XP drops are currently showing/enabled.
+     */
+    public boolean isXPDropsEnabled();
 
     /**
      * Enables the Tap to Drop action mode.
