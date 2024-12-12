@@ -28062,6 +28062,8 @@ public class ItemList {
     public static final int INVITATIONS_30493 = 30493;
     public static final int INVITATIONS_NOTED_30494 = 30494;
 
+    
+
     // CUSTOM ICONS
 
     // skills
