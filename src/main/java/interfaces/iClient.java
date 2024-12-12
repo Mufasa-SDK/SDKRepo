@@ -301,6 +301,33 @@ public interface iClient {
     public boolean enableAFKHandler();
 
     /**
+     * Postpones the scheduled breaks for the current emulator.
+     * <p>
+     * This method sets a flag to prevent breaks from occurring while the current script
+     * is performing important actions. Once postponed, breaks will remain on hold
+     * until {@link #resumeBreaks()} is called.
+     */
+    void postponeBreaks();
+
+    /**
+     * Resumes the ability for breaks to occur for the current emulator.
+     * <p>
+     * This method clears the flag set by {@link #postponeBreaks()} and allows the
+     * break handler to proceed with scheduling or starting breaks as normal.
+     */
+    void resumeBreaks();
+
+    /**
+     * Starts a forced break for the current emulator.
+     * <p>
+     * This method forces a break for the specified duration, using client built-in logout/login handler.
+     *
+     * @param timeMilis The duration of the forced break in milliseconds.
+     */
+    void startBreak(Long timeMilis);
+
+
+    /**
      * Checks if a specified color is found within a rectangle area on the game screen
      *
      * @param targetColor the color to look for.
