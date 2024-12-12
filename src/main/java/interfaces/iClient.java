@@ -326,6 +326,12 @@ public interface iClient {
      */
     void startBreak(Long timeMilis);
 
+    /**
+     * Checks if the client is expecting a break to be done
+     *
+     * @return True if a break is due
+     */
+    boolean isTimeForBreak();
 
     /**
      * Checks if a specified color is found within a rectangle area on the game screen
