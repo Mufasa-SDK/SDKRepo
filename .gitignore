@@ -10,3 +10,4 @@ local.properties
 .vscode
 Simba
 .gradle
+docs/stylesheet.css
