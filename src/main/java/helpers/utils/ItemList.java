@@ -28045,6 +28045,22 @@ public class ItemList {
     public static final int RAGING_ECHOES_IRON_TROPHY_NOTED_30476 = 30476;
     public static final int RAGING_ECHOES_BRONZE_TROPHY_30477 = 30477;
     public static final int RAGING_ECHOES_BRONZE_TROPHY_NOTED_30478 = 30478;
+    public static final int PRESENT_BOX_HAT_30479 = 30479;
+    public static final int PRESENT_BOX_HAT_30480 = 30480;
+    public static final int PRESENT_BOX_HAT_30481 = 30481;
+    public static final int PRESENT_BOX_HAT_30482 = 30482;
+    public static final int PRESENT_BOX_HAT_30483 = 30483;
+    public static final int PRESENT_BOX_HAT_30484 = 30484;
+    public static final int PRESENT_BOX_HAT_30485 = 30485;
+    public static final int PRESENT_BOX_HAT_30486 = 30486;
+    public static final int DOG_DISGUISE_30487 = 30487;
+    public static final int DOG_DISGUISE_NOTED_30488 = 30488;
+    public static final int FESTIVE_SCARF_30489 = 30489;
+    public static final int FESTIVE_SCARF_NOTED_30490 = 30490;
+    public static final int DOG_BOOTS_30491 = 30491;
+    public static final int DOG_BOOTS_NOTED_30492 = 30492;
+    public static final int INVITATIONS_30493 = 30493;
+    public static final int INVITATIONS_NOTED_30494 = 30494;
 
     // CUSTOM ICONS
 
