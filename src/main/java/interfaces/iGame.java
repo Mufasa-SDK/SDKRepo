@@ -92,6 +92,13 @@ public interface iGame {
     public boolean isPlayersAround(Tile tileToCheck, int radius);
 
     /**
+     * Checks if there's currently a System Update timer going.
+     *
+     * @return true if a timer is going, false if not.
+     */
+    public boolean systemUpdateGoing();
+
+    /**
      * Hops to a random world from the selected hop profile, or if other players are found around us (if activated)
      * WDH = White Dot Hop
      *
