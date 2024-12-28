@@ -1,9 +1,6 @@
 package interfaces;
 
-import org.opencv.core.Rect;
-
 import java.awt.*;
-import java.util.List;
 import java.util.Map;
 
 /**

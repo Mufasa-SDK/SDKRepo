@@ -3,7 +3,6 @@ package interfaces;
 import helpers.utils.CompassAngle;
 import helpers.utils.GameObject;
 import helpers.utils.Tile;
-import org.opencv.core.Mat;
 
 import java.awt.*;
 
