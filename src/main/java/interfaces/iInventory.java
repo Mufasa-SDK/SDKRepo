@@ -25,10 +25,21 @@ public interface iInventory {
      *
      * @param itemIDs   Array of item IDs to check in the inventory.
      * @param threshold The threshold value used for the check, threshold is a double where 1.0 represents 100% confidence. Usually above 0.80 (but often 0.90+).
-     * @param matchColor The color to match the specific item with, for example the blue in a Rune scimitar.
+     * @param matchColor The color to match the specific item with, for example, the blue in a Rune scimitar.
      * @return boolean indicating whether any of the specified items are present in the inventory.
      */
     boolean contains(int[] itemIDs, double threshold, Color matchColor);
+
+    /**
+     * Checks if the inventory contains any of the specified items, based on a threshold.
+     *
+     * @param itemIDs   Array of item IDs to check in the inventory.
+     * @param threshold The threshold value used for the check, threshold is a double where 1.0 represents 100% confidence. Usually above 0.80 (but often 0.90+).
+     * @param matchColor The color to match the specific item with, for example, the blue in a Rune scimitar.
+     * @param exclusionColor The color that may NOT be in a possible match, used to exclude items with similar colors.
+     * @return boolean indicating whether any of the specified items are present in the inventory.
+     */
+    boolean contains(int[] itemIDs, double threshold, Color matchColor, Color exclusionColor);
 
     /**
      * Checks if the inventory contains a specific item, based on a threshold.
@@ -44,10 +55,21 @@ public interface iInventory {
      *
      * @param itemID    The ID of the item to check in the inventory.
      * @param threshold The threshold value used for the check, threshold is a double where 1.0 represents 100% confidence. Usually above 0.80 (but often 0.90+).
-     * @param matchColor The color to match the specific item with, for example the blue in a Rune scimitar.
+     * @param matchColor The color to match the specific item with, for example, the blue in a Rune scimitar.
      * @return boolean indicating whether the specified item is present in the inventory.
      */
     boolean contains(int itemID, double threshold, Color matchColor);
+
+    /**
+     * Checks if the inventory contains a specific item, based on a threshold.
+     *
+     * @param itemID    The ID of the item to check in the inventory.
+     * @param threshold The threshold value used for the check, threshold is a double where 1.0 represents 100% confidence. Usually above 0.80 (but often 0.90+).
+     * @param matchColor The color to match the specific item with, for example, the blue in a Rune scimitar.
+     * @param exclusionColor The color that may NOT be in a possible match, used to exclude items with similar colors.
+     * @return boolean indicating whether the specified item is present in the inventory.
+     */
+    boolean contains(int itemID, double threshold, Color matchColor, Color exclusionColor);
 
     /**
      * Checks if the inventory contains any of the specified items, based on a threshold.
