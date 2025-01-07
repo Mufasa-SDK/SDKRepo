@@ -19,12 +19,6 @@ public interface iScript {
     boolean isScriptStopping();
 
     /**
-     * Checks if its time to go to break
-     * @return true if script is requested to enter break.
-     */
-    boolean isTimeForBreak();
-
-    /**
      * Checks if breaks are enabled for the chosen account the script is started with
      * @return true if breaks are enabled.
      */
