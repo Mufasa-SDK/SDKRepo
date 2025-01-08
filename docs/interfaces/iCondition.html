@@ -14,7 +14,7 @@
 <!--[if IE]>
 <script type="text/javascript" src="../jquery/jszip-utils/dist/jszip-utils-ie.min.js"></script>
 <![endif]-->
-<script type="text/javascript" src="../jquery/jquery-3.6.1.min.js"></script>
+<script type="text/javascript" src="../jquery/jquery-3.7.1.min.js"></script>
 <script type="text/javascript" src="../jquery/jquery-ui.min.js"></script>
 </head>
 <body>
@@ -27,7 +27,7 @@
     catch(err) {
     }
 //-->
-var data = {"i0":6,"i1":6};
+var data = {"i0":6,"i1":6,"i2":6};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],4:["t3","Abstract Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -155,6 +155,14 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code>void</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#sleep(int,int)">sleep</a></span>&#8203;(int&nbsp;minMillis,
+     int&nbsp;maxMillis)</code></th>
+<td class="colLast">
+<div class="block">Causes the current thread to sleep for a random amount of time.</div>
+</td>
+</tr>
+<tr id="i2" class="altColor">
+<td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#wait(java.util.concurrent.Callable,int,int)">wait</a></span>&#8203;(java.util.concurrent.Callable&lt;java.lang.Boolean&gt;&nbsp;conditionCallable,
     int&nbsp;intervalMillis,
     int&nbsp;attempts)</code></th>
@@ -191,6 +199,23 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>intervalMillis</code> - the duration to sleep in milliseconds.</dd>
+</dl>
+</li>
+</ul>
+<a id="sleep(int,int)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>sleep</h4>
+<pre class="methodSignature">void&nbsp;sleep&#8203;(int&nbsp;minMillis,
+           int&nbsp;maxMillis)</pre>
+<div class="block">Causes the current thread to sleep for a random amount of time.
+ This is a blocking operation that pauses the thread for the given duration.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>minMillis</code> - the minimum duration to sleep in milliseconds.</dd>
+<dd><code>maxMillis</code> - the maximum duration to sleep in milliseconds.</dd>
 </dl>
 </li>
 </ul>
