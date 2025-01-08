@@ -45,5 +45,10 @@ public enum OptionType {
         /**
          * Represents a configuration option for worldhopper utilies. This includes a boolean checkbox if worldhopper is enabled and also the worldhopper profile selection
          */
-        WORLDHOPPER
+        WORLDHOPPER,
+
+        /**
+         * Represents a description field.
+         */
+        DESCRIPTION
 }
