@@ -50,5 +50,10 @@ public enum OptionType {
         /**
          * Represents a description field.
          */
-        DESCRIPTION
+        DESCRIPTION,
+
+        /**
+         * Represents a 'Text Area' field for user string inputs.
+         */
+        TEXT_AREA
 }
