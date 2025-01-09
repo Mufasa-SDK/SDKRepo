@@ -23,4 +23,13 @@ public @interface ScriptTabConfiguration {
      * @return An array of {@link ScriptConfiguration} annotations.
      */
     ScriptConfiguration[] configurations();
+
+    /**
+     * Container annotation for grouping multiple {@link ScriptTabConfiguration} annotations.
+     */
+    @Retention(RetentionPolicy.RUNTIME)
+    @Target(ElementType.TYPE)
+    @interface List {
+        ScriptTabConfiguration[] value();
+    }
 }
