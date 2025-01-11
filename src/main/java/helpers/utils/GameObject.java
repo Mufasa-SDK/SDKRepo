@@ -6,5 +6,6 @@ package helpers.utils;
 public enum GameObject {
     NPC,
     ITEM,
-    PLAYER
+    PLAYER,
+    SELF
 }
