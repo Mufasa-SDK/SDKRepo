@@ -1,9 +1,6 @@
 package interfaces;
 
-import helpers.utils.AntiBan;
-import helpers.utils.CompassAngle;
-import helpers.utils.GameObject;
-import helpers.utils.Tile;
+import helpers.utils.*;
 
 import java.awt.*;
 
@@ -207,6 +204,14 @@ public interface iGame {
      * @param antiBanOption Optional anti-ban measure to enable for this script
      */
     public void enableOptionalAntiBan(AntiBan antiBanOption);
+
+    /**
+     * Adds the skill to the list of currently training skills.
+     * This list is used in anti-ban for more direct related checks when running scripts
+     *
+     * @param skill The Skill to add to the list of currently training skills for anti-ban
+     */
+    public void addAntiBanSkillList(Skills skill);
 
     /**
      * Checks if the Tap to Drop action is currently enabled.
