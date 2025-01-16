@@ -1,5 +1,6 @@
 package interfaces;
 
+import helpers.utils.AntiBan;
 import helpers.utils.CompassAngle;
 import helpers.utils.GameObject;
 import helpers.utils.Tile;
@@ -183,6 +184,7 @@ public interface iGame {
      */
     public boolean timeToHop();
 
+
     /**
      * Toggles whether the hopping process should be postponed.
      * <p>
@@ -193,6 +195,18 @@ public interface iGame {
      * @param state {@code true} to postpone hops; {@code false} to allow normal hopping.
      */
     public void postponeHops(boolean state);
+
+    /**
+     * Performs a random AntiBan action based on an internal timer
+     */
+    public void antiBan();
+
+    /**
+     * Enables the selected optional anti-ban measure for the run duration of the script
+     *
+     * @param antiBanOption Optional anti-ban measure to enable for this script
+     */
+    public void enableOptionalAntiBan(AntiBan antiBanOption);
 
     /**
      * Checks if the Tap to Drop action is currently enabled.
