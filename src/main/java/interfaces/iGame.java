@@ -184,6 +184,17 @@ public interface iGame {
     public boolean timeToHop();
 
     /**
+     * Toggles whether the hopping process should be postponed.
+     * <p>
+     * If {@code state} is {@code true}, hopping will be postponed
+     * (i.e., ignored or skipped) until further notice. If {@code state} is {@code false},
+     * hopping will proceed normally according to its scheduled times.
+     *
+     * @param state {@code true} to postpone hops; {@code false} to allow normal hopping.
+     */
+    public void postponeHops(boolean state);
+
+    /**
      * Checks if the Tap to Drop action is currently enabled.
      *
      * @return true if the action is currently enabled.
