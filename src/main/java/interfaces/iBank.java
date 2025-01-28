@@ -162,6 +162,13 @@ public interface iBank {
     void enterBankPin();
 
     /**
+     * Sets the bankPin specified by confirming it twice in the bank interface.
+     *
+     * @param bankPin A string of four digits representing the bankPin to set.
+     */
+    void setBankPin(String bankPin);
+
+    /**
      * Sets up dynamic bank functionality and returns a setup identifier.
      * @return A string identifier for the dynamic bank setup.
      */
