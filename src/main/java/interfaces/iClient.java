@@ -279,11 +279,25 @@ public interface iClient {
     boolean disableBreakHandler();
 
     /**
+     * Disables the internal Sleep handler. Do note that you will have to manage sleeps yourself with the login/logout methods and a custom implementation.
+     *
+     * @return Sleep handler stopped or not
+     */
+    boolean disableSleepHandler();
+
+    /**
      * Enables the internal Break handler again if you disabled it.
      *
      * @return Break handler enabled or not
      */
     boolean enableBreakHandler();
+
+    /**
+     * Enables the internal Sleep handler again if you disabled it.
+     *
+     * @return Sleep handler enabled or not
+     */
+    boolean enableSleepHandler();
 
     /**
      * Disables the internal AFK handler. Do note that you will have to manage AFK's yourself with a custom implementation.
@@ -331,6 +345,30 @@ public interface iClient {
      * @return True if a break is due
      */
     boolean isTimeForBreak();
+
+    /**
+     * Postpones the scheduled sleeps for the current emulator.
+     * <p>
+     * This method sets a flag to prevent sleeps from occurring while the current script
+     * is performing important actions. Once postponed, sleeps will remain on hold
+     * until {@link #resumeSleeps()} is called.
+     */
+    public void postponeSleeps();
+
+    /**
+     * Resumes the ability for sleeps to occur for the current emulator.
+     * <p>
+     * This method clears the flag set by {@link #postponeSleeps()} and allows the
+     * sleep handler to proceed with scheduling or starting sleeps as normal.
+     */
+    public void resumeSleeps();
+
+    /**
+     * Checks if the client is expecting a sleep to be done
+     *
+     * @return True if a break is due
+     */
+    public boolean isTimeForSleep();
 
     /**
      * Checks if a specified color is found within a rectangle area on the game screen
