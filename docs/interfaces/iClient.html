@@ -27,7 +27,7 @@
     catch(err) {
     }
 //-->
-var data = {"i0":6,"i1":6,"i2":6,"i3":6,"i4":6,"i5":6,"i6":6,"i7":6,"i8":6,"i9":6,"i10":6,"i11":6,"i12":6,"i13":6,"i14":6,"i15":6,"i16":6,"i17":6,"i18":6,"i19":6,"i20":6,"i21":6,"i22":6,"i23":6,"i24":6,"i25":6,"i26":6,"i27":6,"i28":6,"i29":6,"i30":6,"i31":6,"i32":6,"i33":6,"i34":6,"i35":6,"i36":6,"i37":6,"i38":6,"i39":6,"i40":6,"i41":6,"i42":6,"i43":6,"i44":6,"i45":6,"i46":6,"i47":6,"i48":6,"i49":6,"i50":6};
+var data = {"i0":6,"i1":6,"i2":6,"i3":6,"i4":6,"i5":6,"i6":6,"i7":6,"i8":6,"i9":6,"i10":6,"i11":6,"i12":6,"i13":6,"i14":6,"i15":6,"i16":6,"i17":6,"i18":6,"i19":6,"i20":6,"i21":6,"i22":6,"i23":6,"i24":6,"i25":6,"i26":6,"i27":6,"i28":6,"i29":6,"i30":6,"i31":6,"i32":6,"i33":6,"i34":6,"i35":6,"i36":6,"i37":6,"i38":6,"i39":6,"i40":6,"i41":6,"i42":6,"i43":6,"i44":6,"i45":6,"i46":6,"i47":6,"i48":6,"i49":6,"i50":6,"i51":6,"i52":6};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],4:["t3","Abstract Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -457,47 +457,61 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </tr>
 <tr id="i34" class="altColor">
 <td class="colFirst"><code>void</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#postponeBreaksAndSleeps()">postponeBreaksAndSleeps</a></span>()</code></th>
+<td class="colLast">
+<div class="block">Postpones the scheduled sleeps and breaks for the current emulator.</div>
+</td>
+</tr>
+<tr id="i35" class="rowColor">
+<td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#postponeSleeps()">postponeSleeps</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Postpones the scheduled sleeps for the current emulator.</div>
 </td>
 </tr>
-<tr id="i35" class="rowColor">
+<tr id="i36" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#restartApp()">restartApp</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Restarts the application associated with this client.</div>
 </td>
 </tr>
-<tr id="i36" class="altColor">
+<tr id="i37" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#resumeBreaks()">resumeBreaks</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Resumes the ability for breaks to occur for the current emulator.</div>
 </td>
 </tr>
-<tr id="i37" class="rowColor">
+<tr id="i38" class="altColor">
+<td class="colFirst"><code>void</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#resumeBreaksAndSleeps()">resumeBreaksAndSleeps</a></span>()</code></th>
+<td class="colLast">
+<div class="block">Resumes the ability for sleeps and breaks to occur for the current emulator.</div>
+</td>
+</tr>
+<tr id="i39" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#resumeSleeps()">resumeSleeps</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Resumes the ability for sleeps to occur for the current emulator.</div>
 </td>
 </tr>
-<tr id="i38" class="altColor">
+<tr id="i40" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#sendKeystroke(java.lang.String)">sendKeystroke</a></span>&#8203;(java.lang.String&nbsp;keystroke)</code></th>
 <td class="colLast">
 <div class="block">Sends a specific keystroke to the client.</div>
 </td>
 </tr>
-<tr id="i39" class="rowColor">
+<tr id="i41" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#startBreak(java.lang.Long)">startBreak</a></span>&#8203;(java.lang.Long&nbsp;timeMilis)</code></th>
 <td class="colLast">
 <div class="block">Starts a forced break for the current emulator.</div>
 </td>
 </tr>
-<tr id="i40" class="altColor">
+<tr id="i42" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#tap(int,int)">tap</a></span>&#8203;(int&nbsp;x,
    int&nbsp;y)</code></th>
@@ -505,7 +519,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <div class="block">Simulates a tap action at a specified coordinate.</div>
 </td>
 </tr>
-<tr id="i41" class="rowColor">
+<tr id="i43" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#tap(java.awt.Color,java.awt.Rectangle,int)">tap</a></span>&#8203;(java.awt.Color&nbsp;targetColor,
    java.awt.Rectangle&nbsp;boundingArea,
@@ -514,35 +528,35 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <div class="block">Simulates a tap action on a specific color within a defined area.</div>
 </td>
 </tr>
-<tr id="i42" class="altColor">
+<tr id="i44" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#tap(java.awt.Point)">tap</a></span>&#8203;(java.awt.Point&nbsp;point)</code></th>
 <td class="colLast">
 <div class="block">Simulates a tap action at a specified coordinate using a java.awt.Point.</div>
 </td>
 </tr>
-<tr id="i43" class="rowColor">
+<tr id="i45" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#tap(java.awt.Polygon)">tap</a></span>&#8203;(java.awt.Polygon&nbsp;polygon)</code></th>
 <td class="colLast">
 <div class="block">Simulates a tap action inside a specific polygon.</div>
 </td>
 </tr>
-<tr id="i44" class="altColor">
+<tr id="i46" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#tap(java.awt.Rectangle)">tap</a></span>&#8203;(java.awt.Rectangle&nbsp;rectangle)</code></th>
 <td class="colLast">
 <div class="block">Simulates a tap action inside a specific polygon.</div>
 </td>
 </tr>
-<tr id="i45" class="rowColor">
+<tr id="i47" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#tap(java.util.List)">tap</a></span>&#8203;(java.util.List&lt;java.awt.Point&gt;&nbsp;points)</code></th>
 <td class="colLast">
 <div class="block">Simulates a tap action at a specified coordinate using a java.awt.Point.</div>
 </td>
 </tr>
-<tr id="i46" class="altColor">
+<tr id="i48" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#tap(java.util.List,boolean)">tap</a></span>&#8203;(java.util.List&lt;java.awt.Point&gt;&nbsp;points,
    boolean&nbsp;tapWithinRandom)</code></th>
@@ -550,7 +564,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <div class="block">Simulates a tap action at a specified coordinate using a java.awt.Point.</div>
 </td>
 </tr>
-<tr id="i47" class="rowColor">
+<tr id="i49" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#tapWithMenuAction(int,int,int,int,java.util.List,java.lang.String)">tapWithMenuAction</a></span>&#8203;(int&nbsp;x,
                  int&nbsp;y,
@@ -562,7 +576,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <div class="block">Simulates a tap at the specified coordinates and then searches for a specific string in the menu that appears to tap on.</div>
 </td>
 </tr>
-<tr id="i48" class="altColor">
+<tr id="i50" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#tapWithMenuAction(int,int,int,int,java.util.Map,java.util.List,java.lang.String)">tapWithMenuAction</a></span>&#8203;(int&nbsp;x,
                  int&nbsp;y,
@@ -575,7 +589,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <div class="block">Simulates a tap at the specified coordinates and then searches for a specific string in the menu that appears to tap on.</div>
 </td>
 </tr>
-<tr id="i49" class="rowColor">
+<tr id="i51" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#tapWithMenuAction(java.awt.Rectangle,int,int,java.util.List,java.lang.String)">tapWithMenuAction</a></span>&#8203;(java.awt.Rectangle&nbsp;clickRect,
                  int&nbsp;rectHeight,
@@ -586,7 +600,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <div class="block">Simulates a tap at the specified coordinates and then searches for a specific string in the menu that appears to tap on.</div>
 </td>
 </tr>
-<tr id="i50" class="altColor">
+<tr id="i52" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#tapWithMenuAction(java.awt.Rectangle,int,int,java.util.Map,java.util.List,java.lang.String)">tapWithMenuAction</a></span>&#8203;(java.awt.Rectangle&nbsp;clickRect,
                  int&nbsp;rectHeight,
@@ -1257,6 +1271,33 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>True if a break is due</dd>
 </dl>
+</li>
+</ul>
+<a id="postponeBreaksAndSleeps()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>postponeBreaksAndSleeps</h4>
+<pre class="methodSignature">void&nbsp;postponeBreaksAndSleeps()</pre>
+<div class="block">Postpones the scheduled sleeps and breaks for the current emulator.
+ <p>
+ This method sets a flag to prevent sleeps and breaks from occurring while the current script
+ is performing important actions. Once postponed, sleeps and breaks will remain on hold
+ until <a href="#resumeBreaksAndSleeps()"><code>resumeBreaksAndSleeps()</code></a> is called.</div>
+</li>
+</ul>
+<a id="resumeBreaksAndSleeps()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>resumeBreaksAndSleeps</h4>
+<pre class="methodSignature">void&nbsp;resumeBreaksAndSleeps()</pre>
+<div class="block">Resumes the ability for sleeps and breaks to occur for the current emulator.
+ <p>
+ This method clears the flag set by <a href="#postponeBreaksAndSleeps()"><code>postponeBreaksAndSleeps()</code></a> and allows the
+ sleep and breaks handler to proceed with scheduling or starting sleeps and breaks as normal.</div>
 </li>
 </ul>
 <a id="postponeSleeps()">

@@ -347,6 +347,23 @@ public interface iClient {
     boolean isTimeForBreak();
 
     /**
+     * Postpones the scheduled sleeps and breaks for the current emulator.
+     * <p>
+     * This method sets a flag to prevent sleeps and breaks from occurring while the current script
+     * is performing important actions. Once postponed, sleeps and breaks will remain on hold
+     * until {@link #resumeBreaksAndSleeps()} is called.
+     */
+    void postponeBreaksAndSleeps();
+
+    /**
+     * Resumes the ability for sleeps and breaks to occur for the current emulator.
+     * <p>
+     * This method clears the flag set by {@link #postponeBreaksAndSleeps()} and allows the
+     * sleep and breaks handler to proceed with scheduling or starting sleeps and breaks as normal.
+     */
+    void resumeBreaksAndSleeps();
+
+    /**
      * Postpones the scheduled sleeps for the current emulator.
      * <p>
      * This method sets a flag to prevent sleeps from occurring while the current script
