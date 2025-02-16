@@ -14,7 +14,7 @@
 <!--[if IE]>
 <script type="text/javascript" src="../jquery/jszip-utils/dist/jszip-utils-ie.min.js"></script>
 <![endif]-->
-<script type="text/javascript" src="../jquery/jquery-3.6.1.min.js"></script>
+<script type="text/javascript" src="../jquery/jquery-3.7.1.min.js"></script>
 <script type="text/javascript" src="../jquery/jquery-ui.min.js"></script>
 </head>
 <body>
@@ -27,7 +27,7 @@
     catch(err) {
     }
 //-->
-var data = {"i0":6,"i1":6,"i2":6,"i3":6,"i4":6,"i5":6,"i6":6,"i7":6,"i8":6,"i9":6,"i10":6,"i11":6,"i12":6,"i13":6,"i14":6,"i15":6,"i16":6,"i17":6,"i18":6,"i19":6,"i20":6,"i21":6,"i22":6,"i23":6,"i24":6,"i25":6,"i26":6,"i27":6,"i28":6,"i29":6};
+var data = {"i0":6,"i1":6,"i2":6,"i3":6,"i4":6,"i5":6,"i6":6,"i7":6,"i8":6,"i9":6,"i10":6,"i11":6,"i12":6,"i13":6,"i14":6,"i15":6,"i16":6,"i17":6,"i18":6,"i19":6,"i20":6,"i21":6,"i22":6,"i23":6,"i24":6,"i25":6,"i26":6,"i27":6,"i28":6,"i29":6,"i30":6};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],4:["t3","Abstract Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -325,34 +325,43 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </td>
 </tr>
 <tr id="i25" class="rowColor">
+<td class="colFirst"><code>java.lang.String</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#readText(java.awt.Rectangle,helpers.utils.FontName,java.util.List)">readText</a></span>&#8203;(java.awt.Rectangle&nbsp;areaToOCR,
+        <a href="../helpers/utils/FontName.html" title="enum in helpers.utils">FontName</a>&nbsp;font,
+        java.util.List&lt;java.awt.Color&gt;&nbsp;colors)</code></th>
+<td class="colLast">
+<div class="block">Reads the specific area, and returns what it was able to read.</div>
+</td>
+</tr>
+<tr id="i26" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#selectMake1()">selectMake1</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Selects the "Make 1" option.</div>
 </td>
 </tr>
-<tr id="i26" class="altColor">
+<tr id="i27" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#selectMake10()">selectMake10</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Selects the "Make 10" option.</div>
 </td>
 </tr>
-<tr id="i27" class="rowColor">
+<tr id="i28" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#selectMake5()">selectMake5</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Selects the "Make 5" option.</div>
 </td>
 </tr>
-<tr id="i28" class="altColor">
+<tr id="i29" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#selectMakeAll()">selectMakeAll</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Selects the "Make All" option.</div>
 </td>
 </tr>
-<tr id="i29" class="rowColor">
+<tr id="i30" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#selectMakeX()">selectMakeX</a></span>()</code></th>
 <td class="colLast">
@@ -616,6 +625,26 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>areaToOCR</code> - A java.awt.Rectangle with the area you want to perform OCR on.</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>A string with the OCR results.</dd>
+</dl>
+</li>
+</ul>
+<a id="readText(java.awt.Rectangle,helpers.utils.FontName,java.util.List)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>readText</h4>
+<pre class="methodSignature">java.lang.String&nbsp;readText&#8203;(java.awt.Rectangle&nbsp;areaToOCR,
+                          <a href="../helpers/utils/FontName.html" title="enum in helpers.utils">FontName</a>&nbsp;font,
+                          java.util.List&lt;java.awt.Color&gt;&nbsp;colors)</pre>
+<div class="block">Reads the specific area, and returns what it was able to read.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>areaToOCR</code> - A java.awt.Rectangle with the area you want to perform OCR on.</dd>
+<dd><code>font</code> - A font from the FontName enum to read the area with</dd>
+<dd><code>colors</code> - A list of java awt colors used to find text with</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>A string with the OCR results.</dd>
 </dl>

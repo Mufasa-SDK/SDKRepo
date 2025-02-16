@@ -1,5 +1,7 @@
 package interfaces;
 
+import helpers.utils.FontName;
+
 import java.awt.*;
 import java.util.Map;
 
@@ -122,6 +124,16 @@ public interface iChatbox {
      * @param areaToOCR A java.awt.Rectangle with the area you want to perform OCR on.
      */
     String readLastLine(Rectangle areaToOCR);
+
+    /**
+     * Reads the specific area, and returns what it was able to read.
+     * @return A string with the OCR results.
+     *
+     * @param areaToOCR A java.awt.Rectangle with the area you want to perform OCR on.
+     * @param font A font from the FontName enum to read the area with
+     * @param colors A list of java awt colors used to find text with
+     */
+    String readText(Rectangle areaToOCR, FontName font, java.util.List<java.awt.Color> colors);
 
     /**
      * Reads the specific area, and returns the digits (0-9) it was able to read.
