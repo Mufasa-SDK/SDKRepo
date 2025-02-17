@@ -8,8 +8,8 @@ public abstract class AbstractScript {
     private boolean paused = false;
     private boolean isInitialized = false;
 
-    public void initialize(iGE ge, iInterfaces interfaces, iLogger logger, iBank bank, iClient client, iCondition condition, iDepositBox depositBox, iEquipment equipment, iGame game, iGameTabs gameTabs, iInventory inventory, iLogin login, iLogout logout, iMagic magic, iOverlay overlay, iPlayer player, iPrayer prayer, iStats stats, iWalker walker, iXPBar xpBar, iChatbox chatbox, iObjects objects, iScript script, iPaint paint) {
-        Interfaces.initialize(ge, interfaces, logger, bank, client, condition, depositBox, equipment, game, gameTabs, inventory, login, logout, magic, overlay, player, prayer, stats, walker, xpBar, chatbox, objects, script, paint);
+    public void initialize(iGE ge, iInterfaces interfaces, iLogger logger, iBank bank, iClient client, iCondition condition, iDepositBox depositBox, iEquipment equipment, iGame game, iGameTabs gameTabs, iInventory inventory, iLogin login, iLogout logout, iMagic magic, iOverlay overlay, iPlayer player, iPrayer prayer, iStats stats, iWalker walker, iXPBar xpBar, iChatbox chatbox, iObjects objects, iScript script, iPaint paint, iOCR OCR) {
+        Interfaces.initialize(ge, interfaces, logger, bank, client, condition, depositBox, equipment, game, gameTabs, inventory, login, logout, magic, overlay, player, prayer, stats, walker, xpBar, chatbox, objects, script, paint, OCR);
         isInitialized = true;
     }
 

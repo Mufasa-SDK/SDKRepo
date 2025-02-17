@@ -31,6 +31,7 @@ public class Interfaces {
     public static iObjects Objects;
     public static iScript Script;
     public static iPaint Paint;
+    public static iOCR OCR;
 
     /**
      * Initializes the static references to the various game interfaces.
@@ -60,8 +61,9 @@ public class Interfaces {
      * @param objects The objects interface.
      * @param script The script interface.
      * @param paint The paint interface.
+     * @param OCR The OCR interface
      */
-    public static void initialize(iGE ge,iInterfaces interfaces, iLogger logger, iBank bank, iClient client, iCondition condition, iDepositBox depositBox, iEquipment equipment, iGame game, iGameTabs gameTabs, iInventory inventory, iLogin login, iLogout logout, iMagic magic, iOverlay overlay, iPlayer player, iPrayer prayer, iStats stats, iWalker walker, iXPBar xpBar, iChatbox chatbox, iObjects objects, iScript script, iPaint paint) {
+    public static void initialize(iGE ge,iInterfaces interfaces, iLogger logger, iBank bank, iClient client, iCondition condition, iDepositBox depositBox, iEquipment equipment, iGame game, iGameTabs gameTabs, iInventory inventory, iLogin login, iLogout logout, iMagic magic, iOverlay overlay, iPlayer player, iPrayer prayer, iStats stats, iWalker walker, iXPBar xpBar, iChatbox chatbox, iObjects objects, iScript script, iPaint paint, iOCR OCR) {
         Interfaces.GrandExchange = ge;
         Interfaces.interfaces = interfaces;
         Interfaces.Logger = logger;
@@ -86,5 +88,6 @@ public class Interfaces {
         Interfaces.Objects = objects;
         Interfaces.Script = script;
         Interfaces.Paint = paint;
+        Interfaces.OCR = OCR;
     }
 }
