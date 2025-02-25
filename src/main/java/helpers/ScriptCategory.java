@@ -29,6 +29,14 @@ public enum ScriptCategory {
     Misc,
     Ironman,
     /**
+     * Represents scripts that are made custom for users and only accessible by those users
+     */
+    Custom,
+    /**
+     * Represents scripts that are currently still in pre-release/beta.
+     */
+    Beta,
+    /**
      * Represents scripts that are executed locally.
      */
     Local;
